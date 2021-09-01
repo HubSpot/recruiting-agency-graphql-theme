@@ -1,0 +1,147 @@
+{
+  "name": {
+    "message": "Haitari",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.content.label": {
+    "message": "Sisältö",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.label": {
+    "message": "Haitarit",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.title.label": {
+    "message": "Otsikko",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.choices.plus": {
+    "message": "Plus",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Kuvake",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.border.border.label": {
+    "message": "Raja",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.border.label": {
+    "message": "Raja",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.label": {
+    "message": "Haitarit",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.light": {
+    "message": "Kevyt",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.plain": {
+    "message": "Yksivärinen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.spacing.label": {
+    "message": "Välit",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.background.color.label": {
+    "message": "Väri",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.background.label": {
+    "message": "Tausta",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.label": {
+    "message": "Sisältö",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.spacing.label": {
+    "message": "Välit",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.spacing.spacing.label": {
+    "message": "Välit",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Tyylit",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.background.color.label": {
+    "message": "Väri",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.background.label": {
+    "message": "Tausta",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.label": {
+    "message": "Otsikko",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.spacing.label": {
+    "message": "Välit",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.spacing.spacing.label": {
+    "message": "Välit",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.font.label": {
+    "message": "Fontti",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.label": {
+    "message": "Teksti",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.capitalize": {
+    "message": "Vaihda isoihin kirjaimiin",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.lowercase": {
+    "message": "Pienet kirjaimet",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.none": {
+    "message": "Ei mitään",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.uppercase": {
+    "message": "Isot kirjaimet",
+    "description": "",
+    "placeholders": null
+  }
+}

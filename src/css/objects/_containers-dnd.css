@@ -1,0 +1,18 @@
+/* Content wrappers for blog post and system templates */
+
+.content-wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Drag and drop layout styles */
+
+.dnd-section > .row-fluid {
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .dnd-section .dnd-column {
+    padding: 0;
+  }
+}

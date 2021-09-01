@@ -1,0 +1,207 @@
+{
+  "name": {
+    "message": "Knapp",
+    "description": "",
+    "placeholders": null
+  },
+  "add_icon.label": {
+    "message": "Lägg till ikon",
+    "description": "",
+    "placeholders": null
+  },
+  "button_link.label": {
+    "message": "Knapplänk",
+    "description": "",
+    "placeholders": null
+  },
+  "button_text.default": {
+    "message": "Läs mer",
+    "description": "",
+    "placeholders": null
+  },
+  "button_text.label": {
+    "message": "Knapptext",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.icon.label": {
+    "message": "Ikon",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Ikon",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.position.choices.left": {
+    "message": "Vänster",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.position.choices.right": {
+    "message": "Höger",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.position.label": {
+    "message": "Position",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.alignment.label": {
+    "message": "Justering",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.label": {
+    "message": "Justering",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.color.label": {
+    "message": "Färg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.label": {
+    "message": "Bakgrund",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.border.border.label": {
+    "message": "Kant",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.border.label": {
+    "message": "Kant",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.corner.radius.label": {
+    "message": "Radie",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.background.color.label": {
+    "message": "Färg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.background.label": {
+    "message": "Bakgrund",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.border.border.label": {
+    "message": "Kant",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.border.label": {
+    "message": "Kant",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.label": {
+    "message": "Hovra",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.text.font.label": {
+    "message": "Teckensnitt",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.text.label": {
+    "message": "Text",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Stiler",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_size.choices.large": {
+    "message": "Stor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_size.choices.regular": {
+    "message": "Vanlig",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_size.choices.small": {
+    "message": "Liten",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_size.label": {
+    "message": "Knappstorlek",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_style.choices.primary": {
+    "message": "Primär",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_style.choices.secondary": {
+    "message": "Sekundär",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_style.choices.simple": {
+    "message": "Enkel",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_style.label": {
+    "message": "Knappstil",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.label": {
+    "message": "Blanksteg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.spacing.label": {
+    "message": "Blanksteg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.font.label": {
+    "message": "Teckensnitt",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.label": {
+    "message": "Text",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.transform.choices.capitalize": {
+    "message": "Stora bokstäver",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.transform.choices.lowercase": {
+    "message": "Gemen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.transform.choices.none": {
+    "message": "Ingen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.transform.choices.uppercase": {
+    "message": "Versal",
+    "description": "",
+    "placeholders": null
+  }
+}

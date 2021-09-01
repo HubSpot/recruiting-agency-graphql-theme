@@ -1,0 +1,215 @@
+[
+  {
+    "label": "Quote text",
+    "name": "quote_text",
+    "type": "richtext",
+    "enabled_features": [
+      "alignment",
+      "block",
+      "font_family",
+      "font_size",
+      "standard_emphasis"
+    ],
+    "required": true,
+    "default": "<span>\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan velit sit amet sagittis malesuada.\"</span>"
+  },
+  {
+    "label": "Show author",
+    "name": "show_author",
+    "type": "boolean",
+    "default": true
+  },
+  {
+    "label": "Author",
+    "name": "author",
+    "type": "group",
+    "visibility": {
+      "controlling_field": "show_author",
+      "controlling_value_regex": "true",
+      "operator": "EQUAL"
+    },
+    "expanded": true,
+    "children": [
+      {
+        "label": "Include image",
+        "name": "include_image",
+        "id": "author.include_image",
+        "type": "boolean",
+        "default": true
+      },
+      {
+        "label": "Image",
+        "name": "image",
+        "type": "image",
+        "visibility": {
+          "controlling_field": "author.include_image",
+          "controlling_value_regex": "true",
+          "operator": "EQUAL"
+        },
+        "required": true,
+        "resizable": true,
+        "responsive": true,
+        "show_loading": true,
+        "default": {
+          "alt": "A photo of Shaun Benson, Marketing Manager, Agriflora Inc.",
+          "loading": "lazy",
+          "size_type": "auto",
+          "src": "https://f.hubspotusercontent10.net/hubfs/7303166/Growth/testimonial.jpg"
+        }
+      },
+      {
+        "label": "Content",
+        "name": "content",
+        "type": "richtext",
+        "enabled_features": [
+          "block",
+          "font_family",
+          "font_size",
+          "standard_emphasis"
+        ],
+        "required": true,
+        "default": "<span>Shaun Benson, Marketing Manager, Agriflora Inc.</span>"
+      }
+    ]
+  },
+  {
+    "label": "Styles",
+    "name": "styles",
+    "type": "group",
+    "tab": "STYLE",
+    "children": [
+      {
+        "label": "Author",
+        "name": "author",
+        "type": "group",
+        "visibility": {
+          "controlling_field": "show_author",
+          "controlling_value_regex": "true",
+          "operator": "EQUAL"
+        },
+        "children": [
+          {
+            "label": "Image",
+            "name": "image",
+            "type": "group",
+            "visibility": {
+              "controlling_field": "author.include_image",
+              "controlling_value_regex": "true",
+              "operator": "EQUAL"
+            },
+            "children": [
+              {
+                "label": "Corner",
+                "name": "corner",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Radius",
+                    "name": "radius",
+                    "type": "number",
+                    "display": "text",
+                    "max": 100,
+                    "step": 1,
+                    "suffix": "px"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Alignment",
+            "name": "alignment",
+            "type": "group",
+            "children": [
+              {
+                "label": "Alignment",
+                "name": "alignment",
+                "type": "textalignment"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Testimonial",
+        "name": "testimonial",
+        "type": "group",
+        "children": [
+          {
+            "label": "Presets",
+            "name": "presets",
+            "type": "group",
+            "help_text": "Use presets to quickly adjust the appearance of the selected item to predefined values.",
+            "children": [
+              {
+                "label": "Card style",
+                "name": "card_style",
+                "type": "choice",
+                "choices": [
+                  ["dark", "Dark"],
+                  ["light", "Light"],
+                  ["plain", "Plain"]
+                ],
+                "display": "select",
+                "required": true,
+                "default": "plain"
+              }
+            ]
+          },
+          {
+            "label": "Background",
+            "name": "background",
+            "type": "group",
+            "children": [
+              {
+                "label": "Color",
+                "name": "color",
+                "type": "color"
+              }
+            ]
+          },
+          {
+            "label": "Border",
+            "name": "border",
+            "type": "group",
+            "children": [
+              {
+                "label": "Border",
+                "name": "border",
+                "type": "border"
+              }
+            ]
+          },
+          {
+            "label": "Corner",
+            "name": "corner",
+            "type": "group",
+            "children": [
+              {
+                "label": "Radius",
+                "name": "radius",
+                "type": "number",
+                "display": "text",
+                "max": 100,
+                "step": 1,
+                "suffix": "px"
+              }
+            ]
+          },
+          {
+            "label": "Spacing",
+            "name": "spacing",
+            "type": "group",
+            "children": [
+              {
+                "label": "Spacing",
+                "name": "spacing",
+                "type": "spacing"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

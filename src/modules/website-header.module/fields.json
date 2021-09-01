@@ -1,0 +1,692 @@
+[
+  {
+    "label": "Layout",
+    "name": "layout",
+    "type": "choice",
+    "choices": [
+      [ "left", "Logo left" ],
+      [ "centered", "Logo centered" ]
+    ],
+    "display": "select",
+    "required": true,
+    "default": "left"
+  },
+  {
+    "label": "Logo",
+    "name": "logo",
+    "type": "group",
+    "children": [
+      {
+        "label": "Logo",
+        "name": "logo",
+        "type": "logo",
+        "required": true
+      },
+      {
+        "label": "Link",
+        "name": "link",
+        "id": "logo.link",
+        "type": "text",
+        "help_text": "If no url is specified, your logo will link to your primary domain"
+      },
+      {
+        "label": "Open link in new tab when visitors click",
+        "name": "open_in_new_tab",
+        "type": "boolean",
+        "visibility": {
+          "controlling_field": "logo.link",
+          "controlling_value_regex": null,
+          "operator": null
+        },
+        "default": false
+      }
+    ]
+  },
+  {
+    "label": "Menu",
+    "name": "menu",
+    "type": "group",
+    "children": [
+      {
+        "label": "Menu",
+        "name": "menu",
+        "type": "menu",
+        "default": "default",
+        "required": true
+      },
+      {
+        "label": "Max levels",
+        "name": "max_levels",
+        "type": "number",
+        "help_text": "Determines the number of menu tree children that can be expanded in the menu",
+        "display": "text",
+        "max": 3,
+        "min": 1,
+        "step": 1,
+        "required": true,
+        "default": 3
+      }
+    ]
+  },
+  {
+    "label": "Button",
+    "name": "button",
+    "type": "group",
+    "children": [
+      {
+        "label": "Add button",
+        "name": "add_button",
+        "id": "button.add_button",
+        "type": "boolean",
+        "display": "checkbox",
+        "default": true
+      },
+      {
+        "label": "Button text",
+        "name": "button_text",
+        "type": "text",
+        "visibility": {
+          "controlling_field": "button.add_button",
+          "controlling_value_regex": "true",
+          "operator": "EQUAL"
+        },
+        "required": true,
+        "default": "Contact us"
+      },
+      {
+        "label": "Button link",
+        "name": "button_link",
+        "type": "link",
+        "visibility": {
+          "controlling_field": "button.add_button",
+          "controlling_value_regex": "true",
+          "operator": "EQUAL"
+        },
+        "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
+        "default": {
+          "url": {
+            "href": "",
+            "type": "EXTERNAL"
+          }
+        }
+      },
+      {
+        "label": "Add icon",
+        "name": "add_icon",
+        "id": "button.add_icon",
+        "type": "boolean",
+        "visibility": {
+          "controlling_field": "button.add_button",
+          "controlling_value_regex": "true",
+          "operator": "EQUAL"
+        },
+        "default": false
+      },
+      {
+        "label": "Icon",
+        "name": "icon",
+        "type": "group",
+        "visibility": {
+          "controlling_field": "button.add_icon",
+          "controlling_value_regex": "true",
+          "operator": "EQUAL"
+        },
+        "expanded": true,
+        "children": [
+          {
+            "label": "Icon",
+            "name": "icon_field",
+            "type": "icon",
+            "required": true,
+            "default": {
+              "name": "hubspot",
+              "type" : "SOLID",
+              "unicode": "f3b2"
+            }
+          },
+          {
+            "label": "Position",
+            "name": "position",
+            "type": "choice",
+            "choices": [
+              ["left", "Left"],
+              ["right", "Right"]
+            ],
+            "display": "select",
+            "required": true,
+            "default": "left"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Language switcher",
+    "name": "language_switcher",
+    "type": "group",
+    "children": [
+      {
+        "label": "Add language switcher",
+        "name": "add_language_switcher",
+        "id": "language_switcher.add_language_switcher",
+        "type": "boolean",
+        "help_text": "The language switcher will only appear if there is a multi-language variation for a page.",
+        "display": "checkbox",
+        "default": true
+      },
+      {
+        "label": "Display mode",
+        "name": "display_mode",
+        "type": "choice",
+        "help_text": "The language of the text in the language switcher. PageLang means the names of languages will display in the language of the page the switcher is on. Localized means the name of each language will display in that language. Hybrid is a combination of the two.",
+        "visibility": {
+          "controlling_field": "language_switcher.add_language_switcher",
+          "controlling_value_regex": "true",
+          "operator": "EQUAL"
+        },
+        "choices": [
+          [ "localized", "Localized" ],
+          [ "pagelang", "PageLang" ],
+          [ "hybrid", "Hybrid" ]
+        ],
+        "display": "select",
+        "placeholder": "Search",
+        "required": true,
+        "default": "localized"
+      }
+    ]
+  },
+  {
+    "label": "Styles",
+    "name": "styles",
+    "type": "group",
+    "tab": "STYLE",
+    "children": [
+      {
+        "label": "Top bar",
+        "name": "top_bar",
+        "type": "group",
+        "children": [
+          {
+            "label": "Background",
+            "name": "background",
+            "type": "group",
+            "children": [
+              {
+                "label": "Color",
+                "name": "color",
+                "type": "color"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Language switcher",
+        "name": "language_switcher",
+        "type": "group",
+        "children": [
+          {
+            "label": "Text",
+            "name": "text",
+            "type": "group",
+            "children": [
+              {
+                "label": "Font",
+                "name": "font",
+                "type": "font",
+                "default": {
+                  "size_unit": "px"
+                }
+              },
+              {
+                "label": "Text transform",
+                "name": "text_transform",
+                "type": "choice",
+                "choices": [
+                  [ "none", "None" ],
+                  [ "capitalize", "Capitalize" ],
+                  [ "uppercase", "Uppercase" ],
+                  [ "lowercase", "Lowercase" ]
+                ],
+                "display": "select"
+              }
+            ]
+          },
+          {
+            "label": "Hover",
+            "name": "hover",
+            "type": "group",
+            "children": [
+              {
+                "label": "Font",
+                "name": "font",
+                "type": "font",
+                "visibility": {
+                  "hidden_subfields": {
+                    "size": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "label": "Drop downs",
+            "name": "drop_downs",
+            "type": "group",
+            "children": [
+              {
+                "label": "Text",
+                "name": "text",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Font color",
+                    "name": "font_color",
+                    "type": "color",
+                    "visibility": {
+                      "hidden_subfields": {
+                        "opacity": true
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "Background",
+                "name": "background",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Color",
+                    "name": "color",
+                    "type": "color"
+                  }
+                ]
+              },
+              {
+                "label": "Hover",
+                "name": "hover",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Font color",
+                    "name": "font_color",
+                    "type": "color",
+                    "visibility": {
+                      "hidden_subfields": {
+                        "opacity": true
+                      }
+                    }
+                  },
+                  {
+                    "label": "Background color",
+                    "name": "background_color",
+                    "type": "color"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Logo",
+        "name": "logo",
+        "type": "group",
+        "children": [
+          {
+            "label": "Corner",
+            "name": "corner",
+            "type": "group",
+            "children": [
+              {
+                "label": "Radius",
+                "name": "radius",
+                "type": "number",
+                "display": "text",
+                "max": 100,
+                "step": 1,
+                "suffix": "px"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Menu",
+        "name": "menu",
+        "type": "group",
+        "children": [
+          {
+            "label": "Text",
+            "name": "text",
+            "type": "group",
+            "children": [
+              {
+                "label": "Font",
+                "name": "font",
+                "type": "font",
+                "default": {
+                  "size_unit": "px"
+                }
+              },
+              {
+                "label": "Text transform",
+                "name": "text_transform",
+                "type": "choice",
+                "choices": [
+                  [ "none", "None" ],
+                  [ "capitalize", "Capitalize" ],
+                  [ "uppercase", "Uppercase" ],
+                  [ "lowercase", "Lowercase" ]
+                ],
+                "display": "select"
+              }
+            ]
+          },
+          {
+            "label": "Hover",
+            "name": "hover",
+            "type": "group",
+            "children": [
+              {
+                "label": "Font",
+                "name": "font",
+                "type": "font",
+                "visibility": {
+                  "hidden_subfields": {
+                    "size": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "label": "Active",
+            "name": "active",
+            "type": "group",
+            "children": [
+              {
+                "label": "Font",
+                "name": "font",
+                "type": "font",
+                "visibility": {
+                  "hidden_subfields": {
+                    "size": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "label": "Drop downs",
+            "name": "drop_downs",
+            "type": "group",
+            "children": [
+              {
+                "label": "Text",
+                "name": "text",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Font color",
+                    "name": "font_color",
+                    "type": "color",
+                    "visibility": {
+                      "hidden_subfields": {
+                        "opacity": true
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "Background",
+                "name": "background",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Color",
+                    "name": "color",
+                    "type": "color"
+                  }
+                ]
+              },
+              {
+                "label": "Hover",
+                "name": "hover",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Font color",
+                    "name": "font_color",
+                    "type": "color",
+                    "visibility": {
+                      "hidden_subfields": {
+                        "opacity": true
+                      }
+                    }
+                  },
+                  {
+                    "label": "Background color",
+                    "name": "background_color",
+                    "type": "color"
+                  }
+                ]
+              },
+              {
+                "label": "Active",
+                "name": "active",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Font color",
+                    "name": "font_color",
+                    "type": "color",
+                    "visibility": {
+                      "hidden_subfields": {
+                        "opacity": true
+                      }
+                    }
+                  },
+                  {
+                    "label": "Background color",
+                    "name": "background_color",
+                    "type": "color"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Button",
+        "name": "button",
+        "type": "group",
+        "children": [
+          {
+            "label": "Presets",
+            "name": "presets",
+            "type": "group",
+            "help_text": "Use presets to quickly adjust the appearance of the selected item to predefined values.",
+            "children": [
+              {
+                "label": "Button style",
+                "name": "button_style",
+                "type": "choice",
+                "choices": [
+                  ["primary", "Primary"],
+                  ["secondary", "Secondary"],
+                  ["simple", "Simple"]
+                ],
+                "display": "select",
+                "required": true,
+                "default": "primary"
+              },
+              {
+                "label": "Button size",
+                "name": "button_size",
+                "type": "choice",
+                "choices": [
+                  ["small", "Small"],
+                  ["regular", "Regular"],
+                  ["large", "Large"]
+                ],
+                "display": "select",
+                "required": true,
+                "default": "regular"
+              }
+            ]
+          },
+          {
+            "label": "Text",
+            "name": "text",
+            "type": "group",
+            "children": [
+              {
+                "label": "Font",
+                "name": "font",
+                "type": "font",
+                "default": {
+                  "size_unit": "px"
+                }
+              },
+              {
+                "label": "Text transform",
+                "name": "text_transform",
+                "type": "choice",
+                "choices": [
+                  [ "none", "None" ],
+                  [ "capitalize", "Capitalize" ],
+                  [ "uppercase", "Uppercase" ],
+                  [ "lowercase", "Lowercase" ]
+                ],
+                "display": "select"
+              }
+            ]
+          },
+          {
+            "label": "Background",
+            "name": "background",
+            "type": "group",
+            "children": [
+              {
+                "label": "Color",
+                "name": "color",
+                "type": "color"
+              }
+            ]
+          },
+          {
+            "label": "Border",
+            "name": "border",
+            "type": "group",
+            "children": [
+              {
+                "label" : "Border",
+                "name" : "border",
+                "type" : "border"
+              }
+            ]
+          },
+          {
+            "label": "Corner",
+            "name": "corner",
+            "type": "group",
+            "children": [
+              {
+                "label": "Radius",
+                "name": "radius",
+                "type": "number",
+                "display": "text",
+                "max": 100,
+                "step": 1,
+                "suffix": "px"
+              }
+            ]
+          },
+          {
+            "label": "Spacing",
+            "name": "spacing",
+            "type": "group",
+            "children": [
+              {
+                "label": "Spacing",
+                "name": "spacing",
+                "type": "spacing",
+                "visibility": {
+                  "hidden_subfields": {
+                    "margin": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "label": "Hover",
+            "name": "hover",
+            "type": "group",
+            "children": [
+              {
+                "label": "Text",
+                "name": "text",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Font",
+                    "name": "font",
+                    "type": "font",
+                    "visibility": {
+                      "hidden_subfields": {
+                        "size": true
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "Background",
+                "name": "background",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Color",
+                    "name": "color",
+                    "type": "color"
+                  }
+                ]
+              },
+              {
+                "label": "Border",
+                "name": "border",
+                "type": "group",
+                "children": [
+                  {
+                    "label" : "Border",
+                    "name" : "border",
+                    "type" : "border"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Alignment",
+            "name": "alignment",
+            "type": "group",
+            "children": [
+              {
+                "label": "Alignment",
+                "name": "alignment",
+                "type": "alignment",
+                "alignment_direction": "HORIZONTAL"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

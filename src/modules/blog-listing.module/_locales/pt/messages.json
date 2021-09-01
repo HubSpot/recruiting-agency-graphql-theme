@@ -1,0 +1,492 @@
+{
+  "name": {
+    "message": "Lista de blog",
+    "description": "",
+    "placeholders": null
+  },
+  "author.label": {
+    "message": "Autor",
+    "description": "",
+    "placeholders": null
+  },
+  "button.label": {
+    "message": "Botão",
+    "description": "",
+    "placeholders": null
+  },
+  "button_text.default": {
+    "message": "Leia mais ",
+    "description": "",
+    "placeholders": null
+  },
+  "button_text.label": {
+    "message": "Texto do botão",
+    "description": "",
+    "placeholders": null
+  },
+  "columns.help_text": {
+    "message": "Número de posts por linha",
+    "description": "",
+    "placeholders": null
+  },
+  "columns.label": {
+    "message": "Colunas",
+    "description": "",
+    "placeholders": null
+  },
+  "date.label": {
+    "message": "Data",
+    "description": "",
+    "placeholders": null
+  },
+  "description.label": {
+    "message": "Descrição",
+    "description": "",
+    "placeholders": null
+  },
+  "featured_image.label": {
+    "message": "Imagem em destaque",
+    "description": "",
+    "placeholders": null
+  },
+  "layout_style.choices.card": {
+    "message": "Cartão",
+    "description": "",
+    "placeholders": null
+  },
+  "layout_style.choices.list": {
+    "message": "Lista",
+    "description": "",
+    "placeholders": null
+  },
+  "layout_style.label": {
+    "message": "Estilo de layout",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.label": {
+    "message": "Canto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.radius.label": {
+    "message": "Raio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.label": {
+    "message": "Imagem",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.label": {
+    "message": "Autor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.text.font.label": {
+    "message": "Fonte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.text.label": {
+    "message": "Texto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.alignment.alignment.label": {
+    "message": "Alinhamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.alignment.label": {
+    "message": "Alinhamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.background.color.label": {
+    "message": "Cor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.background.label": {
+    "message": "Plano de fundo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.border.border.label": {
+    "message": "Borda",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.border.label": {
+    "message": "Borda",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.corner.label": {
+    "message": "Canto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.corner.radius.label": {
+    "message": "Raio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.background.color.label": {
+    "message": "Cor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.background.label": {
+    "message": "Plano de fundo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.border.border.label": {
+    "message": "Borda",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.border.label": {
+    "message": "Borda",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.label": {
+    "message": "Passar o mouse",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.text.font.label": {
+    "message": "Fonte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.text.label": {
+    "message": "Texto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.label": {
+    "message": "Botão",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.large": {
+    "message": "Grande",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.regular": {
+    "message": "Regular",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.small": {
+    "message": "Pequeno",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.label": {
+    "message": "Tamanho do botão",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.primary": {
+    "message": "Principal",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.secondary": {
+    "message": "Secundário",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.simple": {
+    "message": "Simples",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.label": {
+    "message": "Estilo do botão",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.help_text": {
+    "message": "Use predefinições para ajustar rapidamente a aparência do item selecionado para valores predefinidos.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.label": {
+    "message": "Pré-definições",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.spacing.label": {
+    "message": "Espaçamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.spacing.spacing.label": {
+    "message": "Espaçamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.font.label": {
+    "message": "Fonte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.label": {
+    "message": "Texto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.capitalize": {
+    "message": "Capitalizar",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.lowercase": {
+    "message": "Minúscula",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.none": {
+    "message": "Nenhum",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.uppercase": {
+    "message": "Maiúscula",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.label": {
+    "message": "Transformar",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.date.label": {
+    "message": "Data",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.date.text.font.label": {
+    "message": "Fonte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.date.text.label": {
+    "message": "Texto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.description.label": {
+    "message": "Descrição",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.description.text.font.label": {
+    "message": "Fonte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.description.text.label": {
+    "message": "Texto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.featured_image.corner.label": {
+    "message": "Canto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.featured_image.corner.radius.label": {
+    "message": "Raio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.featured_image.label": {
+    "message": "Imagem em destaque",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Estilos",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.background.color.label": {
+    "message": "Cor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.background.label": {
+    "message": "Plano de fundo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.border.border.label": {
+    "message": "Borda",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.border.label": {
+    "message": "Borda",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.corner.label": {
+    "message": "Canto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.corner.radius.label": {
+    "message": "Raio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.label": {
+    "message": "Post",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.choices.dark": {
+    "message": "Escuro",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.choices.light": {
+    "message": "Luz",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.choices.plain": {
+    "message": "Simples",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.label": {
+    "message": "Estilo de cartão",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.help_text": {
+    "message": "Use predefinições para ajustar rapidamente a aparência do item selecionado para valores predefinidos.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.label": {
+    "message": "Pré-definições",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.spacing.label": {
+    "message": "Espaçamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.spacing.post_content.label": {
+    "message": "Postar comentário",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.spacing.spacing.label": {
+    "message": "Espaçamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.label": {
+    "message": "Tags",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.font.label": {
+    "message": "Fonte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.label": {
+    "message": "Texto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.capitalize": {
+    "message": "Capitalizar",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.lowercase": {
+    "message": "Minúscula",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.none": {
+    "message": "Nenhum",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.uppercase": {
+    "message": "Maiúscula",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.label": {
+    "message": "Transformar",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.label": {
+    "message": "Título",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.font.label": {
+    "message": "Fonte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.label": {
+    "message": "Texto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.capitalize": {
+    "message": "Capitalizar",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.lowercase": {
+    "message": "Minúscula",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.none": {
+    "message": "Nenhum",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.uppercase": {
+    "message": "Maiúscula",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.label": {
+    "message": "Transformar",
+    "description": "",
+    "placeholders": null
+  },
+  "tags.label": {
+    "message": "Tags",
+    "description": "",
+    "placeholders": null
+  },
+  "title.label": {
+    "message": "Título",
+    "description": "",
+    "placeholders": null
+  }
+}

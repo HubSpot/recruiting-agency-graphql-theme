@@ -1,0 +1,16 @@
+/* Icon wrapper */
+
+.icon {
+  border-radius: 50%;
+  display: inline-flex;
+}
+
+.icon--square .icon {
+  border-radius: 0;
+}
+
+/* Icon */
+
+.icon svg {
+  vertical-align: middle;
+}

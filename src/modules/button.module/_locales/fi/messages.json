@@ -1,0 +1,207 @@
+{
+  "name": {
+    "message": "Painike",
+    "description": "",
+    "placeholders": null
+  },
+  "add_icon.label": {
+    "message": "Lisää kuvake",
+    "description": "",
+    "placeholders": null
+  },
+  "button_link.label": {
+    "message": "Painikelinkki",
+    "description": "",
+    "placeholders": null
+  },
+  "button_text.default": {
+    "message": "Lisätietoja",
+    "description": "",
+    "placeholders": null
+  },
+  "button_text.label": {
+    "message": "Painiketeksti",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.icon.label": {
+    "message": "Kuvake",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Kuvake",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.position.choices.left": {
+    "message": "Vasen",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.position.choices.right": {
+    "message": "Oikea",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.position.label": {
+    "message": "Sijainti",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.alignment.label": {
+    "message": "Kohdistus",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.label": {
+    "message": "Kohdistus",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.color.label": {
+    "message": "Väri",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.label": {
+    "message": "Tausta",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.border.border.label": {
+    "message": "Raja",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.border.label": {
+    "message": "Raja",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.corner.radius.label": {
+    "message": "Säde",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.background.color.label": {
+    "message": "Väri",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.background.label": {
+    "message": "Tausta",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.border.border.label": {
+    "message": "Raja",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.border.label": {
+    "message": "Raja",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.label": {
+    "message": "Osoita",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.text.font.label": {
+    "message": "Fontti",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.text.label": {
+    "message": "Teksti",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Tyylit",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_size.choices.large": {
+    "message": "Suuri",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_size.choices.regular": {
+    "message": "Tavallinen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_size.choices.small": {
+    "message": "Pieni",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_size.label": {
+    "message": "Painikekoko",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_style.choices.primary": {
+    "message": "Ensisijainen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_style.choices.secondary": {
+    "message": "Toissijainen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_style.choices.simple": {
+    "message": "Yksinkertainen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_style.label": {
+    "message": "Painikkeen tyyli",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.label": {
+    "message": "Välit",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.spacing.label": {
+    "message": "Välit",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.font.label": {
+    "message": "Fontti",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.label": {
+    "message": "Teksti",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.transform.choices.capitalize": {
+    "message": "Vaihda isoihin kirjaimiin",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.transform.choices.lowercase": {
+    "message": "Pienet kirjaimet",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.transform.choices.none": {
+    "message": "Ei mitään",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.transform.choices.uppercase": {
+    "message": "Isot kirjaimet",
+    "description": "",
+    "placeholders": null
+  }
+}

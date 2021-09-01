@@ -1,0 +1,122 @@
+{
+  "name": {
+    "message": "Lista",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Ikona",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.content.label": {
+    "message": "Treść",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.icon.label": {
+    "message": "Ikona",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.choices.ol": {
+    "message": "Uporządkowana lista",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.choices.ul": {
+    "message": "Nieuporządkowana lista",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.background.color.label": {
+    "message": "Kolor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.background.label": {
+    "message": "Tło",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.corner.radius.label": {
+    "message": "Promień",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.fill.color.label": {
+    "message": "Kolor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.choices.light": {
+    "message": "Lekka",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.label": {
+    "message": "Kolor ikony",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.choices.circle": {
+    "message": "Okrąg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.choices.square": {
+    "message": "Kwadrat",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.label": {
+    "message": "Kształt ikony",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.large": {
+    "message": "Duże",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.regular": {
+    "message": "Regularne",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.small": {
+    "message": "Małe",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.size.label": {
+    "message": "Rozmiar",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.size.size.label": {
+    "message": "Rozmiar",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.spacing.label": {
+    "message": "Rozstaw",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.spacing.spacing.label": {
+    "message": "Rozstaw",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Style",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.spacing.label": {
+    "message": "Rozstaw",
+    "description": "",
+    "placeholders": null
+  }
+}

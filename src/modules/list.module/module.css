@@ -1,0 +1,24 @@
+/* List icons */
+
+.list__icon {
+  margin-right: 1rem;
+}
+
+/* List item */
+
+.list__item {
+  margin-top: 0;
+}
+
+/* List item content */
+
+.list__item p,
+.list__item h1,
+.list__item h2,
+.list__item h3,
+.list__item h4,
+.list__item h5,
+.list__item h6,
+.list__item blockquote {
+  margin-bottom: 0.7rem;
+}

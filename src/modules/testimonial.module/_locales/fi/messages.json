@@ -1,0 +1,102 @@
+{
+  "name": {
+    "message": "Suositus",
+    "description": "",
+    "placeholders": null
+  },
+  "author.content.label": {
+    "message": "Sisältö",
+    "description": "",
+    "placeholders": null
+  },
+  "author.image.label": {
+    "message": "Kuva",
+    "description": "",
+    "placeholders": null
+  },
+  "author.label": {
+    "message": "Luoja",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.alignment.alignment.label": {
+    "message": "Kohdistus",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.alignment.label": {
+    "message": "Kohdistus",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.radius.label": {
+    "message": "Säde",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.label": {
+    "message": "Kuva",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.label": {
+    "message": "Luoja",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Tyylit",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.background.color.label": {
+    "message": "Väri",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.background.label": {
+    "message": "Tausta",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.border.border.label": {
+    "message": "Raja",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.border.label": {
+    "message": "Raja",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.corner.radius.label": {
+    "message": "Säde",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.label": {
+    "message": "Suositus",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.card_style.choices.light": {
+    "message": "Kevyt",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.card_style.choices.plain": {
+    "message": "Yksivärinen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.spacing.label": {
+    "message": "Välit",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.spacing.spacing.label": {
+    "message": "Välit",
+    "description": "",
+    "placeholders": null
+  }
+}

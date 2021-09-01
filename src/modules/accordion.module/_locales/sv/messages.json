@@ -1,0 +1,147 @@
+{
+  "name": {
+    "message": "Dragspel",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.content.label": {
+    "message": "Innehåll",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.label": {
+    "message": "Dragspel",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.title.label": {
+    "message": "Titel",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.choices.plus": {
+    "message": "Plus",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Ikon",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.border.border.label": {
+    "message": "Kant",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.border.label": {
+    "message": "Kant",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.label": {
+    "message": "Dragspel",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.light": {
+    "message": "Lätt",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.plain": {
+    "message": "Normal",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.spacing.label": {
+    "message": "Blanksteg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.background.color.label": {
+    "message": "Färg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.background.label": {
+    "message": "Bakgrund",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.label": {
+    "message": "Innehåll",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.spacing.label": {
+    "message": "Blanksteg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.spacing.spacing.label": {
+    "message": "Blanksteg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Stiler",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.background.color.label": {
+    "message": "Färg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.background.label": {
+    "message": "Bakgrund",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.label": {
+    "message": "Titel",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.spacing.label": {
+    "message": "Blanksteg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.spacing.spacing.label": {
+    "message": "Blanksteg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.font.label": {
+    "message": "Teckensnitt",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.label": {
+    "message": "Text",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.capitalize": {
+    "message": "Stora bokstäver",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.lowercase": {
+    "message": "Gemen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.none": {
+    "message": "Ingen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.uppercase": {
+    "message": "Versal",
+    "description": "",
+    "placeholders": null
+  }
+}

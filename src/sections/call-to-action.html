@@ -1,0 +1,32 @@
+<!--
+  templateType: section
+  label: Call to action
+  isAvailableForNewContent: true
+  screenshotPath: ../images/section-previews/call-to-action.png
+  description: "Full size background color section separated in two columns. Left columns has title and text, and right column has a button."
+-->
+{% dnd_section
+  background_color={{ context.background_color || '#F5F8FA' }},
+  vertical_alignment='MIDDLE'
+%}
+  {% dnd_module
+    path='@hubspot/rich_text',
+    html={{ context.content || '<h2>Drive people to your products and services</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>' }},
+    width=8
+  %}
+  {% end_dnd_module %}
+  {% dnd_module
+    path='../modules/button',
+    button_text={{ context.button_text || 'Learn more' }}
+    styles={
+      'alignment': {
+        'alignment': {
+          'horizontal_align': 'RIGHT'
+        }
+      }
+    },
+    offset=8,
+    width=4
+  %}
+  {% end_dnd_module %}
+{% end_dnd_section %}

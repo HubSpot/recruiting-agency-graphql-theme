@@ -1,0 +1,272 @@
+[
+  {
+    "label": "Tabs",
+    "name": "tabs",
+    "type": "group",
+    "children": [
+      {
+        "label": "Label",
+        "name": "tab_label",
+        "type": "text",
+        "required": true,
+        "default": "Tab item"
+      },
+      {
+        "label": "Content",
+        "name": "content",
+        "type": "richtext",
+        "enabled_features": [
+          "advanced_emphasis",
+          "alignment",
+          "block",
+          "emoji",
+          "font_family",
+          "font_size",
+          "image",
+          "lists",
+          "standard_emphasis"
+        ],
+        "required": true,
+        "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan velit sit amet sagittis malesuada.</p>"
+      }
+    ],
+    "default": [
+      {
+        "tab_label": "Tab item",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan velit sit amet sagittis malesuada.</p>"
+      },
+      {
+        "tab_label": "Tab item",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan velit sit amet sagittis malesuada.</p>"
+      }
+    ],
+    "occurrence": {
+      "max": 6,
+      "min": 2,
+      "default": 2
+    }
+  },
+  {
+    "label": "Styles",
+    "name": "styles",
+    "type": "group",
+    "tab": "STYLE",
+    "children": [
+      {
+        "label": "Tabs",
+        "name": "tabs",
+        "type": "group",
+        "children": [
+          {
+            "label": "Active",
+            "name": "active",
+            "type": "group",
+            "children": [
+              {
+                "label": "Text",
+                "name": "text",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Font",
+                    "name": "font",
+                    "type": "font",
+                    "default": {
+                      "size_unit": "px"
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "Background",
+                "name": "background",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Color",
+                    "name": "color",
+                    "type": "color"
+                  }
+                ]
+              },
+              {
+                "label": "Border",
+                "name": "border",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Bottom",
+                    "name": "bottom",
+                    "type": "border",
+                    "visibility": {
+                      "hidden_subfields": {
+                        "border_radius": true
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Inactive",
+            "name": "inactive",
+            "type": "group",
+            "children": [
+              {
+                "label": "Text",
+                "name": "text",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Font",
+                    "name": "font",
+                    "type": "font",
+                    "default": {
+                      "size_unit": "px"
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "Background",
+                "name": "background",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Color",
+                    "name": "color",
+                    "type": "color"
+                  }
+                ]
+              },
+              {
+                "label": "Border",
+                "name": "border",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Bottom",
+                    "name": "bottom",
+                    "type": "border"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Hover",
+            "name": "hover",
+            "type": "group",
+            "children": [
+              {
+                "label": "Text",
+                "name": "text",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Font",
+                    "name": "font",
+                    "type": "font",
+                    "default": {
+                      "size_unit": "px"
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "Background",
+                "name": "background",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Color",
+                    "name": "color",
+                    "type": "color"
+                  }
+                ]
+              },
+              {
+                "label": "Border",
+                "name": "border",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Bottom",
+                    "name": "bottom",
+                    "type": "border"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Spacing",
+            "name": "spacing",
+            "type": "group",
+            "children": [
+              {
+                "label": "Spacing",
+                "name": "spacing",
+                "type": "spacing",
+                "visibility": {
+                  "hidden_subfields": {
+                    "margin": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Content",
+        "name": "content",
+        "type": "group",
+        "children": [
+          {
+            "label": "Spacing",
+            "name": "spacing",
+            "type": "group",
+            "children": [
+              {
+                "label": "Spacing",
+                "name": "spacing",
+                "type": "spacing",
+                "visibility": {
+                  "hidden_subfields": {
+                    "margin": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Tabs module",
+        "name": "tabs_module",
+        "type": "group",
+        "children": [
+          {
+            "label": "Spacing",
+            "name": "spacing",
+            "type": "group",
+            "children": [
+              {
+                "label": "Spacing",
+                "name": "spacing",
+                "type": "spacing",
+                "visibility": {
+                  "hidden_subfields": {
+                    "padding": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

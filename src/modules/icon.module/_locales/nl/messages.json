@@ -1,0 +1,162 @@
+{
+  "name": {
+    "message": "Pictogram",
+    "description": "",
+    "placeholders": null
+  },
+  "accessibility_options.label": {
+    "message": "Toegankelijkheidsopties",
+    "description": "",
+    "placeholders": null
+  },
+  "accessibility_options.purpose.choices.decorative": {
+    "message": "Genegeerd door schermlezer",
+    "description": "",
+    "placeholders": null
+  },
+  "accessibility_options.purpose.choices.semantic": {
+    "message": "Gelezen door schermlezer",
+    "description": "",
+    "placeholders": null
+  },
+  "accessibility_options.purpose.label": {
+    "message": "Doel",
+    "description": "",
+    "placeholders": null
+  },
+  "accessibility_options.title.label": {
+    "message": "Titel",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Pictogram",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.alignment.label": {
+    "message": "Uitlijning",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.label": {
+    "message": "Uitlijning",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.color.label": {
+    "message": "Kleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.label": {
+    "message": "Achtergrond",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.corner.label": {
+    "message": "Hoek",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.corner.radius.label": {
+    "message": "Radius",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.fill.color.label": {
+    "message": "Kleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.fill.label": {
+    "message": "Vulle",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Stijlen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.help_text": {
+    "message": "Gebruik voorinstellingen om het uiterlijk van het geselecteerde item aan te passen aan vooraf ingestelde waarden.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_color.choices.dark": {
+    "message": "Donker",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_color.choices.light": {
+    "message": "Licht",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_color.label": {
+    "message": "Pictogramkleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.choices.circle": {
+    "message": "Circel",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.choices.square": {
+    "message": "Vierkant",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.label": {
+    "message": "Vorm pictogram",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.large": {
+    "message": "Groot",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.regular": {
+    "message": "Standaard",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.small": {
+    "message": "Klein",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.label": {
+    "message": "Afmeting pictogram",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.label": {
+    "message": "Voorinstellingen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.size.label": {
+    "message": "Grootte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.size.size.label": {
+    "message": "Grootte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.label": {
+    "message": "Afstand",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.spacing.label": {
+    "message": "Afstand",
+    "description": "",
+    "placeholders": null
+  }
+}

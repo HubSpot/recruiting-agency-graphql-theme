@@ -1,0 +1,15 @@
+{
+  "label": "Icon",
+  "css_assets": [],
+  "external_js": [],
+  "global": false,
+  "host_template_types": ["PAGE", "BLOG_LISTING", "BLOG_POST"],
+  "icon": "../../images/module-icons/certification.svg",
+  "js_assets": [],
+  "other_assets": [],
+  "extra_classes": "",
+  "smart_type": "NOT_SMART",
+  "tags": [],
+  "master_language": "en",
+  "is_available_for_new_content": true
+}

@@ -1,0 +1,497 @@
+{
+  "name": {
+    "message": "Articles associés",
+    "description": "",
+    "placeholders": null
+  },
+  "author.label": {
+    "message": "Auteur",
+    "description": "",
+    "placeholders": null
+  },
+  "button.label": {
+    "message": "Bouton",
+    "description": "",
+    "placeholders": null
+  },
+  "button_text.default": {
+    "message": "En savoir plus",
+    "description": "",
+    "placeholders": null
+  },
+  "button_text.label": {
+    "message": "Texte du bouton",
+    "description": "",
+    "placeholders": null
+  },
+  "date.label": {
+    "message": "Date",
+    "description": "",
+    "placeholders": null
+  },
+  "description.label": {
+    "message": "Description",
+    "description": "",
+    "placeholders": null
+  },
+  "featured_image.label": {
+    "message": "Image en vignette",
+    "description": "",
+    "placeholders": null
+  },
+  "heading.default": {
+    "message": "Articles associés",
+    "description": "",
+    "placeholders": null
+  },
+  "heading.label": {
+    "message": "En-tête",
+    "description": "",
+    "placeholders": null
+  },
+  "layout_style.choices.card": {
+    "message": "Carte",
+    "description": "",
+    "placeholders": null
+  },
+  "layout_style.choices.list": {
+    "message": "Liste",
+    "description": "",
+    "placeholders": null
+  },
+  "layout_style.label": {
+    "message": "Style de mise en page",
+    "description": "",
+    "placeholders": null
+  },
+  "number_of_posts.label": {
+    "message": "Nombre d'articles",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.label": {
+    "message": "Angle",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.radius.label": {
+    "message": "Rayon",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.label": {
+    "message": "Image",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.label": {
+    "message": "Auteur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.text.font.label": {
+    "message": "Police",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.text.label": {
+    "message": "Texte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.alignment.alignment.label": {
+    "message": "Alignement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.alignment.label": {
+    "message": "Alignement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.background.color.label": {
+    "message": "Couleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.background.label": {
+    "message": "Arrière-plan",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.border.border.label": {
+    "message": "Bordure",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.border.label": {
+    "message": "Bordure",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.corner.label": {
+    "message": "Angle",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.corner.radius.label": {
+    "message": "Rayon",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.background.color.label": {
+    "message": "Couleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.background.label": {
+    "message": "Arrière-plan",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.border.border.label": {
+    "message": "Bordure",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.border.label": {
+    "message": "Bordure",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.label": {
+    "message": "Placer le curseur sur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.text.font.label": {
+    "message": "Police",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.text.label": {
+    "message": "Texte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.label": {
+    "message": "Bouton",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.large": {
+    "message": "Grande",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.regular": {
+    "message": "Ordinaire",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.small": {
+    "message": "Petite",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.label": {
+    "message": "Taille du bouton",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.primary": {
+    "message": "Principal",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.secondary": {
+    "message": "Secondaire",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.simple": {
+    "message": "Simple",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.label": {
+    "message": "Style de bouton",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.help_text": {
+    "message": "Utilisez les préréglages pour ajuster rapidement l'apparence de l'élément sélectionné en suivant des valeurs prédéfinies.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.label": {
+    "message": "Préréglages",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.spacing.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.font.label": {
+    "message": "Police",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.label": {
+    "message": "Texte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.capitalize": {
+    "message": "Mettre en majuscules",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.lowercase": {
+    "message": "Minuscule",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.none": {
+    "message": "Aucune",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.uppercase": {
+    "message": "Majuscule",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.label": {
+    "message": "Transformation",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.date.label": {
+    "message": "Date",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.date.text.font.label": {
+    "message": "Police",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.date.text.label": {
+    "message": "Texte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.description.label": {
+    "message": "Description",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.description.text.font.label": {
+    "message": "Police",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.description.text.label": {
+    "message": "Texte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.featured_image.corner.label": {
+    "message": "Angle",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.featured_image.corner.radius.label": {
+    "message": "Rayon",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.featured_image.label": {
+    "message": "Image en vignette",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Styles",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.background.color.label": {
+    "message": "Couleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.background.label": {
+    "message": "Arrière-plan",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.border.border.label": {
+    "message": "Bordure",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.border.label": {
+    "message": "Bordure",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.corner.label": {
+    "message": "Angle",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.corner.radius.label": {
+    "message": "Rayon",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.label": {
+    "message": "Article",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.choices.dark": {
+    "message": "Sombre",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.choices.light": {
+    "message": "Léger",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.choices.plain": {
+    "message": "Uni",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.label": {
+    "message": "Style de carte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.help_text": {
+    "message": "Utilisez les préréglages pour ajuster rapidement l'apparence de l'élément sélectionné en suivant des valeurs prédéfinies.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.label": {
+    "message": "Préréglages",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.spacing.post_content.label": {
+    "message": "Contenu de l'article",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.spacing.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.label": {
+    "message": "Balises",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.font.label": {
+    "message": "Police",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.label": {
+    "message": "Texte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.capitalize": {
+    "message": "Mettre en majuscules",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.lowercase": {
+    "message": "Minuscule",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.none": {
+    "message": "Aucune",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.uppercase": {
+    "message": "Majuscule",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.label": {
+    "message": "Transformation",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.label": {
+    "message": "Titre",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.font.label": {
+    "message": "Police",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.label": {
+    "message": "Texte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.capitalize": {
+    "message": "Mettre en majuscules",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.lowercase": {
+    "message": "Minuscule",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.none": {
+    "message": "Aucune",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.uppercase": {
+    "message": "Majuscule",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.label": {
+    "message": "Transformation",
+    "description": "",
+    "placeholders": null
+  },
+  "tags.label": {
+    "message": "Balises",
+    "description": "",
+    "placeholders": null
+  },
+  "title.label": {
+    "message": "Titre",
+    "description": "",
+    "placeholders": null
+  }
+}

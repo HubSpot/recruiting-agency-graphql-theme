@@ -1,0 +1,197 @@
+{
+  "name": {
+    "message": "Accordéon",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.content.default": {
+    "message": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor arcu non commodo elementum.</p>",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.content.label": {
+    "message": "Contenus",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.label": {
+    "message": "Accordéons",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.open_by_default.label": {
+    "message": "Ouvrir par défaut",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.title.default": {
+    "message": "Titre de l'accordéon",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.title.label": {
+    "message": "Titre",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.choices.caret": {
+    "message": "Caret",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.choices.plus": {
+    "message": "Plus",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Icône",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.border.border.label": {
+    "message": "Bordure",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.border.label": {
+    "message": "Bordure",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.label": {
+    "message": "Accordéons",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.dark": {
+    "message": "Sombre",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.light": {
+    "message": "Léger",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.plain": {
+    "message": "Uni",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.label": {
+    "message": "Style de carte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.help_text": {
+    "message": "Utilisez les préréglages pour ajuster rapidement l'apparence de l'élément sélectionné en suivant des valeurs prédéfinies.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.label": {
+    "message": "Préréglages",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.spacing.space_between_accordions.label": {
+    "message": "Espace entre les accordéons",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.background.color.label": {
+    "message": "Couleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.background.label": {
+    "message": "Arrière-plan",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.label": {
+    "message": "Contenus",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.spacing.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Styles",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.background.color.label": {
+    "message": "Couleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.background.label": {
+    "message": "Arrière-plan",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.label": {
+    "message": "Titre",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.spacing.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.font.label": {
+    "message": "Police",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.label": {
+    "message": "Texte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.capitalize": {
+    "message": "Mettre en majuscules",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.lowercase": {
+    "message": "Minuscule",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.none": {
+    "message": "Aucune",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.uppercase": {
+    "message": "Majuscule",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.label": {
+    "message": "Transformation",
+    "description": "",
+    "placeholders": null
+  }
+}

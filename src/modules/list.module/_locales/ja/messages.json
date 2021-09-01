@@ -1,0 +1,197 @@
+{
+  "name": {
+    "message": "リスト",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "アイコン",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.content.default": {
+    "message": "<h3>リスト項目</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor arcu non commodo elementum.</p>",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.content.label": {
+    "message": "コンテンツ",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.icon.label": {
+    "message": "アイコン",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.label": {
+    "message": "リスト項目",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.choices.ol": {
+    "message": "番号付きリスト",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.choices.ul": {
+    "message": "番号なしリスト",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.label": {
+    "message": "リストタイプ",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.background.color.label": {
+    "message": "カラー",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.background.label": {
+    "message": "背景",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.corner.label": {
+    "message": "角",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.corner.radius.label": {
+    "message": "半径",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.fill.color.label": {
+    "message": "カラー",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.fill.label": {
+    "message": "塗りつぶし",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.label": {
+    "message": "アイコン",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.help_text": {
+    "message": "選択した項目の外観を事前定義された値にすばやく調整するには、プリセットを使用します。",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.choices.dark": {
+    "message": "ダーク",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.choices.light": {
+    "message": "ライト",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.label": {
+    "message": "アイコンの色",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.choices.circle": {
+    "message": "丸",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.choices.square": {
+    "message": "四角",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.label": {
+    "message": "アイコンの形状",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.large": {
+    "message": "大",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.regular": {
+    "message": "通常",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.small": {
+    "message": "小",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.label": {
+    "message": "アイコンのサイズ",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.label": {
+    "message": "プリセット",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.size.label": {
+    "message": "サイズ",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.size.size.label": {
+    "message": "サイズ",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.spacing.label": {
+    "message": "間隔",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.spacing.spacing.label": {
+    "message": "間隔",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "スタイル",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.label": {
+    "message": "リスト項目",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.spacing.between_icon_and_list_items.label": {
+    "message": "アイコンとリスト項目の間",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.spacing.between_list_items.label": {
+    "message": "リスト項目の間",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.spacing.label": {
+    "message": "間隔",
+    "description": "",
+    "placeholders": null
+  },
+  "use_custom_bullet_points.label": {
+    "message": "カスタムの箇条書きを使用",
+    "description": "",
+    "placeholders": null
+  },
+  "use_same_icon_for_all_list_items.label": {
+    "message": "すべてのリスト項目に同じアイコンを使用",
+    "description": "",
+    "placeholders": null
+  }
+}

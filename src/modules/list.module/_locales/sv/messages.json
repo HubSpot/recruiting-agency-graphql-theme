@@ -1,0 +1,122 @@
+{
+  "name": {
+    "message": "Lista",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Ikon",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.content.label": {
+    "message": "Innehåll",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.icon.label": {
+    "message": "Ikon",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.choices.ol": {
+    "message": "Sorterad lista",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.choices.ul": {
+    "message": "Osorterad lista",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.background.color.label": {
+    "message": "Färg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.background.label": {
+    "message": "Bakgrund",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.corner.radius.label": {
+    "message": "Radie",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.fill.color.label": {
+    "message": "Färg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.choices.light": {
+    "message": "Lätt",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.label": {
+    "message": "Ikonfärg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.choices.circle": {
+    "message": "Cirkel",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.choices.square": {
+    "message": "Fyrkant",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.label": {
+    "message": "Ikonens form",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.large": {
+    "message": "Stor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.regular": {
+    "message": "Vanlig",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.small": {
+    "message": "Liten",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.size.label": {
+    "message": "Storlek",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.size.size.label": {
+    "message": "Storlek",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.spacing.label": {
+    "message": "Blanksteg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.spacing.spacing.label": {
+    "message": "Blanksteg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Stiler",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.spacing.label": {
+    "message": "Blanksteg",
+    "description": "",
+    "placeholders": null
+  }
+}

@@ -1,0 +1,42 @@
+/* Heading */
+
+.pricing-card__heading {
+  padding: 0.7rem;
+  text-align: center;
+}
+
+.pricing-card__heading,
+.pricing-card__heading *,
+.pricing-card__heading p,
+.pricing-card__heading h1,
+.pricing-card__heading h2,
+.pricing-card__heading h3,
+.pricing-card__heading h4,
+.pricing-card__heading h5,
+.pricing-card__heading h6,
+.pricing-card__heading a,
+.pricing-card__heading span,
+.pricing-card__heading div,
+.pricing-card__heading li,
+.pricing-card__heading blockquote {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+/* Price */
+
+.pricing-card__price {
+  text-align: center;
+}
+
+/* List items */
+
+.pricing-card__list-item {
+  margin-top: 0;
+}
+
+/* List icons */
+
+.pricing-card__list-icon {
+  margin-right: 1rem;
+}

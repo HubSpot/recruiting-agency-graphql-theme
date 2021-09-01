@@ -1,0 +1,572 @@
+{
+  "name": {
+    "message": "Pricing Card",
+    "description": "",
+    "placeholders": null
+  },
+  "button.add_icon.label": {
+    "message": "Add icon",
+    "description": "",
+    "placeholders": null
+  },
+  "button.button_link.label": {
+    "message": "Button link",
+    "description": "",
+    "placeholders": null
+  },
+  "button.button_text.default": {
+    "message": "Buy starter now",
+    "description": "",
+    "placeholders": null
+  },
+  "button.button_text.label": {
+    "message": "Button text",
+    "description": "",
+    "placeholders": null
+  },
+  "button.icon.icon.label": {
+    "message": "Icon",
+    "description": "",
+    "placeholders": null
+  },
+  "button.icon.label": {
+    "message": "Icon",
+    "description": "",
+    "placeholders": null
+  },
+  "button.icon.position.choices.left": {
+    "message": "Left",
+    "description": "",
+    "placeholders": null
+  },
+  "button.icon.position.choices.right": {
+    "message": "Right",
+    "description": "",
+    "placeholders": null
+  },
+  "button.icon.position.label": {
+    "message": "Position",
+    "description": "",
+    "placeholders": null
+  },
+  "button.label": {
+    "message": "Button",
+    "description": "",
+    "placeholders": null
+  },
+  "heading.heading.default": {
+    "message": "<h3>Starter</h3>",
+    "description": "",
+    "placeholders": null
+  },
+  "heading.heading.label": {
+    "message": "Heading",
+    "description": "",
+    "placeholders": null
+  },
+  "heading.label": {
+    "message": "Heading",
+    "description": "",
+    "placeholders": null
+  },
+  "list.icon.label": {
+    "message": "Icon",
+    "description": "",
+    "placeholders": null
+  },
+  "list.label": {
+    "message": "List",
+    "description": "",
+    "placeholders": null
+  },
+  "list.list_items.content.default": {
+    "message": "Lorem ipsum dolor sit amet, consectetur",
+    "description": "",
+    "placeholders": null
+  },
+  "list.list_items.content.label": {
+    "message": "Content",
+    "description": "",
+    "placeholders": null
+  },
+  "list.list_items.icon.label": {
+    "message": "Icon",
+    "description": "",
+    "placeholders": null
+  },
+  "list.list_items.label": {
+    "message": "List items",
+    "description": "",
+    "placeholders": null
+  },
+  "list.use_custom_bullet_points.label": {
+    "message": "Use custom bullet points",
+    "description": "",
+    "placeholders": null
+  },
+  "list.use_same_icon_for_all_list_items.label": {
+    "message": "Use same icon for all list items",
+    "description": "",
+    "placeholders": null
+  },
+  "price.label": {
+    "message": "Price",
+    "description": "",
+    "placeholders": null
+  },
+  "price.price.default": {
+    "message": "<h4>$50/month</h4>",
+    "description": "",
+    "placeholders": null
+  },
+  "price.price.label": {
+    "message": "Price",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.alignment.alignment.label": {
+    "message": "Alignment",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.alignment.label": {
+    "message": "Alignment",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.background.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.background.label": {
+    "message": "Background",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.border.border.label": {
+    "message": "Border",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.border.label": {
+    "message": "Border",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.corner.label": {
+    "message": "Corner",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.corner.radius.label": {
+    "message": "Radius",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.background.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.background.label": {
+    "message": "Background",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.border.border.label": {
+    "message": "Border",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.border.label": {
+    "message": "Border",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.label": {
+    "message": "Hover",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.text.font.label": {
+    "message": "Font",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.text.label": {
+    "message": "Text",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.label": {
+    "message": "Button",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.large": {
+    "message": "Large",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.regular": {
+    "message": "Regular",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.small": {
+    "message": "Small",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.label": {
+    "message": "Button size",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.primary": {
+    "message": "Primary",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.secondary": {
+    "message": "Secondary",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.simple": {
+    "message": "Simple",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.label": {
+    "message": "Button style",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.help_text": {
+    "message": "Use presets to quickly adjust the appearance of the selected item to predefined values.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.label": {
+    "message": "Presets",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.spacing.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.font.label": {
+    "message": "Font",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.label": {
+    "message": "Text",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.capitalize": {
+    "message": "Capitalize",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.lowercase": {
+    "message": "Lowercase",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.none": {
+    "message": "None",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.uppercase": {
+    "message": "Uppercase",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.label": {
+    "message": "Transform",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.background.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.background.label": {
+    "message": "Background",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.border.border.label": {
+    "message": "Border",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.border.label": {
+    "message": "Border",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.corner.label": {
+    "message": "Corner",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.corner.radius.label": {
+    "message": "Radius",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.height.label": {
+    "message": "Height",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.height.min_height.label": {
+    "message": "Minimum height",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.label": {
+    "message": "Card",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.presets.card_style.choices.dark": {
+    "message": "Dark",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.presets.card_style.choices.light": {
+    "message": "Light",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.presets.card_style.choices.plain": {
+    "message": "Plain",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.presets.card_style.label": {
+    "message": "Card style",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.presets.help_text": {
+    "message": "Use presets to quickly adjust the appearance of the selected item to predefined values.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.presets.label": {
+    "message": "Presets",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.spacing.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.heading.background.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.heading.background.label": {
+    "message": "Background",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.heading.label": {
+    "message": "Heading",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.heading.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.heading.spacing.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Styles",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.background.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.background.label": {
+    "message": "Background",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.corner.label": {
+    "message": "Corner",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.corner.radius.label": {
+    "message": "Radius",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.fill.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.fill.label": {
+    "message": "Fill",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.label": {
+    "message": "Icons",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.presets.help_text": {
+    "message": "Use presets to quickly adjust the appearance of the selected item to predefined values.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.presets.icon_color.choices.dark": {
+    "message": "Dark",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.presets.icon_color.choices.light": {
+    "message": "Light",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.presets.icon_color.label": {
+    "message": "Icon color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.presets.icon_shape.choices.circle": {
+    "message": "Circle",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.presets.icon_shape.choices.square": {
+    "message": "Square",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.presets.icon_shape.label": {
+    "message": "Icon shape",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.presets.icon_size.choices.large": {
+    "message": "Large",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.presets.icon_size.choices.regular": {
+    "message": "Regular",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.presets.icon_size.choices.small": {
+    "message": "Small",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.presets.icon_size.label": {
+    "message": "Icon size",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.presets.label": {
+    "message": "Presets",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.size.label": {
+    "message": "Size",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.size.size.label": {
+    "message": "Size",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.icons.spacing.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.label": {
+    "message": "List",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.list_items.label": {
+    "message": "List items",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.list_items.spacing.between_icon_and_list_items.label": {
+    "message": "Between icon and list item",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.list_items.spacing.between_list_items.label": {
+    "message": "Between list items",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list.list_items.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "subheading.label": {
+    "message": "Subheading",
+    "description": "",
+    "placeholders": null
+  },
+  "subheading.subheading.default": {
+    "message": "<h5>Some key features</h5>",
+    "description": "",
+    "placeholders": null
+  },
+  "subheading.subheading.label": {
+    "message": "Subheading",
+    "description": "",
+    "placeholders": null
+  }
+}

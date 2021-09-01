@@ -1,0 +1,162 @@
+{
+  "name": {
+    "message": "Testimonio",
+    "description": "",
+    "placeholders": null
+  },
+  "author.content.default": {
+    "message": "<span>Shaun Benson, Director de marketing, Agriflora Inc.</span>",
+    "description": "",
+    "placeholders": null
+  },
+  "author.content.label": {
+    "message": "Contenidos",
+    "description": "",
+    "placeholders": null
+  },
+  "author.image.default.alt": {
+    "message": "Fotografía de Shaun Benson, Director de marketing, Agriflora Inc.",
+    "description": "",
+    "placeholders": null
+  },
+  "author.image.label": {
+    "message": "Imagen",
+    "description": "",
+    "placeholders": null
+  },
+  "author.include_image.label": {
+    "message": "Incluir imagen",
+    "description": "",
+    "placeholders": null
+  },
+  "author.label": {
+    "message": "Autor",
+    "description": "",
+    "placeholders": null
+  },
+  "quote_text.default": {
+    "message": "<span>«Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan velit sit amet sagittis malesuada».</span>",
+    "description": "",
+    "placeholders": null
+  },
+  "quote_text.label": {
+    "message": "Citar texto",
+    "description": "",
+    "placeholders": null
+  },
+  "show_author.label": {
+    "message": "Mostrar autor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.alignment.alignment.label": {
+    "message": "Alineación",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.alignment.label": {
+    "message": "Alineación",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.label": {
+    "message": "Esquina",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.radius.label": {
+    "message": "Radio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.label": {
+    "message": "Imagen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.label": {
+    "message": "Autor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Estilos",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.background.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.background.label": {
+    "message": "Fondo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.border.border.label": {
+    "message": "Borde",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.border.label": {
+    "message": "Borde",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.corner.label": {
+    "message": "Esquina",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.corner.radius.label": {
+    "message": "Radio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.label": {
+    "message": "Testimonio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.card_style.choices.dark": {
+    "message": "Oscuro",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.card_style.choices.light": {
+    "message": "Claro",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.card_style.choices.plain": {
+    "message": "Sin formato",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.card_style.label": {
+    "message": "Estilo de tarjeta",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.help_text": {
+    "message": "Usa valores preestablecidos para un rápido ajuste de la apariencia del elemento seleccionado con valores predefinidos.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.label": {
+    "message": "Valores preestablecidos",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.spacing.label": {
+    "message": "Espaciado",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.spacing.spacing.label": {
+    "message": "Espaciado",
+    "description": "",
+    "placeholders": null
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "name": {
+    "message": "Acordeão",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.content.default": {
+    "message": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor arcu non commodo elementum.</p>",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.content.label": {
+    "message": "Conteúdos",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.label": {
+    "message": "Acordeões",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.open_by_default.label": {
+    "message": "Aberto por padrão",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.title.default": {
+    "message": "Título de acordeão",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.title.label": {
+    "message": "Título",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.choices.caret": {
+    "message": "Circunflexo",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.choices.plus": {
+    "message": "Mais",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Ícone",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.border.border.label": {
+    "message": "Borda",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.border.label": {
+    "message": "Borda",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.label": {
+    "message": "Acordeões",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.dark": {
+    "message": "Escuro",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.light": {
+    "message": "Luz",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.plain": {
+    "message": "Simples",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.label": {
+    "message": "Estilo de cartão",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.help_text": {
+    "message": "Use predefinições para ajustar rapidamente a aparência do item selecionado para valores predefinidos.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.label": {
+    "message": "Pré-definições",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.spacing.label": {
+    "message": "Espaçamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.spacing.space_between_accordions.label": {
+    "message": "Espaço entre acordeões",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.background.color.label": {
+    "message": "Cor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.background.label": {
+    "message": "Plano de fundo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.label": {
+    "message": "Conteúdos",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.spacing.label": {
+    "message": "Espaçamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.spacing.spacing.label": {
+    "message": "Espaçamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Estilos",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.background.color.label": {
+    "message": "Cor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.background.label": {
+    "message": "Plano de fundo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.label": {
+    "message": "Título",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.spacing.label": {
+    "message": "Espaçamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.spacing.spacing.label": {
+    "message": "Espaçamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.font.label": {
+    "message": "Fonte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.label": {
+    "message": "Texto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.capitalize": {
+    "message": "Capitalizar",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.lowercase": {
+    "message": "Minúscula",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.none": {
+    "message": "Nenhum",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.uppercase": {
+    "message": "Maiúscula",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.label": {
+    "message": "Transformar",
+    "description": "",
+    "placeholders": null
+  }
+}

@@ -1,0 +1,147 @@
+{# Module styles #}
+
+<style>
+{% scope_css %}
+
+  /* Button wrapper */
+
+  {% if module.styles.alignment.alignment %}
+    .button-wrapper {
+      text-align: {{ module.styles.alignment.alignment.horizontal_align }};
+    }
+  {% endif %}
+
+  /* Button */
+
+  .button {
+    {% if module.styles.background.color.color %}
+      background-color: rgba({{ module.styles.background.color.color|convert_rgb }}, {{ module.styles.background.color.opacity / 100 }});
+    {% endif %}
+    {{ module.styles.border.border.css }}
+    {% if module.styles.corner.radius %}
+      border-radius: {{ module.styles.corner.radius ~ 'px' }};
+    {% endif %}
+    {% if module.styles.text.font.color %}
+      color: {{ module.styles.text.font.color }};
+    {% endif %}
+    {% if module.styles.text.font.size %}
+      font-size: {{ module.styles.text.font.size ~ module.styles.text.font.size_unit }};
+    {% endif %}
+    {% if module.styles.text.font.style %}
+      {{ module.styles.text.font.style }};
+    {% endif %}
+    {{ module.styles.spacing.spacing.css }}
+    {% if module.styles.text.transform %}
+      text-transform: {{ module.styles.text.transform }};
+    {% endif %}
+  }
+
+  {% if module.add_icon && module.icon.icon && module.styles.text.font.color %}
+    .button svg {
+      fill: {{ module.styles.text.font.color }};
+    }
+  {% endif %}
+
+  .button:hover,
+  .button:focus {
+    {% if module.styles.hover.background.color.color %}
+      background-color: rgba({{ module.styles.hover.background.color.color|convert_rgb }}, {{ module.styles.hover.background.color.opacity / 100 }});
+    {% endif %}
+    {{ module.styles.hover.border.border.css }}
+    {% if module.styles.hover.text.font.color %}
+      color: {{ module.styles.hover.text.font.color }};
+    {% endif %}
+    {% if module.styles.hover.text.font.size %}
+      font-size: {{ module.styles.hover.text.font.size ~ module.styles.hover.text.font.size_unit }};
+    {% endif %}
+    {% if module.styles.hover.text.font.style %}
+      {{ module.styles.hover.text.font.style }};
+    {% endif %}
+  }
+
+  {% if module.add_icon && module.icon.icon && module.styles.text.font.color %}
+    .button:hover svg,
+    .button:focus svg {
+      fill: {{ module.styles.hover.text.font.color }};
+    }
+  {% endif %}
+
+  .button:active {
+    {% if module.styles.hover.background.color.color %}
+      background-color: rgba({{ color_variant(module.styles.hover.background.color.color, 80)|convert_rgb }}, {{ module.styles.hover.background.color.opacity / 100 }});
+    {% endif %}
+    {{ module.styles.hover.border.border.css }}
+    {% if module.styles.hover.border.border %}
+      border-color: {{ color_variant(module.styles.hover.border.border.top.color, 80) }};
+    {% endif %}
+    {% if module.styles.hover.text.font.color %}
+      color: {{ module.styles.hover.text.font.color }};
+    {% endif %}
+    {% if module.styles.hover.text.font.size %}
+      font-size: {{ module.styles.hover.text.font.size ~ module.styles.hover.text.font.size_unit }};
+    {% endif %}
+    {% if module.styles.hover.text.font.style %}
+      {{ module.styles.hover.text.font.style }};
+    {% endif %}
+  }
+
+  {% if module.add_icon && module.icon.icon && module.styles.text.font.color %}
+    .button:active svg {
+      fill: {{ module.styles.hover.text.font.color }};
+    }
+  {% endif %}
+
+{% end_scope_css %}
+</style>
+
+{# Sets CSS classes based on style field options #}
+
+{% if module.styles.presets.button_style == 'secondary' %}
+  {% set button_style = 'button--secondary' %}
+{% elif module.styles.presets.button_style == 'simple' %}
+  {% set button_style = 'button--simple' %}
+{% endif %}
+
+{% if module.styles.presets.button_size == 'small' %}
+  {% set button_size = 'button--small' %}
+{% elif module.styles.presets.button_size == 'large' %}
+  {% set button_size = 'button--large' %}
+{% endif %}
+
+{% if module.icon.position == 'right' %}
+  {% set icon_position = 'button--icon-right' %}
+{% endif %}
+
+{# Sets attributes used for the link field #}
+
+{% set href = module.button_link.url.href %}
+{% if module.button_link.url.type is equalto 'EMAIL_ADDRESS' %}
+  {% set href = 'mailto:' + href %}
+{% endif %}
+{% set rel = [] %}
+{% if module.button_link.no_follow %}
+  {% do rel.append('nofollow') %}
+{% endif %}
+{% if module.button_link.open_in_new_tab %}
+  {% do rel.append('noopener') %}
+{% endif %}
+
+{# Button #}
+
+<div class="button-wrapper">
+  <a href="{{ href }}" class="button {{ button_style }} {{ button_size }} {{ icon_position }}"
+    {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+    {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+  >
+    {% if module.add_icon && module.icon.icon %}
+      {% icon
+        extra_classes='button__icon'
+        name='{{ module.icon.icon.name }}'
+        purpose='decorative'
+        style='{{ module.icon.icon.type }}'
+        unicode='{{ module.icon.icon.unicode }}'
+      %}
+    {% endif %}
+    {{ module.button_text }}
+  </a>
+</div>

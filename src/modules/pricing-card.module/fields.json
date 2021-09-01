@@ -1,0 +1,773 @@
+[
+  {
+    "label": "Heading",
+    "name": "heading",
+    "type": "group",
+    "children": [
+      {
+        "label": "Heading",
+        "name": "heading",
+        "type": "richtext",
+        "enabled_features": [
+          "alignment",
+          "block",
+          "font_family",
+          "font_size",
+          "standard_emphasis"
+        ],
+        "required": true,
+        "default": "<h3>Starter</h3>"
+      }
+    ]
+  },
+  {
+    "label": "Price",
+    "name": "price",
+    "type": "group",
+    "children": [
+      {
+        "label": "Price",
+        "name": "price",
+        "type": "richtext",
+        "enabled_features": [
+          "alignment",
+          "block",
+          "font_family",
+          "font_size",
+          "standard_emphasis"
+        ],
+        "required": true,
+        "default": "<h4>$50/month</h4>"
+      }
+    ]
+  },
+  {
+    "label": "Subheading",
+    "name": "subheading",
+    "type": "group",
+    "children": [
+      {
+        "label": "Subheading",
+        "name": "subheading",
+        "type": "richtext",
+        "enabled_features": [
+          "alignment",
+          "block",
+          "font_family",
+          "font_size",
+          "standard_emphasis"
+        ],
+        "required": true,
+        "default": "<h5>Some key features</h5>"
+      }
+    ]
+  },
+  {
+    "label": "List",
+    "name": "list",
+    "type": "group",
+    "children": [
+      {
+        "label": "Use custom bullet points",
+        "name": "use_custom_bullet_points",
+        "id": "list.use_custom_bullet_points",
+        "type": "boolean",
+        "display": "checkbox",
+        "default": false
+      },
+      {
+        "label": "Use same icon for all list items",
+        "name": "use_same_icon_for_all_list_items",
+        "id": "list.use_same_icon_for_all_list_items",
+        "type": "boolean",
+        "display": "checkbox",
+        "visibility": {
+          "controlling_field": "list.use_custom_bullet_points",
+          "controlling_value_regex": "true",
+          "operator": "EQUAL"
+        },
+        "default": true
+      },
+      {
+        "label": "Icon",
+        "name": "icon",
+        "type": "icon",
+        "visibility_rules": "ADVANCED",
+        "advanced_visibility": {
+          "boolean_operator": "AND",
+          "criteria": [
+            {
+              "controlling_field": "list.use_custom_bullet_points",
+              "controlling_value_regex": "true",
+              "operator": "EQUAL"
+            },
+            {
+              "controlling_field": "list.use_same_icon_for_all_list_items",
+              "controlling_value_regex": "true",
+              "operator": "EQUAL"
+            }
+          ]
+        },
+        "required": true,
+        "default": {
+          "name": "check",
+          "type" : "SOLID",
+          "unicode": "f00c"
+        }
+      },
+      {
+        "label": "List items",
+        "name": "list_items",
+        "type": "group",
+        "children":[
+          {
+            "label": "Content",
+            "name": "content",
+            "type": "richtext",
+            "enabled_features": [
+              "alignment",
+              "block",
+              "font_family",
+              "font_size",
+              "standard_emphasis"
+            ],
+            "required": true,
+            "default": "Lorem ipsum dolor sit amet, consectetur"
+          },
+          {
+            "label": "Icon",
+            "name": "icon",
+            "type": "icon",
+            "visibility_rules": "ADVANCED",
+            "advanced_visibility": {
+              "boolean_operator": "AND",
+              "criteria": [
+                {
+                  "controlling_field": "list.use_custom_bullet_points",
+                  "controlling_value_regex": "true",
+                  "operator": "EQUAL"
+                },
+                {
+                  "controlling_field": "list.use_same_icon_for_all_list_items",
+                  "controlling_value_regex": "false",
+                  "operator": "EQUAL"
+                }
+              ]
+            },
+            "required": true,
+            "default": {
+              "name": "check",
+              "type" : "SOLID",
+              "unicode": "f00c"
+            }
+          }
+        ],
+        "occurrence": {
+          "default": 3,
+          "min": 1
+        },
+        "default": [
+          {
+            "content": "Lorem ipsum dolor sit amet, consectetur",
+            "icon": {
+              "name": "check",
+              "type" : "SOLID",
+              "unicode": "f00c"
+            }
+          },
+          {
+            "content": "Lorem ipsum dolor sit amet, consectetur",
+            "icon": {
+              "name": "check",
+              "type" : "SOLID",
+              "unicode": "f00c"
+            }
+          },
+          {
+            "content": "Lorem ipsum dolor sit amet, consectetur",
+            "icon": {
+              "name": "check",
+              "type" : "SOLID",
+              "unicode": "f00c"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Button",
+    "name": "button",
+    "type": "group",
+    "children": [
+      {
+        "label": "Button text",
+        "name": "button_text",
+        "type": "text",
+        "required": true,
+        "default": "Buy starter now"
+      },
+      {
+        "label": "Button link",
+        "name": "button_link",
+        "type": "link",
+        "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
+        "default": {
+          "url": {
+            "href": "",
+            "type": "EXTERNAL"
+          }
+        }
+      },
+      {
+        "label": "Add icon",
+        "name": "add_icon",
+        "id": "button.add_icon",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "label": "Icon",
+        "name": "icon",
+        "type": "group",
+        "visibility": {
+          "controlling_field": "button.add_icon",
+          "controlling_value_regex": "true",
+          "operator": "EQUAL"
+        },
+        "expanded": true,
+        "children": [
+          {
+            "label": "Icon",
+            "name": "icon",
+            "type": "icon",
+            "required": true,
+            "default": {
+              "name": "hubspot",
+              "type" : "SOLID",
+              "unicode": "f3b2"
+            }
+          },
+          {
+            "label": "Position",
+            "name": "position",
+            "type": "choice",
+            "choices": [
+              ["left", "Left"],
+              ["right", "Right"]
+            ],
+            "display": "select",
+            "required": true,
+            "default": "left"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Styles",
+    "name": "styles",
+    "type": "group",
+    "tab": "STYLE",
+    "children": [
+      {
+        "label": "Heading",
+        "name": "heading",
+        "type": "group",
+        "children": [
+          {
+            "label": "Background",
+            "name": "background",
+            "type": "group",
+            "children": [
+              {
+                "label": "Color",
+                "name": "color",
+                "type": "color"
+              }
+            ]
+          },
+          {
+            "label": "Spacing",
+            "name": "spacing",
+            "type": "group",
+            "children": [
+              {
+                "label": "Spacing",
+                "name": "spacing",
+                "type": "spacing",
+                "visibility": {
+                  "hidden_subfields": {
+                    "margin": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "List",
+        "name": "list",
+        "type": "group",
+        "children": [
+          {
+            "label": "Icons",
+            "name": "icons",
+            "type": "group",
+            "visibility": {
+              "controlling_field": "list.use_custom_bullet_points",
+              "controlling_value_regex": "true",
+              "operator": "EQUAL"
+            },
+            "children": [
+              {
+                "label": "Presets",
+                "name": "presets",
+                "type": "group",
+                "help_text": "Use presets to quickly adjust the appearance of the selected item to predefined values.",
+                "children": [
+                  {
+                    "label": "Icon color",
+                    "name": "icon_color",
+                    "type": "choice",
+                    "choices": [
+                      ["dark", "Dark"],
+                      ["light", "Light"]
+                    ],
+                    "display": "select",
+                    "required": true,
+                    "default": "dark"
+                  },
+                  {
+                    "label": "Icon size",
+                    "name": "icon_size",
+                    "type": "choice",
+                    "choices": [
+                      ["small", "Small"],
+                      ["regular", "Regular"],
+                      ["large", "Large"]
+                    ],
+                    "display": "select",
+                    "required": true,
+                    "default": "regular"
+                  },
+                  {
+                    "label": "Icon shape",
+                    "name": "icon_shape",
+                    "type": "choice",
+                    "choices": [
+                      ["circle", "Circle"],
+                      ["square", "Square"]
+                    ],
+                    "display": "select",
+                    "required": true,
+                    "default": "circle"
+                  }
+                ]
+              },
+              {
+                "label": "Fill",
+                "name": "fill",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Color",
+                    "name": "color",
+                    "type": "color",
+                    "visibility": {
+                      "hidden_subfields": {
+                        "opacity": true
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "Size",
+                "name": "size",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Size",
+                    "name": "size",
+                    "type": "number",
+                    "display": "text",
+                    "max": 50,
+                    "min": 1,
+                    "step": 1,
+                    "suffix": "px"
+                  }
+                ]
+              },
+              {
+                "label": "Background",
+                "name": "background",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Color",
+                    "name": "color",
+                    "type": "color"
+                  }
+                ]
+              },
+              {
+                "label": "Corner",
+                "name": "corner",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Radius",
+                    "name": "radius",
+                    "type": "number",
+                    "display": "text",
+                    "max": 100,
+                    "step": 1,
+                    "suffix": "px"
+                  }
+                ]
+              },
+              {
+                "label": "Spacing",
+                "name": "spacing",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Spacing",
+                    "name": "spacing",
+                    "type": "spacing",
+                    "visibility": {
+                      "hidden_subfields": {
+                        "margin": true
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "List items",
+            "name": "list_items",
+            "type": "group",
+            "children": [
+              {
+                "label": "Spacing",
+                "name": "spacing",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Between icon and list item",
+                    "name": "between_icon_and_list_items",
+                    "type": "number",
+                    "visibility": {
+                      "controlling_field": "list.use_custom_bullet_points",
+                      "controlling_value_regex": "true",
+                      "operator": "EQUAL"
+                    },
+                    "display": "slider",
+                    "max": 50,
+                    "step": 5,
+                    "suffix": "px"
+                  },
+                  {
+                    "label": "Between list items",
+                    "name": "between_list_items",
+                    "type": "spacing",
+                    "visibility": {
+                      "hidden_subfields": {
+                        "padding": true
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Button",
+        "name": "button",
+        "type": "group",
+        "children": [
+          {
+            "label": "Presets",
+            "name": "presets",
+            "type": "group",
+            "help_text": "Use presets to quickly adjust the appearance of the selected item to predefined values.",
+            "children": [
+              {
+                "label": "Button style",
+                "name": "button_style",
+                "type": "choice",
+                "choices": [
+                  ["primary", "Primary"],
+                  ["secondary", "Secondary"],
+                  ["simple", "Simple"]
+                ],
+                "display": "select",
+                "required": true,
+                "default": "primary"
+              },
+              {
+                "label": "Button size",
+                "name": "button_size",
+                "type": "choice",
+                "choices": [
+                  ["small", "Small"],
+                  ["regular", "Regular"],
+                  ["large", "Large"]
+                ],
+                "display": "select",
+                "required": true,
+                "default": "regular"
+              }
+            ]
+          },
+          {
+            "label": "Text",
+            "name": "text",
+            "type": "group",
+            "children": [
+              {
+                "label": "Font",
+                "name": "font",
+                "type": "font",
+                "default": {
+                  "size_unit": "px"
+                }
+              },
+              {
+                "label": "Transform",
+                "name": "transform",
+                "type": "choice",
+                "choices": [
+                  [ "none", "None" ],
+                  [ "capitalize", "Capitalize" ],
+                  [ "uppercase", "Uppercase" ],
+                  [ "lowercase", "Lowercase" ]
+                ],
+                "display": "select"
+              }
+            ]
+          },
+          {
+            "label": "Background",
+            "name": "background",
+            "type": "group",
+            "children": [
+              {
+                "label": "Color",
+                "name": "color",
+                "type": "color"
+              }
+            ]
+          },
+          {
+            "label": "Border",
+            "name": "border",
+            "type": "group",
+            "children": [
+              {
+                "label" : "Border",
+                "name" : "border",
+                "type" : "border"
+              }
+            ]
+          },
+          {
+            "label": "Corner",
+            "name": "corner",
+            "type": "group",
+            "children": [
+              {
+                "label": "Radius",
+                "name": "radius",
+                "type": "number",
+                "display": "text",
+                "max": 100,
+                "step": 1,
+                "suffix": "px"
+              }
+            ]
+          },
+          {
+            "label": "Spacing",
+            "name": "spacing",
+            "type": "group",
+            "children": [
+              {
+                "label": "Spacing",
+                "name": "spacing",
+                "type": "spacing",
+                "visibility": {
+                  "hidden_subfields": {
+                    "margin": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "label": "Hover",
+            "name": "hover",
+            "type": "group",
+            "children": [
+              {
+                "label": "Text",
+                "name": "text",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Font",
+                    "name": "font",
+                    "type": "font",
+                    "visibility": {
+                      "hidden_subfields": {
+                        "size": true
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "Background",
+                "name": "background",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Color",
+                    "name": "color",
+                    "type": "color"
+                  }
+                ]
+              },
+              {
+                "label": "Border",
+                "name": "border",
+                "type": "group",
+                "children": [
+                  {
+                    "label" : "Border",
+                    "name" : "border",
+                    "type" : "border"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Alignment",
+            "name": "alignment",
+            "type": "group",
+            "children": [
+              {
+                "label": "Alignment",
+                "name": "alignment",
+                "type": "alignment",
+                "alignment_direction": "HORIZONTAL"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Card",
+        "name": "card",
+        "type": "group",
+        "children": [
+          {
+            "label": "Presets",
+            "name": "presets",
+            "type": "group",
+            "help_text": "Use presets to quickly adjust the appearance of the selected item to predefined values.",
+            "children": [
+              {
+                "label": "Card style",
+                "name": "card_style",
+                "type": "choice",
+                "choices": [
+                  ["dark", "Dark"],
+                  ["light", "Light"],
+                  ["plain", "Plain"]
+                ],
+                "display": "select",
+                "required": true,
+                "default": "light"
+              }
+            ]
+          },
+          {
+            "label": "Background",
+            "name": "background",
+            "type": "group",
+            "children": [
+              {
+                "label": "Color",
+                "name": "color",
+                "type": "color"
+              }
+            ]
+          },
+          {
+            "label": "Border",
+            "name": "border",
+            "type": "group",
+            "children": [
+              {
+                "label": "Border",
+                "name": "border",
+                "type": "border"
+              }
+            ]
+          },
+          {
+            "label": "Corner",
+            "name": "corner",
+            "type": "group",
+            "children": [
+              {
+                "label": "Radius",
+                "name": "radius",
+                "type": "number",
+                "display": "text",
+                "max": 100,
+                "step": 1,
+                "suffix": "px"
+              }
+            ]
+          },
+          {
+            "label": "Height",
+            "name": "height",
+            "type": "group",
+            "children": [
+              {
+                "label": "Minimum height",
+                "name": "min_height",
+                "type": "number",
+                "display": "text",
+                "step": 1,
+                "suffix": "px"
+              }
+            ]
+          },
+          {
+            "label": "Spacing",
+            "name": "spacing",
+            "type": "group",
+            "children": [
+              {
+                "label": "Spacing",
+                "name": "spacing",
+                "type": "spacing"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,132 @@
+{
+  "name": {
+    "message": "Ikona",
+    "description": "",
+    "placeholders": null
+  },
+  "accessibility_options.label": {
+    "message": "Opcje dostępności",
+    "description": "",
+    "placeholders": null
+  },
+  "accessibility_options.purpose.choices.decorative": {
+    "message": "Pominięte przez czytnik ekranu",
+    "description": "",
+    "placeholders": null
+  },
+  "accessibility_options.purpose.choices.semantic": {
+    "message": "Odczytane przez czytnik ekranu",
+    "description": "",
+    "placeholders": null
+  },
+  "accessibility_options.purpose.label": {
+    "message": "Cel",
+    "description": "",
+    "placeholders": null
+  },
+  "accessibility_options.title.label": {
+    "message": "Tytuł",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Ikona",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.alignment.label": {
+    "message": "Wyrównanie",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.label": {
+    "message": "Wyrównanie",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.color.label": {
+    "message": "Kolor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.label": {
+    "message": "Tło",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.corner.radius.label": {
+    "message": "Promień",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.fill.color.label": {
+    "message": "Kolor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Style",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_color.choices.light": {
+    "message": "Lekka",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_color.label": {
+    "message": "Kolor ikony",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.choices.circle": {
+    "message": "Okrąg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.choices.square": {
+    "message": "Kwadrat",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.label": {
+    "message": "Kształt ikony",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.large": {
+    "message": "Duże",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.regular": {
+    "message": "Regularne",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.small": {
+    "message": "Małe",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.size.label": {
+    "message": "Rozmiar",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.size.size.label": {
+    "message": "Rozmiar",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.label": {
+    "message": "Rozstaw",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.spacing.label": {
+    "message": "Rozstaw",
+    "description": "",
+    "placeholders": null
+  }
+}

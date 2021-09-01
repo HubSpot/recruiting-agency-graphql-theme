@@ -1,0 +1,112 @@
+{
+  "name": {
+    "message": "Paginação",
+    "description": "",
+    "placeholders": null
+  },
+  "first_label.default": {
+    "message": "Primeiro",
+    "description": "",
+    "placeholders": null
+  },
+  "first_label.label": {
+    "message": "Primeiro rótulo",
+    "description": "",
+    "placeholders": null
+  },
+  "last_label.default": {
+    "message": "Último",
+    "description": "",
+    "placeholders": null
+  },
+  "last_label.label": {
+    "message": "Último rótulo",
+    "description": "",
+    "placeholders": null
+  },
+  "next_label.default": {
+    "message": "Próximo",
+    "description": "",
+    "placeholders": null
+  },
+  "next_label.label": {
+    "message": "Próximo rótulo",
+    "description": "",
+    "placeholders": null
+  },
+  "previous_label.default": {
+    "message": "Voltar",
+    "description": "",
+    "placeholders": null
+  },
+  "previous_label.label": {
+    "message": "Rótulo anterior",
+    "description": "",
+    "placeholders": null
+  },
+  "show_first_and_last_links.label": {
+    "message": "Exibir o primeiro e o último links",
+    "description": "",
+    "placeholders": null
+  },
+  "show_previous_and_next_links.label": {
+    "message": "Exibir links anteriores e próximos",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.active.border.border.label": {
+    "message": "Borda",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.active.border.label": {
+    "message": "Borda",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.active.corner.label": {
+    "message": "Canto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.active.corner.radius.label": {
+    "message": "Raio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.active.label": {
+    "message": "Ativo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Estilos",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.label": {
+    "message": "Espaçamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.space_between_links.label": {
+    "message": "Espaço entre links",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.spacing.label": {
+    "message": "Espaçamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.font.label": {
+    "message": "Fonte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.label": {
+    "message": "Texto",
+    "description": "",
+    "placeholders": null
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "name": {
+    "message": "Luettelo",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Kuvake",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.content.label": {
+    "message": "Sisältö",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.icon.label": {
+    "message": "Kuvake",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.choices.ol": {
+    "message": "Tilattu luettelo",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.choices.ul": {
+    "message": "Tilaamaton luettelo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.background.color.label": {
+    "message": "Väri",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.background.label": {
+    "message": "Tausta",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.corner.radius.label": {
+    "message": "Säde",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.fill.color.label": {
+    "message": "Väri",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.choices.light": {
+    "message": "Kevyt",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.label": {
+    "message": "Kuvakkeen väri",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.choices.circle": {
+    "message": "Ympyrä",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.choices.square": {
+    "message": "Neliö",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.label": {
+    "message": "Kuvakemuoto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.large": {
+    "message": "Suuri",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.regular": {
+    "message": "Tavallinen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.small": {
+    "message": "Pieni",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.size.label": {
+    "message": "Koko",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.size.size.label": {
+    "message": "Koko",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.spacing.label": {
+    "message": "Välit",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.spacing.spacing.label": {
+    "message": "Välit",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Tyylit",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.spacing.label": {
+    "message": "Välit",
+    "description": "",
+    "placeholders": null
+  }
+}

@@ -1,0 +1,64 @@
+/* Image gallery wrapper */
+
+.image-gallery__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Images */
+
+.image-gallery__image-container {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.image-gallery__image {
+  height: auto;
+  padding: 0 1.4rem 0.7rem;
+  width: 100%;
+}
+
+/* Lightbox */
+
+.image-gallery__lightbox {
+  display: none;
+}
+
+.image-gallery__lightbox--open {
+  background: rgba(0, 0, 0, 0.75);
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: scroll;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Prevents pop up from showing in the editor */
+
+.hs-inline-edit .image-gallery__lightbox--open {
+  display: none;
+}
+
+.image-gallery__caption p {
+  color: #fff;
+}
+
+.image-gallery__close-button {
+  display: flex;
+  margin-left: auto;
+}
+
+.image-gallery__lightbox-content {
+  text-align: center;
+}
+
+.image-gallery__lightbox-image {
+  height: auto;
+  margin-bottom: 1.4rem;
+  max-width: 100%;
+}

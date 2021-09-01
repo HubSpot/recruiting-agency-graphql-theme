@@ -1,0 +1,227 @@
+{
+  "name": {
+    "message": "Seguimi sui social",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.accessibility_options.label": {
+    "message": "Opzioni di accessibilità",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.accessibility_options.title.default": {
+    "message": "Seguici su Facebook",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.accessibility_options.title.help_text": {
+    "message": "Letto dal lettore di schermate",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.accessibility_options.title.label": {
+    "message": "Titolo",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.custom_icon.label": {
+    "message": "Icona personalizzata",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.label": {
+    "message": "Link ai social",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.link.label": {
+    "message": "Link",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.custom_icon": {
+    "message": "Personalizzato",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.envelope": {
+    "message": "E-mail",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.facebook-f": {
+    "message": "Facebook",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.instagram": {
+    "message": "Instagram",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.link": {
+    "message": "Sito web",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.linkedin-in": {
+    "message": "LinkedIn ",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.pinterest-p": {
+    "message": "Pinterest",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.twitter": {
+    "message": "Twitter",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.whatsapp": {
+    "message": "Whatsapp",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.youtube": {
+    "message": "YouTube",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.label": {
+    "message": "Account social",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.alignment.label": {
+    "message": "Allineamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.label": {
+    "message": "Allineamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.color.label": {
+    "message": "Colore",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.label": {
+    "message": "Sfondo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.corner.label": {
+    "message": "Angolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.corner.radius.label": {
+    "message": "Raggio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.fill.color.label": {
+    "message": "Colore",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.fill.label": {
+    "message": "Riempimento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Stili",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.help_text": {
+    "message": "Utilizza le impostazioni predefinite per adeguare l'aspetto dell'elemento selezionato ai valori predefiniti.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_color.choices.dark": {
+    "message": "Scuro",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_color.choices.light": {
+    "message": "Leggero",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_color.label": {
+    "message": "Colore icona",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.choices.circle": {
+    "message": "Cerchio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.choices.square": {
+    "message": "Quadrato",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.label": {
+    "message": "Forma dell'icona",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.large": {
+    "message": "Grande",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.regular": {
+    "message": "Normale",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.small": {
+    "message": "Piccolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.label": {
+    "message": "Dimensioni icona",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.label": {
+    "message": "Impostazioni predefinite",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.size.label": {
+    "message": "Dimensioni",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.size.size.label": {
+    "message": "Dimensioni",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.space_between_icons.label": {
+    "message": "Spazio tra le icone",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  }
+}

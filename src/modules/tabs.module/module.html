@@ -1,0 +1,127 @@
+{# Module styles #}
+
+<style>
+{% scope_css %}
+
+  /* Tabs wrapper */
+
+  .tabs-wrapper {
+    {{ module.styles.tabs_module.spacing.spacing.css }}
+  }
+
+  /* Tabs */
+
+  .tabs__tab {
+    {% if module.styles.tabs.spacing.spacing %}
+      {{ module.styles.tabs.spacing.spacing.css }}
+    {% endif %}}
+  }
+
+  /* Active tab */
+
+  .tabs__tab[aria-selected='true'] {
+    {{ module.styles.tabs.active.border.border.css }}
+    {% if module.styles.tabs.active.background.color.color %}
+      background-color: rgba({{ module.styles.tabs.active.background.color.color|convert_rgb }}, {{ module.styles.tabs.active.background.color.opacity / 100 }});
+    {% endif %}
+    {% if module.styles.tabs.active.text.font.color %}
+      color: {{ module.styles.tabs.active.text.font.color }};
+    {% endif %}
+    {% if module.styles.tabs.active.text.font.size %}
+      font-size: {{ module.styles.tabs.active.text.font.size ~ module.styles.tabs.active.text.font.size_unit }};
+    {% endif %}
+    {% if module.styles.tabs.active.text.font.style %}
+      {{ module.styles.tabs.active.text.font.style }};
+    {% endif %}
+  }
+
+  /* Applies border to pseudo element to prevent jitter when hovering */
+
+  .tabs__tab[aria-selected='true']:after {
+    {% if module.styles.tabs.active.border.bottom.bottom %}
+      border-bottom: {{ module.styles.tabs.active.border.bottom.bottom.width.value ~ module.styles.tabs.active.border.bottom.bottom.width.units }} {{ module.styles.tabs.active.border.bottom.bottom.style }} rgba({{ module.styles.tabs.active.border.bottom.bottom.color|convert_rgb }}, {{ module.styles.tabs.active.border.bottom.bottom.opacity / 100 }});
+    {% else %}
+      border-bottom: 2px solid;
+    {% endif %}
+  }
+
+  /* Inactive tabs */
+
+  .tabs__tab[aria-selected='false'] {
+    {% if module.styles.tabs.inactive.background.color.color %}
+      background-color: rgba({{ module.styles.tabs.inactive.background.color.color|convert_rgb }}, {{ module.styles.tabs.inactive.background.color.opacity / 100 }});
+    {% endif %}
+    {% if module.styles.tabs.inactive.text.font.color %}
+      color: {{ module.styles.tabs.inactive.text.font.color }};
+    {% endif %}
+    {% if module.styles.tabs.inactive.text.font.size %}
+      font-size: {{ module.styles.tabs.inactive.text.font.size ~ module.styles.tabs.inactive.text.font.size_unit }};
+    {% endif %}
+    {% if module.styles.tabs.inactive.text.font.style %}
+      {{ module.styles.tabs.inactive.text.font.style }};
+    {% endif %}
+  }
+
+  /* Applies border to pseudo element to prevent jitter when hovering */
+
+  .tabs__tab[aria-selected='false']:after {
+    {% if module.styles.tabs.inactive.border.bottom.bottom %}
+      border-bottom: {{ module.styles.tabs.inactive.border.bottom.bottom.width.value ~ module.styles.tabs.inactive.border.bottom.bottom.width.units }} {{ module.styles.tabs.inactive.border.bottom.bottom.style }} rgba({{ module.styles.tabs.inactive.border.bottom.bottom.color|convert_rgb }}, {{ module.styles.tabs.inactive.border.bottom.bottom.opacity / 100 }});
+    {% endif %}
+  }
+
+  /* Tab hover */
+
+  .tabs__tab[aria-selected='false']:hover,
+  .tabs__tab[aria-selected='false']:focus {
+    {% if module.styles.tabs.hover.background.color.color %}
+      background-color: rgba({{ module.styles.tabs.hover.background.color.color|convert_rgb }}, {{ module.styles.tabs.hover.background.color.opacity / 100 }});
+    {% endif %}
+    {% if module.styles.tabs.hover.text.font.color %}
+      color: {{ module.styles.tabs.hover.text.font.color }};
+    {% endif %}
+    {% if module.styles.tabs.hover.text.font.size %}
+      font-size: {{ module.styles.tabs.hover.text.font.size ~ module.styles.tabs.hover.text.font.size_unit }};
+    {% endif %}
+    {% if module.styles.tabs.hover.text.font.style %}
+      {{ module.styles.tabs.hover.text.font.style }};
+    {% endif %}
+  }
+
+  .tabs__tab[aria-selected='false']:hover:after,
+  .tabs__tab[aria-selected='false']:focus:after {
+    {% if module.styles.tabs.hover.border.bottom.bottom %}
+      border-bottom: {{ module.styles.tabs.hover.border.bottom.bottom.width.value ~ module.styles.tabs.hover.border.bottom.bottom.width.units }} {{ module.styles.tabs.hover.border.bottom.bottom.style }} rgba({{ module.styles.tabs.hover.border.bottom.bottom.color|convert_rgb }}, {{ module.styles.tabs.hover.border.bottom.bottom.opacity / 100 }});
+    {% endif %}
+  }
+
+  /* Tab content */
+
+  .tabs__content {
+    {{ module.styles.content.spacing.spacing.css }}
+  }
+
+{% end_scope_css %}
+</style>
+
+{# Tabs module #}
+
+<section class="tabs-wrapper">
+
+  {# Tab #}
+
+  <div class="tabs" role="tablist">
+    {% for tab in module.tabs %}
+      <button class="tabs__tab no-button" role="tab" aria-selected="{{ 'true' if loop.first else 'false' }}" aria-controls="tabs__content-{{ loop.index }}--{{ name }}" id="tabs__tab-{{ loop.index }}--{{ name }}" {{ 'tabindex="-1"' if !loop.first }}>{{ tab.tab_label }}</button>
+    {% endfor %}
+  </div>
+
+  {# Tab content #}
+
+  {% for tab in module.tabs %}
+    <div class="tabs__content" tabindex="0" role="tabpanel" id="tabs__content-{{ loop.index }}--{{ name }}" aria-labelledby="tabs__tab-{{ loop.index }}--{{ name }}" {{ 'hidden=""' if !loop.first }}>
+      {{ tab.content }}
+    </div>
+  {% endfor %}
+
+</section>

@@ -1,0 +1,51 @@
+/* Date */
+
+.blog-post__timestamp {
+  display: block;
+  margin-bottom: 0.7rem;
+}
+
+/* Author */
+
+.blog-post__author {
+  align-items: center;
+  display: flex;
+  margin-bottom: 1.4rem;
+}
+
+.blog-post__author-image {
+  height: auto;
+  margin-right: 0.7rem;
+  width: 50px;
+}
+
+.blog-post__author-name,
+.blog-post__author-name:hover,
+.blog-post__author-name:focus,
+.blog-post__author-name:active {
+  text-decoration: none;
+}
+
+/* Content */
+
+.blog-post__body img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Comments */
+
+.blog-comments .hs-submit {
+  text-align: center;
+}
+
+.blog-comments .comment-reply-to {
+  border: 0 none;
+}
+
+.blog-comments .comment-reply-to:hover,
+.blog-comments .comment-reply-to:focus,
+.blog-comments .comment-reply-to:active {
+  background-color: transparent;
+  text-decoration: underline;
+}

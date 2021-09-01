@@ -1,0 +1,112 @@
+{
+  "name": {
+    "message": "Paginazione",
+    "description": "",
+    "placeholders": null
+  },
+  "first_label.default": {
+    "message": "Uno",
+    "description": "",
+    "placeholders": null
+  },
+  "first_label.label": {
+    "message": "Prima etichetta",
+    "description": "",
+    "placeholders": null
+  },
+  "last_label.default": {
+    "message": "Ultima",
+    "description": "",
+    "placeholders": null
+  },
+  "last_label.label": {
+    "message": "Ultima etichetta",
+    "description": "",
+    "placeholders": null
+  },
+  "next_label.default": {
+    "message": "Avanti",
+    "description": "",
+    "placeholders": null
+  },
+  "next_label.label": {
+    "message": "Etichetta successiva",
+    "description": "",
+    "placeholders": null
+  },
+  "previous_label.default": {
+    "message": "Indietro",
+    "description": "",
+    "placeholders": null
+  },
+  "previous_label.label": {
+    "message": "Etichetta precedente",
+    "description": "",
+    "placeholders": null
+  },
+  "show_first_and_last_links.label": {
+    "message": "Mostra i primi e gli ultimi link",
+    "description": "",
+    "placeholders": null
+  },
+  "show_previous_and_next_links.label": {
+    "message": "Mostra i link precedenti e successivi",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.active.border.border.label": {
+    "message": "Bordo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.active.border.label": {
+    "message": "Bordo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.active.corner.label": {
+    "message": "Angolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.active.corner.radius.label": {
+    "message": "Raggio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.active.label": {
+    "message": "Attivo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Stili",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.space_between_links.label": {
+    "message": "Spazio tra i link",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.font.label": {
+    "message": "Carattere",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.label": {
+    "message": "Testo",
+    "description": "",
+    "placeholders": null
+  }
+}

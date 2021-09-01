@@ -1,0 +1,197 @@
+{
+  "name": {
+    "message": "Liste",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Icône",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.content.default": {
+    "message": "<h3>Élément de liste</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor arcu non commodo elementum.</p>",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.content.label": {
+    "message": "Contenus",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.icon.label": {
+    "message": "Icône",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.label": {
+    "message": "Éléments de liste",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.choices.ol": {
+    "message": "Liste ordonnée",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.choices.ul": {
+    "message": "Liste non ordonnée",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.label": {
+    "message": "Type de liste",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.background.color.label": {
+    "message": "Couleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.background.label": {
+    "message": "Arrière-plan",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.corner.label": {
+    "message": "Angle",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.corner.radius.label": {
+    "message": "Rayon",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.fill.color.label": {
+    "message": "Couleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.fill.label": {
+    "message": "Remplissage",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.label": {
+    "message": "Icônes",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.help_text": {
+    "message": "Utilisez les préréglages pour ajuster rapidement l'apparence de l'élément sélectionné en suivant des valeurs prédéfinies.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.choices.dark": {
+    "message": "Sombre",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.choices.light": {
+    "message": "Léger",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.label": {
+    "message": "Couleur de l'icône",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.choices.circle": {
+    "message": "Cercle",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.choices.square": {
+    "message": "Carré",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.label": {
+    "message": "Forme de l'icône",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.large": {
+    "message": "Grande",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.regular": {
+    "message": "Ordinaire",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.small": {
+    "message": "Petite",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.label": {
+    "message": "Taille de l'icône",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.label": {
+    "message": "Préréglages",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.size.label": {
+    "message": "Taille",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.size.size.label": {
+    "message": "Taille",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.spacing.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Styles",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.label": {
+    "message": "Éléments de liste",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.spacing.between_icon_and_list_items.label": {
+    "message": "Entre l'icône et l'élément de liste",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.spacing.between_list_items.label": {
+    "message": "Entre les éléments de liste",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "use_custom_bullet_points.label": {
+    "message": "Utiliser des puces personnalisées",
+    "description": "",
+    "placeholders": null
+  },
+  "use_same_icon_for_all_list_items.label": {
+    "message": "Utiliser la même icône pour tous les éléments de liste",
+    "description": "",
+    "placeholders": null
+  }
+}

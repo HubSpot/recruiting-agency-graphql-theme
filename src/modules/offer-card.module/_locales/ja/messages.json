@@ -1,0 +1,492 @@
+{
+  "name": {
+    "message": "オファーカード",
+    "description": "",
+    "placeholders": null
+  },
+  "button.add_icon.label": {
+    "message": "追加アイコン",
+    "description": "",
+    "placeholders": null
+  },
+  "button.button_link.label": {
+    "message": "ボタンリンク",
+    "description": "",
+    "placeholders": null
+  },
+  "button.button_text.default": {
+    "message": "もっと詳しく",
+    "description": "",
+    "placeholders": null
+  },
+  "button.button_text.label": {
+    "message": "ボタンテキスト",
+    "description": "",
+    "placeholders": null
+  },
+  "button.icon.icon.label": {
+    "message": "アイコン",
+    "description": "",
+    "placeholders": null
+  },
+  "button.icon.label": {
+    "message": "アイコン",
+    "description": "",
+    "placeholders": null
+  },
+  "button.icon.position.choices.left": {
+    "message": "左",
+    "description": "",
+    "placeholders": null
+  },
+  "button.icon.position.choices.right": {
+    "message": "右",
+    "description": "",
+    "placeholders": null
+  },
+  "button.icon.position.label": {
+    "message": "位置",
+    "description": "",
+    "placeholders": null
+  },
+  "button.label": {
+    "message": "ボタン",
+    "description": "",
+    "placeholders": null
+  },
+  "content.content.default": {
+    "message": "<h3>人々を製品やサービスに惹きつける</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor arcu non commodo elementum.</p>",
+    "description": "",
+    "placeholders": null
+  },
+  "content.content.label": {
+    "message": "コンテンツ",
+    "description": "",
+    "placeholders": null
+  },
+  "content.label": {
+    "message": "コンテンツ",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.accessibility_options.label": {
+    "message": "アクセスに関するオプション",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.accessibility_options.purpose.choices.decorative": {
+    "message": "スクリーンリーダーによって無視される",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.accessibility_options.purpose.choices.semantic": {
+    "message": "スクリーンリーダーによって読まれる",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.accessibility_options.purpose.label": {
+    "message": "目的",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.accessibility_options.title.label": {
+    "message": "タイトル",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.icon.label": {
+    "message": "アイコン",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "アイコン",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.alignment.alignment.label": {
+    "message": "位置合わせ",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.alignment.label": {
+    "message": "位置合わせ",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.background.color.label": {
+    "message": "カラー",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.background.label": {
+    "message": "背景",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.border.border.label": {
+    "message": "境界線",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.border.label": {
+    "message": "境界線",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.corner.label": {
+    "message": "角",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.corner.radius.label": {
+    "message": "半径",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.background.color.label": {
+    "message": "カラー",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.background.label": {
+    "message": "背景",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.border.border.label": {
+    "message": "境界線",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.border.label": {
+    "message": "境界線",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.label": {
+    "message": "カーソルを置く",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.text.font.label": {
+    "message": "フォント",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.text.label": {
+    "message": "SMS",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.label": {
+    "message": "ボタン",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.large": {
+    "message": "大",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.regular": {
+    "message": "通常",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.small": {
+    "message": "小",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.label": {
+    "message": "ボタンのサイズ",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.primary": {
+    "message": "プライマリー",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.secondary": {
+    "message": "セカンダリー",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.simple": {
+    "message": "シンプル",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.label": {
+    "message": "ボタンスタイル",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.help_text": {
+    "message": "選択した項目の外観を事前定義された値にすばやく調整するには、プリセットを使用します。",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.label": {
+    "message": "プリセット",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.spacing.label": {
+    "message": "間隔",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.spacing.spacing.label": {
+    "message": "間隔",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.font.label": {
+    "message": "フォント",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.label": {
+    "message": "SMS",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.capitalize": {
+    "message": "大文字にする",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.lowercase": {
+    "message": "小文字",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.none": {
+    "message": "なし",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.uppercase": {
+    "message": "大文字",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.label": {
+    "message": "変換",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.background.color.label": {
+    "message": "カラー",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.background.label": {
+    "message": "背景",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.border.border.label": {
+    "message": "境界線",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.border.label": {
+    "message": "境界線",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.corner.label": {
+    "message": "角",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.corner.radius.label": {
+    "message": "半径",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.height.label": {
+    "message": "高さ",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.height.min_height.label": {
+    "message": "最小高",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.label": {
+    "message": "カード",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.presets.card_style.choices.dark": {
+    "message": "ダーク",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.presets.card_style.choices.light": {
+    "message": "ライト",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.presets.card_style.choices.plain": {
+    "message": "プレーン",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.presets.card_style.label": {
+    "message": "カードのスタイル",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.presets.help_text": {
+    "message": "選択した項目の外観を事前定義された値にすばやく調整するには、プリセットを使用します。",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.presets.label": {
+    "message": "プリセット",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.spacing.label": {
+    "message": "間隔",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.spacing.spacing.label": {
+    "message": "間隔",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.alignment.alignment.label": {
+    "message": "位置合わせ",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.alignment.label": {
+    "message": "位置合わせ",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.background.color.label": {
+    "message": "カラー",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.background.label": {
+    "message": "背景",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.corner.label": {
+    "message": "角",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.corner.radius.label": {
+    "message": "半径",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.fill.color.label": {
+    "message": "カラー",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.fill.label": {
+    "message": "塗りつぶし",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.label": {
+    "message": "アイコン",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.help_text": {
+    "message": "選択した項目の外観を事前定義された値にすばやく調整するには、プリセットを使用します。",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_color.choices.dark": {
+    "message": "ダーク",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_color.choices.light": {
+    "message": "ライト",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_color.label": {
+    "message": "アイコンの色",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_shape.choices.circle": {
+    "message": "丸",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_shape.choices.square": {
+    "message": "四角",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_shape.label": {
+    "message": "アイコンの形状",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_size.choices.large": {
+    "message": "大",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_size.choices.regular": {
+    "message": "通常",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_size.choices.small": {
+    "message": "小",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_size.label": {
+    "message": "アイコンのサイズ",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.label": {
+    "message": "プリセット",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.size.label": {
+    "message": "サイズ",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.spacing.label": {
+    "message": "間隔",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.spacing.spacing.label": {
+    "message": "間隔",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "スタイル",
+    "description": "",
+    "placeholders": null
+  }
+}

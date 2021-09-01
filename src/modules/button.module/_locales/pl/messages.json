@@ -1,0 +1,207 @@
+{
+  "name": {
+    "message": "Przycisk",
+    "description": "",
+    "placeholders": null
+  },
+  "add_icon.label": {
+    "message": "Dodaj ikonę",
+    "description": "",
+    "placeholders": null
+  },
+  "button_link.label": {
+    "message": "Łącze przycisku",
+    "description": "",
+    "placeholders": null
+  },
+  "button_text.default": {
+    "message": "Dowiedz się więcej",
+    "description": "",
+    "placeholders": null
+  },
+  "button_text.label": {
+    "message": "Tekst przycisku",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.icon.label": {
+    "message": "Ikona",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Ikona",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.position.choices.left": {
+    "message": "Po lewej",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.position.choices.right": {
+    "message": "Po prawej",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.position.label": {
+    "message": "Pozycja",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.alignment.label": {
+    "message": "Wyrównanie",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.label": {
+    "message": "Wyrównanie",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.color.label": {
+    "message": "Kolor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.label": {
+    "message": "Tło",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.border.border.label": {
+    "message": "Obramowanie",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.border.label": {
+    "message": "Obramowanie",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.corner.radius.label": {
+    "message": "Promień",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.background.color.label": {
+    "message": "Kolor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.background.label": {
+    "message": "Tło",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.border.border.label": {
+    "message": "Obramowanie",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.border.label": {
+    "message": "Obramowanie",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.label": {
+    "message": "Ustaw kursor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.text.font.label": {
+    "message": "Czcionka",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.hover.text.label": {
+    "message": "Tekst",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Style",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_size.choices.large": {
+    "message": "Duże",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_size.choices.regular": {
+    "message": "Regularne",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_size.choices.small": {
+    "message": "Małe",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_size.label": {
+    "message": "Rozmiar przycisku",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_style.choices.primary": {
+    "message": "Główny",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_style.choices.secondary": {
+    "message": "Dodatkowe",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_style.choices.simple": {
+    "message": "Proste",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.button_style.label": {
+    "message": "Styl przycisku",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.label": {
+    "message": "Rozstaw",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.spacing.label": {
+    "message": "Rozstaw",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.font.label": {
+    "message": "Czcionka",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.label": {
+    "message": "Tekst",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.transform.choices.capitalize": {
+    "message": "Kapitalizacja",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.transform.choices.lowercase": {
+    "message": "Małe litery",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.transform.choices.none": {
+    "message": "Brak",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.transform.choices.uppercase": {
+    "message": "Wielkie litery",
+    "description": "",
+    "placeholders": null
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "name": {
+    "message": "アコーディオン",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.content.default": {
+    "message": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor arcu non commodo elementum.</p>",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.content.label": {
+    "message": "コンテンツ",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.label": {
+    "message": "アコーディオン",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.open_by_default.label": {
+    "message": "既定で開く",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.title.default": {
+    "message": "アコーディオンタイトル",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.title.label": {
+    "message": "タイトル",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.choices.caret": {
+    "message": "キャレット",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.choices.plus": {
+    "message": "追加",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "アイコン",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.border.border.label": {
+    "message": "境界線",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.border.label": {
+    "message": "境界線",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.label": {
+    "message": "アコーディオン",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.dark": {
+    "message": "ダーク",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.light": {
+    "message": "ライト",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.plain": {
+    "message": "プレーン",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.label": {
+    "message": "カードのスタイル",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.help_text": {
+    "message": "選択した項目の外観を事前定義された値にすばやく調整するには、プリセットを使用します。",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.label": {
+    "message": "プリセット",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.spacing.label": {
+    "message": "間隔",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.spacing.space_between_accordions.label": {
+    "message": "アコーディオン間のスペース",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.background.color.label": {
+    "message": "カラー",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.background.label": {
+    "message": "背景",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.label": {
+    "message": "コンテンツ",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.spacing.label": {
+    "message": "間隔",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.spacing.spacing.label": {
+    "message": "間隔",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "スタイル",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.background.color.label": {
+    "message": "カラー",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.background.label": {
+    "message": "背景",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.label": {
+    "message": "タイトル",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.spacing.label": {
+    "message": "間隔",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.spacing.spacing.label": {
+    "message": "間隔",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.font.label": {
+    "message": "フォント",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.label": {
+    "message": "SMS",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.capitalize": {
+    "message": "大文字にする",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.lowercase": {
+    "message": "小文字",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.none": {
+    "message": "なし",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.uppercase": {
+    "message": "大文字",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.label": {
+    "message": "変換",
+    "description": "",
+    "placeholders": null
+  }
+}

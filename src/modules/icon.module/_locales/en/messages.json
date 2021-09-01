@@ -1,0 +1,162 @@
+{
+  "name": {
+    "message": "Icon",
+    "description": "",
+    "placeholders": null
+  },
+  "accessibility_options.label": {
+    "message": "Accessibility options",
+    "description": "",
+    "placeholders": null
+  },
+  "accessibility_options.purpose.choices.decorative": {
+    "message": "Ignored by screen reader",
+    "description": "",
+    "placeholders": null
+  },
+  "accessibility_options.purpose.choices.semantic": {
+    "message": "Read by screen reader",
+    "description": "",
+    "placeholders": null
+  },
+  "accessibility_options.purpose.label": {
+    "message": "Purpose",
+    "description": "",
+    "placeholders": null
+  },
+  "accessibility_options.title.label": {
+    "message": "Title",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Icon",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.alignment.label": {
+    "message": "Alignment",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.label": {
+    "message": "Alignment",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.label": {
+    "message": "Background",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.corner.label": {
+    "message": "Corner",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.corner.radius.label": {
+    "message": "Radius",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.fill.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.fill.label": {
+    "message": "Fill",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Styles",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.help_text": {
+    "message": "Use presets to quickly adjust the appearance of the selected item to predefined values.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_color.choices.dark": {
+    "message": "Dark",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_color.choices.light": {
+    "message": "Light",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_color.label": {
+    "message": "Icon color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.choices.circle": {
+    "message": "Circle",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.choices.square": {
+    "message": "Square",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.label": {
+    "message": "Icon shape",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.large": {
+    "message": "Large",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.regular": {
+    "message": "Regular",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.small": {
+    "message": "Small",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.label": {
+    "message": "Icon size",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.label": {
+    "message": "Presets",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.size.label": {
+    "message": "Size",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.size.size.label": {
+    "message": "Size",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  }
+}

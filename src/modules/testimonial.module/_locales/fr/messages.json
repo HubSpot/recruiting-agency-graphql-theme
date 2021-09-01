@@ -1,0 +1,162 @@
+{
+  "name": {
+    "message": "Témoignage",
+    "description": "",
+    "placeholders": null
+  },
+  "author.content.default": {
+    "message": "<span>Shaun Benson, directeur marketing d'Agriflora Inc.</span>",
+    "description": "",
+    "placeholders": null
+  },
+  "author.content.label": {
+    "message": "Contenus",
+    "description": "",
+    "placeholders": null
+  },
+  "author.image.default.alt": {
+    "message": "Photo de Shaun Benson, directeur marketing d'Agriflora Inc.",
+    "description": "",
+    "placeholders": null
+  },
+  "author.image.label": {
+    "message": "Image",
+    "description": "",
+    "placeholders": null
+  },
+  "author.include_image.label": {
+    "message": "Inclure une image",
+    "description": "",
+    "placeholders": null
+  },
+  "author.label": {
+    "message": "Auteur",
+    "description": "",
+    "placeholders": null
+  },
+  "quote_text.default": {
+    "message": "<span>« Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan velit sit amet sagittis malesuada. »</span>",
+    "description": "",
+    "placeholders": null
+  },
+  "quote_text.label": {
+    "message": "Texte de la citation",
+    "description": "",
+    "placeholders": null
+  },
+  "show_author.label": {
+    "message": "Afficher l'auteur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.alignment.alignment.label": {
+    "message": "Alignement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.alignment.label": {
+    "message": "Alignement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.label": {
+    "message": "Angle",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.radius.label": {
+    "message": "Rayon",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.label": {
+    "message": "Image",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.label": {
+    "message": "Auteur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Styles",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.background.color.label": {
+    "message": "Couleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.background.label": {
+    "message": "Arrière-plan",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.border.border.label": {
+    "message": "Bordure",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.border.label": {
+    "message": "Bordure",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.corner.label": {
+    "message": "Angle",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.corner.radius.label": {
+    "message": "Rayon",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.label": {
+    "message": "Témoignage",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.card_style.choices.dark": {
+    "message": "Sombre",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.card_style.choices.light": {
+    "message": "Léger",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.card_style.choices.plain": {
+    "message": "Uni",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.card_style.label": {
+    "message": "Style de carte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.help_text": {
+    "message": "Utilisez les préréglages pour ajuster rapidement l'apparence de l'élément sélectionné en suivant des valeurs prédéfinies.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.label": {
+    "message": "Préréglages",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.spacing.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  }
+}

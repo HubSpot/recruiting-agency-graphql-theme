@@ -1,0 +1,492 @@
+{
+  "name": {
+    "message": "Listas de blogs",
+    "description": "",
+    "placeholders": null
+  },
+  "author.label": {
+    "message": "Autor",
+    "description": "",
+    "placeholders": null
+  },
+  "button.label": {
+    "message": "Botón",
+    "description": "",
+    "placeholders": null
+  },
+  "button_text.default": {
+    "message": "Más información",
+    "description": "",
+    "placeholders": null
+  },
+  "button_text.label": {
+    "message": "Texto del botón",
+    "description": "",
+    "placeholders": null
+  },
+  "columns.help_text": {
+    "message": "Número de publicaciones por fila",
+    "description": "",
+    "placeholders": null
+  },
+  "columns.label": {
+    "message": "Columnas",
+    "description": "",
+    "placeholders": null
+  },
+  "date.label": {
+    "message": "Fecha",
+    "description": "",
+    "placeholders": null
+  },
+  "description.label": {
+    "message": "Descripción",
+    "description": "",
+    "placeholders": null
+  },
+  "featured_image.label": {
+    "message": "Imagen destacada",
+    "description": "",
+    "placeholders": null
+  },
+  "layout_style.choices.card": {
+    "message": "Tarjeta",
+    "description": "",
+    "placeholders": null
+  },
+  "layout_style.choices.list": {
+    "message": "Lista",
+    "description": "",
+    "placeholders": null
+  },
+  "layout_style.label": {
+    "message": "Estilo de diseño",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.label": {
+    "message": "Esquina",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.radius.label": {
+    "message": "Radio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.label": {
+    "message": "Imagen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.label": {
+    "message": "Autor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.text.font.label": {
+    "message": "Fuente",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.text.label": {
+    "message": "Texto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.alignment.alignment.label": {
+    "message": "Alineación",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.alignment.label": {
+    "message": "Alineación",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.background.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.background.label": {
+    "message": "Fondo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.border.border.label": {
+    "message": "Borde",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.border.label": {
+    "message": "Borde",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.corner.label": {
+    "message": "Esquina",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.corner.radius.label": {
+    "message": "Radio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.background.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.background.label": {
+    "message": "Fondo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.border.border.label": {
+    "message": "Borde",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.border.label": {
+    "message": "Borde",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.label": {
+    "message": "Cursor encima",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.text.font.label": {
+    "message": "Fuente",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.text.label": {
+    "message": "Texto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.label": {
+    "message": "Botón",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.large": {
+    "message": "Grande",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.regular": {
+    "message": "Normal",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.small": {
+    "message": "Pequeño",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.label": {
+    "message": "Tamaño del botón",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.primary": {
+    "message": "Principal",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.secondary": {
+    "message": "Secundario",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.simple": {
+    "message": "Simple",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.label": {
+    "message": "Estilo del botón",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.help_text": {
+    "message": "Usa valores preestablecidos para un rápido ajuste de la apariencia del elemento seleccionado con valores predefinidos.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.label": {
+    "message": "Valores preestablecidos",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.spacing.label": {
+    "message": "Espaciado",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.spacing.spacing.label": {
+    "message": "Espaciado",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.font.label": {
+    "message": "Fuente",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.label": {
+    "message": "Texto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.capitalize": {
+    "message": "Escribir en mayúsculas",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.lowercase": {
+    "message": "Minúscula",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.none": {
+    "message": "Ninguno",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.uppercase": {
+    "message": "Mayúscula",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.label": {
+    "message": "Transformar",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.date.label": {
+    "message": "Fecha",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.date.text.font.label": {
+    "message": "Fuente",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.date.text.label": {
+    "message": "Texto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.description.label": {
+    "message": "Descripción",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.description.text.font.label": {
+    "message": "Fuente",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.description.text.label": {
+    "message": "Texto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.featured_image.corner.label": {
+    "message": "Esquina",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.featured_image.corner.radius.label": {
+    "message": "Radio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.featured_image.label": {
+    "message": "Imagen destacada",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Estilos",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.background.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.background.label": {
+    "message": "Fondo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.border.border.label": {
+    "message": "Borde",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.border.label": {
+    "message": "Borde",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.corner.label": {
+    "message": "Esquina",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.corner.radius.label": {
+    "message": "Radio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.label": {
+    "message": "Publicación",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.choices.dark": {
+    "message": "Oscuro",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.choices.light": {
+    "message": "Claro",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.choices.plain": {
+    "message": "Sin formato",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.label": {
+    "message": "Estilo de tarjeta",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.help_text": {
+    "message": "Usa valores preestablecidos para un rápido ajuste de la apariencia del elemento seleccionado con valores predefinidos.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.label": {
+    "message": "Valores preestablecidos",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.spacing.label": {
+    "message": "Espaciado",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.spacing.post_content.label": {
+    "message": "Contenido de publicación",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.spacing.spacing.label": {
+    "message": "Espaciado",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.label": {
+    "message": "Etiquetas",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.font.label": {
+    "message": "Fuente",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.label": {
+    "message": "Texto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.capitalize": {
+    "message": "Escribir en mayúsculas",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.lowercase": {
+    "message": "Minúscula",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.none": {
+    "message": "Ninguno",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.uppercase": {
+    "message": "Mayúscula",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.label": {
+    "message": "Transformar",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.label": {
+    "message": "Título",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.font.label": {
+    "message": "Fuente",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.label": {
+    "message": "Texto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.capitalize": {
+    "message": "Escribir en mayúsculas",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.lowercase": {
+    "message": "Minúscula",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.none": {
+    "message": "Ninguno",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.uppercase": {
+    "message": "Mayúscula",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.label": {
+    "message": "Transformar",
+    "description": "",
+    "placeholders": null
+  },
+  "tags.label": {
+    "message": "Etiquetas",
+    "description": "",
+    "placeholders": null
+  },
+  "title.label": {
+    "message": "Título",
+    "description": "",
+    "placeholders": null
+  }
+}

@@ -1,0 +1,32 @@
+<!--
+  templateType: global_partial
+  label: Website header
+-->
+<header class="header">
+
+  {# The link below is used for a navigation skipper which allows users navigating the site with their keyboard to skip over the site navigation #}
+
+  <a href="#main-content" class="header__skip">Skip to content</a>
+
+  {% dnd_area 'header'
+    label='Header'
+  %}
+
+    {# Header #}
+
+    {% dnd_section
+      full_width=true,
+      padding={
+        'top': 0,
+        'right': 0,
+        'bottom': 0,
+        'left': 0
+      }
+    %}
+      {% dnd_module path='../../modules/website-header' %}
+      {% end_dnd_module %}
+    {% end_dnd_section %}
+
+  {% end_dnd_area %}
+
+</header>

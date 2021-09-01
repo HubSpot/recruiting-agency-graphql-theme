@@ -1,0 +1,19 @@
+/* Testimonial content */
+
+.testimonial__content {
+  margin-bottom: 1.4rem;
+}
+
+/* Testimonial footer */
+
+.testimonial__footer {
+  align-items: center;
+  display: flex;
+}
+
+/* Testimonial author image */
+
+.testimonial__author-image {
+  border-radius: 100px;
+  margin-right: 1.05rem;
+}

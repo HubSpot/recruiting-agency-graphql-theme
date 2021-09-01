@@ -1,0 +1,17 @@
+/* Social follow wrapper */
+
+.social-follow {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Social follow icons */
+
+.social-follow__link {
+  margin-right: 0.7rem;
+}
+
+.social-follow__link:last-child {
+  margin-right: 0;
+}

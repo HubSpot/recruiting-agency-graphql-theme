@@ -1,0 +1,162 @@
+{
+  "name": {
+    "message": "Testimonial",
+    "description": "",
+    "placeholders": null
+  },
+  "author.content.default": {
+    "message": "<span>Shaun Benson, Marketing Manager, Agriflora Inc.</span>",
+    "description": "",
+    "placeholders": null
+  },
+  "author.content.label": {
+    "message": "Content",
+    "description": "",
+    "placeholders": null
+  },
+  "author.image.default.alt": {
+    "message": "A photo of Shaun Benson, Marketing Manager, Agriflora Inc.",
+    "description": "",
+    "placeholders": null
+  },
+  "author.image.label": {
+    "message": "Image",
+    "description": "",
+    "placeholders": null
+  },
+  "author.include_image.label": {
+    "message": "Include image",
+    "description": "",
+    "placeholders": null
+  },
+  "author.label": {
+    "message": "Author",
+    "description": "",
+    "placeholders": null
+  },
+  "quote_text.default": {
+    "message": "<span>\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan velit sit amet sagittis malesuada.\"</span>",
+    "description": "",
+    "placeholders": null
+  },
+  "quote_text.label": {
+    "message": "Quote text",
+    "description": "",
+    "placeholders": null
+  },
+  "show_author.label": {
+    "message": "Show author",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.alignment.alignment.label": {
+    "message": "Alignment",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.alignment.label": {
+    "message": "Alignment",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.label": {
+    "message": "Corner",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.radius.label": {
+    "message": "Radius",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.label": {
+    "message": "Image",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.label": {
+    "message": "Author",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Styles",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.background.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.background.label": {
+    "message": "Background",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.border.border.label": {
+    "message": "Border",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.border.label": {
+    "message": "Border",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.corner.label": {
+    "message": "Corner",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.corner.radius.label": {
+    "message": "Radius",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.label": {
+    "message": "Testimonial",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.card_style.choices.dark": {
+    "message": "Dark",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.card_style.choices.light": {
+    "message": "Light",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.card_style.choices.plain": {
+    "message": "Plain",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.card_style.label": {
+    "message": "Card style",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.help_text": {
+    "message": "Use presets to quickly adjust the appearance of the selected item to predefined values.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.label": {
+    "message": "Presets",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.spacing.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  }
+}

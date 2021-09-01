@@ -1,0 +1,233 @@
+[
+  {
+    "label": "Icon",
+    "name": "icon",
+    "type": "choice",
+    "choices": [
+      ["caret", "Caret"],
+      ["plus", "Plus"]
+    ],
+    "display": "select",
+    "required": true,
+    "default": "plus"
+  },
+  {
+    "label": "Accordions",
+    "name": "accordions",
+    "type": "group",
+    "children": [
+      {
+        "label": "Title",
+        "name": "title",
+        "type": "text",
+        "required": true,
+        "default": "Accordion title"
+      },
+      {
+        "label": "Content",
+        "name": "content",
+        "type": "richtext",
+        "enabled_features": [
+          "advanced_emphasis",
+          "alignment",
+          "block",
+          "emoji",
+          "font_family",
+          "font_size",
+          "image",
+          "lists",
+          "standard_emphasis"
+        ],
+        "required": true,
+        "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor arcu non commodo elementum.</p>"
+      },
+      {
+        "label": "Open by default",
+        "name": "open_by_default",
+        "type": "boolean",
+        "display": "checkbox",
+        "default": false
+      }
+    ],
+    "occurrence": {
+      "default": 2,
+      "min": 1
+    },
+    "default": [
+      {
+        "title": "Accordion title",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor arcu non commodo elementum.</p>",
+        "open_by_default": false
+      },
+      {
+        "title": "Accordion title",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor arcu non commodo elementum.</p>",
+        "open_by_default": false
+      }
+    ]
+  },
+  {
+    "label": "Styles",
+    "name": "styles",
+    "type": "group",
+    "tab": "STYLE",
+    "children": [
+      {
+        "label": "Title",
+        "name": "title",
+        "type": "group",
+        "children": [
+          {
+            "label": "Text",
+            "name": "text",
+            "type": "group",
+            "children": [
+              {
+                "label": "Font",
+                "name": "font",
+                "type": "font",
+                "default": {
+                  "size_unit": "px"
+                }
+              },
+              {
+                "label": "Transform",
+                "name": "transform",
+                "type": "choice",
+                "choices": [
+                  [ "none", "None" ],
+                  [ "capitalize", "Capitalize" ],
+                  [ "uppercase", "Uppercase" ],
+                  [ "lowercase", "Lowercase" ]
+                ],
+                "display": "select"
+              }
+            ]
+          },
+          {
+            "label": "Background",
+            "name": "background",
+            "type": "group",
+            "children": [
+              {
+                "label": "Color",
+                "name": "color",
+                "type": "color"
+              }
+            ]
+          },
+          {
+            "label": "Spacing",
+            "name": "spacing",
+            "type": "group",
+            "children": [
+              {
+                "label": "Spacing",
+                "name": "spacing",
+                "type": "spacing",
+                "visibility": {
+                  "hidden_subfields": {
+                    "margin": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Content",
+        "name": "content",
+        "type": "group",
+        "children": [
+          {
+            "label": "Background",
+            "name": "background",
+            "type": "group",
+            "children": [
+              {
+                "label": "Color",
+                "name": "color",
+                "type": "color"
+              }
+            ]
+          },
+          {
+            "label": "Spacing",
+            "name": "spacing",
+            "type": "group",
+            "children": [
+              {
+                "label": "Spacing",
+                "name": "spacing",
+                "type": "spacing",
+                "visibility": {
+                  "hidden_subfields": {
+                    "margin": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Accordions",
+        "name": "accordions",
+        "type": "group",
+        "children": [
+          {
+            "label": "Presets",
+            "name": "presets",
+            "type": "group",
+            "help_text": "Use presets to quickly adjust the appearance of the selected item to predefined values.",
+            "children": [
+              {
+                "label": "Card style",
+                "name": "card_style",
+                "type": "choice",
+                "choices": [
+                  ["dark", "Dark"],
+                  ["light", "Light"],
+                  ["plain", "Plain"]
+                ],
+                "display": "select",
+                "required": true,
+                "default": "plain"
+              }
+            ]
+          },
+          {
+            "label": "Border",
+            "name": "border",
+            "type": "group",
+            "children": [
+              {
+                "label": "Border",
+                "name": "border",
+                "type": "border"
+              }
+            ]
+          },
+          {
+            "label": "Spacing",
+            "name": "spacing",
+            "type": "group",
+            "children": [
+              {
+                "label": "Space between accordions",
+                "name": "space_between_accordions",
+                "type": "spacing",
+                "visibility": {
+                  "hidden_subfields": {
+                    "padding": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

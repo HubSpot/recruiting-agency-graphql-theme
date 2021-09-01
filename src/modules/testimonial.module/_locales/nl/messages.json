@@ -1,0 +1,162 @@
+{
+  "name": {
+    "message": "Testimonial",
+    "description": "",
+    "placeholders": null
+  },
+  "author.content.default": {
+    "message": "<span>Shaun Benson, Marketing Manager, Agriflora Inc.</span>",
+    "description": "",
+    "placeholders": null
+  },
+  "author.content.label": {
+    "message": "Inhoud",
+    "description": "",
+    "placeholders": null
+  },
+  "author.image.default.alt": {
+    "message": "Een foto van Shaun Benson, Marketing Manager, Agriflora Inc.",
+    "description": "",
+    "placeholders": null
+  },
+  "author.image.label": {
+    "message": "Afbeelding",
+    "description": "",
+    "placeholders": null
+  },
+  "author.include_image.label": {
+    "message": "Afbeelding opnemen",
+    "description": "",
+    "placeholders": null
+  },
+  "author.label": {
+    "message": "Auteur",
+    "description": "",
+    "placeholders": null
+  },
+  "quote_text.default": {
+    "message": "<span>\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan velit sit amet sagittis malesuada.\"</span>",
+    "description": "",
+    "placeholders": null
+  },
+  "quote_text.label": {
+    "message": "Tekst citeren",
+    "description": "",
+    "placeholders": null
+  },
+  "show_author.label": {
+    "message": "Auteur weergeven",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.alignment.alignment.label": {
+    "message": "Uitlijning",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.alignment.label": {
+    "message": "Uitlijning",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.label": {
+    "message": "Hoek",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.radius.label": {
+    "message": "Radius",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.label": {
+    "message": "Afbeelding",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.label": {
+    "message": "Auteur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Stijlen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.background.color.label": {
+    "message": "Kleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.background.label": {
+    "message": "Achtergrond",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.border.border.label": {
+    "message": "Rand",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.border.label": {
+    "message": "Rand",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.corner.label": {
+    "message": "Hoek",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.corner.radius.label": {
+    "message": "Radius",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.label": {
+    "message": "Testimonial",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.card_style.choices.dark": {
+    "message": "Donker",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.card_style.choices.light": {
+    "message": "Licht",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.card_style.choices.plain": {
+    "message": "Eenvoudig",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.card_style.label": {
+    "message": "Kaartstijl",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.help_text": {
+    "message": "Gebruik voorinstellingen om het uiterlijk van het geselecteerde item aan te passen aan vooraf ingestelde waarden.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.presets.label": {
+    "message": "Voorinstellingen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.spacing.label": {
+    "message": "Afstand",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.testimonial.spacing.spacing.label": {
+    "message": "Afstand",
+    "description": "",
+    "placeholders": null
+  }
+}

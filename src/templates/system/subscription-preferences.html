@@ -1,0 +1,23 @@
+<!--
+  templateType: email_subscription_preferences_page
+  isAvailableForNewContent: true
+  label: Growth - email subscription preferences
+  screenshotPath: ../../images/template-previews/subscription-preferences.png
+-->
+{% set template_css = '../../css/templates/system.css' %}
+{% set template_js = '../../js/system.js' %}
+{% extends '../layouts/base.html' %}
+
+{% block body %}
+<section class="content-wrapper">
+  <div class="systems-page">
+
+    {# Subscription preferences form #}
+
+    {% module 'subscription_preferences'
+      path='@hubspot/email_subscriptions'
+    %}
+
+  </div>
+</section>
+{% endblock body %}

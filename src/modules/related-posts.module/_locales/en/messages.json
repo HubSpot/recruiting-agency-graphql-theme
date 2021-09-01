@@ -1,0 +1,497 @@
+{
+  "name": {
+    "message": "Related Posts",
+    "description": "",
+    "placeholders": null
+  },
+  "author.label": {
+    "message": "Author",
+    "description": "",
+    "placeholders": null
+  },
+  "button.label": {
+    "message": "Button",
+    "description": "",
+    "placeholders": null
+  },
+  "button_text.default": {
+    "message": "Read more",
+    "description": "",
+    "placeholders": null
+  },
+  "button_text.label": {
+    "message": "Button text",
+    "description": "",
+    "placeholders": null
+  },
+  "date.label": {
+    "message": "Date",
+    "description": "",
+    "placeholders": null
+  },
+  "description.label": {
+    "message": "Description",
+    "description": "",
+    "placeholders": null
+  },
+  "featured_image.label": {
+    "message": "Featured image",
+    "description": "",
+    "placeholders": null
+  },
+  "heading.default": {
+    "message": "Related posts",
+    "description": "",
+    "placeholders": null
+  },
+  "heading.label": {
+    "message": "Heading",
+    "description": "",
+    "placeholders": null
+  },
+  "layout_style.choices.card": {
+    "message": "Card",
+    "description": "",
+    "placeholders": null
+  },
+  "layout_style.choices.list": {
+    "message": "List",
+    "description": "",
+    "placeholders": null
+  },
+  "layout_style.label": {
+    "message": "Layout style",
+    "description": "",
+    "placeholders": null
+  },
+  "number_of_posts.label": {
+    "message": "Number of posts",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.label": {
+    "message": "Corner",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.radius.label": {
+    "message": "Radius",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.label": {
+    "message": "Image",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.label": {
+    "message": "Author",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.text.font.label": {
+    "message": "Font",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.text.label": {
+    "message": "Text",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.alignment.alignment.label": {
+    "message": "Alignment",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.alignment.label": {
+    "message": "Alignment",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.background.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.background.label": {
+    "message": "Background",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.border.border.label": {
+    "message": "Border",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.border.label": {
+    "message": "Border",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.corner.label": {
+    "message": "Corner",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.corner.radius.label": {
+    "message": "Radius",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.background.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.background.label": {
+    "message": "Background",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.border.border.label": {
+    "message": "Border",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.border.label": {
+    "message": "Border",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.label": {
+    "message": "Hover",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.text.font.label": {
+    "message": "Font",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.text.label": {
+    "message": "Text",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.label": {
+    "message": "Button",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.large": {
+    "message": "Large",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.regular": {
+    "message": "Regular",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.small": {
+    "message": "Small",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.label": {
+    "message": "Button size",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.primary": {
+    "message": "Primary",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.secondary": {
+    "message": "Secondary",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.simple": {
+    "message": "Simple",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.label": {
+    "message": "Button style",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.help_text": {
+    "message": "Use presets to quickly adjust the appearance of the selected item to predefined values.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.label": {
+    "message": "Presets",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.spacing.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.font.label": {
+    "message": "Font",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.label": {
+    "message": "Text",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.capitalize": {
+    "message": "Capitalize",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.lowercase": {
+    "message": "Lowercase",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.none": {
+    "message": "None",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.uppercase": {
+    "message": "Uppercase",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.label": {
+    "message": "Transform",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.date.label": {
+    "message": "Date",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.date.text.font.label": {
+    "message": "Font",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.date.text.label": {
+    "message": "Text",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.description.label": {
+    "message": "Description",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.description.text.font.label": {
+    "message": "Font",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.description.text.label": {
+    "message": "Text",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.featured_image.corner.label": {
+    "message": "Corner",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.featured_image.corner.radius.label": {
+    "message": "Radius",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.featured_image.label": {
+    "message": "Featured image",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Styles",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.background.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.background.label": {
+    "message": "Background",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.border.border.label": {
+    "message": "Border",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.border.label": {
+    "message": "Border",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.corner.label": {
+    "message": "Corner",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.corner.radius.label": {
+    "message": "Radius",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.label": {
+    "message": "Post",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.choices.dark": {
+    "message": "Dark",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.choices.light": {
+    "message": "Light",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.choices.plain": {
+    "message": "Plain",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.label": {
+    "message": "Card style",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.help_text": {
+    "message": "Use presets to quickly adjust the appearance of the selected item to predefined values.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.label": {
+    "message": "Presets",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.spacing.post_content.label": {
+    "message": "Post content",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.spacing.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.label": {
+    "message": "Tags",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.font.label": {
+    "message": "Font",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.label": {
+    "message": "Text",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.capitalize": {
+    "message": "Capitalize",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.lowercase": {
+    "message": "Lowercase",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.none": {
+    "message": "None",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.uppercase": {
+    "message": "Uppercase",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.label": {
+    "message": "Transform",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.label": {
+    "message": "Title",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.font.label": {
+    "message": "Font",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.label": {
+    "message": "Text",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.capitalize": {
+    "message": "Capitalize",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.lowercase": {
+    "message": "Lowercase",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.none": {
+    "message": "None",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.uppercase": {
+    "message": "Uppercase",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.label": {
+    "message": "Transform",
+    "description": "",
+    "placeholders": null
+  },
+  "tags.label": {
+    "message": "Tags",
+    "description": "",
+    "placeholders": null
+  },
+  "title.label": {
+    "message": "Title",
+    "description": "",
+    "placeholders": null
+  }
+}

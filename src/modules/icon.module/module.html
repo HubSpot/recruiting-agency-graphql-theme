@@ -1,0 +1,68 @@
+{# Module styles #}
+
+<style>
+{% scope_css %}
+
+  /* Icon wrapper */
+
+  {% if module.styles.alignment.alignment.horizontal_align %}
+    .icon-wrapper {
+      text-align: {{ module.styles.alignment.alignment.horizontal_align }};
+    }
+  {% endif %}
+
+  /* Icon */
+
+  .icon {
+    {% if module.styles.background.color.color %}
+      background-color: rgba({{ module.styles.background.color.color|convert_rgb }}, {{ module.styles.background.color.opacity / 100 }});
+    {% endif %}
+    {% if module.styles.corner.radius %}
+      border-radius: {{ module.styles.corner.radius ~ 'px' }};
+    {% endif %}
+    {{ module.styles.spacing.spacing.css }}
+  }
+
+  .icon svg {
+    {% if module.styles.fill.color.color %}
+      fill: {{ module.styles.fill.color.color }};
+    {% endif %}
+    {% if module.styles.size.size %}
+      height: {{ module.styles.size.size ~ 'px' }};
+      width: {{ module.styles.size.size ~ 'px' }};
+    {% endif %}
+  }
+
+{% end_scope_css %}
+</style>
+
+{# Sets CSS classes based on style field options #}
+
+{% if module.styles.presets.icon_size == 'small' %}
+  {% set icon_size = 'icon--small' %}
+{% elif module.styles.presets.icon_size == 'large' %}
+  {% set icon_size = 'icon--large' %}
+{% endif %}
+
+{% if module.styles.presets.icon_color == 'light' %}
+  {% set icon_color = 'icon--light' %}
+{% endif %}
+
+{% if module.styles.presets.icon_shape == 'square' %}
+  {% set icon_shape = 'icon--square' %}
+{% endif %}
+
+{# Icon #}
+
+<div class="icon-wrapper">
+  <span class="{{ icon_size }} {{ icon_color }} {{ icon_shape }}">
+    {% icon
+      extra_classes='icon'
+      name='{{ module.icon.name }}'
+      purpose='{{ module.accessibility_options.purpose }}'
+      style='{{ module.icon.type }}'
+      title='{{ module.accessibility_options.title }}'
+      unicode='{{ module.icon.unicode }}'
+    %}
+  </span>
+</div>

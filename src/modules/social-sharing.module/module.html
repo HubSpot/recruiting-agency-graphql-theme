@@ -1,0 +1,158 @@
+{# Module styles #}
+
+<style>
+{% scope_css %}
+
+  /* Social sharing wrapper */
+
+  .social-sharing {
+    {% if module.styles.alignment.alignment.horizontal_align %}
+      {% if module.styles.alignment.alignment.horizontal_align == 'CENTER' %}
+        justify-content: center;
+      {% elif module.styles.alignment.alignment.horizontal_align == 'RIGHT' %}
+        justify-content: flex-end;
+      {% endif %}
+    {% endif %}
+  }
+
+  /* Social sharing text */
+
+  .social-sharing__share-text {
+    {% if module.styles.text.font.color %}
+      color: {{ module.styles.text.font.color }};
+    {% endif %}
+    {% if module.styles.text.font.size %}
+      font-size: {{ module.styles.text.font.size ~ module.styles.text.font.size_unit }};
+    {% endif %}
+    {% if module.styles.text.font.style %}
+      {{ module.styles.text.font.style }};
+    {% endif %}
+    {% if module.styles.spacing.spacing.margin.bottom %}
+      margin-bottom: {{ module.styles.spacing.spacing.margin.bottom.value ~ module.styles.spacing.spacing.margin.bottom.units }};
+    {% endif %}
+    {% if module.styles.spacing.spacing.margin.top %}
+      margin-top: {{ module.styles.spacing.spacing.margin.top.value ~ module.styles.spacing.spacing.margin.top.units }};
+    {% endif %}
+  }
+
+  /* Social sharing icons */
+
+  .social-sharing__link {
+    {% if module.styles.spacing.space_between_icons %}
+      margin-right: {{ module.styles.spacing.space_between_icons ~ 'px' }};
+    {% endif %}
+    {% if module.styles.spacing.spacing.margin.bottom %}
+      margin-bottom: {{ module.styles.spacing.spacing.margin.bottom.value ~ module.styles.spacing.spacing.margin.bottom.units }};
+    {% endif %}
+    {% if module.styles.spacing.spacing.margin.top %}
+      margin-top: {{ module.styles.spacing.spacing.margin.top.value ~ module.styles.spacing.spacing.margin.top.units }};
+    {% endif %}
+  }
+
+  .social-sharing__icon {
+    {% if module.styles.background.color.color %}
+      background-color: rgba({{ module.styles.background.color.color|convert_rgb }}, {{ module.styles.background.color.opacity / 100 }});
+    {% endif %}
+    {% if module.styles.corner.radius %}
+      border-radius: {{ module.styles.corner.radius ~ 'px' }};
+    {% endif %}
+    {% if module.styles.spacing.spacing.padding.bottom %}
+      padding-bottom: {{ module.styles.spacing.spacing.padding.bottom.value ~ module.styles.spacing.spacing.padding.bottom.units }};
+    {% endif %}
+    {% if module.styles.spacing.spacing.padding.top %}
+      padding-top: {{ module.styles.spacing.spacing.padding.top.value ~ module.styles.spacing.spacing.padding.top.units }};
+    {% endif %}
+    {% if module.styles.spacing.spacing.padding.left %}
+      padding-left: {{ module.styles.spacing.spacing.padding.left.value ~ module.styles.spacing.spacing.padding.left.units }};
+    {% endif %}
+    {% if module.styles.spacing.spacing.padding.right %}
+      padding-right: {{ module.styles.spacing.spacing.padding.right.value ~ module.styles.spacing.spacing.padding.right.units }};
+    {% endif %}
+  }
+
+  .social-sharing__icon svg {
+    {% if module.styles.fill.color.color %}
+      fill: {{ module.styles.fill.color.color }};
+    {% endif %}
+    {% if module.styles.size.size %}
+      height: {{ module.styles.size.size ~ 'px' }};
+      width: {{ module.styles.size.size ~ 'px' }};
+    {% endif %}
+  }
+
+  {% if module.styles.background.color.color %}
+    .social-sharing__icon:hover,
+    .social-sharing__icon:focus {
+        background-color: rgba({{ color_variant(module.styles.background.color.color, -80)|convert_rgb }}, {{ module.styles.background.color.opacity / 100 }});
+    }
+  {% endif %}
+
+  {% if module.styles.background.color.color %}
+    .social-sharing__icon:active {
+      background-color: rgba({{ color_variant(module.styles.background.color.color, 80)|convert_rgb }}, {{ module.styles.background.color.opacity / 100 }});
+    }
+  {% endif %}
+
+{% end_scope_css %}
+</style>
+
+{# Sets CSS classes based on style field options #}
+
+{% if module.styles.presets.icon_size == 'small' %}
+  {% set icon_size = 'icon--small' %}
+{% elif module.styles.presets.icon_size == 'large' %}
+  {% set icon_size = 'icon--large' %}
+{% endif %}
+
+{% if module.styles.presets.icon_color == 'light' %}
+  {% set icon_color = 'icon--light' %}
+{% endif %}
+
+{% if module.styles.presets.icon_shape == 'square' %}
+  {% set icon_shape = 'icon--square' %}
+{% endif %}
+
+{# Social sharing #}
+
+<div class="social-sharing">
+
+  {% if module.share_text %}
+    <span class="social-sharing__share-text">{{ module.share_text }}</span>
+  {% endif %}
+
+  {# Loops through icons in the repeater #}
+
+  {% for social_link in module.social_links %}
+
+    {# Sets href attribute used for the link field #}
+
+    {% set social_icon = social_link.social_account %}
+    {% if social_icon == 'facebook-f' %}
+      {% set href = 'http://www.facebook.com/share.php?u={{ content.absolute_url }}' %}
+    {% elif social_icon == 'twitter' %}
+      {% set href = 'https://twitter.com/intent/tweet?url={{ content.absolute_url }}' %}
+    {% elif social_icon == 'linkedin-in' %}
+      {% set href = 'http://www.linkedin.com/shareArticle?mini=true&url={{ content.absolute_url }}' %}
+    {% elif social_icon == 'pinterest-p' %}
+      {% set href = 'http://pinterest.com/pin/create/link/?url={{ content.absolute_url }}' %}
+    {% elif social_icon == 'envelope' %}
+      {% set href = 'mailto:?body={{ content.absolute_url }}' %}
+    {% endif %}
+
+    {# Social sharing icon and link #}
+
+    <a class="social-sharing__link" href="{{ href }}" target="_blank" rel="noopener">
+      <span class="{{ icon_size }} {{ icon_color }} {{ icon_shape }}">
+        {% icon
+          extra_classes='social-sharing__icon icon',
+          name='{{ social_icon }}',
+          purpose='semantic',
+          style='SOLID',
+          title='{{ social_link.accessibility_options.title }}'
+        %}
+      </span>
+    </a>
+
+  {% endfor %}
+
+</div>

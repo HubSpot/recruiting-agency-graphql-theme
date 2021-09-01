@@ -1,0 +1,162 @@
+{
+  "name": {
+    "message": "Sosiaalinen jako",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.accessibility_options.label": {
+    "message": "Esteettömyysasetukset",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.accessibility_options.title.help_text": {
+    "message": "Näytönlukuohjelma lukee",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.accessibility_options.title.label": {
+    "message": "Otsikko",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.label": {
+    "message": "Sosiaalisen median linkit",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.envelope": {
+    "message": "Sähköposti",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.facebook-f": {
+    "message": "Facebook",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.linkedin-in": {
+    "message": "LinkedIn",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.pinterest-p": {
+    "message": "Pinterest",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.twitter": {
+    "message": "Twitter",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.label": {
+    "message": "Sosiaalisen median tili",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.alignment.label": {
+    "message": "Kohdistus",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.label": {
+    "message": "Kohdistus",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.color.label": {
+    "message": "Väri",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.label": {
+    "message": "Tausta",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.corner.radius.label": {
+    "message": "Säde",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.fill.color.label": {
+    "message": "Väri",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Tyylit",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_color.choices.light": {
+    "message": "Kevyt",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_color.label": {
+    "message": "Kuvakkeen väri",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.choices.circle": {
+    "message": "Ympyrä",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.choices.square": {
+    "message": "Neliö",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.label": {
+    "message": "Kuvakemuoto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.large": {
+    "message": "Suuri",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.regular": {
+    "message": "Tavallinen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.small": {
+    "message": "Pieni",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.size.label": {
+    "message": "Koko",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.size.size.label": {
+    "message": "Koko",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.label": {
+    "message": "Välit",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.spacing.label": {
+    "message": "Välit",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.font.label": {
+    "message": "Fontti",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.label": {
+    "message": "Teksti",
+    "description": "",
+    "placeholders": null
+  }
+}

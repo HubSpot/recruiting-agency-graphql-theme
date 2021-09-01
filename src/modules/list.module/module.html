@@ -1,0 +1,126 @@
+{# Module styles #}
+
+<style>
+{% scope_css %}
+
+  /* List */
+
+  {% if module.list_type == 'ul' && module.use_custom_bullet_points %}
+    .list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .list__item {
+      align-items: center;
+      display: flex;
+      width: 100%;
+    }
+  {% endif %}
+
+  /* List items */
+
+  {% if module.list_type == 'ul' && module.use_custom_bullet_points && module.styles.list_items.spacing.between_list_items %}
+    .list__item {
+      {{ module.styles.list_items.spacing.between_list_items.css }}
+    }
+  {% endif %}
+
+  /* List icons */
+
+  {% if module.list_type == 'ul' && module.use_custom_bullet_points %}
+
+    .list__icon {
+      {% if module.styles.icons.background.color.color %}
+        background-color: rgba({{ module.styles.icons.background.color.color|convert_rgb }}, {{ module.styles.icons.background.color.opacity / 100 }});
+      {% endif %}
+      {% if module.styles.icons.corner.radius %}
+        border-radius: {{ module.styles.icons.corner.radius ~ 'px' }};
+      {% endif %}
+      {% if module.use_custom_bullet_points && module.styles.list_items.spacing.between_icon_and_list_items %}
+        margin-right: {{ module.styles.list_items.spacing.between_icon_and_list_items ~ 'px' }};
+      {% endif %}
+      {{ module.styles.icons.spacing.spacing.css }}
+    }
+
+    .list__icon svg {
+      {% if module.styles.icons.fill.color.color %}
+        fill: {{ module.styles.icons.fill.color.color }};
+      {% endif %}
+      {% if module.styles.icons.size.size %}
+        height: {{ module.styles.icons.size.size ~ 'px' }};
+        width: {{ module.styles.icons.size.size ~ 'px' }};
+      {% endif %}
+    }
+
+  {% endif %}
+
+{% end_scope_css %}
+</style>
+
+{# Sets CSS classes based on style field options #}
+
+{% if module.styles.icons.presets.icon_size == 'small' %}
+  {% set icon_size = 'icon--small' %}
+{% elif module.styles.icons.presets.icon_size == 'large' %}
+  {% set icon_size = 'icon--large' %}
+{% endif %}
+
+{% if module.styles.icons.presets.icon_color == 'light' %}
+  {% set icon_color = 'icon--light' %}
+{% endif %}
+
+{% if module.styles.icons.presets.icon_shape == 'square' %}
+  {% set icon_shape = 'icon--square' %}
+{% endif %}
+
+{# List #}
+
+<{{ module.list_type }} class="list">
+
+  {# Loops through list items in the repeater #}
+
+  {% for item in module.list_items %}
+    <li class="list__item">
+
+      {# Adds custom icons in place of default bullet points if custom icon is enabled #}
+
+      {% if module.list_type == 'ul' && module.use_custom_bullet_points && module.use_same_icon_for_all_list_items && module.icon %}
+
+        <span class="{{ icon_size }} {{ icon_color }} {{ icon_shape }}">
+          {% icon
+            extra_classes='list__icon icon'
+            name='{{ module.icon.name }}',
+            icon_set='{{ module.icon.icon_set }}',
+            purpose='decorative',
+            style='{{ module.icon.type }}',
+            unicode='{{ module.icon.unicode }}',
+          %}
+        </span>
+
+      {# Adds a unique icon per list item if use same icon for all list items is false #}
+
+      {% elif module.list_type == 'ul' && module.use_custom_bullet_points && item.icon %}
+
+        <span class="{{ icon_size }} {{ icon_color }} {{ icon_shape }}">
+          {% icon
+            extra_classes='list__icon icon'
+            name='{{ item.icon.name }}',
+            icon_set='{{ item.icon.icon_set }}',
+            purpose='decorative',
+            style='{{ item.icon.type }}',
+            unicode='{{ item.icon.unicode }}',
+          %}
+        </span>
+
+      {% endif %}
+
+      {# List content #}
+
+      <div class="list__content">
+        {{ item.content }}
+      </div>
+
+    </li>
+  {% endfor %}
+</{{ module.list_type }}>

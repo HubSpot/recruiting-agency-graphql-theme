@@ -1,0 +1,22 @@
+<!--
+  templateType: email_subscriptions_confirmation_page
+  isAvailableForNewContent: true
+  label: Growth - email subscriptions confirmation
+  screenshotPath: ../../images/template-previews/subscriptions-confirmation.png
+-->
+{% set template_css = '../../css/templates/system.css' %}
+{% extends '../layouts/base.html' %}
+
+{% block body %}
+<section class="content-wrapper">
+  <div class="systems-page">
+
+    {# Subscriptions confirmation #}
+
+    {% module 'subscriptions_confirmation'
+      path='@hubspot/email_subscriptions_confirmation'
+    %}
+
+  </div>
+</section>
+{% endblock body %}

@@ -1,0 +1,492 @@
+{
+  "name": {
+    "message": "Elenco blog",
+    "description": "",
+    "placeholders": null
+  },
+  "author.label": {
+    "message": "Autore",
+    "description": "",
+    "placeholders": null
+  },
+  "button.label": {
+    "message": "Pulsante",
+    "description": "",
+    "placeholders": null
+  },
+  "button_text.default": {
+    "message": "Per saperne di più",
+    "description": "",
+    "placeholders": null
+  },
+  "button_text.label": {
+    "message": "Testo pulsante",
+    "description": "",
+    "placeholders": null
+  },
+  "columns.help_text": {
+    "message": "Numero di articoli per riga",
+    "description": "",
+    "placeholders": null
+  },
+  "columns.label": {
+    "message": "Colonne",
+    "description": "",
+    "placeholders": null
+  },
+  "date.label": {
+    "message": "Data",
+    "description": "",
+    "placeholders": null
+  },
+  "description.label": {
+    "message": "Descrizione",
+    "description": "",
+    "placeholders": null
+  },
+  "featured_image.label": {
+    "message": "Immagine in primo piano",
+    "description": "",
+    "placeholders": null
+  },
+  "layout_style.choices.card": {
+    "message": "Scheda",
+    "description": "",
+    "placeholders": null
+  },
+  "layout_style.choices.list": {
+    "message": "Elenco",
+    "description": "",
+    "placeholders": null
+  },
+  "layout_style.label": {
+    "message": "Stile layout",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.label": {
+    "message": "Angolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.corner.radius.label": {
+    "message": "Raggio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.image.label": {
+    "message": "Immagine",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.label": {
+    "message": "Autore",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.text.font.label": {
+    "message": "Carattere",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.author.text.label": {
+    "message": "Testo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.alignment.alignment.label": {
+    "message": "Allineamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.alignment.label": {
+    "message": "Allineamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.background.color.label": {
+    "message": "Colore",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.background.label": {
+    "message": "Sfondo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.border.border.label": {
+    "message": "Bordo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.border.label": {
+    "message": "Bordo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.corner.label": {
+    "message": "Angolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.corner.radius.label": {
+    "message": "Raggio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.background.color.label": {
+    "message": "Colore",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.background.label": {
+    "message": "Sfondo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.border.border.label": {
+    "message": "Bordo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.border.label": {
+    "message": "Bordo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.label": {
+    "message": "Posiziona il cursore",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.text.font.label": {
+    "message": "Carattere",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.text.label": {
+    "message": "Testo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.label": {
+    "message": "Pulsante",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.large": {
+    "message": "Grande",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.regular": {
+    "message": "Normale",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.small": {
+    "message": "Piccolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.label": {
+    "message": "Dimensioni del pulsante",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.primary": {
+    "message": "Principale",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.secondary": {
+    "message": "Secondario",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.simple": {
+    "message": "Semplice",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.label": {
+    "message": "Stile del pulsante",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.help_text": {
+    "message": "Utilizza le impostazioni predefinite per adeguare l'aspetto dell'elemento selezionato ai valori predefiniti.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.label": {
+    "message": "Impostazioni predefinite",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.spacing.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.font.label": {
+    "message": "Carattere",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.label": {
+    "message": "Testo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.capitalize": {
+    "message": "Iniziare maiuscola",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.lowercase": {
+    "message": "Minuscolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.none": {
+    "message": "Nessuno",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.uppercase": {
+    "message": "Maiuscolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.label": {
+    "message": "Trasformazione",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.date.label": {
+    "message": "Data",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.date.text.font.label": {
+    "message": "Carattere",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.date.text.label": {
+    "message": "Testo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.description.label": {
+    "message": "Descrizione",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.description.text.font.label": {
+    "message": "Carattere",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.description.text.label": {
+    "message": "Testo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.featured_image.corner.label": {
+    "message": "Angolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.featured_image.corner.radius.label": {
+    "message": "Raggio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.featured_image.label": {
+    "message": "Immagine in primo piano",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Stili",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.background.color.label": {
+    "message": "Colore",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.background.label": {
+    "message": "Sfondo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.border.border.label": {
+    "message": "Bordo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.border.label": {
+    "message": "Bordo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.corner.label": {
+    "message": "Angolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.corner.radius.label": {
+    "message": "Raggio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.label": {
+    "message": "Post",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.choices.dark": {
+    "message": "Scuro",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.choices.light": {
+    "message": "Leggero",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.choices.plain": {
+    "message": "Standard",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.card_style.label": {
+    "message": "Stile scheda",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.help_text": {
+    "message": "Utilizza le impostazioni predefinite per adeguare l'aspetto dell'elemento selezionato ai valori predefiniti.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.presets.label": {
+    "message": "Impostazioni predefinite",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.spacing.post_content.label": {
+    "message": "Contenuto articolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.post.spacing.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.label": {
+    "message": "Tag",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.font.label": {
+    "message": "Carattere",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.label": {
+    "message": "Testo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.capitalize": {
+    "message": "Iniziare maiuscola",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.lowercase": {
+    "message": "Minuscolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.none": {
+    "message": "Nessuno",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.choices.uppercase": {
+    "message": "Maiuscolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.tags.text.transform.label": {
+    "message": "Trasformazione",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.label": {
+    "message": "Titolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.font.label": {
+    "message": "Carattere",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.label": {
+    "message": "Testo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.capitalize": {
+    "message": "Iniziare maiuscola",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.lowercase": {
+    "message": "Minuscolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.none": {
+    "message": "Nessuno",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.uppercase": {
+    "message": "Maiuscolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.label": {
+    "message": "Trasformazione",
+    "description": "",
+    "placeholders": null
+  },
+  "tags.label": {
+    "message": "Tag",
+    "description": "",
+    "placeholders": null
+  },
+  "title.label": {
+    "message": "Titolo",
+    "description": "",
+    "placeholders": null
+  }
+}

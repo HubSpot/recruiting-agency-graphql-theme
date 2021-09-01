@@ -1,0 +1,14 @@
+{
+  "label": "Social sharing",
+  "css_assets": [],
+  "external_js": [],
+  "global": true,
+  "host_template_types": ["PAGE", "BLOG_LISTING", "BLOG_POST"],
+  "icon": "../../images/module-icons/social-posts.svg",
+  "js_assets": [],
+  "other_assets": [],
+  "extra_classes": "",
+  "smart_type": "NOT_SMART",
+  "tags": [],
+  "is_available_for_new_content": true
+}

@@ -1,0 +1,197 @@
+{
+  "name": {
+    "message": "Lista",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Ícone",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.content.default": {
+    "message": "<h3>Item da lista</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor arcu non commodo elementum.</p>",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.content.label": {
+    "message": "Conteúdos",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.icon.label": {
+    "message": "Ícone",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.label": {
+    "message": "Itens de linha",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.choices.ol": {
+    "message": "Lista ordendada",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.choices.ul": {
+    "message": "Lista não ordenada",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.label": {
+    "message": "Tipo de lista",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.background.color.label": {
+    "message": "Cor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.background.label": {
+    "message": "Plano de fundo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.corner.label": {
+    "message": "Canto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.corner.radius.label": {
+    "message": "Raio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.fill.color.label": {
+    "message": "Cor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.fill.label": {
+    "message": "Preencher",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.label": {
+    "message": "Ícones",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.help_text": {
+    "message": "Use predefinições para ajustar rapidamente a aparência do item selecionado para valores predefinidos.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.choices.dark": {
+    "message": "Escuro",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.choices.light": {
+    "message": "Luz",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.label": {
+    "message": "Cor do ícone",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.choices.circle": {
+    "message": "Círculo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.choices.square": {
+    "message": "Quadrado",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.label": {
+    "message": "Forma do ícone",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.large": {
+    "message": "Grande",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.regular": {
+    "message": "Regular",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.small": {
+    "message": "Pequeno",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.label": {
+    "message": "Tamanho do ícone",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.label": {
+    "message": "Pré-definições",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.size.label": {
+    "message": "Tamanho",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.size.size.label": {
+    "message": "Tamanho",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.spacing.label": {
+    "message": "Espaçamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.spacing.spacing.label": {
+    "message": "Espaçamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Estilos",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.label": {
+    "message": "Itens de linha",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.spacing.between_icon_and_list_items.label": {
+    "message": "Entre o ícone e o item da lista",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.spacing.between_list_items.label": {
+    "message": "Entre os itens da lista",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.spacing.label": {
+    "message": "Espaçamento",
+    "description": "",
+    "placeholders": null
+  },
+  "use_custom_bullet_points.label": {
+    "message": "Use marcadores personalizados",
+    "description": "",
+    "placeholders": null
+  },
+  "use_same_icon_for_all_list_items.label": {
+    "message": "Use o mesmo ícone para todos os itens da lista",
+    "description": "",
+    "placeholders": null
+  }
+}

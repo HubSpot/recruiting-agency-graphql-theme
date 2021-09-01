@@ -1,0 +1,197 @@
+{
+  "name": {
+    "message": "List",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Icon",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.content.default": {
+    "message": "<h3>List item</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor arcu non commodo elementum.</p>",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.content.label": {
+    "message": "Content",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.icon.label": {
+    "message": "Icon",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.label": {
+    "message": "List items",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.choices.ol": {
+    "message": "Ordered list",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.choices.ul": {
+    "message": "Unordered list",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.label": {
+    "message": "List type",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.background.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.background.label": {
+    "message": "Background",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.corner.label": {
+    "message": "Corner",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.corner.radius.label": {
+    "message": "Radius",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.fill.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.fill.label": {
+    "message": "Fill",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.label": {
+    "message": "Icons",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.help_text": {
+    "message": "Use presets to quickly adjust the appearance of the selected item to predefined values.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.choices.dark": {
+    "message": "Dark",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.choices.light": {
+    "message": "Light",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.label": {
+    "message": "Icon color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.choices.circle": {
+    "message": "Circle",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.choices.square": {
+    "message": "Square",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.label": {
+    "message": "Icon shape",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.large": {
+    "message": "Large",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.regular": {
+    "message": "Regular",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.small": {
+    "message": "Small",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.label": {
+    "message": "Icon size",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.label": {
+    "message": "Presets",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.size.label": {
+    "message": "Size",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.size.size.label": {
+    "message": "Size",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.spacing.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Styles",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.label": {
+    "message": "List items",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.spacing.between_icon_and_list_items.label": {
+    "message": "Between icon and list item",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.spacing.between_list_items.label": {
+    "message": "Between list items",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "use_custom_bullet_points.label": {
+    "message": "Use custom bullet points",
+    "description": "",
+    "placeholders": null
+  },
+  "use_same_icon_for_all_list_items.label": {
+    "message": "Use same icon for all list items",
+    "description": "",
+    "placeholders": null
+  }
+}

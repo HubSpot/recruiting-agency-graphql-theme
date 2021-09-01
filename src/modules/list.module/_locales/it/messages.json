@@ -1,0 +1,197 @@
+{
+  "name": {
+    "message": "Elenco",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Icona",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.content.default": {
+    "message": "<h3>Elemento elenco</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor arcu non commodo elementum.</p>",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.content.label": {
+    "message": "Contenuti",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.icon.label": {
+    "message": "Icona",
+    "description": "",
+    "placeholders": null
+  },
+  "list_items.label": {
+    "message": "Elementi elenco",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.choices.ol": {
+    "message": "Elenco ordinato",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.choices.ul": {
+    "message": "Elenco non ordinato",
+    "description": "",
+    "placeholders": null
+  },
+  "list_type.label": {
+    "message": "Tipo elenco",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.background.color.label": {
+    "message": "Colore",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.background.label": {
+    "message": "Sfondo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.corner.label": {
+    "message": "Angolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.corner.radius.label": {
+    "message": "Raggio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.fill.color.label": {
+    "message": "Colore",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.fill.label": {
+    "message": "Riempimento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.label": {
+    "message": "Icone",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.help_text": {
+    "message": "Utilizza le impostazioni predefinite per adeguare l'aspetto dell'elemento selezionato ai valori predefiniti.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.choices.dark": {
+    "message": "Scuro",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.choices.light": {
+    "message": "Leggero",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_color.label": {
+    "message": "Colore icona",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.choices.circle": {
+    "message": "Cerchio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.choices.square": {
+    "message": "Quadrato",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_shape.label": {
+    "message": "Forma dell'icona",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.large": {
+    "message": "Grande",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.regular": {
+    "message": "Normale",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.choices.small": {
+    "message": "Piccolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.icon_size.label": {
+    "message": "Dimensioni icona",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.presets.label": {
+    "message": "Impostazioni predefinite",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.size.label": {
+    "message": "Dimensioni",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.size.size.label": {
+    "message": "Dimensioni",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icons.spacing.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Stili",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.label": {
+    "message": "Elementi elenco",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.spacing.between_icon_and_list_items.label": {
+    "message": "Tra l'icona e l'elemento dell'elenco",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.spacing.between_list_items.label": {
+    "message": "Tra gli elementi dell'elenco",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.list_items.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "use_custom_bullet_points.label": {
+    "message": "Utilizza elenchi puntati personalizzati",
+    "description": "",
+    "placeholders": null
+  },
+  "use_same_icon_for_all_list_items.label": {
+    "message": "Utilizza la stessa icona per tutti gli elementi dell'elenco",
+    "description": "",
+    "placeholders": null
+  }
+}

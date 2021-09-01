@@ -1,0 +1,492 @@
+{
+  "name": {
+    "message": "Carte d'offre",
+    "description": "",
+    "placeholders": null
+  },
+  "button.add_icon.label": {
+    "message": "Ajouter une icône",
+    "description": "",
+    "placeholders": null
+  },
+  "button.button_link.label": {
+    "message": "Lien du bouton",
+    "description": "",
+    "placeholders": null
+  },
+  "button.button_text.default": {
+    "message": "En savoir plus",
+    "description": "",
+    "placeholders": null
+  },
+  "button.button_text.label": {
+    "message": "Texte du bouton",
+    "description": "",
+    "placeholders": null
+  },
+  "button.icon.icon.label": {
+    "message": "Icône",
+    "description": "",
+    "placeholders": null
+  },
+  "button.icon.label": {
+    "message": "Icône",
+    "description": "",
+    "placeholders": null
+  },
+  "button.icon.position.choices.left": {
+    "message": "Gauche",
+    "description": "",
+    "placeholders": null
+  },
+  "button.icon.position.choices.right": {
+    "message": "Droite",
+    "description": "",
+    "placeholders": null
+  },
+  "button.icon.position.label": {
+    "message": "Position",
+    "description": "",
+    "placeholders": null
+  },
+  "button.label": {
+    "message": "Bouton",
+    "description": "",
+    "placeholders": null
+  },
+  "content.content.default": {
+    "message": "<h3>Orienter les gens vers vos produits et services</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor arcu non commodo elementum.</p>",
+    "description": "",
+    "placeholders": null
+  },
+  "content.content.label": {
+    "message": "Contenus",
+    "description": "",
+    "placeholders": null
+  },
+  "content.label": {
+    "message": "Contenus",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.accessibility_options.label": {
+    "message": "Options d'accessibilité",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.accessibility_options.purpose.choices.decorative": {
+    "message": "Ignoré par le lecteur d'écran",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.accessibility_options.purpose.choices.semantic": {
+    "message": "Lu par le lecteur d'écran",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.accessibility_options.purpose.label": {
+    "message": "Utilisation",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.accessibility_options.title.label": {
+    "message": "Titre",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.icon.label": {
+    "message": "Icône",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Icône",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.alignment.alignment.label": {
+    "message": "Alignement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.alignment.label": {
+    "message": "Alignement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.background.color.label": {
+    "message": "Couleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.background.label": {
+    "message": "Arrière-plan",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.border.border.label": {
+    "message": "Bordure",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.border.label": {
+    "message": "Bordure",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.corner.label": {
+    "message": "Angle",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.corner.radius.label": {
+    "message": "Rayon",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.background.color.label": {
+    "message": "Couleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.background.label": {
+    "message": "Arrière-plan",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.border.border.label": {
+    "message": "Bordure",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.border.label": {
+    "message": "Bordure",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.label": {
+    "message": "Placer le curseur sur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.text.font.label": {
+    "message": "Police",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.hover.text.label": {
+    "message": "Texte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.label": {
+    "message": "Bouton",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.large": {
+    "message": "Grande",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.regular": {
+    "message": "Ordinaire",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.choices.small": {
+    "message": "Petite",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_size.label": {
+    "message": "Taille du bouton",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.primary": {
+    "message": "Principal",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.secondary": {
+    "message": "Secondaire",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.choices.simple": {
+    "message": "Simple",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.button_style.label": {
+    "message": "Style de bouton",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.help_text": {
+    "message": "Utilisez les préréglages pour ajuster rapidement l'apparence de l'élément sélectionné en suivant des valeurs prédéfinies.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.presets.label": {
+    "message": "Préréglages",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.spacing.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.font.label": {
+    "message": "Police",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.label": {
+    "message": "Texte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.capitalize": {
+    "message": "Mettre en majuscules",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.lowercase": {
+    "message": "Minuscule",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.none": {
+    "message": "Aucune",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.choices.uppercase": {
+    "message": "Majuscule",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.button.text.transform.label": {
+    "message": "Transformation",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.background.color.label": {
+    "message": "Couleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.background.label": {
+    "message": "Arrière-plan",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.border.border.label": {
+    "message": "Bordure",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.border.label": {
+    "message": "Bordure",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.corner.label": {
+    "message": "Angle",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.corner.radius.label": {
+    "message": "Rayon",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.height.label": {
+    "message": "Hauteur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.height.min_height.label": {
+    "message": "Hauteur minimale",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.label": {
+    "message": "Carte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.presets.card_style.choices.dark": {
+    "message": "Sombre",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.presets.card_style.choices.light": {
+    "message": "Léger",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.presets.card_style.choices.plain": {
+    "message": "Uni",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.presets.card_style.label": {
+    "message": "Style de carte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.presets.help_text": {
+    "message": "Utilisez les préréglages pour ajuster rapidement l'apparence de l'élément sélectionné en suivant des valeurs prédéfinies.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.presets.label": {
+    "message": "Préréglages",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.card.spacing.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.alignment.alignment.label": {
+    "message": "Alignement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.alignment.label": {
+    "message": "Alignement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.background.color.label": {
+    "message": "Couleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.background.label": {
+    "message": "Arrière-plan",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.corner.label": {
+    "message": "Angle",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.corner.radius.label": {
+    "message": "Rayon",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.fill.color.label": {
+    "message": "Couleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.fill.label": {
+    "message": "Remplissage",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.label": {
+    "message": "Icône",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.help_text": {
+    "message": "Utilisez les préréglages pour ajuster rapidement l'apparence de l'élément sélectionné en suivant des valeurs prédéfinies.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_color.choices.dark": {
+    "message": "Sombre",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_color.choices.light": {
+    "message": "Léger",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_color.label": {
+    "message": "Couleur de l'icône",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_shape.choices.circle": {
+    "message": "Cercle",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_shape.choices.square": {
+    "message": "Carré",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_shape.label": {
+    "message": "Forme de l'icône",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_size.choices.large": {
+    "message": "Grande",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_size.choices.regular": {
+    "message": "Ordinaire",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_size.choices.small": {
+    "message": "Petite",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.icon_size.label": {
+    "message": "Taille de l'icône",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.presets.label": {
+    "message": "Préréglages",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.size.label": {
+    "message": "Taille",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.icon.spacing.spacing.label": {
+    "message": "Espacement",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Styles",
+    "description": "",
+    "placeholders": null
+  }
+}

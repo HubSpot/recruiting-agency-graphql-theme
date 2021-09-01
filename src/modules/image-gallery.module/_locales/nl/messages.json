@@ -1,0 +1,252 @@
+{
+  "name": {
+    "message": "Afbeeldingengalerie",
+    "description": "",
+    "placeholders": null
+  },
+  "gallery_options.columns.label": {
+    "message": "Kolommen",
+    "description": "",
+    "placeholders": null
+  },
+  "gallery_options.enable_lightbox.label": {
+    "message": "Lightbox inschakelen",
+    "description": "",
+    "placeholders": null
+  },
+  "gallery_options.fixed_image_height.label": {
+    "message": "Vaste hoogte afbeelding",
+    "description": "",
+    "placeholders": null
+  },
+  "gallery_options.image_height.label": {
+    "message": "Hoogte afbeelding",
+    "description": "",
+    "placeholders": null
+  },
+  "gallery_options.label": {
+    "message": "Galerijopties",
+    "description": "",
+    "placeholders": null
+  },
+  "images.caption.default": {
+    "message": "Een bijschrift dat de afbeelding beschrijft.",
+    "description": "",
+    "placeholders": null
+  },
+  "images.caption.help_text": {
+    "message": "Het bijschrift verschijnt onder de afbeelding in de lightbox",
+    "description": "",
+    "placeholders": null
+  },
+  "images.caption.label": {
+    "message": "Bijschrift",
+    "description": "",
+    "placeholders": null
+  },
+  "images.image.default.alt": {
+    "message": "Een groep collega's die een praatje maakt in een recreatieruimte",
+    "description": "",
+    "placeholders": null
+  },
+  "images.image.label": {
+    "message": "Afbeelding",
+    "description": "",
+    "placeholders": null
+  },
+  "images.label": {
+    "message": "Afbeeldingen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.gallery.label": {
+    "message": "Galerij",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.gallery.spacing.label": {
+    "message": "Afstand",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.gallery.spacing.space_between_images.label": {
+    "message": "Ruimte tussen afbeeldingen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.gallery.spacing.spacing.label": {
+    "message": "Afstand",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.images.alignment.alignment.label": {
+    "message": "Uitlijning",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.images.alignment.label": {
+    "message": "Uitlijning",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.images.corner.label": {
+    "message": "Hoek",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.images.corner.radius.label": {
+    "message": "Radius",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.images.label": {
+    "message": "Afbeeldingen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Stijlen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.background.color.label": {
+    "message": "Kleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.background.label": {
+    "message": "Achtergrond",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.background.color.label": {
+    "message": "Kleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.background.label": {
+    "message": "Achtergrond",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.corner.label": {
+    "message": "Hoek",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.corner.radius.label": {
+    "message": "Radius",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.fill.color.label": {
+    "message": "Kleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.fill.label": {
+    "message": "Vulle",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.label": {
+    "message": "Pictogram voor afsluiten",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.help_text": {
+    "message": "Gebruik voorinstellingen om het uiterlijk van het geselecteerde item aan te passen aan vooraf ingestelde waarden.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_color.choices.dark": {
+    "message": "Donker",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_color.choices.light": {
+    "message": "Licht",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_color.label": {
+    "message": "Pictogramkleur",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_shape.choices.circle": {
+    "message": "Circel",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_shape.choices.square": {
+    "message": "Vierkant",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_shape.label": {
+    "message": "Vorm pictogram",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_size.choices.large": {
+    "message": "Groot",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_size.choices.regular": {
+    "message": "Standaard",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_size.choices.small": {
+    "message": "Klein",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_size.label": {
+    "message": "Afmeting pictogram",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.label": {
+    "message": "Voorinstellingen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.size.label": {
+    "message": "Grootte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.size.size.label": {
+    "message": "Grootte",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.spacing.label": {
+    "message": "Afstand",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.spacing.spacing.label": {
+    "message": "Afstand",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.label": {
+    "message": "Lightboxen",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.text.font.label": {
+    "message": "Lettertype",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.text.label": {
+    "message": "Tekst",
+    "description": "",
+    "placeholders": null
+  }
+}

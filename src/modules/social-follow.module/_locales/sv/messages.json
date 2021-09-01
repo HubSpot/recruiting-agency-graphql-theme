@@ -1,0 +1,192 @@
+{
+  "name": {
+    "message": "Social följare",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.accessibility_options.label": {
+    "message": "Alternativ för tillgänglighet",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.accessibility_options.title.default": {
+    "message": "Följ oss på Facebook",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.accessibility_options.title.help_text": {
+    "message": "Läst av skärmläsaren",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.accessibility_options.title.label": {
+    "message": "Titel",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.custom_icon.label": {
+    "message": "Anpassa ikon",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.label": {
+    "message": "Sociala länkar",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.link.label": {
+    "message": "Länk",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.custom_icon": {
+    "message": "Anpassad",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.envelope": {
+    "message": "E-postadress",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.facebook-f": {
+    "message": "Facebook",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.instagram": {
+    "message": "Instagram",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.link": {
+    "message": "Webbsida",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.linkedin-in": {
+    "message": "LinkedIn",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.pinterest-p": {
+    "message": "Pinterest",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.twitter": {
+    "message": "Twitter",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.whatsapp": {
+    "message": "Whatsapp",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.youtube": {
+    "message": "YouTube",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.label": {
+    "message": "Socialt konto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.alignment.label": {
+    "message": "Justering",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.label": {
+    "message": "Justering",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.color.label": {
+    "message": "Färg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.label": {
+    "message": "Bakgrund",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.corner.radius.label": {
+    "message": "Radie",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.fill.color.label": {
+    "message": "Färg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Stiler",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_color.choices.light": {
+    "message": "Lätt",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_color.label": {
+    "message": "Ikonfärg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.choices.circle": {
+    "message": "Cirkel",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.choices.square": {
+    "message": "Fyrkant",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.label": {
+    "message": "Ikonens form",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.large": {
+    "message": "Stor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.regular": {
+    "message": "Vanlig",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.small": {
+    "message": "Liten",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.size.label": {
+    "message": "Storlek",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.size.size.label": {
+    "message": "Storlek",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.label": {
+    "message": "Blanksteg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.spacing.label": {
+    "message": "Blanksteg",
+    "description": "",
+    "placeholders": null
+  }
+}

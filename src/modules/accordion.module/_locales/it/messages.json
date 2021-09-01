@@ -1,0 +1,197 @@
+{
+  "name": {
+    "message": "Fisarmonica",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.content.default": {
+    "message": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor arcu non commodo elementum.</p>",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.content.label": {
+    "message": "Contenuti",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.label": {
+    "message": "Fisarmoniche",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.open_by_default.label": {
+    "message": "Apri per impostazione predefinita",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.title.default": {
+    "message": "Titolo fisarmonica",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.title.label": {
+    "message": "Titolo",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.choices.caret": {
+    "message": "Cursore",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.choices.plus": {
+    "message": "Più",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Icona",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.border.border.label": {
+    "message": "Bordo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.border.label": {
+    "message": "Bordo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.label": {
+    "message": "Fisarmoniche",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.dark": {
+    "message": "Scuro",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.light": {
+    "message": "Leggero",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.plain": {
+    "message": "Standard",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.label": {
+    "message": "Stile scheda",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.help_text": {
+    "message": "Utilizza le impostazioni predefinite per adeguare l'aspetto dell'elemento selezionato ai valori predefiniti.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.label": {
+    "message": "Impostazioni predefinite",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.spacing.space_between_accordions.label": {
+    "message": "Spazio tra le fisarmoniche",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.background.color.label": {
+    "message": "Colore",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.background.label": {
+    "message": "Sfondo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.label": {
+    "message": "Contenuti",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.spacing.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Stili",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.background.color.label": {
+    "message": "Colore",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.background.label": {
+    "message": "Sfondo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.label": {
+    "message": "Titolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.spacing.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.font.label": {
+    "message": "Carattere",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.label": {
+    "message": "Testo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.capitalize": {
+    "message": "Iniziare maiuscola",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.lowercase": {
+    "message": "Minuscolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.none": {
+    "message": "Nessuno",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.uppercase": {
+    "message": "Maiuscolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.label": {
+    "message": "Trasformazione",
+    "description": "",
+    "placeholders": null
+  }
+}

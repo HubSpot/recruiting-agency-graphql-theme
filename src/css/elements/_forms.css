@@ -1,0 +1,148 @@
+/* Form title */
+
+.form-title {
+  margin: 0;
+}
+
+.form-title ~ div > form {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* Labels */
+
+form label {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+/* Form fields */
+
+form .hs-form-field {
+  margin-bottom: 1.4rem;
+}
+
+form input[type='text'],
+form input[type='email'],
+form input[type='password'],
+form input[type='tel'],
+form input[type='number'],
+form input[type='file'],
+form select,
+form textarea {
+  display: inline-block;
+  width: 100% !important; /* stylelint-disable-line declaration-no-important */
+}
+
+form fieldset {
+  max-width: 100% !important; /* stylelint-disable-line declaration-no-important */
+}
+
+/* Form fields - checkbox/radio */
+
+form .inputs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form .inputs-list > li {
+  display: block;
+  margin: 0.7rem 0;
+}
+
+form .inputs-list input,
+form .inputs-list span {
+  vertical-align: middle;
+}
+
+form input[type='checkbox'],
+form input[type='radio'] {
+  cursor: pointer;
+  margin-right: 0.35rem;
+}
+
+/* Form fields - date picker */
+
+form .hs-dateinput {
+  position: relative;
+}
+
+form .hs-dateinput:before {
+  content: '\01F4C5';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+form .is-selected .pika-button {
+  border-radius: 0 !important; /* stylelint-disable-line declaration-no-important */
+  box-shadow: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+form .fn-date-picker .pika-button:hover,
+form .fn-date-picker .pika-button:focus {
+  border-radius: 0 !important; /* stylelint-disable-line declaration-no-important */
+}
+
+/* Form fields - file picker */
+
+form input[type='file'] {
+  background-color: transparent;
+  border: initial;
+  padding: initial;
+}
+
+/* Headings and text */
+
+form .hs-richtext,
+form .hs-richtext p {
+  font-size: 0.8rem;
+  margin: 0 0 1.4rem;
+}
+
+form .hs-richtext img {
+  height: auto;
+  max-width: 100% !important; /* stylelint-disable-line declaration-no-important */
+}
+
+/* GDPR */
+
+form .legal-consent-container .hs-form-booleancheckbox-display > span {
+  margin-left: 1rem !important; /* stylelint-disable-line declaration-no-important */
+}
+
+/* Validation */
+
+form .hs-form-required {
+  color: #ef6b51;
+}
+
+form .hs-input.error {
+  border-color: #ef6b51;
+}
+
+form .hs-error-msg,
+form .hs-error-msgs {
+  color: #ef6b51;
+  margin-top: 0.35rem;
+}
+
+/* Submit button */
+
+form input[type='submit'],
+form .hs-button {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.15s linear;
+  white-space: normal !important; /* stylelint-disable-line declaration-no-important */
+  width: 100%;
+}
+
+/* Captcha */
+
+.grecaptcha-badge {
+  margin: 0 auto;
+}

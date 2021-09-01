@@ -1,0 +1,252 @@
+{
+  "name": {
+    "message": "Galleria immagini",
+    "description": "",
+    "placeholders": null
+  },
+  "gallery_options.columns.label": {
+    "message": "Colonne",
+    "description": "",
+    "placeholders": null
+  },
+  "gallery_options.enable_lightbox.label": {
+    "message": "Abilita lightbox",
+    "description": "",
+    "placeholders": null
+  },
+  "gallery_options.fixed_image_height.label": {
+    "message": "Altezza immagine fissa",
+    "description": "",
+    "placeholders": null
+  },
+  "gallery_options.image_height.label": {
+    "message": "Altezza immagine",
+    "description": "",
+    "placeholders": null
+  },
+  "gallery_options.label": {
+    "message": "Opzioni galleria",
+    "description": "",
+    "placeholders": null
+  },
+  "images.caption.default": {
+    "message": "Una didascalia che descrive l'immagine.",
+    "description": "",
+    "placeholders": null
+  },
+  "images.caption.help_text": {
+    "message": "La didascalia verrà visualizzata sotto l'immagine nel lightbox",
+    "description": "",
+    "placeholders": null
+  },
+  "images.caption.label": {
+    "message": "Didascalia",
+    "description": "",
+    "placeholders": null
+  },
+  "images.image.default.alt": {
+    "message": "Un gruppo di colleghi che parlano in uno spazio ricreativo",
+    "description": "",
+    "placeholders": null
+  },
+  "images.image.label": {
+    "message": "Immagine",
+    "description": "",
+    "placeholders": null
+  },
+  "images.label": {
+    "message": "Immagini",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.gallery.label": {
+    "message": "Galleria",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.gallery.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.gallery.spacing.space_between_images.label": {
+    "message": "Spazio tra le immagini",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.gallery.spacing.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.images.alignment.alignment.label": {
+    "message": "Allineamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.images.alignment.label": {
+    "message": "Allineamento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.images.corner.label": {
+    "message": "Angolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.images.corner.radius.label": {
+    "message": "Raggio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.images.label": {
+    "message": "Immagini",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Stili",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.background.color.label": {
+    "message": "Colore",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.background.label": {
+    "message": "Sfondo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.background.color.label": {
+    "message": "Colore",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.background.label": {
+    "message": "Sfondo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.corner.label": {
+    "message": "Angolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.corner.radius.label": {
+    "message": "Raggio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.fill.color.label": {
+    "message": "Colore",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.fill.label": {
+    "message": "Riempimento",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.label": {
+    "message": "Icona chiudi",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.help_text": {
+    "message": "Utilizza le impostazioni predefinite per adeguare l'aspetto dell'elemento selezionato ai valori predefiniti.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_color.choices.dark": {
+    "message": "Scuro",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_color.choices.light": {
+    "message": "Leggero",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_color.label": {
+    "message": "Colore icona",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_shape.choices.circle": {
+    "message": "Cerchio",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_shape.choices.square": {
+    "message": "Quadrato",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_shape.label": {
+    "message": "Forma dell'icona",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_size.choices.large": {
+    "message": "Grande",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_size.choices.regular": {
+    "message": "Normale",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_size.choices.small": {
+    "message": "Piccolo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.icon_size.label": {
+    "message": "Dimensioni icona",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.presets.label": {
+    "message": "Impostazioni predefinite",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.size.label": {
+    "message": "Dimensioni",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.size.size.label": {
+    "message": "Dimensioni",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.close_icon.spacing.spacing.label": {
+    "message": "Spaziatura",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.label": {
+    "message": "Lightbox",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.text.font.label": {
+    "message": "Carattere",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.lightboxes.text.label": {
+    "message": "Testo",
+    "description": "",
+    "placeholders": null
+  }
+}

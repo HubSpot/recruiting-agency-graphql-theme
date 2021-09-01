@@ -1,0 +1,197 @@
+{
+  "name": {
+    "message": "Acordeón",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.content.default": {
+    "message": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor arcu non commodo elementum.</p>",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.content.label": {
+    "message": "Contenidos",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.label": {
+    "message": "Acordeones",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.open_by_default.label": {
+    "message": "Abrir de forma predeterminada",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.title.default": {
+    "message": "Título de acordeón",
+    "description": "",
+    "placeholders": null
+  },
+  "accordions.title.label": {
+    "message": "Título",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.choices.caret": {
+    "message": "Signo de intercalación",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.choices.plus": {
+    "message": "Más",
+    "description": "",
+    "placeholders": null
+  },
+  "icon.label": {
+    "message": "Ícono",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.border.border.label": {
+    "message": "Borde",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.border.label": {
+    "message": "Borde",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.label": {
+    "message": "Acordeones",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.dark": {
+    "message": "Oscuro",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.light": {
+    "message": "Claro",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.choices.plain": {
+    "message": "Sin formato",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.card_style.label": {
+    "message": "Estilo de tarjeta",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.help_text": {
+    "message": "Usa valores preestablecidos para un rápido ajuste de la apariencia del elemento seleccionado con valores predefinidos.",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.presets.label": {
+    "message": "Valores preestablecidos",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.spacing.label": {
+    "message": "Espaciado",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.accordions.spacing.space_between_accordions.label": {
+    "message": "Espacio entre acordeones",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.background.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.background.label": {
+    "message": "Fondo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.label": {
+    "message": "Contenidos",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.spacing.label": {
+    "message": "Espaciado",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.content.spacing.spacing.label": {
+    "message": "Espaciado",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Estilos",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.background.color.label": {
+    "message": "Color",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.background.label": {
+    "message": "Fondo",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.label": {
+    "message": "Título",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.spacing.label": {
+    "message": "Espaciado",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.spacing.spacing.label": {
+    "message": "Espaciado",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.font.label": {
+    "message": "Fuente",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.label": {
+    "message": "Texto",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.capitalize": {
+    "message": "Escribir en mayúsculas",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.lowercase": {
+    "message": "Minúscula",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.none": {
+    "message": "Ninguno",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.choices.uppercase": {
+    "message": "Mayúscula",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.title.text.transform.label": {
+    "message": "Transformar",
+    "description": "",
+    "placeholders": null
+  }
+}

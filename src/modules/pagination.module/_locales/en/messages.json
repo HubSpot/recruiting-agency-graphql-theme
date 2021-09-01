@@ -1,0 +1,112 @@
+{
+  "name": {
+    "message": "Pagination",
+    "description": "",
+    "placeholders": null
+  },
+  "first_label.default": {
+    "message": "First",
+    "description": "",
+    "placeholders": null
+  },
+  "first_label.label": {
+    "message": "First label",
+    "description": "",
+    "placeholders": null
+  },
+  "last_label.default": {
+    "message": "Last",
+    "description": "",
+    "placeholders": null
+  },
+  "last_label.label": {
+    "message": "Last label",
+    "description": "",
+    "placeholders": null
+  },
+  "next_label.default": {
+    "message": "Next",
+    "description": "",
+    "placeholders": null
+  },
+  "next_label.label": {
+    "message": "Next label",
+    "description": "",
+    "placeholders": null
+  },
+  "previous_label.default": {
+    "message": "Prev",
+    "description": "",
+    "placeholders": null
+  },
+  "previous_label.label": {
+    "message": "Previous label",
+    "description": "",
+    "placeholders": null
+  },
+  "show_first_and_last_links.label": {
+    "message": "Show first and last links",
+    "description": "",
+    "placeholders": null
+  },
+  "show_previous_and_next_links.label": {
+    "message": "Show previous and next links",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.active.border.border.label": {
+    "message": "Border",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.active.border.label": {
+    "message": "Border",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.active.corner.label": {
+    "message": "Corner",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.active.corner.radius.label": {
+    "message": "Radius",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.active.label": {
+    "message": "Active",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Styles",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.space_between_links.label": {
+    "message": "Space between links",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.spacing.label": {
+    "message": "Spacing",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.font.label": {
+    "message": "Font",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.text.label": {
+    "message": "Text",
+    "description": "",
+    "placeholders": null
+  }
+}

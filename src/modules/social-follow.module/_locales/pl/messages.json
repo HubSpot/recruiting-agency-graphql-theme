@@ -1,0 +1,192 @@
+{
+  "name": {
+    "message": "Obserwowanie w mediach społecznościowych",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.accessibility_options.label": {
+    "message": "Opcje dostępności",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.accessibility_options.title.default": {
+    "message": "Obserwuj nas na Facebooku",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.accessibility_options.title.help_text": {
+    "message": "Odczytane przez czytnik ekranu",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.accessibility_options.title.label": {
+    "message": "Tytuł",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.custom_icon.label": {
+    "message": "Ikona niestandardowa",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.label": {
+    "message": "Łącza do mediów społecznościowych",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.link.label": {
+    "message": "Łącze",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.custom_icon": {
+    "message": "Niestandardowe",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.envelope": {
+    "message": "Adres e-mail",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.facebook-f": {
+    "message": "Facebook",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.instagram": {
+    "message": "Instagram",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.link": {
+    "message": "Witryna internetowa",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.linkedin-in": {
+    "message": "LinkedIn",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.pinterest-p": {
+    "message": "Pinterest",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.twitter": {
+    "message": "Twitter",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.whatsapp": {
+    "message": "Whatsapp",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.choices.youtube": {
+    "message": "YouTube",
+    "description": "",
+    "placeholders": null
+  },
+  "social_links.social_account.label": {
+    "message": "Konto w serwisie społecznościowym",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.alignment.label": {
+    "message": "Wyrównanie",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.alignment.label": {
+    "message": "Wyrównanie",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.color.label": {
+    "message": "Kolor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.background.label": {
+    "message": "Tło",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.corner.radius.label": {
+    "message": "Promień",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.fill.color.label": {
+    "message": "Kolor",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.label": {
+    "message": "Style",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_color.choices.light": {
+    "message": "Lekka",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_color.label": {
+    "message": "Kolor ikony",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.choices.circle": {
+    "message": "Okrąg",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.choices.square": {
+    "message": "Kwadrat",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_shape.label": {
+    "message": "Kształt ikony",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.large": {
+    "message": "Duże",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.regular": {
+    "message": "Regularne",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.presets.icon_size.choices.small": {
+    "message": "Małe",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.size.label": {
+    "message": "Rozmiar",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.size.size.label": {
+    "message": "Rozmiar",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.label": {
+    "message": "Rozstaw",
+    "description": "",
+    "placeholders": null
+  },
+  "styles.spacing.spacing.label": {
+    "message": "Rozstaw",
+    "description": "",
+    "placeholders": null
+  }
+}
