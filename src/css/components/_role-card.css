@@ -1,0 +1,20 @@
+.role-card {
+    cursor: pointer;
+    background-color: white;
+    width: 45%;
+    padding: 24px;
+    margin: 24px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px #aaa;
+}
+
+.role-card>h1 {
+    font-size: 28px;
+    margin: 0px;
+}
+
+.role-card>h2 {
+    font-size: 22px;
+    margin: 12px 0px 24px 0px;
+}

@@ -2,10 +2,11 @@
 
 <div class="role-listing">
     {% for role in roles %}
+        {% set company = role.associations.company_collection__role_to_company.items|first %}
         {% set roleDetailLink = "{{ request.path }}/role?role_identifier={{role.role_identifier}}&title={{role.title}}&job_title={{role.title}}" %}
         <div class="role-card" onclick="window.location='{{ roleDetailLink }}'">
             <h1>{{ role.title }}</h1>
-            <h2>{{ role.company_name }}</h2>
+            <h2>{{ company.name }}</h2>
             <p>{{ truncate(role.description, 150, false, '...') }}</p><a href="{{ roleDetailLink }}">See more...</a>
         </div>    
     {% endfor %}

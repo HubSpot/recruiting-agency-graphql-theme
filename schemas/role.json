@@ -13,13 +13,6 @@
       "description": ""
     },
     {
-      "name": "company_name",
-      "label": "Company Name",
-      "type": "string",
-      "fieldType": "text",
-      "description": ""
-    },
-    {
       "name": "date_fulfilled",
       "label": "Date Fulfilled",
       "type": "date",

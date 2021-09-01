@@ -4,8 +4,10 @@
   {% set dateint = role.desired_start_date||int %}
   {% set date = datetimeformat(role.dateint, '%B %e, %Y') %}
 
+  {% set company = role.associations.company_collection__role_to_company.items|first %}
+
   <h1>Role Details</h1>
-  <p>Company: {{role.company_name}}</p>
+  <p>Company: {{company.name}}</p>
   <p>Title: {{role.title}}</p>
   <p>Location: {{role.location}}</p>
   <p>Start Date: {{date}}</p>

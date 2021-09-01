@@ -6,8 +6,14 @@ query role_listings {
   CRM {
     p_role_collection {
       items {
+        associations {
+          company_collection__role_to_company {
+            items {
+              name
+            }
+          }
+        }
         category
-        company_name
         description
         id
         location

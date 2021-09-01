@@ -1,0 +1,12 @@
+{% set application_id = request.query_dict.applicationId %}
+
+{% if application_id %}
+    {% set property = crm_object("job_application", application_id, "hs_createdate, application_status") %}
+    <h1>Application Details</h1>
+    <p>Submitted on: {{property.hs_createdate}}</p>
+    <p>Status: {{property.application_status}}</p>
+{% else %}
+    <div class="error">
+        No application information provided.
+    </div>
+{% endif %}

@@ -24,6 +24,8 @@
 {% include './components/_cards.css' %}
 {% include './components/_blog-listing.css' %}
 {% include './components/_default-modules.css' %}
+{% include './components/_role-card.css' %}
+{% include './components/_role-listing.css' %}
 
 /* Utilities */
 

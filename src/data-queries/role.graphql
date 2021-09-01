@@ -5,8 +5,14 @@
 query role($role_identifier: String!) {
   CRM {
     p_role(uniquePropertyName: "role_identifier", uniquePropertyValue: $role_identifier) {
+      associations {
+        company_collection__role_to_company {
+          items {
+            name
+          }
+        }
+      }
       category
-      company_name
       description
       id
       location

@@ -1,0 +1,6 @@
+.role-listing {
+    margin-bottom: 48px;
+
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,10 @@
+<!-- module html  -->
+
+{% set applications = data_query.data.CRM.contact_collection.items.associations.p_job_application_collection__job_application_to_contact.items %}
+
+<h3>{{applications.total}} Applications:</h3>
+<ul>
+    {% for application in applications %}
+        <li>Name: {{ application.job_title }} <a href="/application-details?applicationId={{application.id}}">Details</a></li>
+    {% endfor %}
+</ul>
