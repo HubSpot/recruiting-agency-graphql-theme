@@ -1,0 +1,82 @@
+{
+  "name": "job_application",
+  "labels": { "singular": "Job Application", "plural": "Job Applications" },
+  "requiredProperties": ["salary_requirement", "job_title", "resume"],
+  "searchableProperties": ["job_title"],
+  "primaryDisplayProperty": "job_title",
+  "properties": [
+    {
+      "name": "application_status",
+      "label": "Application Status",
+      "type": "enumeration",
+      "fieldType": "select",
+      "description": "",
+      "options": [
+        {
+          "label": "Applied",
+          "value": "applied"
+        },
+        {
+          "label": "Interviewing",
+          "value": "interviewing"
+        },
+        {
+          "label": "Rejected",
+          "value": "rejected"
+        }
+      ]
+    },
+    {
+      "name": "cover_letter",
+      "label": "Cover Letter",
+      "type": "string",
+      "fieldType": "file",
+      "description": ""
+    },
+    {
+      "name": "interview_date",
+      "label": "Interview Date",
+      "type": "datetime",
+      "fieldType": "date",
+      "description": ""
+    },
+    {
+      "name": "job_title",
+      "label": "Job Title",
+      "type": "string",
+      "fieldType": "text",
+      "description": ""
+    },
+    {
+      "name": "notes",
+      "label": "Notes",
+      "type": "string",
+      "fieldType": "text",
+      "description": ""
+    },
+    {
+      "name": "offer_date",
+      "label": "Offer Date",
+      "type": "date",
+      "fieldType": "date",
+      "description": ""
+    },
+    {
+      "name": "resume",
+      "label": "Resume",
+      "type": "string",
+      "fieldType": "file",
+      "description": ""
+    },
+    {
+      "name": "salary_requirement",
+      "label": "Salary Requirement",
+      "type": "number",
+      "fieldType": "number",
+      "description": ""
+    }
+  ],
+  "associatedObjects": [
+    "CONTACT"
+  ]
+}

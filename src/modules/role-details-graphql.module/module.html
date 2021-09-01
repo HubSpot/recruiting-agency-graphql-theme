@@ -1,0 +1,29 @@
+{% if request.query_dict.role_identifier %}
+  {% set role = data_query.data.CRM.p_role %}
+
+  {% set dateint = role.desired_start_date||int %}
+  {% set date = datetimeformat(role.dateint, '%B %e, %Y') %}
+
+  <h1>Role Details</h1>
+  <p>Company: {{role.company_name}}</p>
+  <p>Title: {{role.title}}</p>
+  <p>Location: {{role.location}}</p>
+  <p>Start Date: {{date}}</p>
+  <p>Salary Range: ${{role.salary_min}}-${{role.salary_max}}</p>
+  {% if role.category %}
+    <p>Category: {{role.category}}</p>
+  {% endif %}
+  <p>Status: {{role.status}}</p>
+  <p>{{role.description}}</p>
+
+  <h1>Apply now!</h1>
+  {% form
+    form_to_use="{{ module.job_application_form.form_id }}"
+    response_response_type="{{ module.job_application_form.response_type }}"
+    response_message="{{ module.job_application_form.message }}"
+    response_redirect_id="{{ module.job_application_form.redirect_id }}"
+    response_redirect_url="{{module.job_application_form.redirect_url}}"
+  %}
+{% else %}
+    <h1>No role identifier found.</h1>
+{% endif %}

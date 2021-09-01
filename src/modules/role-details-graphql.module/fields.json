@@ -1,0 +1,12 @@
+[ {
+  "id" : "35170b16-af79-bba8-9408-69bf5c621663",
+  "name" : "job_application_form",
+  "label" : "Job Application Form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form."
+  }
+} ]

@@ -1,0 +1,21 @@
+"""
+  label: "Role Instance"
+  description: "Role instance query for Recruiting Agency case study."
+"""
+query role($role_identifier: String!) {
+  CRM {
+    p_role(uniquePropertyName: "role_identifier", uniquePropertyValue: $role_identifier) {
+      category
+      company_name
+      description
+      id
+      location
+      role_identifier
+      salary_max
+      salary_min
+      title
+      status
+      desired_start_date
+    }
+  }
+}

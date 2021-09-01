@@ -1,0 +1,20 @@
+"""
+  label: "Role Listings"
+  description: "Role listings query for Recruiting Agency case study."
+"""
+query role_listings {
+  CRM {
+    p_role_collection {
+      items {
+        category
+        company_name
+        description
+        id
+        location
+        role_identifier
+        title
+        status
+      }
+    }
+  }
+}
