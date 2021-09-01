@@ -2,9 +2,9 @@
   label: "Application Listings"
   description: "Application listings query for Recruiting Agency case study."
 """
-query application_listings {
+query application_listings($contact_id: String = "{{request.contact.contact_vid}}") {
   CRM {
-    contact_collection(filter: {hs_object_id_eq: "{{request.contact.contact_vid}}"}) {
+    contact_collection(filter: {hs_object_id_eq: $contact_id}) {
       items {
         id
         associations {

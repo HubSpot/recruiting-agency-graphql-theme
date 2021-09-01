@@ -1,0 +1,19 @@
+"""
+  label: "Application Instance"
+  description: "Application instance query for Recruiting Agency case study."
+"""
+query application($applicationId: String!, $contact_id: String = "{{request.contact.contact_vid}}") {
+  CRM {
+    p_job_application(uniquePropertyName: "id", uniquePropertyValue: $applicationId) {
+      job_title
+      application_status
+      associations {
+        contact_collection__job_application_to_contact(filter: {hs_object_id_eq: $contact_id}) {
+          items {
+            id
+          }
+        }
+      }
+    }
+  }
+}

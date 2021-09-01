@@ -1,12 +1,23 @@
-{% set application_id = request.query_dict.applicationId %}
+{% if request.query_dict.applicationId %}
+    {% set application = data_query.data.CRM.p_job_application %}
 
-{% if application_id %}
-    {% set property = crm_object("job_application", application_id, "hs_createdate, application_status") %}
-    <h1>Application Details</h1>
-    <p>Submitted on: {{property.hs_createdate}}</p>
-    <p>Status: {{property.application_status}}</p>
+    {% set associatedContacts = application.associations.contact_collection__job_application_to_contact.items %}
+
+    {% set applicationAssociatedToCurrentUser = {'isAssociated': false } %}
+
+    {% for associatedContact in associatedContacts %}
+        {% if associatedContact.id == request.contact.contact_vid %}
+            {% do applicationAssociatedToCurrentUser.update({'isAssociated': true}) %}
+        {% endif %}
+    {% endfor %}
+
+    {% if applicationAssociatedToCurrentUser.isAssociated %}
+        <h1>Application Details</h1>
+        <p>Title: {{application.job_title}}</p>
+        <p>Status: {{application.application_status}}</p>
+    {% else %}
+        <h1>No application information found for current user.</h1>
+    {% endif %}
 {% else %}
-    <div class="error">
-        No application information provided.
-    </div>
+    <h1>No application information found.</h1>
 {% endif %}

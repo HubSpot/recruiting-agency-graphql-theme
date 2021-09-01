@@ -76,17 +76,12 @@ Once that’s set, give the page a title, and replace the generated slug with th
 ## Step 4: Create Applications Page
 
 The final step of the process is to create a page where applicants can log in and see any pending applications they have submitted, as well as the status of those applications. In order to set this up, we’re going to utilize the Memberships feature. For more detailed information about this feature, you can go here: https://developers.hubspot.com/docs/cms/data/memberships
-In order to get the “existing-application-listing” module to work on your portal, you’ll need to update line three and replace the third argument in the call to `crm_associations` with the ID of the association from the Contact object to your Job Application object. 
 
-In order to find that ID, you can use the following endpoint: GET crm/v3/schemas/{objectType} where ‘objectType’ is the ID of your Job Application object. Again, this object type ID can be found by executing `hs custom-object schema list` from your CLI. In the response from that endpoint, you’ll find a section called “associations”, and you’ll want to find the association with the name “job_application_to_contact” that has a “toObjectId” that matches your Job Application object type ID.
+To do this, we’ll have to do to allow us to set up pages that require registration, so we need to create a Membership list. To do this, navigate to Contacts > Lists and click Create List. This list will be Contact-based, and Active. For the Filter type, select Job Application properties, select Object ID, and is known. What this means, is a Contact will automatically be added to this list when an associated Job Application has been created.
 
-Once you have that ID, replace the argument in the “existing-application-listing” module and upload the module to your portal. This ID is used to find any Job Applications associated with whatever Contact is logged in and viewing the application listings page.
+Now we can create the pages in our CMS. Similarly to our other pages, create a new page with the Application Listing GraphQL template. Drag in the Existing Application Listing module, and then go to the Settings for this page. Expand the Advanced options section, and select “Private - Registration required” in the “Control audience access for this page” section. This will require you to select a list to use for sending registration emails. Next, give this page a title and publish the page.
 
-The next thing we’ll have to do to allow us to set up pages that require registration, is to create a Membership list. To do this, navigate to Contacts > Lists and click Create List. This list will be Contact-based, and Active. For the Filter type, select Job Application properties, select Object ID, and is known. What this means, is a Contact will automatically be added to this list when an associated Job Application has been created.
-
-Now we can create the pages in our CMS. Similarly to our other pages, create a new page with the Empty Page template. Drag in the Existing Application Listing module, and then go to the Settings for this page. Expand the Advanced options section, and select “Private - Registration required” in the “Control audience access for this page” section. This will require you to select a list to use for sending registration emails. Next, give this page a title and publish the page.
-
-Next, create the Application Details page. Follow the same steps as above, except the module you’ll drag in this time is the Application Details module. Before publishing this page, ensure the Content slug is “application-details”, as that slug is hard-coded in the Existing Application Listing module.
+Next, create the Application Details page. Follow the same steps as above, except the template this time will be Application GraphQL and the module you’ll drag in this time is the Application Details module. Before publishing this page, ensure the Content slug is “application-details”, as that slug is hard-coded in the Existing Application Listing module.
 
 ## Step 5: Wrapping Up
 
@@ -97,8 +92,7 @@ To test our site, go ahead and add some roles and submit some Job Applications t
 
 That does it! You now have a fully functional recruiting website where people can view open positions, apply for jobs, and track their application status. On the other side of the process, recruiters can post job openings, keep in touch with applicants through the lifecycle of their application process, and create deals for companies for which applicants are being recruited. Those deals can be associated with Roles that need to be filled, and used to track the lifecycle of the recruitment process for a given company.
 
-Hopefully this gives a sense of the power of using HubSpot CMS in a data driven way alongside CRM Custom Objects
-Resources
+## Resources
 https://git.hubteam.com/HubSpot/cms-recruiting-agency-case-study 
 https://developers.hubspot.com/docs/cms/developer-reference/local-development-cli
 https://developers.hubspot.com/docs/api/crm/crm-custom-objects
