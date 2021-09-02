@@ -1,5 +1,23 @@
-{% set roles = data_query.data.CRM.p_role_collection.items %}
+{% set roleCollection = data_query.data.CRM.p_role_collection %}
+{% set roles = roleCollection.items %}
 
+{% set offset = roleCollection.offset %}
+{% set limit = roleCollection.limit %}
+
+{% set currentPage = (offset / limit)|int %}
+{% set totalPages = (roleCollection.total / limit)|int  %}
+
+<div>
+    <div>
+        Filter by location:
+    </div>
+    <div>
+        Filter by department:
+    </div>
+    <div>
+        Filter by company:
+    </div>
+</div>
 <div class="role-listing">
     {% for role in roles %}
         {% set company = role.associations.company_collection__role_to_company.items|first %}
@@ -9,5 +27,14 @@
             <h2>{{ company.name }}</h2>
             <p>{{ truncate(role.description, 150, false, '...') }}</p><a href="{{ roleDetailLink }}">See more...</a>
         </div>    
+    {% endfor %}
+</div>
+<div>
+    {% for i in range(0, totalPages) %}
+        {% if loop.index == currentPage %}
+            <span>{{loop.index}}</span>
+        {% else %}
+            <a href="{{ request.path }}?offset={{i*limit}}&limit={{limit}}">{{loop.index}}</a>
+        {% endif %}
     {% endfor %}
 </div>

@@ -8,9 +8,31 @@
     {
       "name": "category",
       "label": "Category",
-      "type": "string",
-      "fieldType": "text",
-      "description": ""
+      "type": "enumeration",
+      "fieldType": "select",
+      "description": "",
+      "options": [
+        {
+          "label": "Engineering",
+          "value": "engineering"
+        },
+        {
+          "label": "Marketing",
+          "value": "marketing"
+        },
+        {
+          "label": "Sales",
+          "value": "sales"
+        },
+        {
+          "label": "Accounting",
+          "value": "accounting"
+        },
+        {
+          "label": "Operations",
+          "value": "operations"
+        }
+      ]
     },
     {
       "name": "date_fulfilled",

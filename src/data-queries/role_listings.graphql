@@ -2,9 +2,9 @@
   label: "Role Listings"
   description: "Role listings query for Recruiting Agency case study."
 """
-query role_listings {
+query role_listings($offset: Int = 0, $limit: Int = 1, $filter: crm_p_role_filter) {
   CRM {
-    p_role_collection {
+    p_role_collection(limit: $limit, offset: $offset, filter: $filter) {
       items {
         associations {
           company_collection__role_to_company {
@@ -21,6 +21,10 @@ query role_listings {
         title
         status
       }
+      hasMore
+      limit
+      offset
+      total
     }
   }
 }
