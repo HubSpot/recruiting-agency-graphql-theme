@@ -6,8 +6,8 @@
   "primaryDisplayProperty": "title",
   "properties": [
     {
-      "name": "category",
-      "label": "Category",
+      "name": "department",
+      "label": "Department",
       "type": "enumeration",
       "fieldType": "select",
       "description": "",
