@@ -47,6 +47,10 @@
                 {% set queryParams = queryParams ~ "&location={{request.query_dict.location}}" %}
             {% endif %}
 
+            {% if request.query_dict.department %}
+                {% set queryParams = queryParams ~ "&location={{request.query_dict.department}}" %}
+            {% endif %}
+
             <a href="{{ request.path }}?{{queryParams}}">{{loop.index}}</a>
         {% endif %}
     {% endfor %}

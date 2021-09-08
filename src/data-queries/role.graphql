@@ -2,7 +2,7 @@
   label: "Role Instance"
   description: "Role instance query for Recruiting Agency case study."
 """
-query role($role_identifier: String!) {
+query role($role_identifier: String! = "{{request.query_dict.role_identifier}}") {
   CRM {
     p_role(uniquePropertyName: "role_identifier", uniquePropertyValue: $role_identifier) {
       associations {
@@ -12,7 +12,7 @@ query role($role_identifier: String!) {
           }
         }
       }
-      category
+      department
       description
       id
       location

@@ -1,5 +1,5 @@
 {% if request.query_dict.role_identifier %}
-  {% set role = data_query.data.CRM.p_role %}
+  {% set role = module.data_query.data.CRM.p_role %}
 
   {% set dateint = role.desired_start_date||int %}
   {% set date = datetimeformat(role.dateint, '%B %e, %Y') %}
@@ -13,7 +13,7 @@
   <p>Start Date: {{date}}</p>
   <p>Salary Range: ${{role.salary_min}}-${{role.salary_max}}</p>
   {% if role.category %}
-    <p>Category: {{role.category}}</p>
+    <p>Department: {{role.department}}</p>
   {% endif %}
   <p>Status: {{role.status}}</p>
   <p>{{role.description}}</p>
