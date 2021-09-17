@@ -2,21 +2,92 @@
   templateType: page
   isAvailableForNewContent: true
   label: Role Listing - GraphQL
-  dataQueryPath: /sample-graphql-theme/data-queries/role_listings 
+  dataQueryPath: /sample-graphql-theme/data-queries/role_listings.graphql
 -->
 {% extends "./layouts/base.html" %}
 
 {% block body %}
-
-{{ require_js("https://code.jquery.com/jquery-3.6.0.min.js") }}
 {# The main-content ID is used for the navigation skipper in the header.html file. More information on the navigation skipper can be found here: https://github.com/HubSpot/cms-theme-boilerplate/wiki/Accessibility #}
 <main id="main-content" class="body-container-wrapper">
     {% dnd_area 'dnd_area_main_banner' label='Main Content' %}
+        {% dnd_section
+            background_image={
+                'backgroundPosition': 'MIDDLE_CENTER',
+                'backgroundSize': 'cover',
+                'imageUrl': get_asset_url('../images/industry-images/home-banner.jpg')
+            },
+            max_width=750,
+            padding={
+                'top': 100,
+                'bottom': 100
+            }
+            %}
+            {% dnd_column %}
+                {% dnd_row %}
+                    {% dnd_module
+                        path='@hubspot/rich_text'
+                        html='<div style="text-align: center;"><h1 style="color: #fff;">Open Job Listings</h1><p style="color: #fff;">However you identify, or whatever your path here, please apply if you see a position that makes your heart beat.</p></div>'
+                    %}
+                    {% end_dnd_module %}
+                {% end_dnd_row %}
+            {% end_dnd_column %}
+        {% end_dnd_section %}
         {% dnd_section %}
             {% dnd_column %}
                 {% dnd_row %}
+                    {% dnd_module
+                        path='../modules/roles-graphql.module'
+                    %}
+                    {% end_dnd_module %}
                 {% end_dnd_row %}
-            {% end_dnd_column %}
+            {% end_dnd_column %} 
+        {% end_dnd_section %}
+        {% dnd_section %}
+            {% dnd_column %}
+                {% dnd_row 
+                    max_width=650,
+                    padding={
+                        'top': 75,
+                        'bottom': 75,
+                        'left': 75,
+                        'right': 75
+                    },
+                    background_color='#F5F8FA',
+                    vertical_alignment='MIDDLE'
+                %}
+                    {% dnd_column 
+                        offset=0,
+                        width=9
+                    %}
+                        {% dnd_row %}
+                            {% dnd_module
+                                path='@hubspot/rich_text'
+                                html='<div style="text-align: center;"><h2>What\'s the recruiting process like at Growth?</h2><p>So you\'re considering submitting your resume? Learn more about your experience as a candidate at Growth.</p></div>'
+                            %}
+                            {% end_dnd_module %}
+                        {% end_dnd_row %}
+                    {% end_dnd_column %}
+                    {% dnd_column 
+                        offset=9,
+                        width=3,
+                    %}
+                    {% dnd_row %}
+                        {% dnd_module
+                            path='../modules/button',
+                            button_text='Learn more',
+                            styles={
+                                'alignment': {
+                                    'alignment': {
+                                    'horizontal_align': 'CENTER'
+                                    }
+                                }
+                            }
+                        %}
+                        {% end_dnd_module %}
+                    {% end_dnd_row %}
+                    {% end_dnd_column %}
+                {% end_dnd_row %}
+            {% end_dnd_column %} 
         {% end_dnd_section %}
     {% end_dnd_area %}
 </main>
