@@ -7,8 +7,8 @@
 {% set currentPage = (offset / limit)|int %}
 {% set totalPages = (roleCollection.total / limit)|int  %}
 
-<div>
-    <div>
+<div class="role-filter-wrapper">
+    <div class="role-filter">
         Filter by location:
         <select id="location">
             <option value="">All Locations</option>
@@ -16,7 +16,7 @@
             <option value="Sweden">Sweden</option>
         </select>
     </div>
-    <div>
+    <div class="role-filter">
         Filter by department:
         <select id="department">
             <option value="">All Departments</option>
@@ -32,7 +32,7 @@
         <div class="role-card" onclick="window.location='{{ roleDetailLink }}'">
             <h1>{{ role.title }}</h1>
             <h2>{{ company.name }}</h2>
-            <p>{{ truncate(role.description, 150, false, '...') }}</p><a href="{{ roleDetailLink }}">See more...</a>
+            <p>{{ truncate(role.description, 150, false, '...') }}</p><a class="button" href="{{ roleDetailLink }}">Apply</a>
         </div>    
     {% endfor %}
 </div>
@@ -91,4 +91,4 @@
             }
         }
     }
-  </script>
+</script>

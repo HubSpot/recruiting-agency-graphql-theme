@@ -4,9 +4,7 @@
     width: 45%;
     padding: 24px;
     margin: 24px;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    box-shadow: 2px 2px 5px #aaa;
+    border: 2px solid black;
 }
 
 .role-card>h1 {
