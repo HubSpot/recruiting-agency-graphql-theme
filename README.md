@@ -69,7 +69,7 @@ The queries that will be used for our pages can be found in the “data-queries�
 
 Create a new page, and for this page select the “Role Listing - GraphQL” template. This template contains the "Roles GraphQL" module, which uses the data retrieved by the data query in the template to show a listing of all created role objects. Give the page a title and publish it.
 
-Next, we’ll need the details page. For this page, use the “Role Details - GraphQL” template. This time, drag in the `Role Details GraphQL` module. Additionally, you'll need to set the Job Application Form in the settings of that module to the form we created in Step 2.
+Next, we’ll need the details page. For this page, use the “Role Details - GraphQL” template, which contains the "Role Details GraphQL" module. Additionally, you'll need to set the Job Application Form in the settings of that module to the form we created in Step 2.
 
 Once that’s set, give the page a title, and replace the generated slug with the same one used in the role listing page, but with `/role` appended. For example, if the slug for the GraphQL listing page was “role-listing-graphql’, the slug for this page should be ‘role-listing-graphql/role’
 
