@@ -7,8 +7,8 @@
 {% set currentPage = (offset / limit)|int %}
 {% set totalPages = (roleCollection.total / limit)|int  %}
 
-<div>
-    <div>
+<div class="role-filter-wrapper">
+    <div class="role-filter">
         Filter by location:
         <select id="location">
             <option value="">All Locations</option>
@@ -16,7 +16,7 @@
             <option value="Sweden">Sweden</option>
         </select>
     </div>
-    <div>
+    <div class="role-filter">
         Filter by department:
         <select id="department">
             <option value="">All Departments</option>
