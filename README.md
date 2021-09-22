@@ -43,7 +43,7 @@ For example, the body of your request might look like this:
 
 Once the association is created, we should be finished creating our custom object definitions.
 
-If you'd like, you can use our sample data [here](./data/role_data.json) to populate available job listings. You can make a POST request to /crm/v3/schemas/{objectType}/batch/create (more details can be found here: https://developers.hubspot.com/docs/api/crm/crm-custom-objects) with the JSON in that file to create 15 job listings. You should then associate each job listing with the related company (Spotify, HubSpot, or Tesla) manually in order for the rest of the site to render the job listings as expected.
+If you'd like, you can use our sample data [here](./data/role_data.json) to populate available job listings. Using the CLI, you can run the following command from the root directory of the project: `hs custom-object create role ./data/role_data.json`. You should then associate each job listing with the related company (Spotify, HubSpot, or Tesla) manually in order for the rest of the site to render the job listings as expected.
 
 ## Step 2: Create Job Application Submission Form and Workflow
 
