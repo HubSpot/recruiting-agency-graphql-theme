@@ -2,12 +2,13 @@
 {% set locations = [] %}
 {% set companies = [] %}
 
-{% for filterData in data_query.data.CRM.filterData.items %}
-    {% do departments.append(filterData.department) %}
-    {% do locations.append(filterData.location) %}
-    {% for company in filterData.associations.company_collection__role_to_company.items %}
-        {% do companies.append(company.name) %}
-    {% endfor %}
+{% for departmentAndLocationFilterOption in data_query.data.CRM.departmentAndLocationFilterOptions.items %}
+    {% do departments.append(departmentAndLocationFilterOption.department) %}
+    {% do locations.append(departmentAndLocationFilterOption.location) %}
+{% endfor %}
+
+{% for company in data_query.data.CRM.companyFilterOptions.items %}
+    {% do companies.append(company.name) %}
 {% endfor %}
 
 {% set uniqueDepartments = departments|unique %}

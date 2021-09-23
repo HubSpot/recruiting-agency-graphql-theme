@@ -48,17 +48,15 @@ query role_listings($offset: Int = 0, $limit: Int = 1, $location: String, $depar
         name
       }
     }
-    filterData: p_role_collection(limit: 1000) {
+    departmentAndLocationFilterOptions: p_role_collection(limit: 1000) {
       items {
         department
         location
-        associations {
-          company_collection__role_to_company {
-            items {
-              name
-            }
-          }
-        }
+      }
+    }
+    companyFilterOptions: company_collection(limit: 1000) {
+      items {
+        name
       }
     }
   }
