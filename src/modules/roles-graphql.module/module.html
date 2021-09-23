@@ -1,4 +1,28 @@
+{% set departments = [] %}
+{% set locations = [] %}
+{% set companies = [] %}
+
+{% for filterData in data_query.data.CRM.filterData.items %}
+    {% do departments.append(filterData.department) %}
+    {% do locations.append(filterData.location) %}
+    {% for company in filterData.associations.company_collection__role_to_company.items %}
+        {% do companies.append(company.name) %}
+    {% endfor %}
+{% endfor %}
+
+{% set uniqueDepartments = departments|unique %}
+{% set uniqueLocations = locations|unique %}
+{% set uniqueCompanies = companies|unique %}
+
 {% set roleCollection = data_query.data.CRM.p_role_collection %}
+
+{% set searchingByCompany = false %}
+
+{% if request.query_dict.searchByCompany %}
+    {% set searchingByCompany = true %}
+    {% set roleCollection = data_query.data.CRM.companyFilter.items[0].associations.p_role_collection__role_to_company %}
+{% endif %}
+
 {% set roles = roleCollection.items %}
 
 {% set offset = roleCollection.offset %}
@@ -12,20 +36,34 @@
         Filter by location:
         <select id="location">
             <option value="">All Locations</option>
-            <option value="Remote">Remote</option>
-            <option value="Sweden">Sweden</option>
+            {% for location in uniqueLocations %}
+                <option value="{{location}}">{{location}}</option>
+            {% endfor %}
         </select>
     </div>
     <div class="role-filter">
         Filter by department:
         <select id="department">
             <option value="">All Departments</option>
-            <option value="Engineering">Engineering</option>
-            <option value="QA">QA</option>
+            {% for department in uniqueDepartments %}
+                <option value="{{department}}">{{department}}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="company-filter">
+        Filter by company:
+        <select id="company">
+            <option value="">All Companies</option>
+            {% for company in uniqueCompanies %}
+                <option value="{{company}}">{{company}}</option>
+            {% endfor %}
         </select>
     </div>
 </div>
 <div class="role-listing">
+    {% if roles|length == 0 %}
+        <h2>No Results Found</h2>
+    {% endif %}
     {% for role in roles %}
         {% set company = role.associations.company_collection__role_to_company.items|first %}
         {% set roleDetailLink = "{{ request.path }}/role?role_identifier={{role.role_identifier}}&title={{role.title}}&job_title={{role.title}}" %}
@@ -51,6 +89,14 @@
                 {% set queryParams = queryParams ~ "&location={{request.query_dict.department}}" %}
             {% endif %}
 
+            {% if request.query_dict.company %}
+                {% set queryParams = queryParams ~ "&company={{request.query_dict.company}}" %}
+            {% endif %}
+
+            {% if request.query_dict.searchByCompany %}
+                {% set queryParams = queryParams ~ "&searchByCompany={{request.query_dict.searchByCompany}}" %}
+            {% endif %}
+
             <a href="{{ request.path }}?{{queryParams}}">{{loop.index}}</a>
         {% endif %}
     {% endfor %}
@@ -71,19 +117,27 @@
         if (params.get('department')) {
             document.querySelector("#department").value = params.get("department");
         }
+        if (params.get('company')) {
+            document.querySelector("#company").value = params.get("company");
+        }
 
         document.querySelector("#location").addEventListener('change', function() { 
-            changeFilter("location", "#location");
+            changeFilter("location", "#location", {{searchingByCompany}});
         });
 
         document.querySelector("#department").addEventListener('change', function() {
-            changeFilter("department", "#department");
+            changeFilter("department", "#department", {{searchingByCompany}});
         });
 
-        function changeFilter(filterName, divName) {
+        document.querySelector("#company").addEventListener('change', function() {
+            changeFilter("company", "#company", document.querySelector("#company").selectedIndex !== 0);
+        });
+
+        function changeFilter(filterName, divName, searchByCompany) {
             let urlParams = new URLSearchParams(document.location.search.substr(1));
             setQueryParam(filterName, document.querySelector(divName).value, urlParams);
             setQueryParam("offset", 0, urlParams);
+            setQueryParam("searchByCompany", searchByCompany, urlParams)
             window.location.search = urlParams.toString();
         }
 
