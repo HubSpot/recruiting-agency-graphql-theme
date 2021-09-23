@@ -1,11 +1,20 @@
-{% set roleCollection = data_query.data.CRM.p_role_collection %}
+{% require_css %}
+<style>
+    .role-card {
+        width: calc({{(100 / module.cards_per_row)|round(1, 'floor')}}% - 48px);
+    }
+</style>
+{% end_require_css %}
+
+{% set roleCollection = module.data_query.data.CRM.p_role_collection %}
 {% set roles = roleCollection.items %}
 
-{% set offset = roleCollection.offset %}
-{% set limit = roleCollection.limit %}
+{% set offset = request.query_dict.offset %}
+{% set limit = module.cards_per_row * module.rows_per_page %}
 
-{% set currentPage = (offset / limit)|int %}
-{% set totalPages = (roleCollection.total / limit)|int  %}
+{% set currentPage = ((offset / limit) + 1)|round(0, 'ceil') %}
+
+{% set totalPages = (roleCollection.total / limit)|round(0, 'ceil')  %}
 
 <div class="role-filter-wrapper">
     <div class="role-filter">
@@ -31,8 +40,13 @@
         {% set roleDetailLink = "{{ request.path }}/role?role_identifier={{role.role_identifier}}&title={{role.title}}&job_title={{role.title}}" %}
         <div class="role-card" onclick="window.location='{{ roleDetailLink }}'">
             <h1>{{ role.title }}</h1>
-            <h2>{{ company.name }}</h2>
-            <p>{{ truncate(role.description, 150, false, '...') }}</p><a class="button" href="{{ roleDetailLink }}">Apply</a>
+            {% if module.show_company %}
+                <h2>{{ company.name }}</h2>
+            {% endif %}
+            {% if module.show_description %}
+                <p>{{ truncate(role.description, module.description_length, false, '...') }}</p>
+            {% endif %}
+            <a class="button" href="{{ roleDetailLink }}">Apply</a>
         </div>    
     {% endfor %}
 </div>

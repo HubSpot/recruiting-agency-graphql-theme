@@ -1,8 +1,10 @@
 """
   label: "Role Listings"
   description: "Role listings query for Recruiting Agency case study."
+  $limit = {{module.cards_per_row * module.rows_per_page}}
+  $offset = {{request.query_dict.offset}}
 """
-query role_listings($offset: Int = 0, $limit: Int = 1, $location: String, $department: String) {
+query role_listings($offset: Int, $limit: Int, $location: String, $department: String) {
   CRM {
     p_role_collection(limit: $limit, offset: $offset, filter: {location_eq: $location, department_eq: $department}) {
       items {
