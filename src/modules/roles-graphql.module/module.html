@@ -65,20 +65,24 @@
         var params = url.searchParams;
 
         // Set it as the dropdown value
-        jQuery("#location").val(params.get("location"));
-        jQuery("#department").val(params.get("department"));
+        if (params.get('location')) {
+            document.querySelector("#location").value = params.get("location");
+        }
+        if (params.get('department')) {
+            document.querySelector("#department").value = params.get("department");
+        }
 
-        jQuery("#location").change(function() { 
+        document.querySelector("#location").addEventListener('change', function() { 
             changeFilter("location", "#location");
         });
 
-        jQuery("#department").change(function() {
+        document.querySelector("#department").addEventListener('change', function() {
             changeFilter("department", "#department");
         });
 
         function changeFilter(filterName, divName) {
             let urlParams = new URLSearchParams(document.location.search.substr(1));
-            setQueryParam(filterName, jQuery(divName).val(), urlParams);
+            setQueryParam(filterName, document.querySelector(divName).value, urlParams);
             setQueryParam("offset", 0, urlParams);
             window.location.search = urlParams.toString();
         }
