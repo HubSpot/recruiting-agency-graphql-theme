@@ -7,6 +7,7 @@
 .role-filter-wrapper {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
 }
 .role-filter {
     margin: 12px;
