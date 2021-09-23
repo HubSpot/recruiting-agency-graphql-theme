@@ -1,10 +1,10 @@
 """
   label: "Role Listings"
-  description: "Role listings query for Recruiting Agency case study."
+  description: "Query that retrieves and filters roles in different ways. When filtering by company we need to find the company first and then fetch its associated roles. We use the directives @skip and @include to control which query will run. The last two queries fetch the values we use for generating the filtering options in the UI."
 """
 query role_listings($offset: Int = 0, $limit: Int = 1, $location: String, $department: String, $company: String, $searchByCompany: Boolean! = false) {
   CRM {
-    p_role_collection(limit: $limit, offset: $offset, filter: {location_eq: $location, department_eq: $department}) @skip(if:$searchByCompany) {
+    roles_by_location_department: p_role_collection(limit: $limit, offset: $offset, filter: {location_eq: $location, department_eq: $department}) @skip(if:$searchByCompany) {
       items {
         associations {
           company_collection__role_to_company {
@@ -26,7 +26,7 @@ query role_listings($offset: Int = 0, $limit: Int = 1, $location: String, $depar
       offset
       total
     }
-    companyFilter: company_collection(filter: {name_eq: $company}) @include(if:$searchByCompany) {
+    roles_by_associated_company: company_collection(filter: {name_eq: $company}) @include(if:$searchByCompany) {
       items {
         associations {
           p_role_collection__role_to_company(limit: $limit, offset: $offset, filter: {location_eq: $location, department_eq: $department}) {
@@ -48,13 +48,13 @@ query role_listings($offset: Int = 0, $limit: Int = 1, $location: String, $depar
         name
       }
     }
-    departmentAndLocationFilterOptions: p_role_collection(limit: 1000) {
+    department_and_location_filter_options: p_role_collection(limit: 1000) {
       items {
         department
         location
       }
     }
-    companyFilterOptions: company_collection(limit: 1000) {
+    company_filter_options: company_collection(limit: 1000) {
       items {
         name
       }

@@ -2,26 +2,26 @@
 {% set locations = [] %}
 {% set companies = [] %}
 
-{% for departmentAndLocationFilterOption in data_query.data.CRM.departmentAndLocationFilterOptions.items %}
-    {% do departments.append(departmentAndLocationFilterOption.department) %}
-    {% do locations.append(departmentAndLocationFilterOption.location) %}
+{% for filterOption in data_query.data.CRM.department_and_location_filter_options.items %}
+    {% do departments.append(filterOption.department) %}
+    {% do locations.append(filterOption.location) %}
 {% endfor %}
 
-{% for company in data_query.data.CRM.companyFilterOptions.items %}
-    {% do companies.append(company.name) %}
+{% for filterOption in data_query.data.CRM.company_filter_options.items %}
+    {% do companies.append(filterOption.name) %}
 {% endfor %}
 
 {% set uniqueDepartments = departments|unique %}
 {% set uniqueLocations = locations|unique %}
 {% set uniqueCompanies = companies|unique %}
 
-{% set roleCollection = data_query.data.CRM.p_role_collection %}
+{% set roleCollection = data_query.data.CRM.roles_by_location_department %}
 
 {% set searchingByCompany = false %}
 
 {% if request.query_dict.searchByCompany %}
     {% set searchingByCompany = true %}
-    {% set roleCollection = data_query.data.CRM.companyFilter.items[0].associations.p_role_collection__role_to_company %}
+    {% set roleCollection = data_query.data.CRM.roles_by_associated_company.items[0].associations.p_role_collection__role_to_company %}
 {% endif %}
 
 {% set roles = roleCollection.items %}
