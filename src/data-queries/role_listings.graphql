@@ -1,11 +1,11 @@
 #  label: "Role Listings"
 #  description: "Query that retrieves and filters roles in different ways. When filtering by company we need to find the company first and then fetch its associated roles. We use the directives @skip and @include to control which query will run. The last two queries fetch the values we use for generating the filtering options in the UI."
-#  $limit = {{module.cards_per_row * module.rows_per_page}}
-#  $offset = {{request.query_dict.offset}}
-#  $location = {{request.query_dict.location}}
-#  $department = {{request.query_dict.department}}
-#  $company = {{request.query_dict.company}}
-#  $searchByCompany = {{request.query_dict.searchByCompany}}
+#  $limit: {{module.cards_per_row * module.rows_per_page}}
+#  $offset: {{request.query_dict.offset}}
+#  $location: "{{request.query_dict.location}}"
+#  $department: "{{request.query_dict.department}}"
+#  $company: "{{request.query_dict.company}}"
+#  $searchByCompany: {{request.query_dict.searchByCompany}}
 query role_listings($offset: Int, $limit: Int, $location: String, $department: String, $company: String, $searchByCompany: Boolean! = false) {
   CRM {
     # Gets roles when there is either no filtering, or we're filtering by location and/or department.
