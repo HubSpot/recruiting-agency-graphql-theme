@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "type": "number",
+    "display": "text",
+    "step": 1,
+    "label": "Cards per Row",
+    "name": "cards_per_row",
+    "max": 5,
+    "min": 2,
+    "default": 2
+  },
+  {
+    "type": "number",
+    "display": "text",
+    "step": 1,
+    "label": "Rows per Page",
+    "name": "rows_per_page",
+    "max": 10,
+    "min": 2,
+    "default": 2
+  },
+  {
+    "type": "boolean",
+    "default": true,
+    "display": "checkbox",
+    "label": "Show Description",
+    "name": "show_description"
+  },
+  {
+    "type": "number",
+    "display": "text",
+    "step": 1,
+    "label": "Length of Description to Show",
+    "name": "description_length",
+    "max": 200,
+    "min": 50,
+    "default": 100,
+    "visibility": {
+      "controlling_field": "show_description",
+      "operator": "EQUAL",
+      "controlling_value_regex": "true"
+    }
+  },
+  {
+    "type": "boolean",
+    "default": true,
+    "display": "checkbox",
+    "label": "Show Company",
+    "name": "show_company"
+  }
+]
+
