@@ -23,11 +23,16 @@
     "type": "number",
     "display": "text",
     "step": 1,
-    "label": "Description Length to Show",
+    "label": "Length of Description to Show",
     "name": "description_length",
     "max": 200,
     "min": 50,
-    "default": 100
+    "default": 100,
+    "visibility": {
+      "controlling_field": "show_description",
+      "operator": "EQUAL",
+      "controlling_value_regex": "true"
+    }
   },
   {
     "type": "boolean",
@@ -44,3 +49,4 @@
     "name": "show_description"
   }
 ]
+
