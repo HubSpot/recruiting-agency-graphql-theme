@@ -3,7 +3,7 @@
 #  $offset: {{ request.query_dict.offset || 0 }}
 #  $limit: {{ (module.cards_per_row * module.rows_per_page) || 5 }}
 #  $location: "{{ request.query_dict.location || "" }}"
-#  $department: "{{ request.query_dict.department || ""}}"
+#  $department: "{{ request.query_dict.department || "" }}"
 #  $company: "{{ request.query_dict.company || "" }}"
 #  $searchByCompany: {{ request.query_dict.searchByCompany || false }}
 query role_listings(
