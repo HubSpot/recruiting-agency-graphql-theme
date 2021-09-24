@@ -1,8 +1,8 @@
-"""
-  label: "Application Instance"
-  description: "Application instance query for Recruiting Agency case study."
-"""
-query application($applicationId: String!, $contact_id: String = "{{request.contact.contact_vid}}") {
+#  label: "Application Instance"
+#  description: "Application instance query for Recruiting Agency case study."
+#  $applicationId: "{{ request.query_dict.applicationId || "" }}
+#  $contact_id: "{{ request.contact.contact_vid || "" }}
+query application($applicationId: String!, $contact_id: String) {
   CRM {
     p_job_application(uniquePropertyName: "id", uniquePropertyValue: $applicationId) {
       job_title
