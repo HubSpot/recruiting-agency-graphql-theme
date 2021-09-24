@@ -7,9 +7,10 @@
 .role-filter-wrapper {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
 }
 .role-filter {
-    margin: 24px;
+    margin: 12px;
 }
 
 .role-filter select {
