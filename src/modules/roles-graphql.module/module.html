@@ -34,7 +34,7 @@
 
 {% set roles = roleCollection.items %}
 
-{% set offset = request.query_dict.offset %}
+{% set offset = roleCollection.offset %}
 {% set limit = module.cards_per_row * module.rows_per_page %}
 
 {% set currentPage = ((offset / limit) + 1)|round(0, 'ceil') %}
