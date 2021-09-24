@@ -20,6 +20,13 @@
     "default": 2
   },
   {
+    "type": "boolean",
+    "default": true,
+    "display": "checkbox",
+    "label": "Show Description",
+    "name": "show_description"
+  },
+  {
     "type": "number",
     "display": "text",
     "step": 1,
@@ -40,13 +47,6 @@
     "display": "checkbox",
     "label": "Show Company",
     "name": "show_company"
-  },
-  {
-    "type": "boolean",
-    "default": true,
-    "display": "checkbox",
-    "label": "Show Description",
-    "name": "show_description"
   }
 ]
 
