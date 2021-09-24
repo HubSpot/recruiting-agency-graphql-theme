@@ -10,12 +10,14 @@
 {% set locations = [] %}
 {% set companies = [] %}
 
-{% for filterOption in data_query.data.CRM.department_and_location_filter_options.items %}
+{% set dataQueryData = module.data_query.data.CRM %}
+
+{% for filterOption in dataQueryData.department_and_location_filter_options.items %}
     {% do departments.append(filterOption.department) %}
     {% do locations.append(filterOption.location) %}
 {% endfor %}
 
-{% for filterOption in data_query.data.CRM.company_filter_options.items %}
+{% for filterOption in dataQueryData.company_filter_options.items %}
     {% do companies.append(filterOption.name) %}
 {% endfor %}
 
@@ -23,13 +25,13 @@
 {% set uniqueLocations = locations|unique %}
 {% set uniqueCompanies = companies|unique %}
 
-{% set roleCollection = data_query.data.CRM.roles_by_location_department %}
+{% set roleCollection = dataQueryData.roles_by_location_department %}
 
 {% set searchingByCompany = false %}
 
 {% if request.query_dict.searchByCompany %}
     {% set searchingByCompany = true %}
-    {% set roleCollection = data_query.data.CRM.roles_by_associated_company.items[0].associations.p_role_collection__role_to_company %}
+    {% set roleCollection = dataQueryData.roles_by_associated_company.items[0].associations.p_role_collection__role_to_company %}
 {% endif %}
 
 {% set roles = roleCollection.items %}
@@ -37,7 +39,7 @@
 {% set offset = roleCollection.offset %}
 {% set limit = module.cards_per_row * module.rows_per_page %}
 
-{% set currentPage = ((offset / limit) + 1)|round(0, 'ceil') %}
+{% set currentPage = ((offset / limit))|round(0, 'ceil') %}
 
 {% set totalPages = (roleCollection.total / limit)|round(0, 'ceil')  %}
 
