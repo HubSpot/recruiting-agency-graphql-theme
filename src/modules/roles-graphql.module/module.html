@@ -1,4 +1,29 @@
-{% set roleCollection = data_query.data.CRM.p_role_collection %}
+{% set departments = [] %}
+{% set locations = [] %}
+{% set companies = [] %}
+
+{% for filterOption in data_query.data.CRM.department_and_location_filter_options.items %}
+    {% do departments.append(filterOption.department) %}
+    {% do locations.append(filterOption.location) %}
+{% endfor %}
+
+{% for filterOption in data_query.data.CRM.company_filter_options.items %}
+    {% do companies.append(filterOption.name) %}
+{% endfor %}
+
+{% set uniqueDepartments = departments|unique %}
+{% set uniqueLocations = locations|unique %}
+{% set uniqueCompanies = companies|unique %}
+
+{% set roleCollection = data_query.data.CRM.roles_by_location_department %}
+
+{% set searchingByCompany = false %}
+
+{% if request.query_dict.searchByCompany %}
+    {% set searchingByCompany = true %}
+    {% set roleCollection = data_query.data.CRM.roles_by_associated_company.items[0].associations.p_role_collection__role_to_company %}
+{% endif %}
+
 {% set roles = roleCollection.items %}
 
 {% set offset = roleCollection.offset %}
@@ -7,32 +32,46 @@
 {% set currentPage = (offset / limit)|int %}
 {% set totalPages = (roleCollection.total / limit)|int  %}
 
-<div>
-    <div>
+<div class="role-filter-wrapper">
+    <div class="role-filter">
         Filter by location:
         <select id="location">
             <option value="">All Locations</option>
-            <option value="Remote">Remote</option>
-            <option value="Sweden">Sweden</option>
+            {% for location in uniqueLocations %}
+                <option value="{{location}}">{{location}}</option>
+            {% endfor %}
         </select>
     </div>
-    <div>
+    <div class="role-filter">
         Filter by department:
         <select id="department">
             <option value="">All Departments</option>
-            <option value="Engineering">Engineering</option>
-            <option value="QA">QA</option>
+            {% for department in uniqueDepartments %}
+                <option value="{{department}}">{{department}}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="role-filter">
+        Filter by company:
+        <select id="company">
+            <option value="">All Companies</option>
+            {% for company in uniqueCompanies %}
+                <option value="{{company}}">{{company}}</option>
+            {% endfor %}
         </select>
     </div>
 </div>
 <div class="role-listing">
+    {% if roles|length == 0 %}
+        <h2>No Results Found</h2>
+    {% endif %}
     {% for role in roles %}
         {% set company = role.associations.company_collection__role_to_company.items|first %}
         {% set roleDetailLink = "{{ request.path }}/role?role_identifier={{role.role_identifier}}&title={{role.title}}&job_title={{role.title}}" %}
         <div class="role-card" onclick="window.location='{{ roleDetailLink }}'">
             <h1>{{ role.title }}</h1>
             <h2>{{ company.name }}</h2>
-            <p>{{ truncate(role.description, 150, false, '...') }}</p><a href="{{ roleDetailLink }}">See more...</a>
+            <p>{{ truncate(role.description, 150, false, '...') }}</p><a class="button" href="{{ roleDetailLink }}">Apply</a>
         </div>    
     {% endfor %}
 </div>
@@ -51,6 +90,14 @@
                 {% set queryParams = queryParams ~ "&location={{request.query_dict.department}}" %}
             {% endif %}
 
+            {% if request.query_dict.company %}
+                {% set queryParams = queryParams ~ "&company={{request.query_dict.company}}" %}
+            {% endif %}
+
+            {% if request.query_dict.searchByCompany %}
+                {% set queryParams = queryParams ~ "&searchByCompany={{request.query_dict.searchByCompany}}" %}
+            {% endif %}
+
             <a href="{{ request.path }}?{{queryParams}}">{{loop.index}}</a>
         {% endif %}
     {% endfor %}
@@ -65,21 +112,33 @@
         var params = url.searchParams;
 
         // Set it as the dropdown value
-        jQuery("#location").val(params.get("location"));
-        jQuery("#department").val(params.get("department"));
+        if (params.get('location')) {
+            document.querySelector("#location").value = params.get("location");
+        }
+        if (params.get('department')) {
+            document.querySelector("#department").value = params.get("department");
+        }
+        if (params.get('company')) {
+            document.querySelector("#company").value = params.get("company");
+        }
 
-        jQuery("#location").change(function() { 
-            changeFilter("location", "#location");
+        document.querySelector("#location").addEventListener('change', function() { 
+            changeFilter("location", "#location", {{searchingByCompany}});
         });
 
-        jQuery("#department").change(function() {
-            changeFilter("department", "#department");
+        document.querySelector("#department").addEventListener('change', function() {
+            changeFilter("department", "#department", {{searchingByCompany}});
         });
 
-        function changeFilter(filterName, divName) {
+        document.querySelector("#company").addEventListener('change', function() {
+            changeFilter("company", "#company", document.querySelector("#company").selectedIndex !== 0);
+        });
+
+        function changeFilter(filterName, divName, searchByCompany) {
             let urlParams = new URLSearchParams(document.location.search.substr(1));
-            setQueryParam(filterName, jQuery(divName).val(), urlParams);
+            setQueryParam(filterName, document.querySelector(divName).value, urlParams);
             setQueryParam("offset", 0, urlParams);
+            setQueryParam("searchByCompany", searchByCompany, urlParams)
             window.location.search = urlParams.toString();
         }
 
@@ -91,4 +150,4 @@
             }
         }
     }
-  </script>
+</script>

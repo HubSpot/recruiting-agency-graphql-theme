@@ -43,6 +43,8 @@ For example, the body of your request might look like this:
 
 Once the association is created, we should be finished creating our custom object definitions.
 
+If you'd like, you can use our sample data [here](./data/role_data.json) to populate available job listings. Using the CLI, you can run the following command from the root directory of the project: `hs custom-object create role ./data/role_data.json`. You should then associate each job listing with the related company (Spotify, HubSpot, or Tesla) manually in order for the rest of the site to render the job listings as expected.
+
 ## Step 2: Create Job Application Submission Form and Workflow
 
 Now that the custom objects are created, you can upload the theme to HubSpot by running the following CLI command: `hs upload src sample-graphql-theme`
@@ -67,7 +69,7 @@ Now that the boilerplate objects, forms, and workflow are created, we can move o
 
 The queries that will be used for our pages can be found in the “data-queries” folder of our theme. These GraphQL queries can be modified to include only the properties required for the page or modules they’re used in.
 
-Create a new page, and for this page select the “Role Listing - GraphQL” template. Go ahead and drag in the `Roles GraphQL` module, this module uses the data retrieved by the data query in the template to show a listing of all created role objects. Give the page a title and publish it.
+Create a new page, and for this page select the “Role Listing - GraphQL” template. This template contains the "Roles GraphQL" module, which uses the data retrieved by the data query in the template to show a listing of all created role objects. Give the page a title and publish it.
 
 Next, we’ll need the details page. For this page, use the “Role Details - GraphQL” template. This time, drag in the `Role Details GraphQL` module. Additionally, you'll need to set the Job Application Form in the settings of that module to the form we created in Step 2.
 

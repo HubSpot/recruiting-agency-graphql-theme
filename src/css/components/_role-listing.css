@@ -1,6 +1,31 @@
 .role-listing {
     margin-bottom: 48px;
-
     display: flex;
     flex-wrap: wrap;
+}
+
+.role-filter-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.role-filter {
+    margin: 12px;
+}
+
+.role-filter select {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #cbd6e2;
+    background-color: white;
+    height: 50px;
+    display: block;
+    margin-top: 5px;
+    width: 300px;
+}
+
+.role-filter select:focus, .role-filter select:active, .role-filter select:focus-visible {
+    border-color: rgba(0,208,228,.5);
+    box-shadow: 0 0 4px 1px rgb(0 208 228 / 30%), 0 0 0 1px #00d0e4;
+    outline: 0;
 }
