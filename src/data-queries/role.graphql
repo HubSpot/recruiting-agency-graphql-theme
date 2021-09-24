@@ -1,6 +1,6 @@
 #  label: "Role Instance"
 #  description: "Role instance query for Recruiting Agency case study."
-#  $role_identifier: "{{ request.query_dict.role_identifier || "" }}
+#  $role_identifier: "{{ request.query_dict.role_identifier || "" }}"
 query role($role_identifier: String!) {
   CRM {
     p_role(uniquePropertyName: "role_identifier", uniquePropertyValue: $role_identifier) {
