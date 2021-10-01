@@ -86,6 +86,11 @@
       "name": "contact_assoc",
       "fromObjectName": "job_application",
       "toObjectName": "CONTACT"
+    },
+    {
+      "name": "role_assoc",
+      "fromObjectName": "job_application",
+      "toObjectName": "role"
     }]
   }
 }
