@@ -1,137 +1,137 @@
 {
-  "name": "role",
-  "labels": { "singular": "Role", "plural": "Roles" },
-  "requiredProperties": ["title"],
-  "searchableProperties": ["title"],
-  "primaryDisplayProperty": "title",
-  "properties": [
-    {
-      "name": "department",
-      "label": "Department",
-      "type": "enumeration",
-      "fieldType": "select",
-      "description": "",
-      "options": [
-        {
-          "label": "Engineering",
-          "value": "engineering"
-        },
-        {
-          "label": "Marketing",
-          "value": "marketing"
-        },
-        {
-          "label": "Sales",
-          "value": "sales"
-        },
-        {
-          "label": "Accounting",
-          "value": "accounting"
-        },
-        {
-          "label": "Operations",
-          "value": "operations"
-        }
-      ]
-    },
-    {
-      "name": "date_fulfilled",
-      "label": "Date Fulfilled",
-      "type": "date",
-      "fieldType": "date",
-      "description": ""
-    },
-    {
-      "name": "description",
-      "label": "Description",
-      "type": "string",
-      "fieldType": "textarea",
-      "description": ""
-    },
-    {
-      "name": "desired_start_date",
-      "label": "Desired Start Date",
-      "type": "date",
-      "fieldType": "date",
-      "description": ""
-    },
-    {
-      "name": "fulfillment_status",
-      "label": "Fulfillment Status",
-      "type": "enumeration",
-      "fieldType": "select",
-      "description": "",
-      "options": [
-        {
-          "label": "Closed",
-          "value": "closed"
-        },
-        {
-          "label": "Open",
-          "value": "open"
-        }
-      ]
-    },
-    {
-      "name": "location",
-      "label": "Location",
-      "type": "string",
-      "fieldType": "text",
-      "description": ""
-    },
-    {
-      "name": "role_identifier",
-      "label": "Role Identifier",
-      "type": "string",
-      "fieldType": "text",
-      "hasUniqueValue": true,
-      "description": ""
-    },
-    {
-      "name": "salary_max",
-      "label": "Salary Max",
-      "type": "number",
-      "fieldType": "number",
-      "description": ""
-    },
-    {
-      "name": "salary_min",
-      "label": "Salary Min",
-      "type": "number",
-      "fieldType": "number",
-      "description": ""
-    },
-    {
-      "name": "status",
-      "label": "Status",
-      "type": "enumeration",
-      "fieldType": "select",
-      "description": "",
-      "options": [
-        {
-          "label": "Contract",
-          "value": "contract"
-        },
-        {
-          "label": "Full Time",
-          "value": "full-time"
-        },
-        {
-          "label": "Part Time",
-          "value": "part-time"
-        }
-      ]
-    },
-    {
-      "name": "title",
-      "label": "Title",
-      "type": "string",
-      "fieldType": "text",
-      "description": ""
-    }
-  ],
-  "associatedObjects": [
-    "COMPANY",
-    "DEAL"
-  ]
+  "type": "object-schemas",
+  "data": {
+    "name": "role",
+    "labels": { "singular": "Role", "plural": "Roles" },
+    "requiredProperties": ["title"],
+    "searchableProperties": ["title"],
+    "primaryDisplayProperty": "title",
+    "properties": [
+      {
+        "name": "department",
+        "label": "Department",
+        "type": "enumeration",
+        "fieldType": "select",
+        "description": "",
+        "options": [
+          {
+            "label": "Engineering",
+            "value": "engineering"
+          },
+          {
+            "label": "Marketing",
+            "value": "marketing"
+          },
+          {
+            "label": "Sales",
+            "value": "sales"
+          },
+          {
+            "label": "Accounting",
+            "value": "accounting"
+          },
+          {
+            "label": "Operations",
+            "value": "operations"
+          }
+        ]
+      },
+      {
+        "name": "date_fulfilled",
+        "label": "Date Fulfilled",
+        "type": "date",
+        "fieldType": "date",
+        "description": ""
+      },
+      {
+        "name": "description",
+        "label": "Description",
+        "type": "string",
+        "fieldType": "textarea",
+        "description": ""
+      },
+      {
+        "name": "desired_start_date",
+        "label": "Desired Start Date",
+        "type": "date",
+        "fieldType": "date",
+        "description": ""
+      },
+      {
+        "name": "fulfillment_status",
+        "label": "Fulfillment Status",
+        "type": "enumeration",
+        "fieldType": "select",
+        "description": "",
+        "options": [
+          {
+            "label": "Closed",
+            "value": "closed"
+          },
+          {
+            "label": "Open",
+            "value": "open"
+          }
+        ]
+      },
+      {
+        "name": "location",
+        "label": "Location",
+        "type": "string",
+        "fieldType": "text",
+        "description": ""
+      },
+      {
+        "name": "role_identifier",
+        "label": "Role Identifier",
+        "type": "string",
+        "fieldType": "text",
+        "hasUniqueValue": true,
+        "description": ""
+      },
+      {
+        "name": "salary_max",
+        "label": "Salary Max",
+        "type": "number",
+        "fieldType": "number",
+        "description": ""
+      },
+      {
+        "name": "salary_min",
+        "label": "Salary Min",
+        "type": "number",
+        "fieldType": "number",
+        "description": ""
+      },
+      {
+        "name": "status",
+        "label": "Status",
+        "type": "enumeration",
+        "fieldType": "select",
+        "description": "",
+        "options": [
+          {
+            "label": "Contract",
+            "value": "contract"
+          },
+          {
+            "label": "Full Time",
+            "value": "full-time"
+          },
+          {
+            "label": "Part Time",
+            "value": "part-time"
+          }
+        ]
+      },
+      {
+        "name": "title",
+        "label": "Title",
+        "type": "string",
+        "fieldType": "text",
+        "description": ""
+      }
+    ],
+    "associatedObjects": ["COMPANY", "DEAL"]
+  }
 }

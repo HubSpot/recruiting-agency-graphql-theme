@@ -1,0 +1,12 @@
+{
+    "name": "Jobs App",
+    "description": "App to track job applications and roles",
+    "assets": [
+        {
+            "path": "./schemas/job_application.json"
+        },
+        {
+            "path": "./schemas/role.json"
+        }
+    ]
+}
