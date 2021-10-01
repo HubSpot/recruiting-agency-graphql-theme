@@ -2,6 +2,7 @@
   "type": "object-schemas",
   "data": {
     "name": "job_application",
+    "metaType": "PORTAL_SPECIFIC",
     "labels": { "singular": "Job Application", "plural": "Job Applications" },
     "requiredProperties": ["salary_requirement", "job_title", "resume"],
     "searchableProperties": ["job_title"],
@@ -16,15 +17,18 @@
         "options": [
           {
             "label": "Applied",
-            "value": "applied"
+            "value": "applied",
+            "hidden": "false"
           },
           {
             "label": "Interviewing",
-            "value": "interviewing"
+            "value": "interviewing",
+            "hidden": "false"
           },
           {
             "label": "Rejected",
-            "value": "rejected"
+            "value": "rejected",
+            "hidden": "false"
           }
         ]
       },
@@ -78,6 +82,10 @@
         "description": ""
       }
     ],
-    "associatedObjects": ["CONTACT"]
+    "associations": [{
+      "name": "contact_assoc",
+      "fromObjectName": "job_application",
+      "toObjectName": "CONTACT"
+    }]
   }
 }

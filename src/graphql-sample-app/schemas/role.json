@@ -2,6 +2,7 @@
   "type": "object-schemas",
   "data": {
     "name": "role",
+    "metaType": "PORTAL_SPECIFIC",
     "labels": { "singular": "Role", "plural": "Roles" },
     "requiredProperties": ["title"],
     "searchableProperties": ["title"],
@@ -16,23 +17,28 @@
         "options": [
           {
             "label": "Engineering",
-            "value": "engineering"
+            "value": "engineering",
+            "hidden": "false"
           },
           {
             "label": "Marketing",
-            "value": "marketing"
+            "value": "marketing",
+            "hidden": "false"
           },
           {
             "label": "Sales",
-            "value": "sales"
+            "value": "sales",
+            "hidden": "false"
           },
           {
             "label": "Accounting",
-            "value": "accounting"
+            "value": "accounting",
+            "hidden": "false"
           },
           {
             "label": "Operations",
-            "value": "operations"
+            "value": "operations",
+            "hidden": "false"
           }
         ]
       },
@@ -66,11 +72,13 @@
         "options": [
           {
             "label": "Closed",
-            "value": "closed"
+            "value": "closed",
+            "hidden": "false"
           },
           {
             "label": "Open",
-            "value": "open"
+            "value": "open",
+            "hidden": "false"
           }
         ]
       },
@@ -112,15 +120,18 @@
         "options": [
           {
             "label": "Contract",
-            "value": "contract"
+            "value": "contract",
+            "hidden": "false"
           },
           {
             "label": "Full Time",
-            "value": "full-time"
+            "value": "full-time",
+            "hidden": "false"
           },
           {
             "label": "Part Time",
-            "value": "part-time"
+            "value": "part-time",
+            "hidden": "false"
           }
         ]
       },
@@ -132,6 +143,15 @@
         "description": ""
       }
     ],
-    "associatedObjects": ["COMPANY", "DEAL"]
+    "associations": [{
+      "name": "company_assoc",
+      "fromObjectName": "role",
+      "toObjectName": "COMPANY"
+    },
+    {
+      "name": "deal_assoc",
+      "fromObjectName": "role",
+      "toObjectName": "DEAL"
+    }]
   }
 }

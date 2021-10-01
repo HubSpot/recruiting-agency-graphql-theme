@@ -1,6 +1,7 @@
 {
     "name": "Jobs App",
     "description": "App to track job applications and roles",
+    "public": false,
     "assets": [
         {
             "path": "./schemas/job_application.json"
