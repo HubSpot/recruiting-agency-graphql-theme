@@ -69,7 +69,11 @@
         <h2>No Results Found</h2>
     {% endif %}
     {% for role in roles %}
-        {% set company = role.associations.company_collection__role_to_company.items|first %}
+        {% if request.query_dict.searchByCompany %}
+            {% set company = dataQueryData.roles_by_associated_company.items[0] %}
+        {% else %}
+            {% set company = role.associations.company_collection__role_to_company.items|first %}
+        {% endif %}
         {% set roleDetailLink = "{{ request.path }}/role?role_identifier={{role.role_identifier}}&title={{role.title}}&job_title={{role.title}}" %}
         <div class="role-card" onclick="window.location='{{ roleDetailLink }}'">
             <h1>{{ role.title }}</h1>
