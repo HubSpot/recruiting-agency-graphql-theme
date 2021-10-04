@@ -1,6 +1,6 @@
 <!-- module html  -->
 
-{% set contact = data_query.data.CRM.contact_collection.items|first %}
+{% set contact = data_query.data.CRM.contact %}
 {% set applications = contact.associations.p_job_application_collection__job_application_to_contact.items %}
 <h3>{{applications|length}} Applications:</h3>
 <ul>

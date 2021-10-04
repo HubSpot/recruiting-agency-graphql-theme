@@ -1,18 +1,16 @@
 #  label: "Application Listings"
 #  description: "Application listings query for Recruiting Agency case study."
 #  $contact_id: "{{ request.contact.contact_vid || "" }}"
-query application_listings($contact_id: String) {
+query application_listings($contact_id: String!) {
   CRM {
-    contact_collection(filter: {hs_object_id_eq: $contact_id}) {
-      items {
-        id
-        associations {
-          p_job_application_collection__job_application_to_contact {
-            items {
-              id
-              job_title
-              application_status
-            }
+    contact(uniquePropertyName: "id", uniquePropertyValue: $contact_id) {
+      id
+      associations {
+        p_job_application_collection__job_application_to_contact {
+          items {
+            id
+            job_title
+            application_status
           }
         }
       }
