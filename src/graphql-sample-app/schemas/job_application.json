@@ -1,7 +1,7 @@
 {
   "type": "object-schemas",
   "data": {
-    "name": "job_application",
+    "name": "p_job_application",
     "metaType": "PORTAL_SPECIFIC",
     "labels": { "singular": "Job Application", "plural": "Job Applications" },
     "requiredProperties": ["salary_requirement", "job_title", "resume"],
@@ -84,13 +84,13 @@
     ],
     "associations": [{
       "name": "contact_assoc",
-      "fromObjectName": "job_application",
+      "fromObjectName": "p_job_application",
       "toObjectName": "CONTACT"
     },
     {
       "name": "role_assoc",
-      "fromObjectName": "job_application",
-      "toObjectName": "role"
+      "fromObjectName": "p_job_application",
+      "toObjectName": "p_role"
     }]
   }
 }

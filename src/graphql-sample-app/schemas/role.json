@@ -1,7 +1,7 @@
 {
   "type": "object-schemas",
   "data": {
-    "name": "role",
+    "name": "p_role",
     "metaType": "PORTAL_SPECIFIC",
     "labels": { "singular": "Role", "plural": "Roles" },
     "requiredProperties": ["title"],
@@ -145,12 +145,12 @@
     ],
     "associations": [{
       "name": "company_assoc",
-      "fromObjectName": "role",
+      "fromObjectName": "p_role",
       "toObjectName": "COMPANY"
     },
     {
       "name": "deal_assoc",
-      "fromObjectName": "role",
+      "fromObjectName": "p_role",
       "toObjectName": "DEAL"
     }]
   }
