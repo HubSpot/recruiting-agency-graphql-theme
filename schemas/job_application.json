@@ -31,7 +31,8 @@
       "label": "Cover Letter",
       "type": "string",
       "fieldType": "file",
-      "description": ""
+      "description": "",
+      "formField": true
     },
     {
       "name": "interview_date",

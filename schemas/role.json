@@ -85,7 +85,8 @@
       "type": "string",
       "fieldType": "text",
       "hasUniqueValue": true,
-      "description": ""
+      "description": "",
+      "formField": true
     },
     {
       "name": "salary_max",
