@@ -1,0 +1,19 @@
+[
+  {
+    "type": "text",
+    "display": "text",
+    "label": "Title",
+    "name": "title",
+    "default": "Related jobs"
+  },
+  {
+    "type": "number",
+    "display": "text",
+    "step": 1,
+    "label": "Roles to Show",
+    "name": "roles_to_show",
+    "max": 6,
+    "min": 3,
+    "default": 3
+  }
+]

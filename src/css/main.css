@@ -26,6 +26,7 @@
 {% include './components/_default-modules.css' %}
 {% include './components/_role-card.css' %}
 {% include './components/_role-listing.css' %}
+{% include './components/_featured-roles.css' %}
 
 /* Utilities */
 
