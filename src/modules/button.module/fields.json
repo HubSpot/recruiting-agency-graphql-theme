@@ -1,65 +1,24 @@
 [
   {
-    "label": "Button text",
-    "name": "button_text",
-    "type": "text",
-    "required": true,
-    "default": "Learn more"
-  },
-  {
     "label": "Button link",
-    "name": "button_link",
+    "name": "link",
     "type": "link",
-    "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"],
+    "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS"],
     "default": {
       "url": {
         "href": "",
         "type": "EXTERNAL"
-      }
+      },
+      "no_follow": false,
+      "open_in_new_tab": false
     }
   },
   {
-    "label": "Add icon",
-    "name": "add_icon",
-    "id": "add_icon",
-    "type": "boolean",
-    "default": false
-  },
-  {
-    "label": "Icon",
-    "name": "icon",
-    "type": "group",
-    "visibility": {
-      "controlling_field": "add_icon",
-      "controlling_value_regex": "true",
-      "operator": "EQUAL"
-    },
-    "expanded": true,
-    "children": [
-      {
-        "label": "Icon",
-        "name": "icon",
-        "type": "icon",
-        "required": true,
-        "default": {
-          "name": "hubspot",
-          "type" : "SOLID",
-          "unicode": "f3b2"
-        }
-      },
-      {
-        "label": "Position",
-        "name": "position",
-        "type": "choice",
-        "choices": [
-          ["left", "Left"],
-          ["right", "Right"]
-        ],
-        "display": "select",
-        "required": true,
-        "default": "left"
-      }
-    ]
+    "label": "Button text",
+    "name": "button_text",
+    "type": "text",
+    "required": true,
+    "default": "Add a button link here"
   },
   {
     "label": "Styles",
@@ -68,40 +27,6 @@
     "tab": "STYLE",
     "children": [
       {
-        "label": "Presets",
-        "name": "presets",
-        "type": "group",
-        "help_text": "Use presets to quickly adjust the appearance of the selected item to predefined values.",
-        "children": [
-          {
-            "label": "Button style",
-            "name": "button_style",
-            "type": "choice",
-            "choices": [
-              ["primary", "Primary"],
-              ["secondary", "Secondary"],
-              ["simple", "Simple"]
-            ],
-            "display": "select",
-            "required": true,
-            "default": "primary"
-          },
-          {
-            "label": "Button size",
-            "name": "button_size",
-            "type": "choice",
-            "choices": [
-              ["small", "Small"],
-              ["regular", "Regular"],
-              ["large", "Large"]
-            ],
-            "display": "select",
-            "required": true,
-            "default": "regular"
-          }
-        ]
-      },
-      {
         "label": "Text",
         "name": "text",
         "type": "group",
@@ -109,22 +34,7 @@
           {
             "label": "Font",
             "name": "font",
-            "type": "font",
-            "default": {
-              "size_unit": "px"
-            }
-          },
-          {
-            "label": "Transform",
-            "name": "transform",
-            "type": "choice",
-            "choices": [
-              [ "none", "None" ],
-              [ "capitalize", "Capitalize" ],
-              [ "uppercase", "Uppercase" ],
-              [ "lowercase", "Lowercase" ]
-            ],
-            "display": "select"
+            "type": "font"
           }
         ]
       },
@@ -177,54 +87,6 @@
             "label": "Spacing",
             "name": "spacing",
             "type": "spacing"
-          }
-        ]
-      },
-      {
-        "label": "Hover",
-        "name": "hover",
-        "type": "group",
-        "children": [
-          {
-            "label": "Text",
-            "name": "text",
-            "type": "group",
-            "children": [
-              {
-                "label": "Font",
-                "name": "font",
-                "type": "font",
-                "visibility": {
-                  "hidden_subfields": {
-                    "size": true
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "label": "Background",
-            "name": "background",
-            "type": "group",
-            "children": [
-              {
-                "label": "Color",
-                "name": "color",
-                "type": "color"
-              }
-            ]
-          },
-          {
-            "label": "Border",
-            "name": "border",
-            "type": "group",
-            "children": [
-              {
-                "label" : "Border",
-                "name" : "border",
-                "type" : "border"
-              }
-            ]
           }
         ]
       },
