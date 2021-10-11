@@ -5,14 +5,18 @@
     padding: 24px;
     margin: 24px;
     border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.role-card>h1 {
+.role-card h1 {
     font-size: 28px;
     margin: 0px;
 }
 
-.role-card>h2 {
+.role-card h2 {
     font-size: 22px;
     margin: 12px 0px 24px 0px;
 }

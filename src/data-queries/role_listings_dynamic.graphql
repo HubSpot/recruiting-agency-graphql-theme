@@ -1,0 +1,79 @@
+#  label: "Role Listings - Dynamic"
+#  description: "Query that retrieves and filters roles in different ways. When filtering by company we need to find the company first and then fetch its associated roles. We use the directives @skip and @include to control which query will run. The last two queries fetch the values we use for generating the filtering options in the UI."
+#  $offset: {{ request.query_dict.offset || 0 }}
+#  $limit: {{ (module.cards_per_row * module.rows_per_page) || 5 }}
+#  $company: "{{ request.path_param_dict.dynamic_slugs|length > 0 && request.path_param_dict.dynamic_slugs[0] != "all" ? request.path_param_dict.dynamic_slugs[0] : "" }}"
+#  $department: "{{ request.path_param_dict.dynamic_slugs|length > 1 && request.path_param_dict.dynamic_slugs[1] != "all" ? request.path_param_dict.dynamic_slugs[1] : "" }}"
+#  $location: "{{ request.path_param_dict.dynamic_slugs|length > 2 && request.path_param_dict.dynamic_slugs[2] != "all" ? request.path_param_dict.dynamic_slugs[2] : "" }}"
+#  $searchByCompany: {{ request.path_param_dict.dynamic_slugs|length > 0 && request.path_param_dict.dynamic_slugs[0] != "all" ? true : false }}
+query role_listings_dynamic(
+  $offset: Int, 
+  $limit: Int, 
+  $location: String, 
+  $department: String,
+  $company: String, 
+  $searchByCompany: Boolean!) {
+  CRM {
+    # Gets roles when there is either no filtering, or we're filtering by location and/or department.
+    roles_by_location_department: p_role_collection(limit: $limit, offset: $offset, filter: {location_eq: $location, department_eq: $department}) @skip(if:$searchByCompany) {
+      items {
+        associations {
+          company_collection__role_to_company {
+            items {
+              name
+            }
+          }
+        }
+        department
+        description
+        id
+        location
+        role_identifier
+        title
+        status
+      }
+      hasMore
+      limit
+      offset
+      total
+    }
+    # Gets roles when filtering by company. This is a separate query because when filtering by company
+    # we have to start from the company and get all associated roles.
+    roles_by_associated_company: company_collection(filter: {name_eq: $company}) @include(if:$searchByCompany) {
+      items {
+        associations {
+          p_role_collection__role_to_company(limit: $limit, offset: $offset, filter: {location_eq: $location, department_eq: $department}) {
+            items {
+              department
+              description
+              id
+              location
+              role_identifier
+              title
+              status
+            }
+            hasMore
+            limit
+            offset
+            total
+          }
+        }
+        name
+      }
+    }
+    # Retrieves all available departments and locations to show in dropdown boxes on the role listing page
+    # as available filters.
+    department_and_location_filter_options: p_role_collection(limit: 1000) {
+      items {
+        department
+        location
+      }
+    }
+    # Retrieves all company names to show in dropdown boxes on the role listing page as available filters.
+    company_filter_options: company_collection(limit: 1000) {
+      items {
+        name
+      }
+    }
+  }
+}

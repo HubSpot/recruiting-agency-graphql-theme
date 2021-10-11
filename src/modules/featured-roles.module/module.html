@@ -11,12 +11,16 @@
             {% for role in roles %}
                 {% set company = dataQueryData.company_collection.items[0] %}
                 
-                {% set roleDetailLink = "{{ request.path }}?role_identifier={{role.role_identifier}}&title={{role.title}}&job_title={{role.title}}" %}
+                {% set roleDetailLink = "{{ role.role_identifier }}?role_identifier={{role.role_identifier}}&title={{role.title}}&job_title={{role.title}}" %}
                 <div class="role-card" onclick="window.location='{{ roleDetailLink }}'">
-                    <h1>{{ role.title }}</h1>
-                    <h2>{{ company.name }}</h2>
-                    <p>{{ truncate(role.description, 128, false, '...') }}</p>
-                    <a class="button" href="{{ roleDetailLink }}">View Role</a>
+                    <div class="role-card-body">
+                        <h1>{{ role.title }}</h1>
+                        <h2>{{ company.name }}</h2>
+                        <p>{{ truncate(role.description, 128, false, '...') }}</p>
+                    </div>
+                    <div class="role-card-actions">
+                        <a class="button" href="{{ roleDetailLink }}">View Role</a>
+                    </div>
                 </div>    
             {% endfor %}
         </div>

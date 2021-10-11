@@ -2,6 +2,10 @@
 {% set locations = [] %}
 {% set companies = [] %}
 
+{% set filteredCompany = request.path_param_dict.dynamic_slugs|length > 0 && request.path_param_dict.dynamic_slugs[0] != "all" ? request.path_param_dict.dynamic_slugs[0] : "" %}
+{% set filteredDepartment = request.path_param_dict.dynamic_slugs|length > 1 && request.path_param_dict.dynamic_slugs[1] != "all" ? request.path_param_dict.dynamic_slugs[1] : "" %}
+{% set filteredLocation = request.path_param_dict.dynamic_slugs|length > 2 && request.path_param_dict.dynamic_slugs[2] != "all" ? request.path_param_dict.dynamic_slugs[2] : "" %}
+
 {% set dataQueryData = module.data_query.data.CRM %}
 
 {% for filterOption in dataQueryData.department_and_location_filter_options.items %}
@@ -19,10 +23,9 @@
 
 {% set roleCollection = dataQueryData.roles_by_location_department %}
 
-{% set searchingByCompany = false %}
+{% set searchingByCompany = request.path_param_dict.dynamic_slugs|length > 0 && request.path_param_dict.dynamic_slugs[0] != "all" ? true : false %}
 
-{% if request.query_dict.searchByCompany %}
-    {% set searchingByCompany = true %}
+{% if searchingByCompany %}
     {% set roleCollection = dataQueryData.roles_by_associated_company.items[0].associations.p_role_collection__role_to_company %}
 {% endif %}
 
@@ -41,7 +44,7 @@
         <select id="location">
             <option value="">All Locations</option>
             {% for location in uniqueLocations %}
-                <option value="{{location}}">{{location}}</option>
+                <option value="{{location}}" {{location == filteredLocation ? "selected" : ""}}>{{location}}</option>
             {% endfor %}
         </select>
     </div>
@@ -50,7 +53,7 @@
         <select id="department">
             <option value="">All Departments</option>
             {% for department in uniqueDepartments %}
-                <option value="{{department}}">{{department}}</option>
+                <option value="{{department}}" {{department == filteredDepartment ? "selected" : ""}}>{{department}}</option>
             {% endfor %}
         </select>
     </div>
@@ -59,7 +62,7 @@
         <select id="company">
             <option value="">All Companies</option>
             {% for company in uniqueCompanies %}
-                <option value="{{company}}">{{company}}</option>
+                <option value="{{company}}" {{company == filteredCompany ? "selected" : ""}}>{{company}}</option>
             {% endfor %}
         </select>
     </div>
@@ -69,22 +72,26 @@
         <h2>No Results Found</h2>
     {% endif %}
     {% for role in roles %}
-        {% if request.query_dict.searchByCompany %}
+        {% if searchingByCompany %}
             {% set company = dataQueryData.roles_by_associated_company.items[0] %}
         {% else %}
             {% set company = role.associations.company_collection__role_to_company.items|first %}
         {% endif %}
         
-        {% set roleDetailLink = "{{ request.path }}/role?role_identifier={{role.role_identifier}}&title={{role.title}}&job_title={{role.title}}" %}
+        {% set roleDetailLink = "/roles/detail/{{role.role_identifier}}?role_identifier={{role.role_identifier}}&title={{role.title}}&job_title={{role.title}}" %}
         <div class="role-card" onclick="window.location='{{ roleDetailLink }}'">
-            <h1>{{ role.title }}</h1>
-            {% if module.show_company %}
-                <h2>{{ company.name }}</h2>
-            {% endif %}
-            {% if module.show_description %}
-                <p>{{ truncate(role.description, module.description_length, false, '...') }}</p>
-            {% endif %}
-            <a class="button" href="{{ roleDetailLink }}">Apply</a>
+            <div class="role-card-body">
+                <h1>{{ role.title }}</h1>
+                {% if module.show_company %}
+                    <h2>{{ company.name }}</h2>
+                {% endif %}
+                {% if module.show_description %}
+                    <p>{{ truncate(role.description, module.description_length, false, '...') }}</p>
+                {% endif %}
+            </div> 
+            <div class="role-card-actions">
+                <a class="button" href="{{ roleDetailLink }}">Apply</a>
+            </div>
         </div>    
     {% endfor %}
 </div>
@@ -95,72 +102,54 @@
         {% else %}
             {% set queryParams = "offset={{i*limit}}&limit={{limit}}" %}
 
-            {% if request.query_dict.location %}
-                {% set queryParams = queryParams ~ "&location={{request.query_dict.location}}" %}
-            {% endif %}
-
-            {% if request.query_dict.department %}
-                {% set queryParams = queryParams ~ "&location={{request.query_dict.department}}" %}
-            {% endif %}
-
-            {% if request.query_dict.company %}
-                {% set queryParams = queryParams ~ "&company={{request.query_dict.company}}" %}
-            {% endif %}
-
-            {% if request.query_dict.searchByCompany %}
-                {% set queryParams = queryParams ~ "&searchByCompany={{request.query_dict.searchByCompany}}" %}
-            {% endif %}
-
             <a href="{{ request.path }}?{{queryParams}}">{{loop.index}}</a>
         {% endif %}
     {% endfor %}
 </div>
 
 <script>
-    window.onload = function() {
+    window.onload = function() { 
         // Construct URL object using current browser URL
         var url = new URL(document.location);
 
-        // Get query parameters object
-        var params = url.searchParams;
-
-        // Set it as the dropdown value
-        if (params.get('location')) {
-            document.querySelector("#location").value = params.get("location");
-        }
-        if (params.get('department')) {
-            document.querySelector("#department").value = params.get("department");
-        }
-        if (params.get('company')) {
-            document.querySelector("#company").value = params.get("company");
-        }
-
         document.querySelector("#location").addEventListener('change', function() { 
-            changeFilter("location", "#location", {{searchingByCompany}});
+            changeFilter();
         });
 
         document.querySelector("#department").addEventListener('change', function() {
-            changeFilter("department", "#department", {{searchingByCompany}});
+        changeFilter();
         });
 
         document.querySelector("#company").addEventListener('change', function() {
-            changeFilter("company", "#company", document.querySelector("#company").selectedIndex !== 0);
+            changeFilter();
         });
 
-        function changeFilter(filterName, divName, searchByCompany) {
-            let urlParams = new URLSearchParams(document.location.search.substr(1));
-            setQueryParam(filterName, document.querySelector(divName).value, urlParams);
-            setQueryParam("offset", 0, urlParams);
-            setQueryParam("searchByCompany", searchByCompany, urlParams)
-            window.location.search = urlParams.toString();
-        }
+        function changeFilter() {
+            var href = url.origin + "/roles";
 
-        function setQueryParam(paramName, paramValue, urlParams) {
-            if (paramValue == null || paramValue === "") {
-                urlParams.delete(paramName);
-            } else { 
-                urlParams.set(paramName, paramValue);
+            var companyValue = document.querySelector("#company").value;
+            var departmentValue = document.querySelector("#department").value;
+            var locationValue = document.querySelector("#location").value;
+            
+            if (companyValue) {
+                href += "/" + companyValue;
+            } else {
+                href += "/all";
             }
+
+            if (departmentValue) {
+                href += "/" + departmentValue;
+            } else {
+                href += "/all";
+            }
+
+            if (locationValue) {
+                href += "/" + locationValue;
+            } else {
+                href += "/all";
+            }
+
+            window.location.href = href;
         }
     }
 </script>
