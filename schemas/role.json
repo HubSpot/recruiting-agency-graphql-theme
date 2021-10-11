@@ -45,7 +45,7 @@
       "name": "description",
       "label": "Description",
       "type": "string",
-      "fieldType": "textarea",
+      "fieldType": "html",
       "description": ""
     },
     {
