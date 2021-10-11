@@ -1,31 +1,11 @@
-/* Logo */
-
-.widget-type-logo img {
-  height: auto;
-  margin-bottom: 1.4rem;
-  max-width: 100%;
-}
-
 /* Menu and simple menu */
 
 .hs-menu-wrapper ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   list-style: none;
   margin: 0;
   padding-left: 0;
-}
-
-.hs-menu-wrapper li {
-  margin: 0;
-}
-
-@media (max-width: 767px) {
-  .hs-menu-wrapper li {
-    margin-bottom: 1.4rem;
-    text-align: center;
-  }
 }
 
 /* Horizontal menu */
@@ -73,17 +53,13 @@
   white-space: nowrap;
 }
 
-.hs-menu-wrapper.hs-menu-flow-horizontal.flyouts
-.hs-item-has-children:hover
-> .hs-menu-children-wrapper {
+.hs-menu-wrapper.hs-menu-flow-horizontal.flyouts .hs-item-has-children:hover > .hs-menu-children-wrapper {
   left: 0;
   opacity: 1;
   top: 100%;
 }
 
-.hs-menu-wrapper.hs-menu-flow-vertical.flyouts
-.hs-item-has-children:hover
-> .hs-menu-children-wrapper {
+.hs-menu-wrapper.hs-menu-flow-vertical.flyouts .hs-item-has-children:hover > .hs-menu-children-wrapper {
   left: 100%;
   opacity: 1;
   top: 0;
@@ -91,12 +67,8 @@
 
 @media (max-width: 767px) {
   .hs-menu-wrapper.flyouts .hs-menu-children-wrapper,
-  .hs-menu-wrapper.hs-menu-flow-horizontal.flyouts
-  .hs-item-has-children:hover
-  > .hs-menu-children-wrapper,
-  .hs-menu-wrapper.hs-menu-flow-vertical.flyouts
-  .hs-item-has-children:hover
-  > .hs-menu-children-wrapper {
+  .hs-menu-wrapper.hs-menu-flow-horizontal.flyouts .hs-item-has-children:hover > .hs-menu-children-wrapper,
+  .hs-menu-wrapper.hs-menu-flow-vertical.flyouts .hs-item-has-children:hover > .hs-menu-children-wrapper {
     left: 0;
     opacity: 1;
     position: relative;
@@ -104,9 +76,11 @@
   }
 }
 
-/* Rich text */
+/* CTA, logo, and rich text images */
 
-.widget-type-rich_text img {
+.hs_cos_wrapper_type_cta img,
+.hs_cos_wrapper_type_logo img,
+.hs_cos_wrapper_type_rich_text img {
   height: auto;
   max-width: 100%;
 }

@@ -1,14 +1,20 @@
-/* Content wrappers for blog post and system templates */
-
 .content-wrapper {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1rem;
 }
 
-/* Drag and drop layout styles */
+@media screen and (min-width: 1380px) {
+  .content-wrapper {
+    padding: 0;
+  }
+}
 
 .dnd-section > .row-fluid {
   margin: 0 auto;
+}
+
+.dnd-section .dnd-column {
+  padding: 0 1rem;
 }
 
 @media (max-width: 767px) {
