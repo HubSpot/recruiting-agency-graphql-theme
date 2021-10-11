@@ -12,5 +12,5 @@
   "smart_type": "NOT_SMART",
   "tags": [],
   "is_available_for_new_content": true,
-  "data_query_path": "../../data-queries/role_listings_dynamic"
+  "data_query_path": "../../data-queries/role_listings"
 }
