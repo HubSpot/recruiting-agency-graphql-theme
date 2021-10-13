@@ -36,15 +36,15 @@
             {% dnd_column %}
                 {% dnd_row %}
                     {% dnd_module
-                        path='../modules/roles-graphql.module'
+                        path='../modules/role-listing.module'
                     %}
                     {% end_dnd_module %}
                 {% end_dnd_row %}
-            {% end_dnd_column %} 
+            {% end_dnd_column %}
         {% end_dnd_section %}
         {% dnd_section %}
             {% dnd_column %}
-                {% dnd_row 
+                {% dnd_row
                     max_width=650,
                     padding={
                         'top': 75,
@@ -55,7 +55,7 @@
                     background_color='#F5F8FA',
                     vertical_alignment='MIDDLE'
                 %}
-                    {% dnd_column 
+                    {% dnd_column
                         offset=0,
                         width=9
                     %}
@@ -67,7 +67,7 @@
                             {% end_dnd_module %}
                         {% end_dnd_row %}
                     {% end_dnd_column %}
-                    {% dnd_column 
+                    {% dnd_column
                         offset=9,
                         width=3,
                     %}
@@ -87,7 +87,7 @@
                     {% end_dnd_row %}
                     {% end_dnd_column %}
                 {% end_dnd_row %}
-            {% end_dnd_column %} 
+            {% end_dnd_column %}
         {% end_dnd_section %}
     {% end_dnd_area %}
 </main>
