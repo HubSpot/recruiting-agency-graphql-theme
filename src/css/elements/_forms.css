@@ -1,50 +1,49 @@
-/* Form title */
+/* Fields */
 
-.form-title {
-  margin: 0;
-}
-
-.form-title ~ div > form {
-  border-top: none;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+.hs-form-field {
+  margin-bottom: 1.4rem;
 }
 
 /* Labels */
 
 form label {
   display: block;
+  font-size: 0.875rem;
   margin-bottom: 0.35rem;
 }
 
-/* Form fields */
+/* Help text */
 
-form .hs-form-field {
-  margin-bottom: 1.4rem;
+form legend {
+  font-size: 0.875rem;
 }
 
-form input[type='text'],
-form input[type='email'],
-form input[type='password'],
-form input[type='tel'],
-form input[type='number'],
-form input[type='file'],
+/* Inputs */
+
+form input[type=text],
+form input[type=email],
+form input[type=password],
+form input[type=tel],
+form input[type=number],
+form input[type=file],
 form select,
 form textarea {
   display: inline-block;
-  width: 100% !important; /* stylelint-disable-line declaration-no-important */
+  font-size: 0.875rem;
+  padding: 0.7rem;
+  width: 100%;
 }
 
 form fieldset {
-  max-width: 100% !important; /* stylelint-disable-line declaration-no-important */
+  max-width: 100% !important;
 }
 
-/* Form fields - checkbox/radio */
+/* Inputs - checkbox/radio */
 
 form .inputs-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 form .inputs-list > li {
@@ -57,38 +56,44 @@ form .inputs-list span {
   vertical-align: middle;
 }
 
-form input[type='checkbox'],
-form input[type='radio'] {
+form input[type=checkbox],
+form input[type=radio] {
   cursor: pointer;
   margin-right: 0.35rem;
 }
 
-/* Form fields - date picker */
+/* Inputs - date picker */
 
-form .hs-dateinput {
+.hs-dateinput {
   position: relative;
 }
 
-form .hs-dateinput:before {
-  content: '\01F4C5';
+.hs-dateinput:before {
+  content:'\01F4C5';
   position: absolute;
+  right: 10%;
   top: 50%;
   transform: translateY(-50%);
 }
 
-form .is-selected .pika-button {
-  border-radius: 0 !important; /* stylelint-disable-line declaration-no-important */
-  box-shadow: none !important; /* stylelint-disable-line declaration-no-important */
+.fn-date-picker .pika-table thead th {
+  color: #FFF;
 }
 
-form .fn-date-picker .pika-button:hover,
-form .fn-date-picker .pika-button:focus {
-  border-radius: 0 !important; /* stylelint-disable-line declaration-no-important */
+.fn-date-picker td.is-selected .pika-button {
+  border-radius: 0;
+  box-shadow: none;
 }
 
-/* Form fields - file picker */
+.fn-date-picker td .pika-button:hover,
+.fn-date-picker td .pika-button:focus {
+  border-radius: 0 !important;
+  color: #FFF;
+}
 
-form input[type='file'] {
+/* Inputs - file picker */
+
+form input[type=file] {
   background-color: transparent;
   border: initial;
   padding: initial;
@@ -98,47 +103,45 @@ form input[type='file'] {
 
 form .hs-richtext,
 form .hs-richtext p {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   margin: 0 0 1.4rem;
 }
 
 form .hs-richtext img {
-  height: auto;
-  max-width: 100% !important; /* stylelint-disable-line declaration-no-important */
+  max-width: 100% !important;
 }
 
 /* GDPR */
 
-form .legal-consent-container .hs-form-booleancheckbox-display > span {
-  margin-left: 1rem !important; /* stylelint-disable-line declaration-no-important */
+.legal-consent-container .hs-form-booleancheckbox-display > span,
+.legal-consent-container .hs-form-booleancheckbox-display > span p {
+  margin-left: 1rem !important;
 }
 
 /* Validation */
 
-form .hs-form-required {
-  color: #ef6b51;
+.hs-form-required {
+  color: #EF6B51;
 }
 
-form .hs-input.error {
-  border-color: #ef6b51;
+.hs-input.invalid.error {
+  border-color: #EF6B51;
 }
 
-form .hs-error-msg,
-form .hs-error-msgs {
-  color: #ef6b51;
+.hs-error-msg {
+  color: #EF6B51;
   margin-top: 0.35rem;
 }
 
 /* Submit button */
 
-form input[type='submit'],
+form input[type=submit],
 form .hs-button {
   cursor: pointer;
   display: inline-block;
   text-align: center;
   transition: all 0.15s linear;
-  white-space: normal !important; /* stylelint-disable-line declaration-no-important */
-  width: 100%;
+  white-space: normal;
 }
 
 /* Captcha */

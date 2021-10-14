@@ -11,7 +11,7 @@
       {
         "label": "Social account",
         "name": "social_account",
-        "id": "social_links.social_account",
+        "id": "social_account",
         "type": "choice",
         "choices": [
           ["facebook-f", "Facebook"],
@@ -23,7 +23,7 @@
           ["envelope", "Email"],
           ["link", "Website"],
           ["whatsapp", "Whatsapp"],
-          ["custom_icon", "Custom"]
+          ["custom_icon", "Custom icon"]
         ],
         "display": "select",
         "required": true,
@@ -34,7 +34,7 @@
         "name": "custom_icon",
         "type": "icon",
         "visibility": {
-          "controlling_field": "social_links.social_account",
+          "controlling_field": "social_account",
           "controlling_value_regex": "custom_icon",
           "operator": "EQUAL"
         },
@@ -44,13 +44,16 @@
         }
       },
       {
-        "label": "Link",
-        "name": "link",
+        "label": "Social link",
+        "name": "social_link",
         "type": "link",
         "required": true,
         "supported_types": ["EXTERNAL", "EMAIL_ADDRESS"],
         "default": {
+          "no_follow": false,
+          "open_in_new_tab": true,
           "url": {
+            "content_id": null,
             "href": "https://www.facebook.com",
             "type": "EXTERNAL"
           }
@@ -58,15 +61,14 @@
       },
       {
         "label": "Accessibility options",
-        "name": "accessibility_options",
+        "name": "accessibility",
         "type": "group",
         "children": [
           {
             "label": "Title",
             "name": "title",
             "type": "text",
-            "help_text": "Read by screen reader",
-            "required" : true,
+            "required": true,
             "default": "Follow us on Facebook"
           }
         ]
@@ -76,7 +78,10 @@
       {
         "social_account": "facebook-f",
         "social_link": {
+          "no_follow": false,
+          "open_in_new_tab": true,
           "url": {
+            "content_id": null,
             "href": "https://www.facebook.com",
             "type": "EXTERNAL"
           }
@@ -88,7 +93,10 @@
       {
         "social_account": "linkedin-in",
         "social_link": {
+          "no_follow": false,
+          "open_in_new_tab": true,
           "url": {
+            "content_id": null,
             "href": "https://www.linkedin.com",
             "type": "EXTERNAL"
           }
@@ -100,7 +108,10 @@
       {
         "social_account": "twitter",
         "social_link": {
+          "no_follow": false,
+          "open_in_new_tab": true,
           "url": {
+            "content_id": null,
             "href": "https://www.twitter.com",
             "type": "EXTERNAL"
           }
@@ -112,7 +123,10 @@
       {
         "social_account": "instagram",
         "social_link": {
+          "no_follow": false,
+          "open_in_new_tab": true,
           "url": {
+            "content_id": null,
             "href": "https://www.instagram.com",
             "type": "EXTERNAL"
           }
@@ -129,51 +143,6 @@
     "type": "group",
     "tab": "STYLE",
     "children": [
-      {
-        "label": "Presets",
-        "name": "presets",
-        "type": "group",
-        "help_text": "Use presets to quickly adjust the appearance of the selected item to predefined values.",
-        "children": [
-          {
-            "label": "Icon color",
-            "name": "icon_color",
-            "type": "choice",
-            "choices": [
-              ["dark", "Dark"],
-              ["light", "Light"]
-            ],
-            "display": "select",
-            "required": true,
-            "default": "dark"
-          },
-          {
-            "label": "Icon size",
-            "name": "icon_size",
-            "type": "choice",
-            "choices": [
-              ["small", "Small"],
-              ["regular", "Regular"],
-              ["large", "Large"]
-            ],
-            "display": "select",
-            "required": true,
-            "default": "regular"
-          },
-          {
-            "label": "Icon shape",
-            "name": "icon_shape",
-            "type": "choice",
-            "choices": [
-              ["circle", "Circle"],
-              ["square", "Square"]
-            ],
-            "display": "select",
-            "required": true,
-            "default": "circle"
-          }
-        ]
-      },
       {
         "label": "Fill",
         "name": "fill",
