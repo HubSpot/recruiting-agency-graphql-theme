@@ -3,9 +3,9 @@ body {
   word-break: break-word;
 }
 
-html[lang^='ja'] body,
-html[lang^='zh'] body,
-html[lang^='ko'] body {
+html[lang^="ja"] body,
+html[lang^="zh"] body,
+html[lang^="ko"] body {
   line-break: strict;
   word-break: break-all;
 }
@@ -39,29 +39,19 @@ h6 {
 ul,
 ol {
   margin: 0 0 1.4rem;
-  padding-left: 1rem;
-}
-
-ul li,
-ol li {
-  margin: 0.7rem;
 }
 
 ul ul,
 ol ul,
 ul ol,
 ol ol {
-  margin: 1.4rem 0;
+  margin: 0;
 }
 
-.no-list {
+ul.no-list {
   list-style: none;
   margin: 0;
   padding-left: 0;
-}
-
-.no-list li {
-  margin: 0;
 }
 
 /* Code blocks */
@@ -77,39 +67,21 @@ code {
 /* Blockquotes */
 
 blockquote {
-  border-left: 10px solid;
+  border-left: 2px solid;
   margin: 0 0 1.4rem;
-  padding-left: 1rem;
+  padding-left: 0.7rem;
 }
 
 /* Horizontal rules */
 
 hr {
-  border: 0 none;
-  border-bottom: 1px solid;
-}
-
-/* Subscripts and superscripts */
-
-sup,
-sub {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
+  border: none;
+  border-bottom: 1px solid #CCC;
 }
 
 /* Image alt text */
 
 img {
-  font-size: 1rem;
+  font-size: 0.583rem;
   word-break: normal;
 }

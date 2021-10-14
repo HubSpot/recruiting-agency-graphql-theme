@@ -8,15 +8,13 @@ table {
 
 /* Table cells */
 
-th,
-td {
-  padding: 0.7rem;
+td,
+th {
   vertical-align: top;
 }
 
 /* Table header */
 
-thead th,
-thead td {
+thead th {
   vertical-align: bottom;
 }
