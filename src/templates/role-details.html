@@ -1,8 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: Role Details - GraphQL
-  dataQueryPath: ../data-queries/role
+  label: Role details
 -->
 {% extends './layouts/base.html' %}
 
@@ -25,7 +24,7 @@
         {% dnd_row
           vertical_alignment='TOP'
         %}
-          {% dnd_module path='../modules/role-details-graphql.module' %}
+          {% dnd_module path='../modules/role-details.module' %}
           {% end_dnd_module %}
         {% end_dnd_row %}
     {% end_dnd_column %}

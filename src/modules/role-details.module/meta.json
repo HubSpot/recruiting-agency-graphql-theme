@@ -1,5 +1,5 @@
 {
-  "label": "Existing Application Listing",
+  "label": "Role details",
   "css_assets": [],
   "external_js": [],
   "global": false,
@@ -7,6 +7,7 @@
   "host_template_types": [
     "PAGE"
   ],
+  "icon": "../../images/module-icons/high-file.svg",
   "js_assets": [],
   "other_assets": [],
   "smart_type": "NOT_SMART",
