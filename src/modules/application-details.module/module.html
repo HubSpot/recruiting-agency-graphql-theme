@@ -1,5 +1,5 @@
 {% if request.query_dict.applicationId %}
-    {% set application = data_query.data.CRM.p_job_application %}
+    {% set application = module.data_query.data.CRM.p_job_application %}
 
     {% set associatedContacts = application.associations.contact_collection__job_application_to_contact.items %}
 
