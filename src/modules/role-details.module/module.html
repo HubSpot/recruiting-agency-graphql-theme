@@ -1,5 +1,5 @@
 {% if request.query_dict.role_identifier %}
-  {% set role = module.data_query.data.CRM.p_role %}
+  {% set role = data_query.data.CRM.p_role %}
 
   {% set dateint = role.desired_start_date||int %}
   {% set date = datetimeformat(role.dateint, '%B %e, %Y') %}

@@ -1,0 +1,5 @@
+{% set role = module.data_query.data.CRM.p_role %}
+
+{% if role.department %}
+    <p>Department: {{role.department}}</p>
+{% endif %}
