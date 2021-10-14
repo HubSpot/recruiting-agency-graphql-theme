@@ -1,6 +1,5 @@
 /* For content that needs to be visually hidden but stay visible for screenreaders */
 
-/* stylelint-disable declaration-no-important */
 .show-for-sr {
   border: 0 !important;
   clip: rect(0, 0, 0, 0) !important;
@@ -24,4 +23,3 @@
     width: 1px !important;
   }
 }
-/* stylelint-enable declaration-no-important */

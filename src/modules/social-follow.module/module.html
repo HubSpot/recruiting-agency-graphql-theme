@@ -1,144 +1,128 @@
 {# Module styles #}
 
 <style>
-{% scope_css %}
+  {% scope_css %}
 
-  /* Social follow wrapper */
+      {# Social follow wrapper #}
 
-  .social-follow {
-    {% if module.styles.alignment.alignment.horizontal_align %}
-      {% if module.styles.alignment.alignment.horizontal_align == 'CENTER' %}
-        justify-content: center;
-      {% elif module.styles.alignment.alignment.horizontal_align == 'RIGHT' %}
-        justify-content: flex-end;
+      .social-links {
+        {% if module.styles.alignment.alignment.horizontal_align %}
+          {% if module.styles.alignment.alignment.horizontal_align == 'LEFT' %}
+            justify-content: flex-start;
+          {% elif module.styles.alignment.alignment.horizontal_align == 'CENTER' %}
+            justify-content: center;
+          {% elif module.styles.alignment.alignment.horizontal_align == 'RIGHT' %}
+            justify-content: flex-end;
+          {% endif %}
+        {% endif %}
+      }
+
+      {# Social follow icons #}
+
+      .social-links__link {
+        {% if module.styles.spacing.space_between_icons %}
+          margin-right: {{ module.styles.spacing.space_between_icons ~ 'px' }};
+        {% endif %}
+        {% if module.styles.spacing.spacing.margin.bottom %}
+          margin-bottom: {{ module.styles.spacing.spacing.margin.bottom.value ~ 'px' }};
+        {% endif %}
+        {% if module.styles.spacing.spacing.margin.top %}
+          margin-top: {{ module.styles.spacing.spacing.margin.top.value ~ 'px' }};
+        {% endif %}
+      }
+
+      .social-links__icon {
+        {% if module.styles.background.color.color %}
+          background-color: rgba({{ module.styles.background.color.color|convert_rgb }}, {{ module.styles.background.color.opacity / 100 }});
+        {% endif %}
+        {% if module.styles.corner.radius %}
+          border-radius: {{ module.styles.corner.radius ~ 'px' }};
+        {% endif %}
+        {% if module.styles.spacing.spacing.padding.bottom %}
+          padding-bottom: {{ module.styles.spacing.spacing.padding.bottom.value ~ 'px' }};
+        {% endif %}
+        {% if module.styles.spacing.spacing.padding.top %}
+          padding-top: {{ module.styles.spacing.spacing.padding.top.value ~ 'px' }};
+        {% endif %}
+        {% if module.styles.spacing.spacing.padding.left %}
+          padding-left: {{ module.styles.spacing.spacing.padding.left.value ~ 'px' }};
+        {% endif %}
+        {% if module.styles.spacing.spacing.padding.right %}
+          padding-right: {{ module.styles.spacing.spacing.padding.right.value ~ 'px' }};
+        {% endif %}
+      }
+
+      .social-links__icon svg {
+        {% if module.styles.fill.color.color %}
+          fill: {{ module.styles.fill.color.color }};
+        {% endif %}
+        {% if module.styles.size.size %}
+          height: {{ module.styles.size.size ~ 'px' }};
+          width: {{ module.styles.size.size ~ 'px' }};
+        {% endif %}
+      }
+
+      {% if module.styles.background.color.color %}
+        .social-links__icon:hover,
+        .social-links__icon:focus {
+            background-color: rgba({{ color_variant(module.styles.background.color.color, -80)|convert_rgb }}, {{ module.styles.background.color.opacity / 100 }});
+        }
       {% endif %}
-    {% endif %}
-  }
 
-  /* Social follow icons */
+      {% if module.styles.background.color.color %}
+        .social-links__icon:active {
+          background-color: rgba({{ color_variant(module.styles.background.color.color, 80)|convert_rgb }}, {{ module.styles.background.color.opacity / 100 }});
+        }
+      {% endif %}
 
-  .social-follow__link {
-    {% if module.styles.spacing.space_between_icons %}
-      margin-right: {{ module.styles.spacing.space_between_icons ~ 'px' }};
-    {% endif %}
-    {% if module.styles.spacing.spacing.margin.bottom %}
-      margin-bottom: {{ module.styles.spacing.spacing.margin.bottom.value ~ module.styles.spacing.spacing.margin.bottom.units }};
-    {% endif %}
-    {% if module.styles.spacing.spacing.margin.top %}
-      margin-top: {{ module.styles.spacing.spacing.margin.top.value ~ module.styles.spacing.spacing.margin.top.units }};
-    {% endif %}
-  }
-
-  .social-follow__icon {
-    {% if module.styles.background.color.color %}
-      background-color: rgba({{ module.styles.background.color.color|convert_rgb }}, {{ module.styles.background.color.opacity / 100 }});
-    {% endif %}
-    {% if module.styles.corner.radius %}
-      border-radius: {{ module.styles.corner.radius ~ 'px' }};
-    {% endif %}
-    {% if module.styles.spacing.spacing.padding.bottom %}
-      padding-bottom: {{ module.styles.spacing.spacing.padding.bottom.value ~ module.styles.spacing.spacing.padding.bottom.units }};
-    {% endif %}
-    {% if module.styles.spacing.spacing.padding.top %}
-      padding-top: {{ module.styles.spacing.spacing.padding.top.value ~ module.styles.spacing.spacing.padding.top.units }};
-    {% endif %}
-    {% if module.styles.spacing.spacing.padding.left %}
-      padding-left: {{ module.styles.spacing.spacing.padding.left.value ~ module.styles.spacing.spacing.padding.left.units }};
-    {% endif %}
-    {% if module.styles.spacing.spacing.padding.right %}
-      padding-right: {{ module.styles.spacing.spacing.padding.right.value ~ module.styles.spacing.spacing.padding.right.units }};
-    {% endif %}
-  }
-
-  .social-follow__icon svg {
-    {% if module.styles.fill.color.color %}
-      fill: {{ module.styles.fill.color.color }};
-    {% endif %}
-    {% if module.styles.size.size %}
-      height: {{ module.styles.size.size ~ 'px' }};
-      width: {{ module.styles.size.size ~ 'px' }};
-    {% endif %}
-  }
-
-  {% if module.styles.background.color.color %}
-    .social-follow__icon:hover,
-    .social-follow__icon:focus {
-        background-color: rgba({{ color_variant(module.styles.background.color.color, -80)|convert_rgb }}, {{ module.styles.background.color.opacity / 100 }});
-    }
-  {% endif %}
-
-  {% if module.styles.background.color.color %}
-    .social-follow__icon:active {
-      background-color: rgba({{ color_variant(module.styles.background.color.color, 80)|convert_rgb }}, {{ module.styles.background.color.opacity / 100 }});
-    }
-  {% endif %}
-
-{% end_scope_css %}
+  {% end_scope_css %}
 </style>
 
-{# Sets CSS classes based on style field options #}
+{# Social links #}
 
-{% if module.styles.presets.icon_size == 'small' %}
-  {% set icon_size = 'icon--small' %}
-{% elif module.styles.presets.icon_size == 'large' %}
-  {% set icon_size = 'icon--large' %}
-{% endif %}
+<div class="social-links">
 
-{% if module.styles.presets.icon_color == 'light' %}
-  {% set icon_color = 'icon--light' %}
-{% endif %}
+  {# Loops through each social link in the social links repeater #}
 
-{% if module.styles.presets.icon_shape == 'square' %}
-  {% set icon_shape = 'icon--square' %}
-{% endif %}
-
-{# Social follow #}
-
-<div class="social-follow">
-
-  {# Loops through icons in the repeater #}
-
-  {% for social_link in module.social_links %}
-
-    {# Sets the icon to one of the preset social icons or a custom icon #}
-
-    {% if social_link.social_account != 'custom_icon' %}
-      {% set social_icon = social_link.social_account %}
-    {% else %}
-      {% set social_icon = social_link.custom_icon.name %}
-    {% endif %}
+  {% for item in module.social_links %}
 
     {# Sets attributes used for the link field #}
 
-    {% set href = social_link.link.url.href %}
-    {% if social_link.link.url.type is equalto 'EMAIL_ADDRESS' %}
+    {% set href = item.social_link.url.href %}
+    {% if item.social_link.url.type is equalto 'EMAIL_ADDRESS' %}
       {% set href = 'mailto:' + href %}
     {% endif %}
     {% set rel = [] %}
-    {% if social_link.link.no_follow %}
+    {% if item.social_link.no_follow %}
       {% do rel.append('nofollow') %}
     {% endif %}
-    {% if social_link.link.open_in_new_tab %}
+    {% if item.social_link.open_in_new_tab %}
       {% do rel.append('noopener') %}
     {% endif %}
 
-    {# Social follow icon and link #}
+    {# Sets a custom icon if the custom option is selected #}
 
-    <a href="{{ href }}"
-      class="social-follow__link"
-      {% if social_link.link.open_in_new_tab %}target="_blank"{% endif %}
-      {% if rel %}rel="{{ rel|join(' ') }}"{% endif %}
-    >
-      <span class="{{ icon_size }} {{ icon_color }} {{ icon_shape }}">
-        {% icon
-          extra_classes='social-follow__icon icon',
-          name='{{ social_icon }}',
-          purpose='semantic',
-          style='SOLID',
-          title='{{ social_link.accessibility_options.title }}'
-        %}
-      </span>
+    {% if item.social_account != 'custom_icon' %}
+      {% set social_icon = item.social_account %}
+    {% else %}
+      {% set social_icon = item.custom_icon.name %}
+    {% endif %}
+
+    {# Icon #}
+
+    <a class="social-links__link" href="{{ href }}"
+    {% if item.social_link.open_in_new_tab %}target="_blank"{% endif %}
+    {% if rel %}rel="{{ rel|join(' ') }}"{% endif %}>
+      {% icon
+        extra_classes='social-links__icon',
+        name='{{ social_icon }}',
+        purpose='semantic',
+        style='SOLID',
+        title='{{ item.accessibility.title }}',
+        unique_in_loop=True
+      %}
     </a>
 
   {% endfor %}
+
 </div>

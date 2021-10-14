@@ -1,0 +1,23 @@
+{% if request.query_dict.applicationId %}
+    {% set application = module.data_query.data.CRM.p_job_application %}
+
+    {% set associatedContacts = application.associations.contact_collection__job_application_to_contact.items %}
+
+    {% set applicationAssociatedToCurrentUser = {'isAssociated': false } %}
+
+    {% for associatedContact in associatedContacts %}
+        {% if associatedContact.id == request.contact.contact_vid %}
+            {% do applicationAssociatedToCurrentUser.update({'isAssociated': true}) %}
+        {% endif %}
+    {% endfor %}
+
+    {% if applicationAssociatedToCurrentUser.isAssociated %}
+        <h1>Application Details</h1>
+        <p>Title: {{application.job_title}}</p>
+        <p>Status: {{application.application_status}}</p>
+    {% else %}
+        <h1>No application information found for current user.</h1>
+    {% endif %}
+{% else %}
+    <h1>No application information found.</h1>
+{% endif %}

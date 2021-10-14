@@ -1,47 +1,17 @@
-/* Primary button */
-
 button,
-.button,
-.hs-button {
-  align-items: center;
+.button {
   cursor: pointer;
-  display: inline-flex;
+  display: inline-block;
   text-align: center;
-  transition: color 0.15s linear;
+  transition: all 0.15s linear;
   white-space: normal;
 }
 
-/* Simple button */
-
-.button.button--simple {
-  background-color: transparent;
-  border: none;
-  border-radius: 0;
-  padding: 0;
-  position: relative;
-}
-
-.button.button--simple:hover,
-.button.button--simple:focus {
-  background-color: transparent;
-  border: none;
-}
-
-/* Disabled button */
-
 button:disabled,
-.button:disabled,
-.hs-button:disabled {
-  background-color: #f1f1f1;
-  border-color: #f1f1f1;
-  pointer-events: none;
-}
-
-button:disabled,
-.button:disabled,
-.button.button--secondary:disabled,
-.button.button--simple:disabled {
-  color: #d0d0d0;
+.button:disabled {
+  background-color: #D0D0D0;
+  border-color: #D0D0D0;
+  color: #E6E6E6;
 }
 
 /* No button */
@@ -65,28 +35,4 @@ button:disabled,
   text-align: left;
   text-decoration: none;
   transition: none;
-}
-
-/* Button icons */
-
-.button .button__icon svg {
-  display: block;
-  fill: inherit;
-  height: 1.25rem;
-  margin-right: 1rem;
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .button .button__icon svg {
-    width: 1.25rem;
-  }
-}
-
-.button--icon-right .button__icon {
-  order: 1;
-}
-
-.button--icon-right .button__icon svg {
-  margin-left: 1rem;
-  margin-right: 0;
 }

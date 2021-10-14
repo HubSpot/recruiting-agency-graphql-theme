@@ -1,15 +1,16 @@
 /* Error pages */
 
 .error-page {
-  padding: 9.8rem 0;
+  padding: 10rem 0;
   position: relative;
   text-align: center;
 }
 
 .error-page:before {
-  color: #f3f6f9;
+  color: #F3F6F9;
   content: attr(data-error);
   font-size: 40vw;
+  font-weight: bold;
   left: 50%;
   position: absolute;
   top: 50%;
@@ -29,65 +30,107 @@
 .systems-page {
   margin: 0 auto;
   max-width: 700px;
-  padding: 2.8rem 1.4rem;
+  padding: 3rem 1.4rem;
 }
 
 .systems-page--search-results {
   max-width: 100%;
 }
 
+.systems-page .header {
+  background-color: transparent;
+  border-bottom: none;
+  padding: 0;
+}
+
 .systems-page .success {
-  background-color: #cde3cc;
-  border: 1px solid #4f7d24;
-  color: #4f7d24;
+  background-color: #CDE3CC;
+  border: 1.5px solid #4F7D24;
+  border-radius: 6px;
+  color: #4F7D24;
   display: inline-block;
   margin: 1.4rem 0;
-  padding: 0.35rem 0.7rem;
+  padding: 0.1rem 0.7rem;
   width: 100%;
+}
+
+.systems-page form input {
+  max-width: 100%;
+}
+
+.systems-page form input[type='submit'] {
+  margin: 0.7rem 0;
+  display: block;
 }
 
 /* Search pages */
 
 .hs-search-results__title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-bottom: 0.35rem;
   text-decoration: underline;
+}
+
+.hs-search-results__title:hover {
+  text-decoration: none;
 }
 
 .hs-search-results__description {
   padding-top: 0.7rem;
 }
 
+/* Password prompt */
+
+.password-prompt input[type=password] {
+  height: auto !important;
+  margin-bottom: 1.4rem;
+}
+
+.systems-page #hs-login-widget-remember,
+.systems-page #hs-login-widget-remember ~ label {
+  display: inline-block;
+  margin-bottom: 0.175rem;
+}
+
+.systems-page #hs_login_reset {
+  display: block;
+  margin-bottom: 0.7rem;
+}
+
 /* Backup unsubscribe */
 
 .backup-unsubscribe #email-prefs-form div {
-  padding-bottom: 0 !important; /* stylelint-disable-line declaration-no-important */
+  padding-bottom: 0 !important;
 }
 
-.backup-unsubscribe input[type='email'] {
+.backup-unsubscribe input[type=email] {
+  font-size: 0.875rem !important;
   margin-bottom: 1.4rem;
+  padding: 0.7rem !important;
 }
 
 /* Subscription preferences */
 
-form#email-prefs-form .header {
-  background-color: transparent;
-}
-
-form#email-prefs-form .item.disabled {
-  cursor: not-allowed;
+#email-prefs-form .item.disabled {
   opacity: 0.6;
+  cursor: not-allowed;
 }
 
-form#email-prefs-form .item.disabled input:disabled {
+#email-prefs-form .item.disabled input:disabled {
   cursor: not-allowed;
+}
+
+/* Membership pages */
+
+#hs-membership-form a[class*='show-password'] {
+  font-size: 0.75rem;
 }
 
 /* Input error messages */
 
 .form-input-validation-message ul.hs-error-msgs {
-  margin: 0;
   padding-left: 0;
+  margin: 0;
 }
 
 .form-input-validation-message ul.hs-error-msgs li {
