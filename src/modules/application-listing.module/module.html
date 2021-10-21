@@ -1,10 +1,16 @@
-<!-- module html  -->
+{# Module data #}
 
 {% set contact = module.data_query.data.CRM.contact %}
 {% set applications = contact.associations.p_job_application_collection__job_application_to_contact.items %}
-<h3>{{applications|length}} Applications:</h3>
+
+{# Heading #}
+
+<h1>{{applications|length}} Applications:</h1>
+
+{# Application listing #}
+
 <ul>
-    {% for application in applications %}
-        <li>Name: {{ application.job_title }} <a href="/application-details?applicationId={{application.id}}">Details</a></li>
-    {% endfor %}
+  {% for application in applications %}
+    <li>Name: {{ application.job_title }} <a href="/application-details?applicationId={{ application.id }}">Details</a></li>
+  {% endfor %}
 </ul>
