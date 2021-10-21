@@ -1,0 +1,36 @@
+/* Application listing */
+
+.application-listing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.4rem 0;
+}
+
+.application-listing__heading {
+  text-align: center;
+  width: 100%;
+}
+
+.application-listing__card {
+  border: 2px solid #494A52;
+  margin-bottom: 1.4rem;
+  padding: 1.4rem;
+  width: 100%;
+}
+
+.application-listing__card > h2 {
+  font-size: 30px;
+  margin-bottom: 0.7rem;
+}
+
+.application-listing__card > h3 {
+  font-size: 24px;
+  margin-bottom: 0.7rem;
+}
+
+@media (max-width: 767px) {
+  .application-listing {
+    padding: 1.4rem 1rem;
+  }
+}

@@ -1,16 +1,31 @@
+{# Module styles #}
+
+<style>
+  @media (min-width: 767px) {
+    .application-listing__card {
+      width: calc({{(100 / module.cards_per_row)}}% - 0.7rem);
+    }
+  }
+</style>
+
 {# Module data #}
 
 {% set contact = module.data_query.data.CRM.contact %}
-{% set applications = contact.associations.p_job_application_collection__job_application_to_contact.items %}
+  {% set applications = contact.associations.p_job_application_collection__job_application_to_contact.items %}
 
-{# Heading #}
+  {# Application listing #}
 
-<h1>{{applications|length}} Applications:</h1>
+  <section class="application-listing">
 
-{# Application listing #}
+    {# Heading #}
 
-<ul>
-  {% for application in applications %}
-    <li>Name: {{ application.job_title }} <a href="/application-details?applicationId={{ application.id }}">Details</a></li>
-  {% endfor %}
-</ul>
+    <h1 class="application-listing__heading">{{ applications|length }} Applications</h1>
+
+    {% for application in applications %}
+      <section class="card application-listing__card">
+        <h2>{{ application.job_title }}</h2>
+        <a class="button" href="/application-details?applicationId={{ application.id }}">Details</a>
+      </section>
+    {% endfor %}
+
+  </section>
