@@ -11,7 +11,7 @@
 {# Module data #}
 
 {% set contact = module.data_query.data.CRM.contact %}
-  {% set applications = contact.associations.p_job_application_collection__job_application_to_contact.items %}
+{% set applications = contact.associations.p_job_application_collection__job_application_to_contact.items %}
 
   {# Application listing #}
 
@@ -22,8 +22,14 @@
     <h1 class="application-listing__heading">{{ applications|length }} Applications</h1>
 
     {% for application in applications %}
+      {% set role = application.associations.p_role_collection__role_to_job_application.items %}
       <section class="card application-listing__card">
         <h2>{{ application.job_title }}</h2>
+        <h3>Company name: {# Associations > Role > Associations > Company > Name #}</h3>
+        <h3>Department: {{ role.department }}</h3>
+        <p>Location: {# Associations > Role > Location #}</p>
+        <p>Status: {{ application.application_status|capitalize }}</p>
+        <p>Date submitted: {{ application.hs_unique_creation_key }}</p>
         <a class="button" href="/application-details?applicationId={{ application.id }}">Details</a>
       </section>
     {% endfor %}
