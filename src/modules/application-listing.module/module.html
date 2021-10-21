@@ -2,7 +2,7 @@
 
 <style>
   @media (min-width: 767px) {
-    .application-listing__card {
+    .application-card {
       width: calc({{(100 / module.cards_per_row)}}% - 0.7rem);
     }
   }
@@ -22,16 +22,19 @@
     <h1 class="application-listing__heading">{{ applications|length }} Applications</h1>
 
     {% for application in applications %}
-      {% set role = application.associations.p_role_collection__role_to_job_application.items %}
-      <section class="card application-listing__card">
-        <h2>{{ application.job_title }}</h2>
-        <h3>Company name: {# Associations > Role > Associations > Company > Name #}</h3>
-        <h3>Department: {{ role.department }}</h3>
-        <p>Location: {# Associations > Role > Location #}</p>
-        <p>Status: {{ application.application_status|capitalize }}</p>
-        <p>Date submitted: {{ application.hs_unique_creation_key }}</p>
-        <a class="button" href="/application-details?applicationId={{ application.id }}">Details</a>
+
+      {% set role = application.associations.p_role_collection__role_to_job_application.items|first %}
+      {% set company = role.associations.company_collection__role_to_company.items|first %}
+
+      <section class="card application-card">
+        <h2 class="application-card__heading">{{ application.job_title }}</h2>
+        <h3 class="application-card__company">{{ company.name }}</h3>
+        <span class="application-card__department">{{ role.department|capitalize }}</span>
+        <span class="application-card__location">{{ role.location }}</span>
+        <span class="application-card__status">Status: {{ application.application_status|capitalize }}</span>
+        <a class="application-card__button button" href="/application-details?applicationId={{ application.id }}">Details</a>
       </section>
+
     {% endfor %}
 
   </section>
