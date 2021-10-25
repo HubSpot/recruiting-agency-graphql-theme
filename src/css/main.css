@@ -34,6 +34,9 @@ Specific pieces of UI that are stylized. Typically used for global partial styli
 
 {% include './components/_header.css' %}
 {% include './components/_default-modules.css' %}
+{% include './components/_role-card.css' %}
+{% include './components/_role-listing.css' %}
+{% include './components/_featured-roles.css' %}
 
 /* Utilities
 Helper classes with ability to override anything that comes before it
