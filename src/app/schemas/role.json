@@ -1,0 +1,157 @@
+{
+  "type": "object-schemas",
+  "data": {
+    "name": "p_role",
+    "labels": { "singular": "Role", "plural": "Roles" },
+    "requiredProperties": ["title"],
+    "searchableProperties": ["title"],
+    "primaryDisplayProperty": "title",
+    "properties": [
+      {
+        "name": "department",
+        "label": "Department",
+        "type": "enumeration",
+        "fieldType": "select",
+        "description": "",
+        "options": [
+          {
+            "label": "Engineering",
+            "value": "engineering",
+            "hidden": "false"
+          },
+          {
+            "label": "Marketing",
+            "value": "marketing",
+            "hidden": "false"
+          },
+          {
+            "label": "Sales",
+            "value": "sales",
+            "hidden": "false"
+          },
+          {
+            "label": "Accounting",
+            "value": "accounting",
+            "hidden": "false"
+          },
+          {
+            "label": "Operations",
+            "value": "operations",
+            "hidden": "false"
+          }
+        ]
+      },
+      {
+        "name": "date_fulfilled",
+        "label": "Date Fulfilled",
+        "type": "date",
+        "fieldType": "date",
+        "description": ""
+      },
+      {
+        "name": "description",
+        "label": "Description",
+        "type": "string",
+        "fieldType": "textarea",
+        "description": ""
+      },
+      {
+        "name": "desired_start_date",
+        "label": "Desired Start Date",
+        "type": "date",
+        "fieldType": "date",
+        "description": ""
+      },
+      {
+        "name": "fulfillment_status",
+        "label": "Fulfillment Status",
+        "type": "enumeration",
+        "fieldType": "select",
+        "description": "",
+        "options": [
+          {
+            "label": "Closed",
+            "value": "closed",
+            "hidden": "false"
+          },
+          {
+            "label": "Open",
+            "value": "open",
+            "hidden": "false"
+          }
+        ]
+      },
+      {
+        "name": "location",
+        "label": "Location",
+        "type": "string",
+        "fieldType": "text",
+        "description": ""
+      },
+      {
+        "name": "role_identifier",
+        "label": "Role Identifier",
+        "type": "string",
+        "fieldType": "text",
+        "hasUniqueValue": true,
+        "description": "",
+        "formField": true
+      },
+      {
+        "name": "salary_max",
+        "label": "Salary Max",
+        "type": "number",
+        "fieldType": "number",
+        "description": ""
+      },
+      {
+        "name": "salary_min",
+        "label": "Salary Min",
+        "type": "number",
+        "fieldType": "number",
+        "description": ""
+      },
+      {
+        "name": "status",
+        "label": "Status",
+        "type": "enumeration",
+        "fieldType": "select",
+        "description": "",
+        "options": [
+          {
+            "label": "Contract",
+            "value": "contract",
+            "hidden": "false"
+          },
+          {
+            "label": "Full Time",
+            "value": "full-time",
+            "hidden": "false"
+          },
+          {
+            "label": "Part Time",
+            "value": "part-time",
+            "hidden": "false"
+          }
+        ]
+      },
+      {
+        "name": "title",
+        "label": "Title",
+        "type": "string",
+        "fieldType": "text",
+        "description": ""
+      }
+    ],
+    "associations": [{
+      "name": "company_assoc",
+      "fromObjectName": "p_role",
+      "toObjectName": "COMPANY"
+    },
+    {
+      "name": "deal_assoc",
+      "fromObjectName": "p_role",
+      "toObjectName": "DEAL"
+    }]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Job title + role schemas",
+  "description": "Placeholder app for loading job schemas",
+  "public": false,
+  "assets": [
+    {
+      "path": "./schemas/job-application.json"
+    },
+    {
+      "path": "./resources/role.json"
+    }
+  ]
+}
