@@ -15,6 +15,21 @@ query application_listings($contact_id: String!) {
             }
             job_title
             application_status
+            associations {
+              p_role_collection__role_to_job_application {
+                items {
+                  department
+                  location
+                  associations {
+                    company_collection__role_to_company {
+                      items {
+                        name
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
