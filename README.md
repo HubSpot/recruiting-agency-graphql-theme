@@ -36,10 +36,12 @@ For the body of the request, we’ll need the object type ID for both of the obj
 
 For example, the body of your request might look like this:
 
+```
 {
   "fromObjectTypeId": "2-2617384",
   "toObjectTypeId": "2-2783326"
 }
+```
 
 Once the association is created, we should be finished creating our custom object definitions.
 
@@ -67,11 +69,15 @@ Now that the boilerplate objects, forms, and workflow are created, we can move o
 
 The queries that will be used for our pages can be found in the “data-queries” folder of our theme. These GraphQL queries can be modified to include only the properties required for the page or modules they’re used in.
 
-Create a new page, and for this page select the “Role Listing - GraphQL” template. This template contains the "Roles GraphQL" module, which uses the data retrieved by the data query in the template to show a listing of all created role objects. Give the page a title and publish it.
+Create a new page, and for this page select the “Role listing” template. This template contains the "Role listing" module, which uses the data retrieved by the data query in the template to show a listing of all created role objects. Give the page a title and publish it.
 
-Next, we’ll need the details page. For this page, use the “Role Details - GraphQL” template. This time contains bot the "Role Details GraphQL" module and above that, the "Feature Roles" module, which shows other roles in the same company and department the applicant may be interested in. Select the Role Details module and set the Job Application Form in the settings of that module to the form we created in Step 2.
+Next, we’ll need the details page. For this page, use the “Role details” template. This template contains both the "Role details" module and above that, the "Featured roles" module, which shows other roles in the same company and department the applicant may be interested in. Select the "Role details" module and set the Job Application Form in the settings of that module to the form we created in Step 2.
 
-Once that’s set, give the page a title, and replace the generated slug with the same one used in the role listing page, but with `/role` appended. For example, if the slug for the GraphQL listing page was “role-listing-graphql’, the slug for this page should be ‘role-listing-graphql/role’
+For the detail page, we'll be setting it up as a data query dynamic page. This means we'll be attaching a data query to the page itself (instead of to the module or template), and that query will be one that grabs a single instance of an object, in this case a Role. Go ahead and go to the page settings and expand the Advanced Options section. In the Dynamic Pages section, select the "Role Instance" query in the Data source dropdown. Next, we need to set the slug for the page to be dynamic. A dynamic slug is one that uses the syntax `[:dynamic-slug]` in the Page URL, for example `roles/[:dynamic-slug]`. Applicants will then be able to access an individual role using it's role identifier in place of the dynamic slug token, for example: `roles/spotify-engineer-i`.
+
+The parts that make up the dynamic slug are accessed in the data query using the HubL `{{ request.path_param_dict.dynamic_slug }}`. So, go ahead and manually update the Page URL to match the one in the role listing page, but with `/[:dynamic-slug]` appended. For example, if the slug for the GraphQL listing page was `roles`, the slug for this page should be `roles/[:dynamic-slug]`.
+
+Finally, give the page a title and publish it.
 
 ## Step 4: Create Applications Page
 
