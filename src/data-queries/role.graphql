@@ -4,6 +4,9 @@
 query role($role_identifier: String!) {
   CRM {
     p_role(uniquePropertyName: "role_identifier", uniquePropertyValue: $role_identifier) {
+      _metadata { 
+        id
+      }
       associations {
         company_collection__role_to_company {
           items {
@@ -13,7 +16,6 @@ query role($role_identifier: String!) {
       }
       department
       description
-      id
       location
       role_identifier
       salary_max

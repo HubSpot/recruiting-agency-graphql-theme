@@ -32,7 +32,7 @@
         <span class="application-card__department">{{ role.department|capitalize }}</span>
         <span class="application-card__location">{{ role.location }}</span>
         <span class="application-card__status">Status: {{ application.application_status|capitalize }}</span>
-        <a class="application-card__button button" href="/application-details?applicationId={{ application.id }}">Details</a>
+        <a class="application-card__button button" href="/application-details?applicationId={{ application._metadata.id }}">Details</a>
       </section>
 
     {% endfor %}
