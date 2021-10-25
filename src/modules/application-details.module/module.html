@@ -6,7 +6,7 @@
     {% set applicationAssociatedToCurrentUser = {'isAssociated': false } %}
 
     {% for associatedContact in associatedContacts %}
-        {% if associatedContact.id == request.contact.contact_vid %}
+        {% if associatedContact._metadata.id == request.contact.contact_vid %}
             {% do applicationAssociatedToCurrentUser.update({'isAssociated': true}) %}
         {% endif %}
     {% endfor %}
