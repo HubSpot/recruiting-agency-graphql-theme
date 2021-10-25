@@ -4,11 +4,15 @@
 query application_listings($contact_id: String!) {
   CRM {
     contact(uniquePropertyName: "id", uniquePropertyValue: $contact_id) {
-      id
+      _metadata { 
+        id
+      }
       associations {
         p_job_application_collection__job_application_to_contact {
           items {
-            id
+            _metadata { 
+              id
+            }
             job_title
             application_status
           }
