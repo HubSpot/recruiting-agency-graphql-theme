@@ -7,7 +7,7 @@
       "path": "./schemas/job-application.json"
     },
     {
-      "path": "./resources/role.json"
+      "path": "./schemas/role.json"
     }
   ]
 }
