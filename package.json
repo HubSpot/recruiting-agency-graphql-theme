@@ -1,10 +1,10 @@
 {
-  "name": "@hubspot/sample-graphql-theme",
+  "name": "@hubspot/recruiting-agency-graphql-theme",
   "version": "0.1.0",
   "description": "Boilerplate project for building websites on the HubSpot CMS",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HubSpot/sample-graphql-theme.git"
+    "url": "https://github.com/HubSpot/recruiting-agency-graphql-theme.git"
   },
   "author": "",
   "license": "Apache-2.0",

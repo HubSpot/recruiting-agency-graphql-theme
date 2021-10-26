@@ -17,6 +17,9 @@ query role_listings(
     # Gets roles when there is either no filtering, or we're filtering by location and/or department.
     roles_by_location_department: p_role_collection(limit: $limit, offset: $offset, filter: {location_eq: $location, department_eq: $department}) @skip(if:$searchByCompany) {
       items {
+        _metadata { 
+          id
+        }
         associations {
           company_collection__role_to_company {
             items {
@@ -26,7 +29,6 @@ query role_listings(
         }
         department
         description
-        id
         location
         role_identifier
         title
@@ -44,9 +46,11 @@ query role_listings(
         associations {
           p_role_collection__role_to_company(limit: $limit, offset: $offset, filter: {location_eq: $location, department_eq: $department}) {
             items {
+              _metadata { 
+                id
+              }
               department
               description
-              id
               location
               role_identifier
               title
