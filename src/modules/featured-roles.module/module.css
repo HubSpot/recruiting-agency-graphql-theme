@@ -1,8 +1,9 @@
 .featured-roles-wrapper {
   margin-bottom: 16px;
 }
-.featured-roles-wrapper>h2 {
-  margin: 0px;
+
+.featured-roles-wrapper > h2 {
+  margin: 0;
 }
 
 .featured-roles {
@@ -12,19 +13,19 @@
 
 .featured-roles > .role-card {
   cursor: pointer;
-  background-color: white;
+  background-color: #FFF;
   width: calc(33.3% - 32px);
   padding: 16px;
   margin: 16px;
-  border: 2px solid black;
+  border: 2px solid #000;
 }
 
-.featured-roles > .role-card>h1 {
+.featured-roles > .role-card > h1 {
   font-size: 28px;
-  margin: 0px;
+  margin: 0;
 }
 
-.featured-roles > .role-card>h2 {
+.featured-roles > .role-card > h2 {
   font-size: 22px;
-  margin: 0px 0px 0px 0px;
+  margin: 0;
 }
