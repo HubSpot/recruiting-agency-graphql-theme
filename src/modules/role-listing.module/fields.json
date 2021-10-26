@@ -1,52 +1,53 @@
 [
   {
+    "label": "Cards per row",
+    "name": "cards_per_row",
     "type": "number",
     "display": "text",
-    "step": 1,
-    "label": "Cards per Row",
-    "name": "cards_per_row",
     "max": 5,
     "min": 2,
+    "required": true,
+    "step": 1,
     "default": 2
   },
   {
+    "label": "Rows per page",
+    "name": "rows_per_page",
     "type": "number",
     "display": "text",
-    "step": 1,
-    "label": "Rows per Page",
-    "name": "rows_per_page",
     "max": 10,
     "min": 2,
+    "required": true,
+    "step": 1,
     "default": 2
   },
   {
+    "label": "Show description",
+    "name": "show_description",
     "type": "boolean",
-    "default": true,
     "display": "checkbox",
-    "label": "Show Description",
-    "name": "show_description"
+    "default": true
   },
   {
-    "type": "number",
-    "display": "text",
-    "step": 1,
-    "label": "Length of Description to Show",
+    "label": "Length of description to show",
     "name": "description_length",
-    "max": 200,
-    "min": 50,
-    "default": 100,
+    "type": "number",
     "visibility": {
       "controlling_field": "show_description",
       "operator": "EQUAL",
       "controlling_value_regex": "true"
-    }
+    },
+    "display": "text",
+    "max": 200,
+    "min": 50,
+    "step": 1,
+    "default": 100
   },
   {
+    "label": "Show company",
+    "name": "show_company",
     "type": "boolean",
-    "default": true,
     "display": "checkbox",
-    "label": "Show Company",
-    "name": "show_company"
+    "default": true
   }
 ]
-
