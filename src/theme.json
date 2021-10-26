@@ -1,7 +1,7 @@
 {
-  "label": "Sample GraphQL Theme",
-  "preview_path": "./templates/home.html",
-  "screenshot_path": "./images/template-previews/home.png",
+  "label": "Recruiting Agency GraphQL Theme",
+  "preview_path": "./templates/role-listing.html",
+  "screenshot_path": "./images/template-previews/role-listing.png",
   "enable_domain_stylesheets": false,
   "responsive_breakpoints": [
     {
