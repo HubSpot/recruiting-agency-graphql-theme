@@ -1,3 +1,5 @@
+{# Module data #}
+
 {% if request.query_dict.applicationId %}
 
   {% set application = module.data_query.data.CRM.p_job_application %}
@@ -10,10 +12,26 @@
     {% endif %}
   {% endfor %}
 
-  {% if applicationAssociatedToCurrentUser.isAssociated %}
-    <h1>Application Details</h1>
-    <p>Title: {{application.job_title}}</p>
-    <p>Status: {{application.application_status}}</p>
+{% else %}
+
+  {# Example data used by the editor #}
+
+  {% set application = {
+      job_title: 'Store Leader',
+      application_status: 'Applied'
+    }
+  %}
+
+{% endif %}
+
+{# Application details #}
+
+{% if request.query_dict.applicationId || is_in_editor %}
+
+  {% if applicationAssociatedToCurrentUser.isAssociated || is_in_editor %}
+    <h1>Application details</h1>
+    <p>Title: {{ application.job_title }}</p>
+    <p>Status: {{ application.application_status }}</p>
   {% else %}
     <h1>No application information found for current user.</h1>
   {% endif %}
