@@ -1,1 +1,14 @@
-[ ]
+
+ [
+  {
+    "label": "Cards per row",
+    "name": "cards_per_row",
+    "type": "number",
+    "display": "text",
+    "max": 5,
+    "min": 2,
+    "required": true,
+    "step": 1,
+    "default": 2
+  }
+]

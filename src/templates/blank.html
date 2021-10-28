@@ -7,8 +7,8 @@
 {% extends './layouts/base.html' %}
 
 {% block body %}
-{% dnd_area 'dnd_area'
-  label='Main section'
-%}
-{% end_dnd_area %}
+  {% dnd_area 'dnd_area'
+    label='Main section'
+  %}
+  {% end_dnd_area %}
 {% endblock body %}

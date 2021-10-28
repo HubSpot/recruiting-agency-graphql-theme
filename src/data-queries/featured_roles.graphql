@@ -16,9 +16,11 @@ query featured_roles(
         associations {
           p_role_collection__role_to_company(limit: $limit, filter: {department_eq: $department, hs_object_id_neq: $skipId}) {
             items {
+              _metadata { 
+                id
+              }
               department
               description
-              id
               location
               role_identifier
               title

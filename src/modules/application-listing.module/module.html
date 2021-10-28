@@ -1,10 +1,40 @@
-<!-- module html  -->
+{# Module styles #}
 
-{% set contact = module.data_query.data.CRM.contact %}
+<style>
+  @media (min-width: 767px) {
+    .application-card {
+      width: calc({{(100 / module.cards_per_row)}}% - 0.7rem);
+    }
+  }
+</style>
+
+{# Module data #}
+
+{% set contact = data_query.data.CRM.contact %}
 {% set applications = contact.associations.p_job_application_collection__job_application_to_contact.items %}
-<h3>{{applications|length}} Applications:</h3>
-<ul>
+
+  {# Application listing #}
+
+  <section class="application-listing">
+
+    {# Heading #}
+
+    <h1 class="application-listing__heading">{{ applications|length }} Applications</h1>
+
     {% for application in applications %}
-        <li>Name: {{ application.job_title }} <a href="/application-details?applicationId={{application.id}}">Details</a></li>
+
+      {% set role = application.associations.p_role_collection__role_to_job_application.items|first %}
+      {% set company = role.associations.company_collection__role_to_company.items|first %}
+
+      <section class="card application-card">
+        <h2 class="application-card__heading">{{ application.job_title }}</h2>
+        <h3 class="application-card__company">{{ company.name }}</h3>
+        <span class="application-card__department">{{ role.department|capitalize }}</span>
+        <span class="application-card__location">{{ role.location }}</span>
+        <span class="application-card__status">Status: {{ application.application_status|capitalize }}</span>
+        <a class="application-card__button button" href="/application-details?applicationId={{ application._metadata.id }}">Details</a>
+      </section>
+
     {% endfor %}
-</ul>
+
+  </section>

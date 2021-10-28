@@ -10,7 +10,9 @@ query application($applicationId: String!, $contact_id: String) {
       associations {
         contact_collection__job_application_to_contact(filter: {hs_object_id_eq: $contact_id}) {
           items {
-            id
+            _metadata {
+              id
+            }
           }
         }
       }
