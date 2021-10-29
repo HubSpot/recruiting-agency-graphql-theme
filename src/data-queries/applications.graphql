@@ -10,14 +10,14 @@ query application_listings($contact_id: String!) {
       associations {
         p_job_application_collection__job_application_to_contact {
           items {
+            _metadata {
+              id
+            }
             job_title
             application_status
             associations {
               p_role_collection__role_to_job_application {
                 items {
-                  _metadata {
-                    id
-                  }
                   department
                   location
                   associations {
