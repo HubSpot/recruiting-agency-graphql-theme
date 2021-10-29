@@ -46,12 +46,12 @@
   {% if applicationAssociatedToCurrentUser.isAssociated || is_in_editor %}
     <section class="application-details">
       <h1 class="application-details__heading">Application details</h1>
-      <span class="application-details__status">Status: {{ application.application_status }}</span>
+      <span class="application-details__status">Status: {{ application.application_status|capitalize }}</span>
       <span class="application-details__company">Company: {{ company.name }}</span>
       <span class="application-details__title">Title: {{ application.job_title }}</span>
       <span class="application-details__location">Location: {{ role.location }}</span>
       <span class="application-details__salary-range">Salary Range: ${{ role.salary_min }}-{{ role.salary_max }}</span>
-      <span class="application-details__department">Department: {{ role.department }}</span>
+      <span class="application-details__department">Department: {{ role.department|capitalize }}</span>
     </section>
   {% else %}
     <h1>No application information found for current user.</h1>
