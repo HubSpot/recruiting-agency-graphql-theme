@@ -4,7 +4,7 @@
 #  $contact_id: "{{ request.contact.contact_vid || "" }}"
 query application($applicationId: String!, $contact_id: String) {
   CRM {
-    p_job_application(uniquePropertyName: "id", uniquePropertyValue: $applicationId) {
+    p_job_application(uniqueIdentifier: "id", uniqueIdentifierValue: $applicationId) {
       job_title
       application_status
       associations {
