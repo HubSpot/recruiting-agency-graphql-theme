@@ -3,8 +3,8 @@
 #  $contact_id: "{{ request.contact.contact_vid || "" }}"
 query application_listings($contact_id: String!) {
   CRM {
-    contact(uniquePropertyName: "id", uniquePropertyValue: $contact_id) {
-      _metadata {
+    contact(uniqueIdentifier: "id", uniqueIdentifierValue: $contact_id) {
+      _metadata { 
         id
       }
       associations {
