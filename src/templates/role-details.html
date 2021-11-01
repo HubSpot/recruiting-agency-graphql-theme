@@ -9,8 +9,23 @@
   {% dnd_area 'dnd_area'
     label='Main section'
   %}
-    {% dnd_section %}
-      {% dnd_column %}
+    {% dnd_section
+      full_width=true,
+      padding={
+        'top': 0,
+        'right': 0,
+        'bottom': 0,
+        'left': 0
+      }
+    %}
+      {% dnd_column
+        padding={
+          'top': 0,
+          'right': 0,
+          'bottom': 0,
+          'left': 0
+        }
+      %}
         {% dnd_row %}
           {% dnd_module path='../modules/role-details.module' %}
           {% end_dnd_module %}

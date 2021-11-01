@@ -1,31 +1,64 @@
 {% if request.query_dict.role_identifier %}
+
+  {#  Module data #}
+
   {% set role = module.data_query.data.CRM.p_role %}
-
-  {% set dateint = role.desired_start_date||int %}
-  {% set date = datetimeformat(role.dateint, '%B %e, %Y') %}
-
   {% set company = role.associations.company_collection__role_to_company.items|first %}
 
-  <h1>Role Details</h1>
-  <p>Company: {{ company.name }}</p>
-  <p>Title: {{ role.title }}</p>
-  <p>Location: {{ role.location }}</p>
-  <p>Start Date: {{ date }}</p>
-  <p>Salary Range: ${{ role.salary_min }}-${{ role.salary_max }}</p>
-  {% if role.department %}
-    <p>Department: {{ role.department }}</p>
-  {% endif %}
-  <p>Status: {{ role.status }}</p>
-  <p>{{ role.description }}</p>
-
-  <h1>Apply now!</h1>
-  {% form
-    form_to_use='{{ module.job_application_form.form_id }}',
-    response_response_type='{{ module.job_application_form.response_type }}',
-    response_message='{{ module.job_application_form.message }}',
-    response_redirect_id='{{ module.job_application_form.redirect_id }}',
-    response_redirect_url='{{ module.job_application_form.redirect_url }}'
-  %}
 {% else %}
-    <h1>No role identifier found.</h1>
+
+  {# Example data used in the editor #}
+
+  {% set role = {
+      department: 'Sales',
+      description: '<p>Our Store Leaders are seasoned retail veterans and naturally charismatic leaders. In this role, you will be responsible for leading the recruitment, training, development and overall management of a dynamic store team that will help Tesla accelerate the world’s transition to sustainable transportation.</p><p>You will be challenged to support your team through training, coaching, motivating and analyzing sales performance. You will be tasked with identifying events in the local market that will maximize Tesla’s brand exposure and create more Tesla owners. You will be measured and rewarded by your ability to achieve targets, drive optimal team performance, and maintain store operations.</p><p>To succeed at Tesla, you must be energetic, highly organized, and hard working. You should have a passion for sustainable energy and the ability to create exceptional customer experiences. While individual contributions will be recognized, teamwork is essential to achieve the highest level of success. We will reward team players who help others succeed and empower the team around them.</p><h2>Responsibilities</h2><h3>BUSINESS HEALTH</h3><ul><li>Coach and motivate sales team to meet assigned sales, delivery, and productivity goals through customer EV education and product knowledge, delivering excellent service and merchandise presentation and promotion.</li><li>Demonstrate sales leadership by role playing and having an active presence in customer facing locations</li><li>Train and develop team on sales and delivery processes</li><li>Analyze data to determine optimal business strategies</li><li>Set individual goals for your team, ensuring goals are aligned with store goals</li><li>Ensure team is fluent in all aspects of product knowledge</li><li>Partner with Marketing to identify local marketing and event opportunities to drive sales</li><li>Drive for Excellence in all areas of business focused on reaching P&L expectations for respective location</li></ul><h3>CUSTOMER EXPERIENCE</h3><ul><li>Responsible for ensuring all employees provide best in class experience in every interaction</li><li>Manage escalations quickly and effectively</li><li>Empower and guide employees through challenging customer concerns, to make decisions in the customers’ best interest while also supporting Tesla’s mission</li></ul><h3>EMPLOYEE ENGAGEMENT</h3><ul><li>Recruit, train, and develop management team and employees ensuring all positions are filled in a timely manner</li><li>Support, implement and provide follow-up for all training</li><li>Continually evaluate the performance of each employee and provide constant feedback to drive results</li><li>Identify high potential talent and effectively succession plan for needs of the business</li><li>Ensure all employees adhere to Tesla policies and procedures</li><li>Resolve all people and safety issues in a timely and effective manner, collaborating with Human Resources and appropriate teams effectively</li></ul><h3>BRAND STANDARDS</h3><ul><li>Ensure facility maintenance and showroom presentation adhere to the brand standard</li><li>Control store expenses continually striving to reduce costs</li><li>Ensure all employees align with Tesla’s Dress Code and Grooming Guidelines</li></ul><h2>Requirements</h2><ul><li>Bachelor’s degree or equivalent professional experience</li><li>5+ years of applicable experience with proven track record to meet or exceed goals</li><li>Self-starting entrepreneur with exceptional management and coaching skills</li><li>Ability to prioritize multiple projects and adhere to business-critical deadlines</li><li>Excellent written and verbal communication skills</li><li>Dedicated and ethical approach to sales and sales operations</li><li>Ability to develop collaborative relationships acting as a well-respected, trusted partner with whom others want to work</li><li>Ability to work evenings and weekends in a retail environment</li><li>Valid driver’s license in the country in which you are applying, 2 year minimum driving record required with a clean driving history</li><li>Ability to obtain appropriate state licensing, where applicable</li></ul>',
+      location: 'Aventura, FL',
+      salary_max: '120,000',
+      salary_min: '85,000',
+      title: 'Store Leader'
+    }
+  %}
+
+  {% set company = {
+      name: 'Tesla'
+    }
+  %}
+
+{% endif %}
+
+{% if request.query_dict.role_identifier || is_in_editor %}
+
+  {# Role details #}
+
+  <section class="role-details">
+    <div class="content-wrapper">
+      <h1 class="role-details__heading">Role details</h1>
+      <span class="role-details__company">Company: {{ company.name }}</span>
+      <span class="role-details__title">Title: {{ role.title }}</span>
+      <span class="role-details__location">Location: {{ role.location }}</span>
+      <span class="role-details__salary-range">Salary range: ${{ role.salary_min }}-${{ role.salary_max }}</span>
+      <span class="role-details__department">Department: {{ role.department }}</span>
+      <span class="role-details__description">{{ role.description }}</span>
+    </div>
+  </section>
+
+  {# Application form #}
+
+  <section class="role-application">
+    <div class="content-wrapper">
+      <h2 class="role-application__heading">Apply now!</h2>
+      {% form
+        form_to_use='{{ module.job_application_form.form_id }}',
+        response_response_type='{{ module.job_application_form.response_type }}',
+        response_message='{{ module.job_application_form.message }}',
+        response_redirect_id='{{ module.job_application_form.redirect_id }}',
+        response_redirect_url='{{ module.job_application_form.redirect_url }}'
+      %}
+    </div>
+  </section>
+
+{% else %}
+
+  <h1>No role identifier found.</h1>
+
 {% endif %}
