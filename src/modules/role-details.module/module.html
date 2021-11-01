@@ -7,24 +7,24 @@
   {% set company = role.associations.company_collection__role_to_company.items|first %}
 
   <h1>Role Details</h1>
-  <p>Company: {{company.name}}</p>
-  <p>Title: {{role.title}}</p>
-  <p>Location: {{role.location}}</p>
-  <p>Start Date: {{date}}</p>
-  <p>Salary Range: ${{role.salary_min}}-${{role.salary_max}}</p>
+  <p>Company: {{ company.name }}</p>
+  <p>Title: {{ role.title }}</p>
+  <p>Location: {{ role.location }}</p>
+  <p>Start Date: {{ date }}</p>
+  <p>Salary Range: ${{ role.salary_min }}-${{ role.salary_max }}</p>
   {% if role.department %}
-    <p>Department: {{role.department}}</p>
+    <p>Department: {{ role.department }}</p>
   {% endif %}
-  <p>Status: {{role.status}}</p>
-  <p>{{role.description}}</p>
+  <p>Status: {{ role.status }}</p>
+  <p>{{ role.description }}</p>
 
   <h1>Apply now!</h1>
   {% form
-    form_to_use="{{ module.job_application_form.form_id }}"
-    response_response_type="{{ module.job_application_form.response_type }}"
-    response_message="{{ module.job_application_form.message }}"
-    response_redirect_id="{{ module.job_application_form.redirect_id }}"
-    response_redirect_url="{{ module.job_application_form.redirect_url }}"
+    form_to_use='{{ module.job_application_form.form_id }}',
+    response_response_type='{{ module.job_application_form.response_type }}',
+    response_message='{{ module.job_application_form.message }}',
+    response_redirect_id='{{ module.job_application_form.redirect_id }}',
+    response_redirect_url='{{ module.job_application_form.redirect_url }}'
   %}
 {% else %}
     <h1>No role identifier found.</h1>
