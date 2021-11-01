@@ -1,3 +1,7 @@
+{% if not data_query.data %}
+    <p>Description Placeholder</p>
+{% endif %}
+
 {% set role = data_query.data.CRM.p_role %}
 
 <p>{{role.description}}</p>
