@@ -3,10 +3,7 @@
   "css_assets": [],
   "external_js": [],
   "global": false,
-  "help_text": "",
-  "host_template_types": [
-    "PAGE"
-  ],
+  "host_template_types": ["PAGE"],
   "icon": "../../images/module-icons/high-file.svg",
   "js_assets": [],
   "other_assets": [],
