@@ -14,6 +14,21 @@ query application($applicationId: String!, $contact_id: String) {
               id
             }
           }
+        },
+        p_role_collection__role_to_job_application {
+          items {
+            department
+            location
+            salary_max
+            salary_min
+            associations {
+              company_collection__role_to_company {
+                items {
+                  name
+                }
+              }
+            }
+          }
         }
       }
     }
