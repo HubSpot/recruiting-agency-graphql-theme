@@ -8,6 +8,8 @@
   {% set associatedContacts = application.associations.contact_collection__job_application_to_contact.items %}
   {% set applicationAssociatedToCurrentUser = {'isAssociated': false } %}
 
+  {# Checks to see the contact associated with a given application and if the contact ID of that contact matches the contact ID of the user viewing the page it shows the application data on the page #}
+
   {% for associatedContact in associatedContacts %}
     {% if associatedContact._metadata.id == request.contact.contact_vid %}
       {% do applicationAssociatedToCurrentUser.update({'isAssociated': true}) %}
