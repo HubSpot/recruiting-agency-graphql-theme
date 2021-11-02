@@ -10,8 +10,66 @@
 
 {# Module data #}
 
-{% set contact = data_query.data.CRM.contact %}
-{% set applications = contact.associations.p_job_application_collection__job_application_to_contact.items %}
+{% if !is_in_editor %}
+
+  {% set contact = data_query.data.CRM.contact %}
+  {% set applications = contact.associations.p_job_application_collection__job_application_to_contact.items %}
+
+{% else %}
+
+  {# Example data used in the editor #}
+
+  {% set applications = [
+      {
+        application_status: 'Applied',
+        associations: {
+          p_role_collection__role_to_job_application: {
+            items: [
+              {
+                department: 'Sales',
+                location: 'Aventura, FL',
+                associations: {
+                  company_collection__role_to_company: {
+                    items: [
+                      {
+                        name: 'Tesla'
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        job_title: 'Store Leader'
+      },
+      {
+        application_status: 'Applied',
+        associations: {
+          p_role_collection__role_to_job_application: {
+            items: [
+              {
+                department: 'Operations',
+                location: 'Cambridge, MA',
+                associations: {
+                  company_collection__role_to_company: {
+                    items: [
+                      {
+                        name: 'HubSpot'
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        job_title: 'Sales Operation Specialist'
+      }
+    ]
+  %}
+
+{% endif %}
 
   {# Application listing #}
 
