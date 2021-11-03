@@ -13,10 +13,8 @@
 {# Module data #}
 
 {% if !is_in_editor %}
-
   {% set contact = data_query.data.CRM.contact %}
   {% set applications = contact.associations.p_job_application_collection__job_application_to_contact.items %}
-
 {% else %}
 
   {# Example data used in the editor #}

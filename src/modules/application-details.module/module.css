@@ -1,4 +1,6 @@
-.application-details > span {
+/* Application details */
+
+.application-details__item {
   display: block;
   margin-bottom: 1.4rem;
 }

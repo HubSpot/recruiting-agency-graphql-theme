@@ -1,10 +1,8 @@
+{#  Module data #}
+
 {% if request.query_dict.role_identifier %}
-
-  {#  Module data #}
-
   {% set role = module.data_query.data.CRM.p_role %}
   {% set company = role.associations.company_collection__role_to_company.items|first %}
-
 {% else %}
 
   {# Example data used in the editor #}
@@ -33,12 +31,12 @@
   <section class="role-details">
     <div class="content-wrapper">
       <h1 class="role-details__heading">Role details</h1>
-      <span class="role-details__company">Company: {{ company.name }}</span>
-      <span class="role-details__title">Title: {{ role.title }}</span>
-      <span class="role-details__location">Location: {{ role.location }}</span>
-      <span class="role-details__salary-range">Salary range: ${{ role.salary_min }}-${{ role.salary_max }}</span>
-      <span class="role-details__department">Department: {{ role.department }}</span>
-      <span class="role-details__description">{{ role.description }}</span>
+      <span class="role-details__item">Company: {{ company.name }}</span>
+      <span class="role-details__item">Title: {{ role.title }}</span>
+      <span class="role-details__item">Location: {{ role.location }}</span>
+      <span class="role-details__item">Salary range: ${{ role.salary_min }}-${{ role.salary_max }}</span>
+      <span class="role-details__item">Department: {{ role.department }}</span>
+      <span class="role-details__item">{{ role.description }}</span>
     </div>
   </section>
 
@@ -49,16 +47,14 @@
       <h2 class="role-application__heading">Apply now!</h2>
       {% form
         form_to_use='{{ module.job_application_form.form_id }}',
-        response_response_type='{{ module.job_application_form.response_type }}',
         response_message='{{ module.job_application_form.message }}',
         response_redirect_id='{{ module.job_application_form.redirect_id }}',
-        response_redirect_url='{{ module.job_application_form.redirect_url }}'
+        response_redirect_url='{{ module.job_application_form.redirect_url }}',
+        response_response_type='{{ module.job_application_form.response_type }}'
       %}
     </div>
   </section>
 
 {% else %}
-
   <h1>No role identifier found.</h1>
-
 {% endif %}
