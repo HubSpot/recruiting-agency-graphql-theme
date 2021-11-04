@@ -63,5 +63,102 @@
         "detail": "department"
       }
     ]
+  },
+  {
+    "label": "Styles",
+    "name": "styles",
+    "type": "group",
+    "tab": "STYLE",
+    "children": [
+      {
+        "label": "Heading",
+        "name": "heading",
+        "type": "group",
+        "children": [
+          {
+            "label": "Text",
+            "name": "text",
+            "type": "group",
+            "children": [
+              {
+                "label": "Font",
+                "name": "font",
+                "type": "font"
+              }
+            ]
+          },
+          {
+            "label": "Alignment",
+            "name": "alignment",
+            "type": "group",
+            "children": [
+              {
+                "label": "Alignment",
+                "name": "alignment",
+                "type": "alignment",
+                "alignment_direction": "HORIZONTAL"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Application details",
+        "name": "application_details",
+        "type": "group",
+        "children": [
+          {
+            "label": "Label",
+            "name": "detail_label",
+            "type": "group",
+            "children": [
+              {
+                "label": "Text",
+                "name": "text",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Font",
+                    "name": "font",
+                    "type": "font"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Detail",
+            "name": "detail",
+            "type": "group",
+            "children": [
+              {
+                "label": "Text",
+                "name": "text",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Font",
+                    "name": "font",
+                    "type": "font"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Spacing",
+        "name": "spacing",
+        "type": "group",
+        "children": [
+          {
+            "label": "Spacing",
+            "name": "spacing",
+            "type": "spacing"
+          }
+        ]
+      }
+    ]
   }
 ]

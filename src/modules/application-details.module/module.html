@@ -1,3 +1,36 @@
+{# Module styles #}
+
+<style>
+  {% scope_css %}
+
+    {# Heading #}
+
+    .application-details__heading {
+      {{ module.styles.heading.text.font.css }}
+      {% if module.styles.heading.alignment.alignment.horizontal_align %}
+        text-align: {{ module.styles.heading.alignment.alignment.horizontal_align }};
+      {% endif %}
+    }
+
+    {# Application detail #}
+
+    .application-details__item-label {
+      {{ module.styles.application_details.detail_label.text.font.css }}
+    }
+
+    .application-details__item-detail {
+      {{ module.styles.application_details.detail.text.font.css }}
+    }
+
+    {# Spacing #}
+
+    .applcation-details {
+      {{ module.styles.card.spacing.spacing.css }}
+    }
+
+  {% end_scope_css %}
+</style>
+
 {# Module data #}
 
 {% if request.query_dict.applicationId %}
@@ -63,7 +96,10 @@
           {% set detail = application.job_title %}
         {% endif %}
 
-        <span class="application-details__item">{{ application_detail.detail_label }} {{ detail }}</span>
+        <span class="application-details__item">
+          <span class="application-details__item-label">{{ application_detail.detail_label }}</span>
+          <span class="application-details__item-detail"> {{ detail }}</span>
+        </span>
       {% endfor %}
     </section>
   {% else %}
