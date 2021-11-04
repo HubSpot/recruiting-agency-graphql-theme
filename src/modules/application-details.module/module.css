@@ -1,9 +1,6 @@
-.application-details__status,
-.application-details__company,
-.application-details__title,
-.application-details__location,
-.application-details__salary-range,
-.application-details__department {
+/* Application details */
+
+.application-details__item {
   display: block;
   margin-bottom: 1.4rem;
 }

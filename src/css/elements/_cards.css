@@ -1,0 +1,39 @@
+.card-listing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.4rem 0;
+}
+
+@media (max-width: 767px) {
+  .card-listing {
+    padding: 1.4rem 1rem;
+  }
+}
+
+.card-listing__heading {
+  text-align: center;
+  width: 100%;
+}
+
+.card {
+  border: 2px solid #494A52;
+  margin-bottom: 1.4rem;
+  padding: 1.4rem;
+  width: 100%;
+}
+
+.card__heading {
+  font-size: 30px;
+}
+
+.card__subheading {
+  font-size: 24px;
+}
+
+.card__heading,
+.card__subheading,
+.card__item {
+  display: block;
+  margin-bottom: 0.7rem;
+}

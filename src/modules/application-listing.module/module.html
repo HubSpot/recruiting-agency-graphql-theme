@@ -1,20 +1,20 @@
 {# Module styles #}
 
 <style>
-  @media (min-width: 767px) {
-    .application-card {
-      width: calc({{(100 / module.cards_per_row)}}% - 0.7rem);
+  {% scope_css %}
+    @media (min-width: 767px) {
+      .card {
+        width: calc({{(100 / module.cards_per_row)}}% - 0.7rem);
+      }
     }
-  }
+  {% end_scope_css %}
 </style>
 
 {# Module data #}
 
 {% if !is_in_editor %}
-
   {% set contact = data_query.data.CRM.contact %}
   {% set applications = contact.associations.p_job_application_collection__job_application_to_contact.items %}
-
 {% else %}
 
   {# Example data used in the editor #}
@@ -73,24 +73,26 @@
 
   {# Application listing #}
 
-  <section class="application-listing">
+  <section class="card-listing">
 
     {# Heading #}
 
-    <h1 class="application-listing__heading">{{ applications|length }} Applications</h1>
+    <h1 class="card-listing__heading">{{ applications|length }} Applications</h1>
+
+    {# Application cards #}
 
     {% for application in applications %}
 
       {% set role = application.associations.p_role_collection__role_to_job_application.items|first %}
       {% set company = role.associations.company_collection__role_to_company.items|first %}
 
-      <section class="card application-card">
-        <h2 class="application-card__heading">{{ application.job_title }}</h2>
-        <h3 class="application-card__company">{{ company.name }}</h3>
-        <span class="application-card__department">{{ role.department|capitalize }}</span>
-        <span class="application-card__location">{{ role.location }}</span>
-        <span class="application-card__status">Status: {{ application.application_status|capitalize }}</span>
-        <a class="application-card__button button" href="/application-details?applicationId={{ application._metadata.id }}">Details</a>
+      <section class="card">
+        <h2 class="card__heading">{{ application.job_title }}</h2>
+        <h3 class="card__subheading">{{ company.name }}</h3>
+        <span class="card__item">{{ role.department|capitalize }}</span>
+        <span class="card__item">{{ role.location }}</span>
+        <span class="card__item">Status: {{ application.application_status|capitalize }}</span>
+        <a class="card__button button" href="/application-details?applicationId={{ application._metadata.id }}">Details</a>
       </section>
 
     {% endfor %}
