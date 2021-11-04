@@ -109,7 +109,7 @@
       <div class="card">
         <h3 class="card__heading">{{ role.title }}</h3>
         <h4 class="card__subheading">{{ company.name }}</h4>
-        <p class="card__description">{{ truncate(role.description|striptags, 128, false, '...') }}</p>
+        <p class="card__description">{{ truncate(role.description|striptags, module.card.length_of_description, false, '...') }}</p>
         <a class="card__button button" href="{{ roleDetailLink }}">{{ module.card.button_text }}</a>
       </div>
     {% endfor %}

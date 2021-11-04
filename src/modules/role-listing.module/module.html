@@ -2,11 +2,138 @@
 
 <style>
   {% scope_css %}
-    @media (min-width: 767px) {
-      .card {
-        width: calc({{(100 / module.cards_per_row)}}% - 0.7rem);
-      }
+
+    {# Role filter #}
+
+    .role-filter-wrapper {
+      {% if module.styles.filter.background.color.color %}
+        background-color: rgba({{ module.styles.filter.background.color.color|convert_rgb }}, {{ module.styles.filter.background.color.opacity / 100 }});
+      {% endif %}
     }
+
+    .role-filter__label {
+      {{ module.styles.filter.labels.font.css }}
+    }
+
+    {# Card #}
+
+    .card {
+      {% if module.styles.cards.background.color.color %}
+        background-color: rgba({{ module.styles.cards.background.color.color|convert_rgb }}, {{ module.styles.cards.background.color.opacity / 100 }});
+      {% endif %}
+      {{ module.styles.cards.border.border.css }}
+      {% if module.styles.cards.corner.radius %}
+        border-radius: {{ module.styles.cards.corner.radius ~ 'px' }};
+      {% endif %}
+      {{ module.styles.cards.spacing.card_content.css }}
+    }
+
+    {% if module.styles.cards.spacing.space_between_cards %}
+      @media (min-width: 767px) {
+        .card {
+          width: calc({{ 100 / module.cards_per_row }}% - {{ module.styles.cards.spacing.space_between_cards ~ 'px' }});
+        }
+      }
+    {% else %}
+      @media (min-width: 767px) {
+        .card {
+          width: calc({{ 100 / module.cards_per_row }}% - 0.7rem);
+        }
+      }
+    {% endif %}
+
+    {# Card content #}
+
+    .card__heading {
+      {{ module.styles.cards.heading.font.css }}
+    }
+
+    .card__subheading {
+    {{ module.styles.cards.subheading.font.css }}
+    }
+
+    .card__description {
+      {{ module.styles.cards.description.font.css }}
+    }
+
+    {# Button wrapper #}
+
+    {% if module.styles.alignment.alignment %}
+      .button-wrapper {
+        text-align: {{ module.styles.alignment.alignment.horizontal_align }};
+      }
+    {% endif %}
+
+    {# Button #}
+
+    .button {
+      {% if module.styles.cards.button.background.color.color %}
+        background-color: rgba({{ module.styles.cards.button.background.color.color|convert_rgb }}, {{ module.styles.cards.button.background.color.opacity / 100 }});
+      {% endif %}
+      {{ module.styles.cards.button.border.border.css }}
+      {% if module.styles.cards.button.corner.radius %}
+        border-radius: {{ module.styles.cards.button.corner.radius ~ 'px' }};
+      {% endif %}
+      {{ module.styles.cards.button.text.font.css }}
+      {{ module.styles.cards.button.spacing.spacing.css }}
+    }
+
+    .button:hover,
+    .button:focus {
+      {% if module.styles.cards.button.background.color.color %}
+        background-color: rgba({{ color_variant(module.styles.cards.button.background.color.color, -80)|convert_rgb }}, {{ module.styles.cards.button.background.color.opacity / 100 }});
+      {% endif %}
+    }
+
+    .button:active {
+      {% if module.styles.cards.button.background.color.color %}
+        background-color: rgba({{ color_variant(module.styles.cards.button.background.color.color, 80)|convert_rgb }}, {{ module.styles.cards.button.background.color.opacity / 100 }});
+      {% endif %}
+    }
+
+    {# Pagination #}
+
+    .pagination {
+      {{ module.styles.pagination.spacing.spacing.css }}
+    }
+
+    {# Pagination links #}
+
+    .pagination__link--number {
+      {% if module.styles.pagination.text.font.color %}
+        color: {{ module.styles.pagination.text.font.color }};
+      {% endif %}
+      {% if module.styles.pagination.text.font.size %}
+        font-size: {{ module.styles.pagination.text.font.size ~ module.styles.pagination.text.font.size_unit }};
+      {% endif %}
+      {% if module.styles.pagination.text.font.style %}
+        {{ module.styles.pagination.text.font.style }};
+      {% endif %}
+      {% if module.styles.pagination.spacing.space_between_links %}
+        margin-right: {{ module.styles.pagination.spacing.space_between_links ~ 'px' }};
+      {% endif %}
+    }
+
+    {% if module.styles.pagination.text.font.color %}
+      .pagination__link--number:hover,
+      .pagination__link--number:focus {
+        color: {{ color_variant(module.styles.pagination.text.font.color, -80) }};
+      }
+
+      .pagination__link--number:active {
+        color: {{ color_variant(module.styles.pagination.text.font.color, 80) }};
+      }
+    {% endif %}
+
+    {# Active pagination link #}
+
+    .pagination__link--active {
+      {{ module.styles.pagination.active.border.border.css }}
+      {% if module.styles.pagination.active.corner.radius %}
+        border-radius: {{ module.styles.pagination.active.corner.radius ~ 'px' }};
+      {% endif %}
+    }
+
   {% end_scope_css %}
 </style>
 
@@ -67,7 +194,7 @@
 <div class="role-filter-wrapper">
   <div class="role-filter-inner-wrapper content-wrapper">
     <div class="role-filter">
-      <label for="location">Filter by location:</label>
+      <label class="role-filter__label" for="location">Filter by location:</label>
       <select id="location">
         <option value="">Choose location</option>
         {% for location in uniqueLocations %}
@@ -76,7 +203,7 @@
       </select>
     </div>
     <div class="role-filter">
-      <label for="department">Filter by department:</label>
+      <label class="role-filter__label" for="department">Filter by department:</label>
       <select id="department">
         <option value="">Choose department</option>
         {% for department in uniqueDepartments %}
@@ -85,7 +212,7 @@
       </select>
     </div>
     <div class="role-filter">
-      <label for="company">Filter by company:</label>
+      <label class="role-filter__label" for="company">Filter by company:</label>
       <select id="company">
         <option value="">Choose company</option>
         {% for company in uniqueCompanies %}
@@ -117,12 +244,8 @@
 
     <section class="card">
       <h2 class="card__heading">{{ role.title }}</h2>
-      {% if module.show_company %}
-        <h3 class="card__subheading">{{ company.name }}</h3>
-      {% endif %}
-      {% if module.show_description %}
-        <p class="card__description">{{ truncate(role.description, module.description_length, false, '...') }}</p>
-      {% endif %}
+      <h3 class="card__subheading">{{ company.name }}</h3>
+      <p class="card__description">{{ truncate(role.description|striptags, module.card.length_of_description, false, '...') }}</p>
       <a class="card__button button" href="{{ roleDetailLink }}">Apply</a>
     </section>
   {% endfor %}
