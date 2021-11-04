@@ -15,7 +15,7 @@ query application($applicationId: String!, $contact_id: String) {
             }
           }
         },
-        p_role_collection__role_to_job_application {
+        p_role_collection__job_application_to_role {
           items {
             department
             location
