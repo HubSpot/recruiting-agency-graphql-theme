@@ -2,11 +2,96 @@
 
 <style>
   {% scope_css %}
-    @media (min-width: 767px) {
-      .card {
-        width: calc({{(100 / module.columns)}}% - 0.7rem);
-      }
+
+    {# Heading #}
+
+    .card-listing__heading {
+      {{ module.styles.heading.text.font.css }}
+      {% if module.styles.heading.alignment.alignment.horizontal_align %}
+        text-align: {{ module.styles.heading.alignment.alignment.horizontal_align }};
+      {% endif %}
     }
+
+    {# Card #}
+
+    .card {
+      {% if module.styles.cards.background.color.color %}
+        background-color: rgba({{ module.styles.cards.background.color.color|convert_rgb }}, {{ module.styles.cards.background.color.opacity / 100 }});
+      {% endif %}
+      {{ module.styles.cards.border.border.css }}
+      {% if module.styles.cards.corner.radius %}
+        border-radius: {{ module.styles.cards.corner.radius ~ 'px' }};
+      {% endif %}
+      {{ module.styles.cards.spacing.card_content.css }}
+    }
+
+    {% if module.styles.cards.spacing.space_between_cards %}
+      @media (min-width: 767px) {
+        .card {
+          width: calc({{ 100 / module.columns }}% - {{ module.styles.cards.spacing.space_between_cards ~ 'px' }});
+        }
+      }
+    {% else %}
+      @media (min-width: 767px) {
+        .card {
+          width: calc({{ 100 / module.columns }}% - 0.7rem);
+        }
+      }
+    {% endif %}
+
+    {# Card content #}
+
+    .card__heading {
+      {{ module.styles.cards.heading.font.css }}
+    }
+
+    .card__subheading {
+     {{ module.styles.cards.subheading.font.css }}
+    }
+
+    .card__item-label {
+      {{ module.styles.cards.details.detail_label.font.css }}
+    }
+
+    .card__item-detail {
+      {{ module.styles.cards.details.detail.font.css }}
+    }
+
+    {# Button wrapper #}
+
+    {% if module.styles.alignment.alignment %}
+      .button-wrapper {
+        text-align: {{ module.styles.alignment.alignment.horizontal_align }};
+      }
+    {% endif %}
+
+    {# Button #}
+
+    .button {
+      {% if module.styles.cards.button.background.color.color %}
+        background-color: rgba({{ module.styles.cards.button.background.color.color|convert_rgb }}, {{ module.styles.cards.button.background.color.opacity / 100 }});
+      {% endif %}
+      {{ module.styles.cards.button.border.border.css }}
+      {% if module.styles.cards.button.corner.radius %}
+        border-radius: {{ module.styles.cards.button.corner.radius ~ 'px' }};
+      {% endif %}
+      {{ module.styles.cards.button.text.font.css }}
+      {{ module.styles.cards.button.spacing.spacing.css }}
+    }
+
+    .button:hover,
+    .button:focus {
+      {% if module.styles.cards.button.background.color.color %}
+        background-color: rgba({{ color_variant(module.styles.cards.button.background.color.color, -80)|convert_rgb }}, {{ module.styles.cards.button.background.color.opacity / 100 }});
+      {% endif %}
+    }
+
+    .button:active {
+      {% if module.styles.cards.button.background.color.color %}
+        background-color: rgba({{ color_variant(module.styles.cards.button.background.color.color, 80)|convert_rgb }}, {{ module.styles.cards.button.background.color.opacity / 100 }});
+      {% endif %}
+    }
+
   {% end_scope_css %}
 </style>
 
@@ -92,7 +177,7 @@
 
         {# Application card details #}
 
-        {% for card_detail in module.application_card.details %}
+        {% for card_detail in module.card.details %}
 
           {# Sets values for detail based on field choice #}
 
@@ -112,8 +197,9 @@
           </span>
 
         {% endfor %}
-
-        <a class="card__button button" href="/application-details?applicationId={{ application._metadata.id }}">{{ module.application_card.button_text }}</a>
+        <div class="card__button-wrapper button-wrapper">
+          <a class="card__button button" href="/application-details?applicationId={{ application._metadata.id }}">{{ module.card.button_text }}</a>
+        </div>
       </section>
 
     {% endfor %}

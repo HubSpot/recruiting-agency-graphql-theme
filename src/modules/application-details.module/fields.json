@@ -113,16 +113,9 @@
             "type": "group",
             "children": [
               {
-                "label": "Text",
-                "name": "text",
-                "type": "group",
-                "children": [
-                  {
-                    "label": "Font",
-                    "name": "font",
-                    "type": "font"
-                  }
-                ]
+                "label": "Font",
+                "name": "font",
+                "type": "font"
               }
             ]
           },
@@ -132,16 +125,9 @@
             "type": "group",
             "children": [
               {
-                "label": "Text",
-                "name": "text",
-                "type": "group",
-                "children": [
-                  {
-                    "label": "Font",
-                    "name": "font",
-                    "type": "font"
-                  }
-                ]
+                "label": "Font",
+                "name": "font",
+                "type": "font"
               }
             ]
           }
