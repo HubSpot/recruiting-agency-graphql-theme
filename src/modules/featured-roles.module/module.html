@@ -13,7 +13,7 @@
       {% for role in roles %}
 
         {% set company = dataQueryData.company_collection.items[0] %}
-        {% set roleDetailLink = "{{ request.path }}?role_identifier={{ role.role_identifier }}&title={{ role.title }}&job_title={{ role.title }}" %}
+        {% set roleDetailLink = "{{role.role_identifier}}?role_identifier={{ role.role_identifier }}&title={{ role.title }}&job_title={{ role.title }}" %}
 
         <div class="featured-roles__card">
           <h3>{{ role.title }}</h3>

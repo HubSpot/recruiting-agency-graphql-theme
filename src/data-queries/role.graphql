@@ -16,6 +16,7 @@ query role($role_identifier: String!) {
       }
       department
       description
+      hs_object_id
       location
       role_identifier
       salary_max
