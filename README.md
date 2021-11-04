@@ -1,5 +1,6 @@
 Sample GraphQL Theme
-========================
+========================  
+:warning: This functionality is currently under development and is subject to change based on testing and feedback. By using this functionality you agree to adhere to our [Developer Terms](https://legal.hubspot.com/developer-terms) & [Developer Beta Terms](https://legal.hubspot.com/developerbetaterms). Please fill out [this form](https://forms.gle/wQ1Rztc85gDAWUYU9) to request to be added to the BETA. :warning: 
 
 This theme is based off of the CMS Starter Growth Theme. It includes modules and templates that demonstrate how to utilize GraphQL as part of a website built with HubSpot CMS and Custom CRM Objects.
 
