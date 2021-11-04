@@ -1,3 +1,96 @@
+{# Module styles #}
+
+<style>
+{% scope_css %}
+
+  {# Heading #}
+
+  .card-listing__heading {
+    {{ module.styles.heading.text.font.css }}
+    {% if module.styles.heading.alignment.alignment.horizontal_align %}
+      text-align: {{ module.styles.heading.alignment.alignment.horizontal_align }};
+    {% endif %}
+  }
+
+  {# Card #}
+
+  .card {
+    {% if module.styles.cards.background.color.color %}
+      background-color: rgba({{ module.styles.cards.background.color.color|convert_rgb }}, {{ module.styles.cards.background.color.opacity / 100 }});
+    {% endif %}
+    {{ module.styles.cards.border.border.css }}
+    {% if module.styles.cards.corner.radius %}
+      border-radius: {{ module.styles.cards.corner.radius ~ 'px' }};
+    {% endif %}
+    {{ module.styles.cards.spacing.card_content.css }}
+  }
+
+  {% if module.styles.cards.spacing.space_between_cards %}
+    @media (min-width: 767px) {
+      .card {
+        width: calc({{ 100 / module.roles_to_show }}% - {{ module.styles.cards.spacing.space_between_cards ~ 'px' }});
+      }
+    }
+  {% else %}
+    @media (min-width: 767px) {
+      .card {
+        width: calc({{ 100 / module.roles_to_show }}% - 0.7rem);
+      }
+    }
+  {% endif %}
+
+  {# Card content #}
+
+  .card__heading {
+    {{ module.styles.cards.heading.font.css }}
+  }
+
+  .card__subheading {
+   {{ module.styles.cards.subheading.font.css }}
+  }
+
+  .card__description {
+    {{ module.styles.cards.description.font.css }}
+  }
+
+  {# Button wrapper #}
+
+  {% if module.styles.alignment.alignment %}
+    .button-wrapper {
+      text-align: {{ module.styles.alignment.alignment.horizontal_align }};
+    }
+  {% endif %}
+
+  {# Button #}
+
+  .button {
+    {% if module.styles.cards.button.background.color.color %}
+      background-color: rgba({{ module.styles.cards.button.background.color.color|convert_rgb }}, {{ module.styles.cards.button.background.color.opacity / 100 }});
+    {% endif %}
+    {{ module.styles.cards.button.border.border.css }}
+    {% if module.styles.cards.button.corner.radius %}
+      border-radius: {{ module.styles.cards.button.corner.radius ~ 'px' }};
+    {% endif %}
+    {{ module.styles.cards.button.text.font.css }}
+    {{ module.styles.cards.button.spacing.spacing.css }}
+  }
+
+  .button:hover,
+  .button:focus {
+    {% if module.styles.cards.button.background.color.color %}
+      background-color: rgba({{ color_variant(module.styles.cards.button.background.color.color, -80)|convert_rgb }}, {{ module.styles.cards.button.background.color.opacity / 100 }});
+    {% endif %}
+  }
+
+  .button:active {
+    {% if module.styles.cards.button.background.color.color %}
+      background-color: rgba({{ color_variant(module.styles.cards.button.background.color.color, 80)|convert_rgb }}, {{ module.styles.cards.button.background.color.opacity / 100 }});
+    {% endif %}
+  }
+
+{% end_scope_css %}
+</style>
+
 {# Module data #}
 
 {% set dataQueryData = module.data_query.data.CRM %}
@@ -7,22 +100,18 @@
 {# Featured roles #}
 
 {% if roles|length > 0 %}
-  <section class="featured-roles">
-    <h2>{{ module.title }}</h2>
-    <div class="featured-roles__wrapper">
-      {% for role in roles %}
+  <section class="card-listing">
+    <h2 class="card-listing__heading">{{ module.heading }}</h2>
+    {% for role in roles %}
+      {% set company = dataQueryData.company_collection.items[0] %}
+      {% set roleDetailLink = "{{ request.path }}?role_identifier={{ role.role_identifier }}&title={{ role.title }}&job_title={{ role.title }}" %}
 
-        {% set company = dataQueryData.company_collection.items[0] %}
-        {% set roleDetailLink = "{{ request.path }}?role_identifier={{ role.role_identifier }}&title={{ role.title }}&job_title={{ role.title }}" %}
-
-        <div class="featured-roles__card">
-          <h3>{{ role.title }}</h3>
-          <h4>{{ company.name }}</h4>
-          <p>{{ truncate(role.description, 128, false, '...') }}</p>
-          <a class="button" href="{{ roleDetailLink }}">Apply</a>
-        </div>
-
-      {% endfor %}
-    </div>
+      <div class="card">
+        <h3 class="card__heading">{{ role.title }}</h3>
+        <h4 class="card__subheading">{{ company.name }}</h4>
+        <p class="card__description">{{ truncate(role.description|striptags, 128, false, '...') }}</p>
+        <a class="card__button button" href="{{ roleDetailLink }}">{{ module.card.button_text }}</a>
+      </div>
+    {% endfor %}
   </section>
 {% endif %}
