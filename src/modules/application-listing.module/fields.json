@@ -1,14 +1,71 @@
-
- [
+[
   {
-    "label": "Cards per row",
-    "name": "cards_per_row",
+    "label": "Heading",
+    "name": "heading",
+    "type": "text",
+    "inline_help_text": "This heading will be appended after the total number of applications in the listing",
+    "default": "Applications"
+  },
+  {
+    "label": "Columns",
+    "name": "columns",
     "type": "number",
     "display": "text",
-    "max": 5,
+    "max": 4,
     "min": 2,
     "required": true,
     "step": 1,
     "default": 2
+  },
+  {
+    "label": "Application card",
+    "name": "application_card",
+    "type": "group",
+    "children": [
+      {
+        "label": "Details",
+        "name": "details",
+        "type": "group",
+        "inline_help_text": "Controls the details in the card that show below the job title and application",
+        "children": [
+          {
+            "label": "Detail label",
+            "name": "detail_label",
+            "type": "text",
+            "default": "Status:"
+          },
+          {
+            "label": "Detail",
+            "name": "detail",
+            "type": "choice",
+            "display": "select",
+            "choices": [
+              [ "department", "Department" ],
+              [ "location", "Location" ],
+              [ "status", "Application status" ]
+            ],
+            "default": "status"
+          }
+        ],
+        "occurrence": {
+          "default": 1,
+          "max": 3,
+          "min": 1
+        },
+        "default": [
+          {
+            "detail_label": "Status:",
+            "detail": "status"
+          }
+        ]
+      },
+      {
+        "label": "Button text",
+        "name": "button_text",
+        "type": "text",
+        "inline_help_text": "This button will automatically link to the appropriate application details page",
+        "default": "Details"
+      }
+    ]
   }
 ]
