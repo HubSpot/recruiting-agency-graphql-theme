@@ -1,23 +1,60 @@
-{% if request.query_dict.applicationId %}
+{# Module data #}
 
+{% if request.query_dict.applicationId %}
   {% set application = module.data_query.data.CRM.p_job_application %}
+  {% set role = application.associations.p_role_collection__role_to_job_application.items %}
+  {% set company = role.associations.company_collection__role_to_company.items %}
   {% set associatedContacts = application.associations.contact_collection__job_application_to_contact.items %}
   {% set applicationAssociatedToCurrentUser = {'isAssociated': false } %}
+
+  {# Checks to see the contact associated with a given application and if the contact ID of that contact matches the contact ID of the user viewing the page it shows the application data on the page #}
 
   {% for associatedContact in associatedContacts %}
     {% if associatedContact._metadata.id == request.contact.contact_vid %}
       {% do applicationAssociatedToCurrentUser.update({'isAssociated': true}) %}
     {% endif %}
   {% endfor %}
+{% else %}
 
-  {% if applicationAssociatedToCurrentUser.isAssociated %}
-    <h1>Application Details</h1>
-    <p>Title: {{application.job_title}}</p>
-    <p>Status: {{application.application_status}}</p>
+  {# Example data used in the editor #}
+
+  {% set application = {
+      job_title: 'Store Leader',
+      application_status: 'Applied'
+    }
+  %}
+
+  {% set role = {
+      location: 'Aventura, FL',
+      department: 'Sales',
+      salary_max: '120,000',
+      salary_min: '85,000'
+    }
+  %}
+
+  {% set company = {
+      name: 'Tesla'
+    }
+  %}
+
+{% endif %}
+
+{# Application details #}
+
+{% if request.query_dict.applicationId || is_in_editor %}
+  {% if applicationAssociatedToCurrentUser.isAssociated || is_in_editor %}
+    <section class="application-details">
+      <h1 class="application-details__heading">Application details</h1>
+      <span class="application-details__item">Status: {{ application.application_status|capitalize }}</span>
+      <span class="application-details__item">Company: {{ company.name }}</span>
+      <span class="application-details__item">Title: {{ application.job_title }}</span>
+      <span class="application-details__item">Location: {{ role.location }}</span>
+      <span class="application-details__item">Salary Range: ${{ role.salary_min }}-{{ role.salary_max }}</span>
+      <span class="application-details__item">Department: {{ role.department|capitalize }}</span>
+    </section>
   {% else %}
     <h1>No application information found for current user.</h1>
   {% endif %}
-
 {% else %}
   <h1>No application information found.</h1>
 {% endif %}

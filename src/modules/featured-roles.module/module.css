@@ -1,31 +1,22 @@
-.featured-roles-wrapper {
+.featured-roles {
   margin-bottom: 16px;
 }
 
-.featured-roles-wrapper > h2 {
-  margin: 0;
-}
-
-.featured-roles {
+.featured-roles__wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.featured-roles > .role-card {
-  cursor: pointer;
+.featured-roles__card {
   background-color: #FFF;
-  width: calc(33.3% - 32px);
-  padding: 16px;
-  margin: 16px;
   border: 2px solid #000;
+  cursor: pointer;
+  margin-bottom: 1.4rem;
+  padding: 16px;
+  width: calc(33.3% - 32px);
 }
 
-.featured-roles > .role-card > h1 {
-  font-size: 28px;
-  margin: 0;
-}
-
-.featured-roles > .role-card > h2 {
-  font-size: 22px;
-  margin: 0;
+.featured-roles > h2 {
+  text-align: center;
 }

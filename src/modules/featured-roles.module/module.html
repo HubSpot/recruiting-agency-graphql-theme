@@ -1,28 +1,28 @@
+{# Module data #}
+
 {% set dataQueryData = module.data_query.data.CRM %}
 {% set roleCollection = dataQueryData.company_collection.items[0].associations.p_role_collection__role_to_company %}
 {% set roles = roleCollection.items %}
 
+{# Featured roles #}
+
 {% if roles|length > 0 %}
-  <div class="featured-roles-wrapper">
+  <section class="featured-roles">
     <h2>{{ module.title }}</h2>
-    <div class="featured-roles">
+    <div class="featured-roles__wrapper">
       {% for role in roles %}
 
         {% set company = dataQueryData.company_collection.items[0] %}
         {% set roleDetailLink = "{{ request.path }}?role_identifier={{ role.role_identifier }}&title={{ role.title }}&job_title={{ role.title }}" %}
 
-        <div class="role-card" onclick="window.location='{{ roleDetailLink }}'">
-          <div class="role-card-body">
-              <h1>{{ role.title }}</h1>
-              <h2>{{ company.name }}</h2>
-              <p>{{ truncate(role.description, 128, false, '...') }}</p>
-          </div>
-          <div class="role-card-actions">
-              <a class="button" href="{{ roleDetailLink }}">View Role</a>
-          </div>
+        <div class="featured-roles__card">
+          <h3>{{ role.title }}</h3>
+          <h4>{{ company.name }}</h4>
+          <p>{{ truncate(role.description, 128, false, '...') }}</p>
+          <a class="button" href="{{ roleDetailLink }}">Apply</a>
         </div>
 
       {% endfor %}
     </div>
-  </div>
+  </section>
 {% endif %}
