@@ -1,14 +1,14 @@
 {# Module styles #}
 
-{% require_css %}
-  <style>
+<style>
+  {% scope_css %}
     @media (min-width: 767px) {
-      .role-card {
+      .card {
         width: calc({{(100 / module.cards_per_row)}}% - 0.7rem);
       }
     }
-  </style>
-{% end_require_css %}
+  {% end_scope_css %}
+</style>
 
 {# Module data #}
 
@@ -98,10 +98,14 @@
 
 {# Role listing #}
 
-<div class="role-listing content-wrapper">
+<div class="card-listing content-wrapper">
+
   {% if roles|length == 0 %}
     <h2>No results found</h2>
   {% endif %}
+
+  {# Role cards #}
+
   {% for role in roles %}
     {% if request.query_dict.searchByCompany %}
       {% set company = dataQueryData.roles_by_associated_company.items[0] %}
@@ -110,17 +114,19 @@
     {% endif %}
 
     {% set roleDetailLink = "{{ request.path }}/role?role_identifier={{ role.role_identifier }}&title={{ role.title }}&job_title={{ role.title }}" %}
-    <section class="role-card">
-      <h2>{{ role.title }}</h2>
+
+    <section class="card">
+      <h2 class="card__heading">{{ role.title }}</h2>
       {% if module.show_company %}
-        <h3>{{ company.name }}</h3>
+        <h3 class="card__subheading">{{ company.name }}</h3>
       {% endif %}
       {% if module.show_description %}
-        <p>{{ truncate(role.description, module.description_length, false, '...') }}</p>
+        <p class="card__description">{{ truncate(role.description, module.description_length, false, '...') }}</p>
       {% endif %}
-      <a class="button" href="{{ roleDetailLink }}">Apply</a>
+      <a class="card__button button" href="{{ roleDetailLink }}">Apply</a>
     </section>
   {% endfor %}
+
 </div>
 
 {# Pagination #}
