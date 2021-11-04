@@ -1,1 +1,67 @@
-[]
+[
+  {
+    "label": "Heading",
+    "name": "heading",
+    "type": "text",
+    "default": "Application details"
+  },
+  {
+    "label": "Application details",
+    "name": "application_details",
+    "type": "group",
+    "children": [
+      {
+        "label": "Detail label",
+        "name": "detail_label",
+        "type": "text",
+        "default": "Status:"
+      },
+      {
+        "label": "Detail",
+        "name": "detail",
+        "type": "choice",
+        "display": "select",
+        "choices": [
+          [ "company", "Company name" ],
+          [ "department", "Department" ],
+          [ "location", "Location" ],
+          [ "salary_range", "Salary Range" ],
+          [ "status", "Application status" ],
+          [ "title", "Job title" ]
+        ],
+        "default": "status"
+      }
+    ],
+    "occurrence": {
+      "default": 6,
+      "max": 6,
+      "min": 1
+    },
+    "default": [
+      {
+        "detail_label": "Status:",
+        "detail": "status"
+      },
+      {
+        "detail_label": "Company:",
+        "detail": "company"
+      },
+      {
+        "detail_label": "Title:",
+        "detail": "title"
+      },
+      {
+        "detail_label": "Location:",
+        "detail": "location"
+      },
+      {
+        "detail_label": "Salary range:",
+        "detail": "salary_range"
+      },
+      {
+        "detail_label": "Department:",
+        "detail": "department"
+      }
+    ]
+  }
+]

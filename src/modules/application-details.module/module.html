@@ -44,13 +44,27 @@
 {% if request.query_dict.applicationId || is_in_editor %}
   {% if applicationAssociatedToCurrentUser.isAssociated || is_in_editor %}
     <section class="application-details">
-      <h1 class="application-details__heading">Application details</h1>
-      <span class="application-details__item">Status: {{ application.application_status|capitalize }}</span>
-      <span class="application-details__item">Company: {{ company.name }}</span>
-      <span class="application-details__item">Title: {{ application.job_title }}</span>
-      <span class="application-details__item">Location: {{ role.location }}</span>
-      <span class="application-details__item">Salary Range: ${{ role.salary_min }}-{{ role.salary_max }}</span>
-      <span class="application-details__item">Department: {{ role.department|capitalize }}</span>
+      <h1 class="application-details__heading">{{ module.heading }}</h1>
+      {% for application_detail in module.application_details %}
+
+        {# Sets values for detail based on field choice #}
+
+        {% if application_detail.detail == 'company' %}
+          {% set detail = company.name %}
+        {% elif application_detail.detail == 'department' %}
+          {% set detail = role.department|capitalize %}
+        {% elif application_detail.detail == 'location' %}
+          {% set detail = role.location %}
+        {% elif application_detail.detail == 'salary_range' %}
+          {% set detail = '$' ~ role.salary_min ~ '-' ~ role.salary_max %}
+        {% elif application_detail.detail == 'status' %}
+          {% set detail = application.application_status|capitalize %}
+        {% elif application_detail.detail == 'title' %}
+          {% set detail = application.job_title %}
+        {% endif %}
+
+        <span class="application-details__item">{{ application_detail.detail_label }} {{ detail }}</span>
+      {% endfor %}
     </section>
   {% else %}
     <h1>No application information found for current user.</h1>
