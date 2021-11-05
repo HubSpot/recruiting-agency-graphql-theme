@@ -1,3 +1,36 @@
+{# Module styles #}
+
+<style>
+  {% scope_css %}
+
+    {# Heading #}
+
+    .application-details__heading {
+      {{ module.styles.heading.text.font.css }}
+      {% if module.styles.heading.alignment.alignment.horizontal_align %}
+        text-align: {{ module.styles.heading.alignment.alignment.horizontal_align }};
+      {% endif %}
+    }
+
+    {# Application detail #}
+
+    .application-details__item-label {
+      {{ module.styles.application_details.detail_label.font.css }}
+    }
+
+    .application-details__item-detail {
+      {{ module.styles.application_details.detail.font.css }}
+    }
+
+    {# Spacing #}
+
+    .applcation-details {
+      {{ module.styles.card.spacing.spacing.css }}
+    }
+
+  {% end_scope_css %}
+</style>
+
 {# Module data #}
 
 {% if request.query_dict.applicationId %}
@@ -44,13 +77,30 @@
 {% if request.query_dict.applicationId || is_in_editor %}
   {% if applicationAssociatedToCurrentUser.isAssociated || is_in_editor %}
     <section class="application-details">
-      <h1 class="application-details__heading">Application details</h1>
-      <span class="application-details__item">Status: {{ application.application_status|capitalize }}</span>
-      <span class="application-details__item">Company: {{ company.name }}</span>
-      <span class="application-details__item">Title: {{ application.job_title }}</span>
-      <span class="application-details__item">Location: {{ role.location }}</span>
-      <span class="application-details__item">Salary Range: ${{ role.salary_min }}-{{ role.salary_max }}</span>
-      <span class="application-details__item">Department: {{ role.department|capitalize }}</span>
+      <h1 class="application-details__heading">{{ module.heading }}</h1>
+      {% for application_detail in module.application_details %}
+
+        {# Sets values for detail based on field choice #}
+
+        {% if application_detail.detail == 'company' %}
+          {% set detail = company.name %}
+        {% elif application_detail.detail == 'department' %}
+          {% set detail = role.department|capitalize %}
+        {% elif application_detail.detail == 'location' %}
+          {% set detail = role.location %}
+        {% elif application_detail.detail == 'salary_range' %}
+          {% set detail = '$' ~ role.salary_min ~ '-' ~ role.salary_max %}
+        {% elif application_detail.detail == 'status' %}
+          {% set detail = application.application_status|capitalize %}
+        {% elif application_detail.detail == 'title' %}
+          {% set detail = application.job_title %}
+        {% endif %}
+
+        <span class="application-details__item">
+          <span class="application-details__item-label">{{ application_detail.detail_label }}</span>
+          <span class="application-details__item-detail"> {{ detail }}</span>
+        </span>
+      {% endfor %}
     </section>
   {% else %}
     <h1>No application information found for current user.</h1>

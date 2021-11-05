@@ -25,7 +25,25 @@
           {% end_dnd_module %}
         {% end_dnd_row %}
         {% dnd_row %}
-          {% dnd_module path='../modules/application-listing.module' %}
+          {% dnd_module
+            path='../modules/application-listing.module'
+            card={
+              'details': [
+                {
+                  'detail_label': "",
+                  'detail': "department"
+                },
+                {
+                  'detail_label': "",
+                  'detail': "location"
+                },
+                {
+                  'detail_label': "Status:",
+                  'detail': "status"
+                }
+              ]
+            }
+          %}
           {% end_dnd_module %}
         {% end_dnd_row %}
       {% end_dnd_column %}

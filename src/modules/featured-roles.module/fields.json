@@ -1,19 +1,272 @@
 [
   {
-    "label": "Title",
-    "name": "title",
+    "label": "Heading",
+    "name": "heading",
     "type": "text",
-    "display": "text",
     "default": "Related jobs"
   },
   {
-    "label": "Roles to Show",
+    "label": "Roles to show",
     "name": "roles_to_show",
     "type": "number",
     "display": "text",
-    "max": 6,
-    "min": 3,
+    "max": 3,
+    "min": 2,
+    "required": true,
     "step": 1,
     "default": 3
+  },
+  {
+    "label": "Card",
+    "name": "card",
+    "type": "group",
+    "children": [
+      {
+        "label": "Button text",
+        "name": "button_text",
+        "type": "text",
+        "inline_help_text": "This button will automatically link to the appropriate role details page",
+        "default": "Apply"
+      }
+    ]
+  },
+  {
+    "label": "Styles",
+    "name": "styles",
+    "type": "group",
+    "tab": "STYLE",
+    "children": [
+      {
+        "label": "Heading",
+        "name": "heading",
+        "type": "group",
+        "children": [
+          {
+            "label": "Text",
+            "name": "text",
+            "type": "group",
+            "children": [
+              {
+                "label": "Font",
+                "name": "font",
+                "type": "font"
+              }
+            ]
+          },
+          {
+            "label": "Alignment",
+            "name": "alignment",
+            "type": "group",
+            "children": [
+              {
+                "label": "Alignment",
+                "name": "alignment",
+                "type": "alignment",
+                "alignment_direction": "HORIZONTAL"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Cards",
+        "name": "cards",
+        "type": "group",
+        "children": [
+          {
+            "label": "Heading",
+            "name": "heading",
+            "type": "group",
+            "children": [
+              {
+                "label": "Font",
+                "name": "font",
+                "type": "font"
+              }
+            ]
+          },
+          {
+            "label": "Subheading",
+            "name": "subheading",
+            "type": "group",
+            "children": [
+              {
+                "label": "Font",
+                "name": "font",
+                "type": "font"
+              }
+            ]
+          },
+          {
+            "label": "Description",
+            "name": "description",
+            "type": "group",
+            "children": [
+              {
+                "label": "Font",
+                "name": "font",
+                "type": "font"
+              }
+            ]
+          },
+          {
+            "label": "Button",
+            "name": "button",
+            "type": "group",
+            "children": [
+              {
+                "label": "Text",
+                "name": "text",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Font",
+                    "name": "font",
+                    "type": "font"
+                  }
+                ]
+              },
+              {
+                "label": "Background",
+                "name": "background",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Color",
+                    "name": "color",
+                    "type": "color"
+                  }
+                ]
+              },
+              {
+                "label": "Border",
+                "name": "border",
+                "type": "group",
+                "children": [
+                  {
+                    "label" : "Border",
+                    "name" : "border",
+                    "type" : "border"
+                  }
+                ]
+              },
+              {
+                "label": "Corner",
+                "name": "corner",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Radius",
+                    "name": "radius",
+                    "type": "number",
+                    "display": "text",
+                    "max": 100,
+                    "step": 1,
+                    "suffix": "px"
+                  }
+                ]
+              },
+              {
+                "label": "Spacing",
+                "name": "spacing",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Spacing",
+                    "name": "spacing",
+                    "type": "spacing",
+                    "visibility": {
+                      "hidden_subfields": {
+                        "margin": true
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "Alignment",
+                "name": "alignment",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Alignment",
+                    "name": "alignment",
+                    "type": "alignment",
+                    "alignment_direction": "HORIZONTAL"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Background",
+            "name": "background",
+            "type": "group",
+            "children": [
+              {
+                "label": "Color",
+                "name": "color",
+                "type": "color"
+              }
+            ]
+          },
+          {
+            "label": "Border",
+            "name": "border",
+            "type": "group",
+            "children": [
+              {
+                "label" : "Border",
+                "name" : "border",
+                "type" : "border"
+              }
+            ]
+          },
+          {
+            "label": "Corner",
+            "name": "corner",
+            "type": "group",
+            "children": [
+              {
+                "label": "Radius",
+                "name": "radius",
+                "type": "number",
+                "display": "text",
+                "max": 100,
+                "step": 1,
+                "suffix": "px"
+              }
+            ]
+          },
+          {
+            "label": "Spacing",
+            "name": "spacing",
+            "type": "group",
+            "children": [
+              {
+                "label": "Space between cards",
+                "name": "space_between_cards",
+                "type": "number",
+                "display": "slider",
+                "max": 50,
+                "min": 0,
+                "step": 5,
+                "suffix": "px"
+              },
+              {
+                "label": "Card content",
+                "name": "card_content",
+                "type": "spacing",
+                "visibility": {
+                  "hidden_subfields": {
+                    "margin": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

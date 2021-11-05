@@ -1,14 +1,330 @@
-
- [
+[
   {
-    "label": "Cards per row",
-    "name": "cards_per_row",
+    "label": "Heading",
+    "name": "heading",
+    "type": "text",
+    "inline_help_text": "This heading will be appended after the total number of applications in the listing",
+    "default": "Applications"
+  },
+  {
+    "label": "Columns",
+    "name": "columns",
+    "id": "columns",
     "type": "number",
     "display": "text",
-    "max": 5,
+    "max": 4,
     "min": 2,
     "required": true,
     "step": 1,
     "default": 2
+  },
+  {
+    "label": "Card",
+    "name": "card",
+    "type": "group",
+    "children": [
+      {
+        "label": "Details",
+        "name": "details",
+        "type": "group",
+        "inline_help_text": "Controls the details in the card that show below the job title and application",
+        "children": [
+          {
+            "label": "Label",
+            "name": "detail_label",
+            "type": "text",
+            "default": "Status:"
+          },
+          {
+            "label": "Detail",
+            "name": "detail",
+            "type": "choice",
+            "display": "select",
+            "choices": [
+              [ "department", "Department" ],
+              [ "location", "Location" ],
+              [ "status", "Application status" ]
+            ],
+            "default": "status"
+          }
+        ],
+        "occurrence": {
+          "default": 1,
+          "max": 3,
+          "min": 1
+        },
+        "default": [
+          {
+            "detail_label": "Status:",
+            "detail": "status"
+          }
+        ]
+      },
+      {
+        "label": "Button text",
+        "name": "button_text",
+        "type": "text",
+        "inline_help_text": "This button will automatically link to the appropriate application details page",
+        "default": "Details"
+      }
+    ]
+  },
+  {
+    "label": "Styles",
+    "name": "styles",
+    "type": "group",
+    "tab": "STYLE",
+    "children": [
+      {
+        "label": "Heading",
+        "name": "heading",
+        "type": "group",
+        "children": [
+          {
+            "label": "Text",
+            "name": "text",
+            "type": "group",
+            "children": [
+              {
+                "label": "Font",
+                "name": "font",
+                "type": "font"
+              }
+            ]
+          },
+          {
+            "label": "Alignment",
+            "name": "alignment",
+            "type": "group",
+            "children": [
+              {
+                "label": "Alignment",
+                "name": "alignment",
+                "type": "alignment",
+                "alignment_direction": "HORIZONTAL"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Cards",
+        "name": "cards",
+        "type": "group",
+        "children": [
+          {
+            "label": "Heading",
+            "name": "heading",
+            "type": "group",
+            "children": [
+              {
+                "label": "Font",
+                "name": "font",
+                "type": "font"
+              }
+            ]
+          },
+          {
+            "label": "Subheading",
+            "name": "subheading",
+            "type": "group",
+            "children": [
+              {
+                "label": "Font",
+                "name": "font",
+                "type": "font"
+              }
+            ]
+          },
+          {
+            "label": "Details",
+            "name": "details",
+            "type": "group",
+            "children": [
+              {
+                "label": "Label",
+                "name": "detail_label",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Font",
+                    "name": "font",
+                    "type": "font"
+                  }
+                ]
+              },
+              {
+                "label": "Detail",
+                "name": "detail",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Font",
+                    "name": "font",
+                    "type": "font"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Button",
+            "name": "button",
+            "type": "group",
+            "children": [
+              {
+                "label": "Text",
+                "name": "text",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Font",
+                    "name": "font",
+                    "type": "font"
+                  }
+                ]
+              },
+              {
+                "label": "Background",
+                "name": "background",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Color",
+                    "name": "color",
+                    "type": "color"
+                  }
+                ]
+              },
+              {
+                "label": "Border",
+                "name": "border",
+                "type": "group",
+                "children": [
+                  {
+                    "label" : "Border",
+                    "name" : "border",
+                    "type" : "border"
+                  }
+                ]
+              },
+              {
+                "label": "Corner",
+                "name": "corner",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Radius",
+                    "name": "radius",
+                    "type": "number",
+                    "display": "text",
+                    "max": 100,
+                    "step": 1,
+                    "suffix": "px"
+                  }
+                ]
+              },
+              {
+                "label": "Spacing",
+                "name": "spacing",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Spacing",
+                    "name": "spacing",
+                    "type": "spacing",
+                    "visibility": {
+                      "hidden_subfields": {
+                        "margin": true
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "Alignment",
+                "name": "alignment",
+                "type": "group",
+                "children": [
+                  {
+                    "label": "Alignment",
+                    "name": "alignment",
+                    "type": "alignment",
+                    "alignment_direction": "HORIZONTAL"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Background",
+            "name": "background",
+            "type": "group",
+            "children": [
+              {
+                "label": "Color",
+                "name": "color",
+                "type": "color"
+              }
+            ]
+          },
+          {
+            "label": "Border",
+            "name": "border",
+            "type": "group",
+            "children": [
+              {
+                "label" : "Border",
+                "name" : "border",
+                "type" : "border"
+              }
+            ]
+          },
+          {
+            "label": "Corner",
+            "name": "corner",
+            "type": "group",
+            "children": [
+              {
+                "label": "Radius",
+                "name": "radius",
+                "type": "number",
+                "display": "text",
+                "max": 100,
+                "step": 1,
+                "suffix": "px"
+              }
+            ]
+          },
+          {
+            "label": "Spacing",
+            "name": "spacing",
+            "type": "group",
+            "children": [
+              {
+                "label": "Space between cards",
+                "name": "space_between_cards",
+                "type": "number",
+                "display": "slider",
+                "max": 50,
+                "min": 0,
+                "step": 5,
+                "suffix": "px"
+              },
+              {
+                "label": "Card content",
+                "name": "card_content",
+                "type": "spacing",
+                "visibility": {
+                  "hidden_subfields": {
+                    "margin": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
