@@ -1,8 +1,8 @@
 Sample GraphQL Theme
-========================  
-:warning: This functionality is in beta and requires your account to be ungated. You can request access by submitting [this form](https://forms.gle/wQ1Rztc85gDAWUYU9). By participating in this beta you agree to HubSpot's [Developer Terms](https://legal.hubspot.com/developer-terms) & [Developer Beta Terms](https://legal.hubspot.com/developerbetaterms). Please note this functionality is currently under development and is subject to change based on testing and feedback. :warning: 
+========================
+:warning: This functionality is in beta and requires your account to be ungated. You can request access by submitting [this form](https://forms.gle/wQ1Rztc85gDAWUYU9). By participating in this beta you agree to HubSpot's [Developer Terms](https://legal.hubspot.com/developer-terms) & [Developer Beta Terms](https://legal.hubspot.com/developerbetaterms). Please note this functionality is currently under development and is subject to change based on testing and feedback. :warning:
 
-This theme is based off of the CMS Starter Growth Theme. It includes modules and templates that demonstrate how to utilize GraphQL as part of a website built with HubSpot CMS and Custom CRM Objects.
+This theme is based off of the [HubSpot CMS Boilerplate](https://github.com/HubSpot/cms-theme-boilerplate) theme. It includes modules and templates that demonstrate how to utilize GraphQL as part of a website built with HubSpot CMS and Custom CRM Objects.
 
 # Using the Sample Theme
 
@@ -18,7 +18,7 @@ Let’s get started!
 
 ## Step 1: Create CRM Custom Objects
 
-The first thing you’ll need to do is install the HubSpot CLI tools. This will make development much easier by allowing you to use the IDE you feel most comfortable with. To install the CLI tools, follow the instructions here: https://developers.hubspot.com/docs/cms/developer-reference/local-development-cli#install 
+The first thing you’ll need to do is install the HubSpot CLI tools. This will make development much easier by allowing you to use the IDE you feel most comfortable with. To install the CLI tools, follow the instructions here: https://developers.hubspot.com/docs/cms/developer-reference/local-development-cli#install
 
 Once you have the CLI tools installed, clone the repository into a folder on your local file system. Then, navigate to that directory and run `hs init` to configure your project.
 
