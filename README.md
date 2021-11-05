@@ -48,7 +48,7 @@ If you'd like, you can use our sample data [here](./data/role_data.json) to popu
 
 ## Step 2: Create Job Application Submission Form and Workflow
 
-Now that the custom objects are created, you can upload the theme to HubSpot by running the following CLI command: `hs upload src sample-graphql-theme`
+Now that the custom objects are created, you can upload the theme to HubSpot by running the following CLI command: `hs upload src recruiting-agency-graphql-theme`
 
 In order to prepare for creating our pages to display roles and allow prospective applicants to apply to a given role, we’ll need to create a form that we can use on our pages. When an applicant submits this form, we want to create a contact record (if the user doesn’t already exist as a contact), and an associated Job Application object that contains their resume and cover letter.
 
