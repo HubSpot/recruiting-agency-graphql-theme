@@ -1,3 +1,48 @@
+{# Module styles #}
+
+<style>
+  {% scope_css %}
+
+    {# Role details heading #}
+
+    .role-details__heading {
+      {{ module.styles.role_details.heading.text.font.css }}
+      {% if module.styles.role_details.heading.alignment.alignment.horizontal_align %}
+        text-align: {{ module.styles.role_details.heading.alignment.alignment.horizontal_align }};
+      {% endif %}
+    }
+
+    {# Role details #}
+
+    .role-details__item-label {
+      {{ module.styles.role_details.details.detail_label.font.css }}
+    }
+
+    .role-details__item-detail {
+      {{ module.styles.role_details.details.detail.font.css }}
+    }
+
+    /* Job application heading */
+
+    .role-application {
+      {% if module.styles.form.background.color.color %}
+        background-color: rgba({{ module.styles.form.background.color.color|convert_rgb }}, {{ module.styles.form.background.color.opacity / 100 }});
+      {% endif %}
+      {{ module.styles.form.spacing.spacing.css }}
+    }
+
+    /* Job application heading */
+
+    .role-application__heading {
+      {{ module.styles.form.heading.text.font.css }}
+      {% if module.styles.form.heading.alignment.alignment.horizontal_align %}
+        text-align: {{ module.styles.form.heading.alignment.alignment.horizontal_align }};
+      {% endif %}
+    }
+
+  {% end_scope_css %}
+</style>
+
 {#  Module data #}
 
 {% if request.query_dict.role_identifier %}
@@ -30,13 +75,29 @@
 
   <section class="role-details">
     <div class="content-wrapper">
-      <h1 class="role-details__heading">Role details</h1>
-      <span class="role-details__item">Company: {{ company.name }}</span>
-      <span class="role-details__item">Title: {{ role.title }}</span>
-      <span class="role-details__item">Location: {{ role.location }}</span>
-      <span class="role-details__item">Salary range: ${{ role.salary_min }}-${{ role.salary_max }}</span>
-      <span class="role-details__item">Department: {{ role.department }}</span>
-      <span class="role-details__item">{{ role.description }}</span>
+      <h1 class="role-details__heading">{{ module.role_details.heading }}</h1>
+      {% for role_detail in module.role_details.details %}
+
+        {# Sets values for detail based on field choice #}
+
+        {% if role_detail.detail == 'company' %}
+          {% set detail = company.name %}
+        {% elif role_detail.detail == 'department' %}
+          {% set detail = role.department %}
+        {% elif role_detail.detail == 'location' %}
+          {% set detail = role.location %}
+        {% elif role_detail.detail == 'salary_range' %}
+          {% set detail = '$' ~ role.salary_min ~ '-' ~ role.salary_max %}
+        {% elif role_detail.detail == 'title' %}
+          {% set detail = role.title %}
+        {% endif %}
+
+        <span class="role-details__item">
+          <span class="role-details__item-label">{{ role_detail.detail_label }}</span>
+          <span class="role-details__item-detail"> {{ detail }}</span>
+        </span>
+      {% endfor %}
+      <div class="role-details__item">{{ role.description }}</div>
     </div>
   </section>
 
@@ -44,13 +105,13 @@
 
   <section class="role-application">
     <div class="content-wrapper">
-      <h2 class="role-application__heading">Apply now!</h2>
+      <h2 class="role-application__heading">{{ module.job_application.heading }}</h2>
       {% form
-        form_to_use='{{ module.job_application_form.form_id }}',
-        response_message='{{ module.job_application_form.message }}',
-        response_redirect_id='{{ module.job_application_form.redirect_id }}',
-        response_redirect_url='{{ module.job_application_form.redirect_url }}',
-        response_response_type='{{ module.job_application_form.response_type }}'
+        form_to_use='{{ module.job_application.form.form_id }}',
+        response_message='{{ module.job_application.form.message }}',
+        response_redirect_id='{{ module.job_application.form.redirect_id }}',
+        response_redirect_url='{{ module.job_application.form.redirect_url }}',
+        response_response_type='{{ module.job_application.form.response_type }}'
       %}
     </div>
   </section>

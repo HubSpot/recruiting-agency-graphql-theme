@@ -27,7 +27,33 @@
         }
       %}
         {% dnd_row %}
-          {% dnd_module path='../modules/role-details.module' %}
+          {% dnd_module
+            path='../modules/role-details.module',
+            role_details={
+              'details': [
+                {
+                  'detail_label': 'Company:',
+                  'detail': 'company'
+                },
+                {
+                  'detail_label': 'Title:',
+                  'detail': 'title'
+                },
+                {
+                  'detail_label': 'Location:',
+                  'detail': 'location'
+                },
+                {
+                  'detail_label': 'Salary range:',
+                  'detail': 'salary_range'
+                },
+                {
+                  'detail_label': 'Department:',
+                  'detail': 'department'
+                }
+              ]
+            }
+          %}
           {% end_dnd_module %}
         {% end_dnd_row %}
       {% end_dnd_column %}
