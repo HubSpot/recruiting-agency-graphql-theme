@@ -12,8 +12,6 @@ The end product will be a site where a recruiting agency can post roles they are
 
 Throughout this process, we’ll touch on a number of aspects of the HubSpot platform, such as: CRM Custom Objects, Workflows, Forms, Custom Modules, GraphQL Data Queries, Lists, Memberships, and more.
 
-The source code for the theme and schemas are in this GitHub repository: https://github.com/HubSpot/sample-graphql-theme
-
 Let’s get started!
 
 ## Step 1: Create CRM Custom Objects
