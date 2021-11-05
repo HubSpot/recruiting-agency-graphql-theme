@@ -16,7 +16,7 @@ Let’s get started!
 
 ## Step 1: Create CRM Custom Objects
 
-The first thing you’ll need to do is install the HubSpot CLI tools. This will make development much easier by allowing you to use the IDE you feel most comfortable with. To install the CLI tools, follow the instructions here: https://developers.hubspot.com/docs/cms/developer-reference/local-development-cli#install
+The first thing you’ll need to do is install the HubSpot CLI tools. This will make development much easier by allowing you to use the IDE you feel most comfortable with. To install the CLI tools, follow the instructions [here](https://developers.hubspot.com/docs/cms/developer-reference/local-development-cli#install).
 
 Once you have the CLI tools installed, clone the repository into a folder on your local file system. Then, navigate to that directory and run `hs init` to configure your project.
 
@@ -29,7 +29,7 @@ You should see a response in the CLI indicating the custom objects were successf
 Now that our custom objects have been created, the next step is to create the association between our custom objects, so that a given Role can be associated to Job Applications. In order to do this, we’ll have to use the custom objects API endpoints.
 
 To create the association, we’ll need to hit the API directly, using this endpoint: POST
-/crm/v3/schemas/{objectType}/associations (more details for the endpoint can be found here: https://developers.hubspot.com/docs/api/crm/crm-custom-objects)
+/crm/v3/schemas/{objectType}/associations (more details for the endpoint can be found [here](https://developers.hubspot.com/docs/api/crm/crm-custom-objects)).
 
 For the body of the request, we’ll need the object type ID for both of the objects for which we’re creating an association. We can find the object type ID by running the following command from the CLI: `hs custom-object schema list`. The output of that command should list your custom objects and their object type ID.
 
