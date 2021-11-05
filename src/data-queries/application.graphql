@@ -2,7 +2,7 @@
 #  description: "Application instance query for Recruiting Agency case study."
 #  $applicationId: "{{ request.query_dict.applicationId || "" }}"
 #  $contact_id: "{{ request.contact.contact_vid || "" }}"
-query application($applicationId: String!, $contact_id: String) {
+query application($applicationId: String!, $contact_id: Number) {
   CRM {
     p_job_application(uniqueIdentifier: "id", uniqueIdentifierValue: $applicationId) {
       job_title

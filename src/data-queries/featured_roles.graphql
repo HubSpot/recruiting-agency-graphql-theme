@@ -3,12 +3,12 @@
 #  $limit: {{ module.roles_to_show || 3 }}
 #  $department: {{ data_query.data.CRM.p_role.department || "" }}
 #  $company: "{{ data_query.data.CRM.p_role.associations.company_collection__role_to_company.items[0].name || "" }}"
-#  $skipId: "{{ data_query.data.CRM.p_role._metadata.id }}
+#  $skipId: "{{ data_query.data.CRM.p_role._metadata.id }}"
 query featured_roles(
   $limit: Int, 
   $department: String,
   $company: String,
-  $skipId: String)
+  $skipId: Number)
 {
   CRM {
     company_collection(filter: {name_eq: $company}) {
