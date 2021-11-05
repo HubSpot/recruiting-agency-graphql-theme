@@ -186,8 +186,8 @@
 
 {% set offset = roleCollection.offset %}
 {% set limit = module.cards_per_row * module.rows_per_page %}
-{% set currentPage = (offset / limit)|round(0, 'ceil') %}
-{% set totalPages = (roleCollection.total / limit)|round(0, 'ceil')  %}
+{% set currentPage = (offset / limit)|number|round(0, 'ceil') %}
+{% set totalPages = (roleCollection.total / limit)|number|round(0, 'ceil')  %}
 
 {# Role filter bar #}
 
@@ -240,7 +240,7 @@
       {% set company = role.associations.company_collection__role_to_company.items|first %}
     {% endif %}
 
-    {% set roleDetailLink = "{{ request.path }}/role?role_identifier={{ role.role_identifier }}&title={{ role.title }}&job_title={{ role.title }}" %}
+    {% set roleDetailLink = "{{ request.path }}/{{ role.role_identifier }}?role_identifier={{ role.role_identifier }}&title={{ role.title }}&job_title={{ role.title }}" %}
 
     <section class="card">
       <h2 class="card__heading">{{ role.title }}</h2>

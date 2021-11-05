@@ -45,8 +45,8 @@
 
 {#  Module data #}
 
-{% if request.query_dict.role_identifier %}
-  {% set role = module.data_query.data.CRM.p_role %}
+{% if dynamic_page_data_instance %}
+  {% set role = data_query.data.CRM.p_role %}
   {% set company = role.associations.company_collection__role_to_company.items|first %}
 {% else %}
 

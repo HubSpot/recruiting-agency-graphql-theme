@@ -104,7 +104,7 @@
     <h2 class="card-listing__heading">{{ module.heading }}</h2>
     {% for role in roles %}
       {% set company = dataQueryData.company_collection.items[0] %}
-      {% set roleDetailLink = "{{ request.path }}?role_identifier={{ role.role_identifier }}&title={{ role.title }}&job_title={{ role.title }}" %}
+      {% set roleDetailLink = "{{ role.role_identifier }}?role_identifier={{ role.role_identifier }}&title={{ role.title }}&job_title={{ role.title }}" %}
 
       <div class="card">
         <h3 class="card__heading">{{ role.title }}</h3>
