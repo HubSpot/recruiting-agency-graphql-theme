@@ -35,8 +35,8 @@
 
 {% if request.query_dict.applicationId %}
   {% set application = module.data_query.data.CRM.p_job_application %}
-  {% set role = application.associations.p_role_collection__role_to_job_application.items %}
-  {% set company = role.associations.company_collection__role_to_company.items %}
+  {% set role = application.associations.p_role_collection__job_application_to_role.items|first %}
+  {% set company = role.associations.company_collection__role_to_company.items|first %}
   {% set associatedContacts = application.associations.contact_collection__job_application_to_contact.items %}
   {% set applicationAssociatedToCurrentUser = {'isAssociated': false } %}
 

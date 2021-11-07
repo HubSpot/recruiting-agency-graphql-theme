@@ -108,7 +108,7 @@
       {
         application_status: 'Applied',
         associations: {
-          p_role_collection__role_to_job_application: {
+          p_role_collection__job_application_to_role: {
             items: [
               {
                 department: 'Sales',
@@ -131,7 +131,7 @@
       {
         application_status: 'Applied',
         associations: {
-          p_role_collection__role_to_job_application: {
+          p_role_collection__job_application_to_role: {
             items: [
               {
                 department: 'Operations',
@@ -168,7 +168,7 @@
 
     {% for application in applications %}
 
-      {% set role = application.associations.p_role_collection__role_to_job_application.items|first %}
+      {% set role = application.associations.p_role_collection__job_application_to_role.items|first %}
       {% set company = role.associations.company_collection__role_to_company.items|first %}
 
       <section class="card">
