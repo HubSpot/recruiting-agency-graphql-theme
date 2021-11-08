@@ -98,11 +98,13 @@ The last thing we’re going to do to tie everything together is create a menu a
 
 Add two menu items, one for the Role Listing page, and one for the Application Listing page. Then, publish the menu. Now, ensure the new menu is selected in the Global Content Editor, and Publish your changes.
 
-To test our site, go ahead and submit some Job Applications to a few different roles. You’ll notice that since you’re logged into your HubSpot account to edit the website, you won’t need to register to view the Job Applications page. If you’d like to test the Membership list and registration, you’ll need to open the site in an Incognito window and submit a Job Application using an e-mail address that isn’t associated with your existing HubSpot account. **Note: In order for registration e-mails to be sent, a valid domain must be attached to your HubSpot portal.**
+To test our site, go ahead and submit some Job Applications to a few different roles. You’ll notice that since you’re logged into your HubSpot account to edit the website, you won’t need to register to view the Job Applications page. If you’d like to test the Membership list and registration, you’ll need to open the site in an Incognito window and submit a Job Application using an e-mail address that isn’t associated with your existing HubSpot account. **Note: In order for registration e-mails to be sent, a valid domain must be connected to your HubSpot portal. See prerequisites here: https://knowledge.hubspot.com/website-pages/require-member-registration-to-access-private-content**
 
 That does it! You now have a fully functional recruiting website where people can view open positions, apply for jobs, and track their application status. On the other side of the process, recruiters can post job openings, keep in touch with applicants through the lifecycle of their application process, and create deals for companies for which applicants are being recruited. Those deals can be associated with Roles that need to be filled, and used to track the lifecycle of the recruitment process for a given company.
 
 ## Resources
 https://developers.hubspot.com/docs/cms/developer-reference/local-development-cli
+
 https://developers.hubspot.com/docs/api/crm/crm-custom-objects
+
 https://developers.hubspot.com/docs/cms/data/memberships
