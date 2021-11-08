@@ -3,15 +3,11 @@
   "css_assets": [],
   "external_js": [],
   "global": false,
-  "help_text": "",
-  "host_template_types": [
-    "PAGE"
-  ],
+  "host_template_types": ["PAGE"],
   "icon": "../../images/module-icons/high-file.svg",
   "js_assets": [],
   "other_assets": [],
   "smart_type": "NOT_SMART",
   "tags": [],
-  "is_available_for_new_content": true,
-  "data_query_path": "../../data-queries/role"
+  "is_available_for_new_content": true
 }

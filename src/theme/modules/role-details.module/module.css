@@ -1,0 +1,25 @@
+/* Role details */
+
+.role-details {
+  padding: 1.4rem 1rem;
+}
+
+.role-details__heading {
+  text-align: center;
+}
+
+.role-details__item {
+  display: block;
+  margin-bottom: 1.4rem;
+}
+
+/* Role application */
+
+.role-application {
+  background-color: #F8FAFC;
+  padding: 1.4rem 1rem;
+}
+
+.role-application__heading {
+  text-align: center;
+}

@@ -1,38 +1,205 @@
 {# Module styles #}
 
 <style>
-  @media (min-width: 767px) {
-    .application-card {
-      width: calc({{(100 / module.cards_per_row)}}% - 0.7rem);
+  {% scope_css %}
+
+    {# Heading #}
+
+    .card-listing__heading {
+      {{ module.styles.heading.text.font.css }}
+      {% if module.styles.heading.alignment.alignment.horizontal_align %}
+        text-align: {{ module.styles.heading.alignment.alignment.horizontal_align }};
+      {% endif %}
     }
-  }
+
+    {# Card #}
+
+    .card {
+      {% if module.styles.cards.background.color.color %}
+        background-color: rgba({{ module.styles.cards.background.color.color|convert_rgb }}, {{ module.styles.cards.background.color.opacity / 100 }});
+      {% endif %}
+      {{ module.styles.cards.border.border.css }}
+      {% if module.styles.cards.corner.radius %}
+        border-radius: {{ module.styles.cards.corner.radius ~ 'px' }};
+      {% endif %}
+      {{ module.styles.cards.spacing.card_content.css }}
+    }
+
+    {% if module.styles.cards.spacing.space_between_cards %}
+      @media (min-width: 767px) {
+        .card {
+          width: calc({{ 100 / module.columns }}% - {{ module.styles.cards.spacing.space_between_cards ~ 'px' }});
+        }
+      }
+    {% else %}
+      @media (min-width: 767px) {
+        .card {
+          width: calc({{ 100 / module.columns }}% - 0.7rem);
+        }
+      }
+    {% endif %}
+
+    {# Card content #}
+
+    .card__heading {
+      {{ module.styles.cards.heading.font.css }}
+    }
+
+    .card__subheading {
+     {{ module.styles.cards.subheading.font.css }}
+    }
+
+    .card__item-label {
+      {{ module.styles.cards.details.detail_label.font.css }}
+    }
+
+    .card__item-detail {
+      {{ module.styles.cards.details.detail.font.css }}
+    }
+
+    {# Button wrapper #}
+
+    {% if module.styles.alignment.alignment %}
+      .button-wrapper {
+        text-align: {{ module.styles.alignment.alignment.horizontal_align }};
+      }
+    {% endif %}
+
+    {# Button #}
+
+    .button {
+      {% if module.styles.cards.button.background.color.color %}
+        background-color: rgba({{ module.styles.cards.button.background.color.color|convert_rgb }}, {{ module.styles.cards.button.background.color.opacity / 100 }});
+      {% endif %}
+      {{ module.styles.cards.button.border.border.css }}
+      {% if module.styles.cards.button.corner.radius %}
+        border-radius: {{ module.styles.cards.button.corner.radius ~ 'px' }};
+      {% endif %}
+      {{ module.styles.cards.button.text.font.css }}
+      {{ module.styles.cards.button.spacing.spacing.css }}
+    }
+
+    .button:hover,
+    .button:focus {
+      {% if module.styles.cards.button.background.color.color %}
+        background-color: rgba({{ color_variant(module.styles.cards.button.background.color.color, -80)|convert_rgb }}, {{ module.styles.cards.button.background.color.opacity / 100 }});
+      {% endif %}
+    }
+
+    .button:active {
+      {% if module.styles.cards.button.background.color.color %}
+        background-color: rgba({{ color_variant(module.styles.cards.button.background.color.color, 80)|convert_rgb }}, {{ module.styles.cards.button.background.color.opacity / 100 }});
+      {% endif %}
+    }
+
+  {% end_scope_css %}
 </style>
 
 {# Module data #}
 
-{% set contact = data_query.data.CRM.contact %}
-{% set applications = contact.associations.p_job_application_collection__job_application_to_contact.items %}
+{% if !is_in_editor %}
+  {% set contact = data_query.data.CRM.contact %}
+  {% set applications = contact.associations.p_job_application_collection__job_application_to_contact.items %}
+{% else %}
+
+  {# Example data used in the editor #}
+
+  {% set applications = [
+      {
+        application_status: 'Applied',
+        associations: {
+          p_role_collection__job_application_to_role: {
+            items: [
+              {
+                department: 'Sales',
+                location: 'Aventura, FL',
+                associations: {
+                  company_collection__role_to_company: {
+                    items: [
+                      {
+                        name: 'Tesla'
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        job_title: 'Store Leader'
+      },
+      {
+        application_status: 'Applied',
+        associations: {
+          p_role_collection__job_application_to_role: {
+            items: [
+              {
+                department: 'Operations',
+                location: 'Cambridge, MA',
+                associations: {
+                  company_collection__role_to_company: {
+                    items: [
+                      {
+                        name: 'HubSpot'
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        job_title: 'Sales Operation Specialist'
+      }
+    ]
+  %}
+
+{% endif %}
 
   {# Application listing #}
 
-  <section class="application-listing">
+  <section class="card-listing">
 
     {# Heading #}
 
-    <h1 class="application-listing__heading">{{ applications|length }} Applications</h1>
+    <h1 class="card-listing__heading">{{ applications|length }} {{ module.heading }}</h1>
+
+    {# Application cards #}
 
     {% for application in applications %}
 
-      {% set role = application.associations.p_role_collection__role_to_job_application.items|first %}
+      {% set role = application.associations.p_role_collection__job_application_to_role.items|first %}
       {% set company = role.associations.company_collection__role_to_company.items|first %}
 
-      <section class="card application-card">
-        <h2 class="application-card__heading">{{ application.job_title }}</h2>
-        <h3 class="application-card__company">{{ company.name }}</h3>
-        <span class="application-card__department">{{ role.department|capitalize }}</span>
-        <span class="application-card__location">{{ role.location }}</span>
-        <span class="application-card__status">Status: {{ application.application_status|capitalize }}</span>
-        <a class="application-card__button button" href="/application-details?applicationId={{ application._metadata.id }}">Details</a>
+      <section class="card">
+        <h2 class="card__heading">{{ application.job_title }}</h2>
+        <h3 class="card__subheading">{{ company.name }}</h3>
+
+        {# Application card details #}
+
+        {% for card_detail in module.card.details %}
+
+          {# Sets values for detail based on field choice #}
+
+          {% if card_detail.detail == 'date_submitted' %}
+            {% set detail = company.name %}
+          {% elif card_detail.detail == 'department' %}
+            {% set detail = role.department|capitalize %}
+          {% elif card_detail.detail == 'location' %}
+            {% set detail = role.location %}
+          {% elif card_detail.detail == 'status' %}
+            {% set detail = application.application_status|capitalize %}
+          {% endif %}
+
+          <span class="card__item">
+            <span class="card__item-label">{{ card_detail.detail_label }}</span>
+            <span class="card__item-detail"> {{ detail }}</span>
+          </span>
+
+        {% endfor %}
+        <div class="card__button-wrapper button-wrapper">
+          <a class="card__button button" href="/application-details?applicationId={{ application._metadata.id }}">{{ module.card.button_text }}</a>
+        </div>
       </section>
 
     {% endfor %}

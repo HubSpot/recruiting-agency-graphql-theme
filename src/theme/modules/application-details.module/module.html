@@ -1,23 +1,110 @@
-{% if request.query_dict.applicationId %}
+{# Module styles #}
 
+<style>
+  {% scope_css %}
+
+    {# Heading #}
+
+    .application-details__heading {
+      {{ module.styles.heading.text.font.css }}
+      {% if module.styles.heading.alignment.alignment.horizontal_align %}
+        text-align: {{ module.styles.heading.alignment.alignment.horizontal_align }};
+      {% endif %}
+    }
+
+    {# Application detail #}
+
+    .application-details__item-label {
+      {{ module.styles.application_details.detail_label.font.css }}
+    }
+
+    .application-details__item-detail {
+      {{ module.styles.application_details.detail.font.css }}
+    }
+
+    {# Spacing #}
+
+    .applcation-details {
+      {{ module.styles.card.spacing.spacing.css }}
+    }
+
+  {% end_scope_css %}
+</style>
+
+{# Module data #}
+
+{% if request.query_dict.applicationId %}
   {% set application = module.data_query.data.CRM.p_job_application %}
+  {% set role = application.associations.p_role_collection__job_application_to_role.items|first %}
+  {% set company = role.associations.company_collection__role_to_company.items|first %}
   {% set associatedContacts = application.associations.contact_collection__job_application_to_contact.items %}
   {% set applicationAssociatedToCurrentUser = {'isAssociated': false } %}
+
+  {# Checks to see the contact associated with a given application and if the contact ID of that contact matches the contact ID of the user viewing the page it shows the application data on the page #}
 
   {% for associatedContact in associatedContacts %}
     {% if associatedContact._metadata.id == request.contact.contact_vid %}
       {% do applicationAssociatedToCurrentUser.update({'isAssociated': true}) %}
     {% endif %}
   {% endfor %}
+{% else %}
 
-  {% if applicationAssociatedToCurrentUser.isAssociated %}
-    <h1>Application Details</h1>
-    <p>Title: {{application.job_title}}</p>
-    <p>Status: {{application.application_status}}</p>
+  {# Example data used in the editor #}
+
+  {% set application = {
+      job_title: 'Store Leader',
+      application_status: 'Applied'
+    }
+  %}
+
+  {% set role = {
+      location: 'Aventura, FL',
+      department: 'Sales',
+      salary_max: '120,000',
+      salary_min: '85,000'
+    }
+  %}
+
+  {% set company = {
+      name: 'Tesla'
+    }
+  %}
+
+{% endif %}
+
+{# Application details #}
+
+{% if request.query_dict.applicationId || is_in_editor %}
+  {% if applicationAssociatedToCurrentUser.isAssociated || is_in_editor %}
+    <section class="application-details">
+      <h1 class="application-details__heading">{{ module.heading }}</h1>
+      {% for application_detail in module.application_details %}
+
+        {# Sets values for detail based on field choice #}
+
+        {% if application_detail.detail == 'company' %}
+          {% set detail = company.name %}
+        {% elif application_detail.detail == 'department' %}
+          {% set detail = role.department|capitalize %}
+        {% elif application_detail.detail == 'location' %}
+          {% set detail = role.location %}
+        {% elif application_detail.detail == 'salary_range' %}
+          {% set detail = '$' ~ role.salary_min ~ '-' ~ role.salary_max %}
+        {% elif application_detail.detail == 'status' %}
+          {% set detail = application.application_status|capitalize %}
+        {% elif application_detail.detail == 'title' %}
+          {% set detail = application.job_title %}
+        {% endif %}
+
+        <span class="application-details__item">
+          <span class="application-details__item-label">{{ application_detail.detail_label }}</span>
+          <span class="application-details__item-detail"> {{ detail }}</span>
+        </span>
+      {% endfor %}
+    </section>
   {% else %}
     <h1>No application information found for current user.</h1>
   {% endif %}
-
 {% else %}
   <h1>No application information found.</h1>
 {% endif %}
