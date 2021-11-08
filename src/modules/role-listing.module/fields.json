@@ -4,7 +4,7 @@
     "name": "cards_per_row",
     "type": "number",
     "display": "text",
-    "max": 5,
+    "max": 4,
     "min": 2,
     "required": true,
     "step": 1,

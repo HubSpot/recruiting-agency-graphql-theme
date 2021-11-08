@@ -10,7 +10,7 @@
     "name": "roles_to_show",
     "type": "number",
     "display": "text",
-    "max": 3,
+    "max": 4,
     "min": 2,
     "required": true,
     "step": 1,

@@ -100,7 +100,7 @@
 {# Featured roles #}
 
 {% if roles|length > 0 %}
-  <section class="card-listing">
+  <section class="card-listing card-listing--{{ module.roles_to_show }}-cols">
     <h2 class="card-listing__heading">{{ module.heading }}</h2>
     {% for role in roles %}
       {% set company = dataQueryData.company_collection.items[0] %}

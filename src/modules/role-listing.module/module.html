@@ -225,7 +225,7 @@
 
 {# Role listing #}
 
-<div class="card-listing content-wrapper">
+<div class="card-listing content-wrapper card-listing--{{ module.cards_per_row }}-cols">
 
   {% if roles|length == 0 %}
     <h2>No results found</h2>

@@ -11,6 +11,33 @@
   }
 }
 
+/* Blog listing - card */
+
+@media (max-width: 767px) {
+  .card-listing--2-col .card {
+    width: calc(50% - 0.7rem);
+  }
+
+  .card-listing--3-col .card {
+    width: calc(33.3% - 0.7rem);
+  }
+
+  .card-listing--4-col .card {
+    width: calc(25% - 0.7rem);
+  }
+
+  .card-listing--3-col .card:nth-child(3n + 1),
+  .card-listing--3-col .card:nth-child(3n + 2) {
+    margin-right: 1.05rem;
+  }
+
+  .card-listing--4-col .card:nth-child(4n + 1),
+  .card-listing--4-col .card:nth-child(4n + 2),
+  .card-listing--4-col .card:nth-child(4n + 3) {
+    margin-right: 0.933rem;
+  }
+}
+
 .card-listing__heading {
   text-align: center;
   width: 100%;
