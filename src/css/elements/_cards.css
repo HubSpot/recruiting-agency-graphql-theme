@@ -45,6 +45,8 @@
 
 .card {
   border: 2px solid #494A52;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1.4rem;
   padding: 1.4rem;
   width: 100%;
@@ -63,4 +65,8 @@
 .card__item {
   display: block;
   margin-bottom: 0.7rem;
+}
+
+.card__button-wrapper {
+  margin-top: auto;
 }
