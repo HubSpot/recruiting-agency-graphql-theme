@@ -1,8 +1,8 @@
 Sample GraphQL Theme
-========================  
-:warning: This functionality is in beta and requires your account to be ungated. You can request access by submitting [this form](https://forms.gle/wQ1Rztc85gDAWUYU9). By participating in this beta you agree to HubSpot's [Developer Terms](https://legal.hubspot.com/developer-terms) & [Developer Beta Terms](https://legal.hubspot.com/developerbetaterms). Please note this functionality is currently under development and is subject to change based on testing and feedback. :warning: 
+========================
+:warning: This functionality is in beta and requires your account to be ungated. You can request access by submitting [this form](https://forms.gle/wQ1Rztc85gDAWUYU9). By participating in this beta you agree to HubSpot's [Developer Terms](https://legal.hubspot.com/developer-terms) & [Developer Beta Terms](https://legal.hubspot.com/developerbetaterms). Please note this functionality is currently under development and is subject to change based on testing and feedback. :warning:
 
-This theme is based off of the CMS Starter Growth Theme. It includes modules and templates that demonstrate how to utilize GraphQL as part of a website built with HubSpot CMS and Custom CRM Objects.
+This theme is based off of the [HubSpot CMS Boilerplate](https://github.com/HubSpot/cms-theme-boilerplate) theme. It includes modules and templates that demonstrate how to utilize GraphQL as part of a website built with HubSpot CMS and Custom CRM Objects.
 
 # Using the Sample Theme
 
@@ -12,13 +12,11 @@ The end product will be a site where a recruiting agency can post roles they are
 
 Throughout this process, we’ll touch on a number of aspects of the HubSpot platform, such as: CRM Custom Objects, Workflows, Forms, Custom Modules, GraphQL Data Queries, Lists, Memberships, and more.
 
-The source code for the theme and schemas are in this GitHub repository: https://github.com/HubSpot/sample-graphql-theme
-
 Let’s get started!
 
 ## Step 1: Create CRM Custom Objects
 
-The first thing you’ll need to do is install the HubSpot CLI tools. This will make development much easier by allowing you to use the IDE you feel most comfortable with. To install the CLI tools, follow the instructions here: https://developers.hubspot.com/docs/cms/developer-reference/local-development-cli#install 
+The first thing you’ll need to do is install the HubSpot CLI tools. This will make development much easier by allowing you to use the IDE you feel most comfortable with. To install the CLI tools, follow the instructions [here](https://developers.hubspot.com/docs/cms/developer-reference/local-development-cli#install).
 
 Once you have the CLI tools installed, clone the repository into a folder on your local file system. Then, navigate to that directory and run `hs init` to configure your project.
 
@@ -31,7 +29,7 @@ You should see a response in the CLI indicating the custom objects were successf
 Now that our custom objects have been created, the next step is to create the association between our custom objects, so that a given Role can be associated to Job Applications. In order to do this, we’ll have to use the custom objects API endpoints.
 
 To create the association, we’ll need to hit the API directly, using this endpoint: POST
-/crm/v3/schemas/{objectType}/associations (more details for the endpoint can be found here: https://developers.hubspot.com/docs/api/crm/crm-custom-objects)
+/crm/v3/schemas/{objectType}/associations (more details for the endpoint can be found [here](https://developers.hubspot.com/docs/api/crm/crm-custom-objects)).
 
 For the body of the request, we’ll need the object type ID for both of the objects for which we’re creating an association. We can find the object type ID by running the following command from the CLI: `hs custom-object schema list`. The output of that command should list your custom objects and their object type ID.
 
@@ -50,11 +48,11 @@ If you'd like, you can use our sample data [here](./data/role_data.json) to popu
 
 ## Step 2: Create Job Application Submission Form and Workflow
 
-Now that the custom objects are created, you can upload the theme to HubSpot by running the following CLI command: `hs upload src sample-graphql-theme`
+Now that the custom objects are created, you can upload the theme to HubSpot by running the following CLI command: `hs upload src recruiting-agency-graphql-theme`
 
 In order to prepare for creating our pages to display roles and allow prospective applicants to apply to a given role, we’ll need to create a form that we can use on our pages. When an applicant submits this form, we want to create a contact record (if the user doesn’t already exist as a contact), and an associated Job Application object that contains their resume and cover letter.
 
-To create the form, open up HubSpot and navigate to Marketing > Lead Capture > Form. Click Create a Free Form, and select Embedded form as the type. Stick to the default Blank template and click Start to begin creating our form. By default, an Email field is already added for us, in addition to that we’ll want to drag over the First name and Last name properties to the form, as well as the Phone number property.
+To create the form, open up HubSpot and navigate to Marketing > Lead Capture > Form. Click Create a Free Form and select Embedded form as the type. Use the default Blank template and click Start to begin creating our form. By default, an Email field is already added for us, in addition to that we’ll want to drag over the First name and Last name properties to the form, as well as the Phone number property.
 
 Now, add the following fields for Job Application to our form: Salary Requirement, Resume, Cover Letter, Job title. Then add Title (under Role) and Role Identifier. For Job title, edit the field and turn off “Make this field required” and then turn on “Make this field hidden”. For this field, we’re going to automatically populate it when the applicant views a role, since it’s required to create a Job Application record, and we don’t want our applicants to have to manually fill in the field. Similarly, for Role Identifier and Title you’ll also want to make the field hidden, as it will be auto populated.
 
@@ -66,7 +64,7 @@ For the action, we want to set a property value for the object. The property we�
 
 ## Step 3: Create Role Listing and Detail Pages
 
-Now that the boilerplate objects, forms, and workflow are created, we can move on to creating the functional parts of the site where users can view roles, and submit applications for those roles. There are a number of different ways one could accomplish this.
+Now that the objects, forms, and workflow are created, we can move on to creating the functional parts of the site where users can view roles, and submit applications for those roles. There are a number of different ways one could accomplish this.
 
 The queries that will be used for our pages can be found in the “data-queries” folder of our theme. These GraphQL queries can be modified to include only the properties required for the page or modules they’re used in.
 
@@ -82,13 +80,13 @@ Finally, give the page a title and publish it.
 
 ## Step 4: Create Applications Page
 
-The final step of the process is to create a page where applicants can log in and see any pending applications they have submitted, as well as the status of those applications. In order to set this up, we’re going to utilize the Memberships feature. For more detailed information about this feature, you can go here: https://developers.hubspot.com/docs/cms/data/memberships
+The final step of the process is to create a page where applicants can log in and see any pending applications they have submitted, as well as the status of those applications. In order to set this up, we’re going to utilize the Memberships feature. For more detailed information about this feature, you can go [here](https://developers.hubspot.com/docs/cms/data/memberships).
 
-To do this, we’ll have to do to allow us to set up pages that require registration, so we need to create a Membership list. To do this, navigate to Contacts > Lists and click Create List. This list will be Contact-based, and Active. For the Filter type, select Job Application properties, select Object ID, and is known. What this means, is a Contact will automatically be added to this list when an associated Job Application has been created.
+To do this, we’ll have to set up pages that require registration, so we need to create a Membership list. To do this, navigate to Contacts > Lists and click Create List. This list will be Contact-based, and Active. For the Filter type, select Job Application properties, select Object ID, and is known. What this means, is a Contact will automatically be added to this list when an associated Job Application has been created.
 
-Now we can create the pages in our CMS. Similarly to our other pages, create a new page with the Application Listing GraphQL template. Drag in the Existing Application Listing module, and then go to the Settings for this page. Expand the Advanced options section, and select “Private - Registration required” in the “Control audience access for this page” section. This will require you to select a list to use for sending registration emails. Next, give this page a title and publish the page.
+Now we can create the pages in our CMS. Similarly to our other pages, create a new page with the Application Listing template. Go to the Settings for this page, expand the Advanced options section, and select “Private - Registration required” in the “Control audience access for this page” section. This will require you to select a list to use for sending registration emails. Next, give this page a title and publish the page.
 
-Next, create the Application Details page. Follow the same steps as above, except the template this time will be Application GraphQL and the module you’ll drag in this time is the Application Details module. Before publishing this page, ensure the Content slug is “application-details”, as that slug is hard-coded in the Existing Application Listing module.
+Next, create the Application Details page. Follow the same steps as above, except the template this time will be Application Details. Before publishing this page, ensure the Content slug is “application-details”, as that slug is hard-coded in the Application Listing module.
 
 ## Step 5: Wrapping Up
 
