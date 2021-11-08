@@ -186,8 +186,8 @@
 
 {% set offset = roleCollection.offset %}
 {% set limit = module.cards_per_row * module.rows_per_page %}
-{% set currentPage = (offset / limit)|number|round(0, 'ceil') %}
-{% set totalPages = (roleCollection.total / limit)|number|round(0, 'ceil')  %}
+{% set currentPage = (offset / limit)|round(0, 'ceil') %}
+{% set totalPages = (roleCollection.total / limit)|round(0, 'ceil')  %}
 
 {# Role filter bar #}
 
