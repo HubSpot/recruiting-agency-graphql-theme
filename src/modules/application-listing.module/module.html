@@ -22,22 +22,9 @@
       {% if module.styles.cards.corner.radius %}
         border-radius: {{ module.styles.cards.corner.radius ~ 'px' }};
       {% endif %}
+      {{ module.styles.cards.spacing.spacing.css }}
       {{ module.styles.cards.spacing.card_content.css }}
     }
-
-    {% if module.styles.cards.spacing.space_between_cards %}
-      @media (min-width: 767px) {
-        .card {
-          width: calc({{ 100 / module.columns }}% - {{ module.styles.cards.spacing.space_between_cards ~ 'px' }});
-        }
-      }
-    {% else %}
-      @media (min-width: 767px) {
-        .card {
-          width: calc({{ 100 / module.columns }}% - 0.7rem);
-        }
-      }
-    {% endif %}
 
     {# Card content #}
 
@@ -46,7 +33,7 @@
     }
 
     .card__subheading {
-     {{ module.styles.cards.subheading.font.css }}
+      {{ module.styles.cards.subheading.font.css }}
     }
 
     .card__item-label {
@@ -59,9 +46,9 @@
 
     {# Button wrapper #}
 
-    {% if module.styles.alignment.alignment %}
+    {% if module.styles.cards.button.alignment.alignment %}
       .button-wrapper {
-        text-align: {{ module.styles.alignment.alignment.horizontal_align }};
+        text-align: {{ module.styles.cards.button.alignment.alignment.horizontal_align }};
       }
     {% endif %}
 
@@ -158,7 +145,7 @@
 
   {# Application listing #}
 
-  <section class="card-listing">
+  <section class="card-listing card-listing--{{ module.columns }}-cols">
 
     {# Heading #}
 

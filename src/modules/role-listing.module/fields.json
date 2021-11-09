@@ -4,7 +4,7 @@
     "name": "cards_per_row",
     "type": "number",
     "display": "text",
-    "max": 5,
+    "max": 4,
     "min": 2,
     "required": true,
     "step": 1,
@@ -258,22 +258,22 @@
             "type": "group",
             "children": [
               {
-                "label": "Space between cards",
-                "name": "space_between_cards",
-                "type": "number",
-                "display": "slider",
-                "max": 50,
-                "min": 0,
-                "step": 5,
-                "suffix": "px"
-              },
-              {
                 "label": "Card content",
                 "name": "card_content",
                 "type": "spacing",
                 "visibility": {
                   "hidden_subfields": {
                     "margin": true
+                  }
+                }
+              },
+              {
+                "label": "Spacing",
+                "name": "spacing",
+                "type": "spacing",
+                "visibility": {
+                  "hidden_subfields": {
+                    "padding": true
                   }
                 }
               }
