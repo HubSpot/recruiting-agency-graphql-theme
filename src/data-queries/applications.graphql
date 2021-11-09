@@ -1,6 +1,6 @@
 #  label: "Application Listings"
 #  description: "Application listings query for Recruiting Agency case study."
-#  $contact_id: "{{ request.contact.contact_vid || "" }}"
+#  $contact_id: "{{ request.contact.contact_vid || '' }}"
 query application_listings($contact_id: String!) {
   CRM {
     contact(uniqueIdentifier: "id", uniqueIdentifierValue: $contact_id) {
