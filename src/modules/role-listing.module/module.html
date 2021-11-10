@@ -194,7 +194,7 @@
       <select id="department">
         <option value="">Choose department</option>
         {% for department in uniqueDepartments %}
-          <option value="{{ department }}">{{ department }}</option>
+          <option value="{{ department }}">{{ department|capitalize }}</option>
         {% endfor %}
       </select>
     </div>
