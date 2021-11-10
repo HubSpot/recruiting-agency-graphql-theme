@@ -103,6 +103,8 @@ To test our site, go ahead and submit some Job Applications to a few different r
 That does it! You now have a fully functional recruiting website where people can view open positions, apply for jobs, and track their application status. On the other side of the process, recruiters can post job openings, keep in touch with applicants through the lifecycle of their application process, and create deals for companies for which applicants are being recruited. Those deals can be associated with Roles that need to be filled, and used to track the lifecycle of the recruitment process for a given company.
 
 ## Resources
+https://developers.hubspot.com/docs/cms/data/query-hubspot-data-using-graphql  
+
 https://developers.hubspot.com/docs/cms/developer-reference/local-development-cli
 
 https://developers.hubspot.com/docs/api/crm/crm-custom-objects
