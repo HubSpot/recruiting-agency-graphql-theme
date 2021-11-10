@@ -1,6 +1,6 @@
 #  label: "Role Instance"
 #  description: "Role instance query for Recruiting Agency case study."
-#  $role_identifier: "{{ request.path_param_dict.dynamic_slug }}"
+#  $role_identifier: {{ request.path_param_dict.dynamic_slug }}
 query role($role_identifier: String!) {
   CRM {
     p_role(uniqueIdentifier: "role_identifier", uniqueIdentifierValue: $role_identifier) {
