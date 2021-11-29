@@ -11,10 +11,10 @@ query featured_roles(
   $skipId: Number)
 {
   CRM {
-    company_collection(filter: {name_eq: $company}) {
+    company_collection(filter: {name__eq: $company}) {
       items {
         associations {
-          p_role_collection__role_to_company(limit: $limit, filter: {department_eq: $department, hs_object_id_neq: $skipId}) {
+          p_role_collection__role_to_company(limit: $limit, filter: {department__eq: $department, hs_object_id__neq: $skipId}) {
             items {
               _metadata { 
                 id

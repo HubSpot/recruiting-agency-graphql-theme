@@ -15,7 +15,7 @@ query role_listings(
   $searchByCompany: Boolean!) {
   CRM {
     # Gets roles when there is either no filtering, or we're filtering by location and/or department.
-    roles_by_location_department: p_role_collection(limit: $limit, offset: $offset, filter: {location_eq: $location, department_eq: $department}) @skip(if:$searchByCompany) {
+    roles_by_location_department: p_role_collection(limit: $limit, offset: $offset, filter: {location__eq: $location, department__eq: $department}) @skip(if:$searchByCompany) {
       items {
         _metadata { 
           id
@@ -41,10 +41,10 @@ query role_listings(
     }
     # Gets roles when filtering by company. This is a separate query because when filtering by company
     # we have to start from the company and get all associated roles.
-    roles_by_associated_company: company_collection(filter: {name_eq: $company}) @include(if:$searchByCompany) {
+    roles_by_associated_company: company_collection(filter: {name__eq: $company}) @include(if:$searchByCompany) {
       items {
         associations {
-          p_role_collection__role_to_company(limit: $limit, offset: $offset, filter: {location_eq: $location, department_eq: $department}) {
+          p_role_collection__role_to_company(limit: $limit, offset: $offset, filter: {location__eq: $location, department__eq: $department}) {
             items {
               _metadata { 
                 id
