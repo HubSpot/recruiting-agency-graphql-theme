@@ -171,7 +171,7 @@
           {% if card_detail.detail == 'date_submitted' %}
             {% set detail = company.name %}
           {% elif card_detail.detail == 'department' %}
-            {% set detail = role.department|capitalize %}
+            {% set detail = role.department.label %}
           {% elif card_detail.detail == 'location' %}
             {% set detail = role.location %}
           {% elif card_detail.detail == 'status' %}

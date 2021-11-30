@@ -6,7 +6,7 @@
 #  $skipId: {{ data_query.data.CRM.p_role._metadata.id }}
 query featured_roles(
   $limit: Int, 
-  $department: String,
+  $department: HS_Enum,
   $company: String,
   $skipId: Number)
 {

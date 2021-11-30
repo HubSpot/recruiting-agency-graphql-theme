@@ -10,7 +10,7 @@ query role_listings(
   $offset: Int, 
   $limit: Int, 
   $location: String, 
-  $department: String,
+  $department: HS_Enum,
   $company: String, 
   $searchByCompany: Boolean!) {
   CRM {
