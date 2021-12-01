@@ -175,7 +175,7 @@
           {% elif card_detail.detail == 'location' %}
             {% set detail = role.location %}
           {% elif card_detail.detail == 'status' %}
-            {% set detail = application.application_status|capitalize %}
+            {% set detail = application.application_status.label %}
           {% endif %}
 
           <span class="card__item">
