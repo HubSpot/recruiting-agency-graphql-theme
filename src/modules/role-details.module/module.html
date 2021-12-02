@@ -83,7 +83,7 @@
         {% if role_detail.detail == 'company' %}
           {% set detail = company.name %}
         {% elif role_detail.detail == 'department' %}
-          {% set detail = role.department|capitalize %}
+          {% set detail = role.department.label %}
         {% elif role_detail.detail == 'location' %}
           {% set detail = role.location %}
         {% elif role_detail.detail == 'salary_range' %}

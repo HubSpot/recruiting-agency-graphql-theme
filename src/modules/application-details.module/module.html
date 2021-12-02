@@ -85,13 +85,13 @@
         {% if application_detail.detail == 'company' %}
           {% set detail = company.name %}
         {% elif application_detail.detail == 'department' %}
-          {% set detail = role.department|capitalize %}
+          {% set detail = role.department.label %}
         {% elif application_detail.detail == 'location' %}
           {% set detail = role.location %}
         {% elif application_detail.detail == 'salary_range' %}
           {% set detail = '$' ~ role.salary_min ~ '-' ~ role.salary_max %}
         {% elif application_detail.detail == 'status' %}
-          {% set detail = application.application_status|capitalize %}
+          {% set detail = application.application_status.label %}
         {% elif application_detail.detail == 'title' %}
           {% set detail = application.job_title %}
         {% endif %}

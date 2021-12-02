@@ -8,7 +8,7 @@ query application($applicationId: String!, $contact_id: Number) {
       job_title
       application_status
       associations {
-        contact_collection__job_application_to_contact(filter: {hs_object_id_eq: $contact_id}) {
+        contact_collection__job_application_to_contact(filter: {hs_object_id__eq: $contact_id}) {
           items {
             _metadata {
               id
