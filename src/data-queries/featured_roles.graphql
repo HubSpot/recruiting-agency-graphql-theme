@@ -1,7 +1,7 @@
 #  label: "Featured Roles"
 #  description: "Query to show featured roles on a page that is showing role details. Relies on the template using a data query that retrieves a single role."
 #  $limit: {{ module.roles_to_show || 3 }}
-#  $department: {{ data_query.data.CRM.p_role.department || '' }}
+#  $department: {{ data_query.data.CRM.p_role.department.value || '' }}
 #  $company: {{ data_query.data.CRM.p_role.associations.company_collection__role_to_company.items[0].name || '' }}
 #  $skipId: {{ data_query.data.CRM.p_role._metadata.id }}
 query featured_roles(
