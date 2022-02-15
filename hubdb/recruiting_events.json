@@ -1,0 +1,76 @@
+{
+  "name": "recruiting_events",
+  "useForPages": false,
+  "label": "Recruiting Events",
+  "allowChildTables": false,
+  "allowPublicApiAccess": false,
+  "dynamicMetaTags": {},
+  "enableChildTablePages": false,
+  "columns": [
+    { "name": "name", "label": "Name", "width": 297, "type": "TEXT" },
+    { "name": "description", "label": "Description", "type": "RICHTEXT" },
+    { "name": "location", "label": "Location", "type": "LOCATION" },
+    { "name": "start_time", "label": "Start Time", "type": "DATETIME" },
+    { "name": "end_time", "label": "End Time", "type": "DATETIME" },
+    {
+      "name": "event_type",
+      "label": "Event Type",
+      "options": [
+        {
+          "id": "1",
+          "name": "College Campus",
+          "type": "option",
+          "order": null
+        },
+        { "id": "2", "name": "High School", "type": "option", "order": null },
+        { "id": "3", "name": "Pop-up", "type": "option", "order": null }
+      ],
+      "type": "MULTISELECT",
+      "optionCount": 3
+    }
+  ],
+  "rows": [
+    {
+      "path": null,
+      "name": null,
+      "values": {
+        "start_time": 1645185600000,
+        "event_type": [
+          { "id": "1", "name": "College Campus", "type": "option", "order": 0 }
+        ],
+        "name": "College Careers",
+        "end_time": 1645200000000,
+        "description": "<p>We're hiring the best and brightest from College University for a wide range of diverse companies! Come see what jobs are available!</p>",
+        "location": { "lat": 41.745165, "long": -111.8119312, "type": "location" }
+      }
+    },
+    {
+      "path": null,
+      "name": null,
+      "values": {
+        "start_time": 1646899200000,
+        "event_type": [
+          { "id": "2", "name": "High School", "type": "option", "order": 1 }
+        ],
+        "name": "Interesting Internships",
+        "end_time": 1646910000000,
+        "description": "<p>Are you in high school? Do you want an internship? Come to our recruiting event!</p>",
+        "location": { "lat": 40.6553989, "long": -111.9391606, "type": "location" }
+      }
+    },
+    {
+      "path": null,
+      "name": null,
+      "values": {
+        "start_time": 1649350800000,
+        "event_type": [
+          { "id": "3", "name": "Pop-up", "type": "option", "order": 2 }
+        ],
+        "name": "Pop-up Professions",
+        "end_time": 1649358000000,
+        "description": "<p>Want to get a new profession? Come to our pop-up recruiting event!</p>",
+        "location": { "lat": 40.2697947, "long": -76.8907238, "type": "location" }
+      }
+    }
+  ]
+}
