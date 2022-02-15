@@ -1,0 +1,21 @@
+{# Module data #}
+
+{% set dataQueryData = module.data_query.data.HUBDB %}
+{% set recruitingEvents = dataQueryData.recruiting_events_collection.items %}
+
+{# Recruiting Events #}
+
+{% if recruitingEvents|length > 0 %}
+  <h2>Recruiting Events</h2>
+  <div class="card-listing content-wrapper card-listing--3-cols">
+    {% for recruitingEvent in recruitingEvents %}
+      <section class="card">
+        <h2 class="card__heading">{{ recruitingEvent.name }}</h2>
+        <h3 class="card__subheading">{{ recruitingEvent.start_time|datetimeformat("%B %e, %Y") }}</h3>
+        <h3 class="card__subheading">{{ recruitingEvent.start_time|datetimeformat("%I:%M %p") }}-{{ recruitingEvent.end_time|datetimeformat("%I:%M %p")}}</h3>
+        <p class="card__description">{{ recruitingEvent.description }}</p>
+        <h3 class="card__subheading">Event Type: {{ recruitingEvent.event_type|first }}</h3>
+      </section>
+    {% endfor %}
+  </div>
+{% endif %}

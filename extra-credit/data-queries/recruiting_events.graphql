@@ -1,0 +1,15 @@
+#  label: "Recruiting Events"
+#  description: "Query to retrieve recruiting events."
+query recruiting_events {
+  HUBDB {
+    recruiting_events_collection {
+      items {
+        description
+        end_time
+        event_type
+        name
+        start_time
+      }
+    }
+  }
+}
