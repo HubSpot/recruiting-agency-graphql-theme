@@ -1,0 +1,16 @@
+#  label: "Recruiting Events"
+#  description: "Query to retrieve recruiting events."
+#  $startDate: {{ module.startdate is none ? "" : unixtimestamp(module.startdate)  }}
+query recruiting_events($startDate: DateTime) {
+  HUBDB {
+    recruiting_events_collection(filter: {start_time__gt: $startDate}) {
+      items {
+        description
+        end_time
+        event_type
+        name
+        start_time
+      }
+    }
+  }
+}

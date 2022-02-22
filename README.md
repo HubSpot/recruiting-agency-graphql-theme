@@ -102,6 +102,16 @@ To test our site, go ahead and submit some Job Applications to a few different r
 
 That does it! You now have a fully functional recruiting website where people can view open positions, apply for jobs, and track their application status. On the other side of the process, recruiters can post job openings, keep in touch with applicants through the lifecycle of their application process, and create deals for companies for which applicants are being recruited. Those deals can be associated with Roles that need to be filled, and used to track the lifecycle of the recruitment process for a given company.
 
+## Extra Credit: HubDB
+
+If you have access to HubDB, there are also modules and data included to demonstrate the usage of GraphQL to pull data from HubDB. To get started, use the HubSpot CLI to create the sample HubDB table in your portal by using the following command: `hs hubdb create ./hubdb/recruiting_events.json`. You should see a message indicating the table was created with 3 rows.
+
+Now, we'll need to upload the HubDB related assets to our theme. These are stored in the `extra-credit` folder. You can use the following CLI command: `hs upload extra-credit recruiting-agency-graphql-theme` to upload the assets into the same theme we have been using for the previous steps.
+
+Now that the table is created, and the required assets are uploaded to our portal, we'll need to add the Recruiting Events module to our Role Listings page. Go ahead and edit the Role Listings page we created earlier, and drag and drop the Recruiting Events module below the Role Listing module. By default, this module will list all rows of the HubDB table we created, but a module field has been added to allow you to set the minimum date and time to start listing events. For example, if we set the module field to `03/01/2022` it will list all events with a start date on or after that date.
+
+That should do it! One final thing to mention: While this sample doesn't explicitly demonstrate this functionality, it is possible to retrieve both HubDB data and CRM data in the same query. So, if you have data in both Custom Objects and HubDB tables and you want to use both sets of data in a single page, template, or module, GraphQL makes it easier than ever!
+
 ## Resources
 https://developers.hubspot.com/docs/cms/data/query-hubspot-data-using-graphql  
 
