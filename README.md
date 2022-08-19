@@ -44,6 +44,8 @@ For example, the body of your request might look like this:
 
 If you have `curl` on your machine, you can send the request like so: `curl -d '{ "fromObjectTypeId": "{jobApplicationObjectTypeId}", "toObjectTypeId": "{roleObjectTypeId" }' -H 'Content-Type: application/json' https://api.hubapi.com/crm/v3/schemas/{jobApplicationObjectTypeId}/associations\?hapikey\={hapiKey}`, replacing `{roleObjectTypeId}` and `{jobApplicationObjectTypeId}` with the appropriate ids when running `hs custom-object schema list`, and replacing `{hapiKey}` with a generated API key for your portal. If you're not sure where to get your API key, see this [documentation](https://knowledge.hubspot.com/integrations/how-do-i-get-my-hubspot-api-key).
 
+Note: Starting November 30, 2022, HubSpot API keys will no longer be able to be used as an authentication method to access HubSpot APIs. Private Apps will be used instead of APIs, you can defer to this [document](https://developers.hubspot.com/docs/api/private-apps) for more details on private apps.
+
 **NOTE: It's important you create the association FROM the Job Application TO the Role, and not the other way around, or your GraphQL schema may differ slightly from what is expected. For example, if you create the association FROM the Role TO the Job Application, the associations field in your schema would be `role_collection__role_to_job_application` instead of the expected `role_collection__job_application_to_role`.**
 
 Once the association is created, we should be finished creating our custom object definitions.
@@ -62,7 +64,7 @@ Now, add the following fields for Job Application to our form: Salary Requiremen
 
 That’s it for the form! Go ahead and change the name to something easy to remember, and click Update.
 
-One other thing that should be done before we create our pages that allow users to submit applications, is to set up a Workflow that will define the default state of applications that are submitted. Navigate to the Workflows section and click Create Workflow. For this workflow, select Start from scratch, and select “Job application-based”. The enrollment trigger for this workflow will be when “Object ID” is known -- essentially, when a job application is first created.
+One other thing that should be done before we create our pages that allow users to submit applications, is to set up a Workflow that will define the default state of applications that are submitted. Navigate to the Workflows section and click Create Workflow. For this workflow, select Start from scratch, and select “Job application-based”. The enrollment trigger for this workflow will be when “Record ID” is known -- essentially, when a job application is first created.
 
 For the action, we want to set a property value for the object. The property we’ll set is “Application Status” and we’ll set it to “Applied”. Go ahead and publish this workflow. Now, whenever a new Job Application is created in our portal, the status will be set as “Applied”. This is useful because we can set up membership lists that automatically allow users to register on our site and access their submitted job applications, as we’ll see later.
 
@@ -86,7 +88,7 @@ Finally, give the page a title and publish it.
 
 The final step of the process is to create a page where applicants can log in and see any pending applications they have submitted, as well as the status of those applications. In order to set this up, we’re going to utilize the Memberships feature. For more detailed information about this feature, you can go [here](https://developers.hubspot.com/docs/cms/data/memberships).
 
-To do this, we’ll have to set up pages that require registration, so we need to create a Membership list. To do this, navigate to Contacts > Lists and click Create List. This list will be Contact-based, and Active. Give it a name and hit Next. For the Filter type, select Job Application properties, select Object ID, and is known. What this means, is a Contact will automatically be added to this list when an associated Job Application has been created. Go ahead and click Save List.
+To do this, we’ll have to set up pages that require registration, so we need to create a Membership list. To do this, navigate to Contacts > Lists and click Create List. This list will be Contact-based, and Active. Give it a name and hit Next. For the Filter type, select Job Application properties, select Record ID, and is known. What this means, is a Contact will automatically be added to this list when an associated Job Application has been created. Go ahead and click Save List.
 
 Now we can create the pages in our CMS. Similarly to our other pages, create a new page with the "Application listing" template. Go to the Settings for this page, expand the Advanced options section, and select “Private - Registration required” in the “Control audience access for this page” section. This will require you to select a list to use for sending registration emails. Next, give this page a title and publish the page.
 
