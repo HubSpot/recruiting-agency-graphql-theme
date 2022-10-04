@@ -1,6 +1,5 @@
 Sample GraphQL Theme
 ========================
-:warning: This functionality is in beta and requires your account to be ungated. You can request access by submitting [this form](https://www.hubspot.com/devday2021/private-betas). By participating in this beta you agree to HubSpot's [Developer Terms](https://legal.hubspot.com/developer-terms) & [Developer Beta Terms](https://legal.hubspot.com/developerbetaterms). Please note this functionality is currently under development and is subject to change based on testing and feedback. :warning:
 
 This theme is based off of the [HubSpot CMS Boilerplate](https://github.com/HubSpot/cms-theme-boilerplate) theme. It includes modules and templates that demonstrate how to utilize GraphQL as part of a website built with HubSpot CMS and Custom CRM Objects.
 
@@ -26,29 +25,41 @@ One thing to note in the schema of the Role object is the unique value, “Role 
 
 You should see a response in the CLI indicating the custom objects were successfully created, along with a link to view the custom objects directly in HubSpot. If you want to see all the properties that were created, click the Actions dropdown, and select `Edit properties`.
 
-Now that our custom objects have been created, the next step is to create the association between our custom objects, so that a given Role can be associated to Job Applications. In order to do this, we’ll have to use the custom objects API endpoints.
+Now that our custom objects have been created, the next step is to create the association between our custom objects, so that a given Role can be associated to Job Applications.
 
-To create the association, we’ll need to hit the API directly, using this endpoint: POST
-/crm/v3/schemas/{objectType}/associations (more details for the endpoint can be found [here](https://developers.hubspot.com/docs/api/crm/crm-custom-objects)).
+To create the association, there are two methods.
 
-For the body of the request, we’ll need the object type ID for both of the objects for which we’re creating an association. We can find the object type ID by running the following command from the CLI: `hs custom-object schema list`. The output of that command should list your custom objects and their object type ID.
+__Method 1: Using the UI__
 
-For example, the body of your request might look like this:
+For this method, this can be done in the settings of the custom objects. To do this, go to Settings, then expand Objects, and click Custom Objects. From there, ensure your selected object is Job Applications, and select the Associations tab.
+
+Then, expand the dropdown to the right of `Select object associations` and click `Create new association`. From there, select the Role object and click Create.
+
+NOTE: It's important you create the association FROM the Job Application TO the Role, and not the other way around, or your GraphQL schema may differ slightly from what is expected. For example, if you create the association FROM the Role TO the Job Application, the associations field in your schema would be `p_role_collection__role_to_job_application` instead of the expected `p_role_collection__job_application_to_role`.
+
+__Method 2: The API and Private Apps__
+
+For this method, we'll hit the API directly, using this endpoint: POST
+/crm/v4/associations/{fromObjectType}/{toObjectType}/labels (more details for the associations API can be found [here](https://developers.hubspot.com/docs/api/crm/associations)).
+
+In order to use this endpoint, we should create a Private App and give it the appropriate scopes (more details about private apps can be found [here](https://developers.hubspot.com/docs/api/private-apps)). To do this, go to Settings, then expand Integrations, and select Private App. Then, click Create a private app. For the scopes, you'll need to give this app access to `crm.objects.custom.write`. Finally, click Create app and take note of the token for the app.
+
+Next, to call the endpoint, we’ll need the object type ID for both of the objects for which we’re creating an association. We can find the object type ID by running the following command from the CLI: `hs custom-object schema list`. The output of that command should list your custom objects and their object type ID.
+
+Now that we have the object type IDs and the token for our private app, we can make the request to create the association.
+
+The body of your request will look like this:
 
 ```
 {
-  "fromObjectTypeId": "2-2617384",
-  "toObjectTypeId": "2-2783326"
+  "label": "",
+  "name": "job_application_to_role"
 }
 ```
 
-If you have `curl` on your machine, you can send the request like so: `curl -d '{ "fromObjectTypeId": "{jobApplicationObjectTypeId}", "toObjectTypeId": "{roleObjectTypeId" }' -H 'Content-Type: application/json' https://api.hubapi.com/crm/v3/schemas/{jobApplicationObjectTypeId}/associations\?hapikey\={hapiKey}`, replacing `{roleObjectTypeId}` and `{jobApplicationObjectTypeId}` with the appropriate ids when running `hs custom-object schema list`, and replacing `{hapiKey}` with a generated API key for your portal. If you're not sure where to get your API key, see this [documentation](https://knowledge.hubspot.com/integrations/how-do-i-get-my-hubspot-api-key).
+If you have `curl` on your machine, you can send the request like so: `curl -d '{ "label": "", "name": "job_application_to_role" }' -H 'Content-Type: application/json' -H 'Authorization: Bearer {privateAppToken}' https://api.hubapiqa.com/crm/v4/associations/{jobApplicationObjectTypeId}/{roleObjectTypeId}/labels`, replacing `{roleObjectTypeId}` and `{jobApplicationObjectTypeId}` with the appropriate ids listed when running `hs custom-object schema list`, and replacing `{privateAppToken}` with the app token from earlier.
 
-Note: Starting November 30, 2022, HubSpot API keys will no longer be able to be used as an authentication method to access HubSpot APIs. Private Apps will be used instead of APIs, you can defer to this [document](https://developers.hubspot.com/docs/api/private-apps) for more details on private apps.
-
-**NOTE: It's important you create the association FROM the Job Application TO the Role, and not the other way around, or your GraphQL schema may differ slightly from what is expected. For example, if you create the association FROM the Role TO the Job Application, the associations field in your schema would be `role_collection__role_to_job_application` instead of the expected `role_collection__job_application_to_role`.**
-
-Once the association is created, we should be finished creating our custom object definitions.
+Once the association is created, we should be finished creating our custom object definitions!
 
 If you'd like, you can use our sample data [here](./data/role_data.json) to populate available roles. Using the CLI, you can run the following command from the root directory of the project: `hs custom-object create role ./data/role_data.json`. You should then associate each role with the related company (Spotify, HubSpot, or Tesla) manually in order for the rest of the site to render the roles as expected. The company name should be in the `Role Identifier` field when viewing the role.
 
