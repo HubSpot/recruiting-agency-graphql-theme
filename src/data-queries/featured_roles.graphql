@@ -5,10 +5,11 @@
 #  $company: {{ data_query.data.CRM.p_role.associations.company_collection__role_to_company.items[0].name || '' }}
 #  $skipId: {{ data_query.data.CRM.p_role._metadata.id }}
 query featured_roles(
-  $limit: Int, 
+  $limit: Int,
   $department: HS_Enum,
   $company: String,
   $skipId: Number)
+  @DataTabVariables(variableNames: ["department", "limit"])
 {
   CRM {
     company_collection(filter: {name__eq: $company}) {
@@ -16,7 +17,7 @@ query featured_roles(
         associations {
           p_role_collection__role_to_company(limit: $limit, filter: {department__eq: $department, hs_object_id__neq: $skipId}) {
             items {
-              _metadata { 
+              _metadata {
                 id
               }
               department
