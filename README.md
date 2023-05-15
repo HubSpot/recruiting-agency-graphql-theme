@@ -89,7 +89,7 @@ Create a new page, and for this page select the "Role listing" template. This te
 
 Next, we’ll need the details page. For this page, use the "Role details" template. This template contains both the "Role details" module and above that, the "Featured roles" module, which shows other roles in the same company and department the applicant may be interested in. Select the "Role details" module and set the Job Application Form in the settings of that module to the form we created in Step 2.
 
-For the detail page, we'll be setting it up as a data query dynamic page. This means we'll be attaching a data query to the page itself (instead of to the module or template), and that query will be one that grabs a single instance of an object, in this case a Role. Go ahead and go to the page settings and expand the Advanced Options section. In the Dynamic Pages section, select the "Role Instance" query in the Data source dropdown. Next, we need to set the slug for the page to be dynamic. A dynamic slug is one that uses the syntax `[:dynamic-slug]` in the Page URL. The parts that make up the dynamic slug are accessed in the data query using the HubL `{{ request.path_param_dict.dynamic_slug }}`. 
+For the detail page, we'll be setting it up as a data query dynamic page. This means we'll be attaching a data query to the page itself (instead of to the module or template), and that query will be one that grabs a single instance of an object, in this case a Role. Go ahead and go to the page settings and expand the Advanced Options section. In the Dynamic Pages section, select the "Role Instance" query in the Data source dropdown. Next, we need to set the slug for the page to be dynamic. A dynamic slug is one that uses the syntax `[:dynamic-slug]` in the Page URL. The parts that make up the dynamic slug are accessed in the data query using the HubL `{{ request.path_param_dict.dynamic_slug }}`.
 
 Now, go ahead and manually update the Page URL to match the one in the role listing page, but with `/[:dynamic-slug]` appended. For example, if the slug for the role listing page was `roles`, the slug for this page should be `roles/[:dynamic-slug]`. Applicants will then be able to access an individual role using it's role identifier in place of the dynamic slug token, for example: `roles/spotify-engineer-i`.
 
@@ -115,6 +115,9 @@ To test our site, go ahead and submit some Job Applications to a few different r
 
 That does it! You now have a fully functional recruiting website where people can view open positions, apply for jobs, and track their application status. On the other side of the process, recruiters can post job openings, keep in touch with applicants through the lifecycle of their application process, and create deals for companies for which applicants are being recruited. Those deals can be associated with Roles that need to be filled, and used to track the lifecycle of the recruitment process for a given company.
 
+## Extra Credit: Giving non-developer control of the data
+You can give a non-developer control of the [GraphQL queries attached to a page using graphql](https://developers.hubspot.com/docs/cms/data/use-graphql-data-in-your-website-pages?_ga=2.211767573.1452725315.1683813147-1115491873.1683813147).  Modules connected to a GraphQL query can make variables editable via the `DataTabVariables` function as seen in the `featured_roles.graphql` file. Using the provided `featured_roles` module, we can allow non-developers to control the amount of roles shown on the page. Navigate to the role details page and select the featured roles module. From there you should see the "data" tab. In it the marketer can choose what department roles shown will be from and the amount to be shown.
+
 ## Extra Credit: HubDB
 
 If you have access to HubDB, there are also modules and data included to demonstrate the usage of GraphQL to pull data from HubDB. To get started, use the HubSpot CLI to create the sample HubDB table in your portal by using the following command: `hs hubdb create ./hubdb/recruiting_events.json`. You should see a message indicating the table was created with 3 rows.
@@ -126,7 +129,7 @@ Now that the table is created, and the required assets are uploaded to our porta
 That should do it! One final thing to mention: While this sample doesn't explicitly demonstrate this functionality, it is possible to retrieve both HubDB data and CRM data in the same query. So, if you have data in both Custom Objects and HubDB tables and you want to use both sets of data in a single page, template, or module, GraphQL makes it easier than ever!
 
 ## Resources
-https://developers.hubspot.com/docs/cms/data/query-hubspot-data-using-graphql  
+https://developers.hubspot.com/docs/cms/data/query-hubspot-data-using-graphql
 
 https://developers.hubspot.com/docs/cms/developer-reference/local-development-cli
 
