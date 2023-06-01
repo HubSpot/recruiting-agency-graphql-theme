@@ -1,0 +1,9 @@
+{% if not data_query.data %}
+    <p>Department:</p>
+{% endif %}
+
+{% set role = data_query.data.CRM.p_role %}
+
+{% if role.department %}
+    <p>Department: {{role.department}}</p>
+{% endif %}
